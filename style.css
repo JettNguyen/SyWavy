@@ -192,17 +192,57 @@ button {
 
 .btn-platform-icon {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
 
 .btn-platform-icon svg,
-.btn-outline svg {
+.btn-outline svg,
+.social-icon-link svg {
+  display: block;
   width: 16px;
   height: 16px;
   fill: currentColor;
   flex-shrink: 0;
+}
+
+/* ── Platform brand colors ── */
+.btn-outline[data-platform="Spotify"]:hover,
+.btn-outline[data-platform="Spotify"]:focus-visible {
+  border-color: #1DB954;
+  color: #1DB954;
+  background: rgba(29, 185, 84, 0.07);
+}
+
+.btn-outline[data-platform="Apple Music"]:hover,
+.btn-outline[data-platform="Apple Music"]:focus-visible {
+  border-color: #FA243C;
+  color: #FA243C;
+  background: rgba(250, 36, 60, 0.07);
+}
+
+.social-icon-link[data-platform="Instagram"]:hover,
+.social-icon-link[data-platform="Instagram"]:focus-visible {
+  color: #E1306C;
+  border-color: #E1306C;
+  background: rgba(225, 48, 108, 0.07);
+}
+
+.social-icon-link[data-platform="TikTok"]:hover,
+.social-icon-link[data-platform="TikTok"]:focus-visible {
+  color: #EE1D52;
+  border-color: #EE1D52;
+  background: rgba(238, 29, 82, 0.07);
+}
+
+.social-icon-link[data-platform="YouTube"]:hover,
+.social-icon-link[data-platform="YouTube"]:focus-visible {
+  color: #FF0000;
+  border-color: #FF0000;
+  background: rgba(255, 0, 0, 0.07);
 }
 
 /* ============================================================
@@ -313,14 +353,29 @@ button {
 }
 
 .nav-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   flex-shrink: 0;
-  line-height: 0;
+  text-decoration: none;
 }
 
 .nav-logo {
-  height: clamp(28px, 5vw, 40px);
+  height: clamp(26px, 4vw, 36px);
   width: auto;
   display: block;
+}
+
+.nav-wordmark-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: var(--gradient-wave);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.5;
 }
 
 .nav-links {
@@ -349,6 +404,8 @@ button {
 
 /* Hamburger */
 .nav-hamburger {
+  position: relative;
+  z-index: 1000; /* above the mobile overlay (z-index: 999) within nav's stacking context */
   display: flex;
   flex-direction: column;
   justify-content: center;

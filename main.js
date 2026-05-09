@@ -16,10 +16,15 @@
      SVG ICONS
   ---------------------------------------------------------- */
   const ICONS = {
-    Spotify: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.52 17.32c-.21.33-.65.44-.98.23-2.68-1.64-6.06-2.01-10.03-1.1-.38.09-.77-.15-.86-.54-.09-.38.15-.77.54-.86 4.35-1 8.1-.57 11.1 1.28.33.21.44.65.23.99zm1.47-3.27c-.27.42-.83.55-1.24.28-3.07-1.89-7.75-2.43-11.38-1.33-.46.14-.94-.12-1.08-.58-.14-.46.12-.94.58-1.08 4.15-1.26 9.31-.65 12.84 1.52.41.27.54.83.28 1.24zm.13-3.4C15.6 8.4 9.97 8.23 6.65 9.23c-.55.17-1.13-.15-1.3-.7-.17-.55.15-1.13.7-1.3 3.83-1.16 10.2-.94 14.22 1.54.5.3.66.94.37 1.43-.29.5-.94.66-1.43.37z"/></svg>`,
-    'Apple Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208A6.38 6.38 0 00.05 5.08c-.02.316-.03.634-.05.95v12c.02.317.03.634.05.95.058 1.082.35 2.088.93 3.001.72 1.14 1.715 1.895 3.025 2.258.539.148 1.09.222 1.646.24.278.01.556.014.834.018H18.48c.278-.004.556-.009.834-.018a7.01 7.01 0 001.647-.24c1.31-.363 2.303-1.12 3.025-2.258.578-.913.87-1.919.928-3.001.02-.316.03-.633.05-.95V7.073c-.02-.316-.03-.633-.05-.95zM15.39 14.05v-5.1l-5.51 1.384v5.92c0 .776-.44 1.46-1.13 1.78-.263.122-.55.183-.838.18-.952-.012-1.72-.786-1.71-1.748.013-.95.78-1.713 1.73-1.713.28.004.557.068.81.187v-7.62l7.37-1.852v6.832c0 .776-.44 1.46-1.13 1.78-.262.12-.548.183-.836.18-.952-.012-1.72-.786-1.71-1.748.013-.95.78-1.713 1.73-1.713.28.004.558.067.812.187V14.05z"/></svg>`,
+    // Spotify — circle with three sound-wave arcs (Simple Icons canonical path)
+    Spotify: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>`,
+    // Apple Music — rounded square badge with beamed music notes cut through (evenodd)
+    'Apple Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.05 3H6.95A3.95 3.95 0 003 6.95v10.1A3.95 3.95 0 006.95 21h10.1A3.95 3.95 0 0021 17.05V6.95A3.95 3.95 0 0017.05 3zM15.9 8.1v5.58a2.32 2.32 0 01-1.42 2.14 2.35 2.35 0 01-2.59-.5 2.3 2.3 0 01.35-3.55c.38-.24.82-.36 1.27-.34.21.01.42.05.62.12V9.02l-4.27 1.06v4.73a2.32 2.32 0 01-1.42 2.14 2.35 2.35 0 01-2.59-.5 2.3 2.3 0 01.35-3.55c.38-.24.82-.36 1.27-.34.21.01.42.05.62.12V7.2L15.9 5.4V8.1z"/></svg>`,
+    // Instagram — rounded square with circle lens and dot flash
     Instagram: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>`,
+    // TikTok — musical-note silhouette (Simple Icons canonical path)
     TikTok: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>`,
+    // YouTube — rounded rectangle with play triangle
     YouTube: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`
   };
 
@@ -89,6 +94,9 @@
     if (!waveRafId) waveRafId = requestAnimationFrame(tickWaves);
   }, { passive: true });
 
+  // Position waves immediately on load — don't wait for first scroll event
+  tickWaves();
+
   function closeMenu() {
     navMenu.classList.remove('mobile-open');
     hamburger.classList.remove('open');
@@ -129,7 +137,7 @@
     const wrap = document.getElementById('featuredRelease');
 
     const linksHTML = featured.links.map(l => `
-      <a href="${l.url}" class="btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Stream on ${l.platform}">
+      <a href="${l.url}" class="btn-outline" data-platform="${l.platform}" target="_blank" rel="noopener noreferrer" aria-label="Stream on ${l.platform}">
         <span class="btn-platform-icon" aria-hidden="true">${icon(l.platform)}</span>
         ${l.platform}
       </a>
@@ -169,8 +177,8 @@
     card.dataset.type = release.type;
 
     const linksHTML = release.links.map(l => `
-      <a href="${l.url}" class="btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Stream ${release.title} on ${l.platform}">
-        <span aria-hidden="true">${icon(l.platform)}</span>
+      <a href="${l.url}" class="btn-outline" data-platform="${l.platform}" target="_blank" rel="noopener noreferrer" aria-label="Stream ${release.title} on ${l.platform}">
+        <span class="btn-platform-icon" aria-hidden="true">${icon(l.platform)}</span>
         ${l.platform}
       </a>
     `).join('');
@@ -290,6 +298,7 @@
     const a = document.createElement('a');
     a.href = s.url;
     a.className = 'social-icon-link';
+    a.dataset.platform = s.platform;
     a.setAttribute('aria-label', s.platform);
     a.setAttribute('target', '_blank');
     a.setAttribute('rel', 'noopener noreferrer');
@@ -350,6 +359,7 @@
     const a = document.createElement('a');
     a.href = s.url;
     a.className = 'social-icon-link';
+    a.dataset.platform = s.platform;
     a.setAttribute('aria-label', s.platform);
     a.setAttribute('target', '_blank');
     a.setAttribute('rel', 'noopener noreferrer');
