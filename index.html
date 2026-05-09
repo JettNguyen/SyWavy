@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SyWavy — Artist, Producer, Tampa Bay" />
+  <title>SyWavy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- WAVE BACKGROUND -->
+  <div id="waveBg" aria-hidden="true">
+    <div class="wave-layer wave-back"></div>
+    <div class="wave-layer wave-mid"></div>
+    <div class="wave-layer wave-front"></div>
+    <div id="waveDepth"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-wordmark" aria-label="SyWavy home">
+      <img src="assets/photos/logo.png" alt="SyWavy" class="nav-logo" />
+    </a>
+
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navMenu" role="list">
+      <li><a href="#music" class="nav-link">Music</a></li>
+      <li><a href="#videos" class="nav-link">Videos</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 id="heroName" class="hero-name"></h1>
+        <p id="heroDescriptor" class="hero-descriptor"></p>
+        <a href="#music" class="btn-primary">Stream Now</a>
+      </div>
+    </section>
+
+    <!-- LATEST RELEASE -->
+    <section id="music" aria-labelledby="musicHeading">
+      <div class="container">
+        <div id="featuredRelease" class="featured-release animate-on-scroll"></div>
+        <div class="catalog-label">
+          <span>From the catalog</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOGRAPHY -->
+    <section id="discography" aria-labelledby="discographyHeading">
+      <div class="container">
+        <h2 id="discographyHeading" class="section-heading sr-only">Discography</h2>
+        <div class="filter-tabs" role="tablist" aria-label="Filter releases">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="album" role="tab" aria-selected="false">Albums</button>
+          <button class="filter-btn" data-filter="ep" role="tab" aria-selected="false">EPs</button>
+          <button class="filter-btn" data-filter="single" role="tab" aria-selected="false">Singles</button>
+        </div>
+        <div id="discographyGrid" class="discography-grid" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" aria-labelledby="videosHeading">
+      <div class="container">
+        <h2 id="videosHeading" class="section-heading">Watch</h2>
+        <div id="videosGrid" class="videos-grid"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="aboutHeading">
+      <div class="container">
+        <div class="about-layout animate-on-scroll">
+          <div class="about-photo-wrap">
+            <img
+              src="assets/photos/sywavy-portrait.jpg"
+              alt="SyWavy"
+              class="about-photo"
+              width="600"
+              height="750"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="about-photo-fallback" aria-hidden="true"></div>
+          </div>
+          <div class="about-text">
+            <h2 id="aboutHeading" class="section-heading">About</h2>
+            <p id="aboutBio" class="about-bio"></p>
+            <p id="aboutLocation" class="about-location"></p>
+            <div id="aboutSocials" class="about-socials"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <div class="contact-inner animate-on-scroll">
+          <h2 id="contactHeading" class="section-heading">Work Together</h2>
+          <p class="contact-sub">For bookings and collaborations.</p>
+
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="formName">Name</label>
+              <input type="text" id="formName" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email</label>
+              <input type="email" id="formEmail" name="email" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-submit">Send Message</button>
+            <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+          </form>
+
+          <p class="contact-direct">
+            or reach out directly at
+            <a id="contactEmail" href="#" class="contact-email-link"></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy" id="footerCopy"></p>
+      <div id="footerSocials" class="footer-socials"></div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
