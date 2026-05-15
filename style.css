@@ -40,6 +40,8 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* Dark base so iOS liquid glass browser chrome always samples dark content */
+  background-color: #0e0e0e;
 }
 
 body {
@@ -540,14 +542,19 @@ button {
 .hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
+  /* Solid dark strip at the top covering the browser chrome zone (safe area + address bar),
+     then fades into the regular gradient. iOS 26 liquid glass samples the scroll layer here,
+     so this dark content is what bleeds through the glass instead of the portrait photo. */
   background: linear-gradient(
     to bottom,
-    rgba(14, 14, 14, 0.55) 0%,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(14, 14, 14, 1) calc(env(safe-area-inset-top, 44px) + 80px),
+    rgba(14, 14, 14, 0.55) calc(env(safe-area-inset-top, 44px) + 130px),
     rgba(14, 14, 14, 0.15) 42%,
     rgba(14, 14, 14, 0.35) 68%,
     transparent 100%
   );
-  z-index: 1;
 }
 
 .hero-content {
