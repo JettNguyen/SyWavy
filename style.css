@@ -342,7 +342,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem clamp(1.25rem, 5vw, 2.5rem);
+  padding: calc(env(safe-area-inset-top, 0px) + 1rem) clamp(1.25rem, 5vw, 2.5rem) 1rem;
   transition: background-color var(--transition-base), backdrop-filter var(--transition-base);
 }
 
@@ -459,6 +459,8 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   background: rgba(14, 12, 10, 0.97);
   align-items: center;
   justify-content: center;
