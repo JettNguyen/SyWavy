@@ -350,6 +350,19 @@ button {
   transition: background-color var(--transition-base), backdrop-filter var(--transition-base);
 }
 
+/* Extend nav background above the viewport to block content showing through
+   Safari's liquid glass browser chrome on iOS */
+#nav::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: #0e0e0e;
+  pointer-events: none;
+}
+
 #nav.scrolled {
   background: rgba(14, 12, 10, 0.88);
   backdrop-filter: blur(16px);
