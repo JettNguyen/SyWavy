@@ -342,9 +342,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Extend navbar behind Safari UI using explicit height + padding separation */
-  height: calc(60px + env(safe-area-inset-top));
-  padding-top: env(safe-area-inset-top);
+  /* Only inset content for safe area, let background reach from true top */
+  padding-top: calc(env(safe-area-inset-top) + 0.75rem);
   padding-left: clamp(1.25rem, 5vw, 2.5rem);
   padding-right: clamp(1.25rem, 5vw, 2.5rem);
   padding-bottom: 0.75rem;
@@ -352,9 +351,8 @@ button {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: background-color var(--transition-base), backdrop-filter var(--transition-base);
-  /* GPU compositing + prevent Safari dynamic toolbar reflow */
+  /* GPU compositing to stabilize during Safari dynamic toolbar transitions */
   transform: translateZ(0);
-  will-change: transform;
 }
 
 #nav.scrolled {
