@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SyWavy" />
+  <title>SyWavy</title>
+  <link rel="icon" type="image/png" href="assets/photos/logo.png" />
+  <link rel="apple-touch-icon" href="assets/photos/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- WAVE BACKGROUND -->
+  <div id="waveBg" aria-hidden="true">
+    <div class="wave-layer wave-back"></div>
+    <div class="wave-layer wave-mid"></div>
+    <div class="wave-layer wave-front"></div>
+    <div id="waveDepth"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-wordmark" aria-label="SyWavy home">
+      <img src="assets/photos/logo.png" alt="" class="nav-logo" />
+      <span class="nav-wordmark-text">SyWavy</span>
+    </a>
+
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navMenu" role="list">
+      <li><a href="/#music" class="nav-link">Music</a></li>
+      <li><a href="/#videos" class="nav-link">Videos</a></li>
+      <li><a href="/#about" class="nav-link">About</a></li>
+      <li><a href="/#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="release-page">
+      <div class="container">
+        <a href="/" class="back-link" aria-label="Back to SyWavy">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+          </svg>
+          SyWavy
+        </a>
+        <div id="releaseContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy" id="footerCopy"></p>
+      <div id="footerSocials" class="footer-socials"></div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="release.js"></script>
+</body>
+</html>
