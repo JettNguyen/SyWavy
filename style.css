@@ -342,12 +342,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem clamp(1.25rem, 5vw, 2.5rem);
+  /* env() pushes content below the notch/Dynamic Island; background fills behind Safari chrome */
+  padding: calc(env(safe-area-inset-top, 0px) + 0.75rem) clamp(1.25rem, 5vw, 2.5rem) 0.75rem;
+  background: rgba(14, 12, 10, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: background-color var(--transition-base), backdrop-filter var(--transition-base);
 }
 
 #nav.scrolled {
-  background: rgba(14, 12, 10, 0.82);
+  background: rgba(14, 12, 10, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--color-border);
