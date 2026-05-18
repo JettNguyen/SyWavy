@@ -14,7 +14,7 @@ window.SYWAVY = {
       type: "album",
       date: "2026-05-29",
       featured: true,
-      coverArt: "assets/covers/magnum-opus.jpg",
+      coverArt: "assets/covers/magnum-opus.png",
       links: [
         { platform: "Spotify", url: "#" },
         { platform: "Apple Music", url: "#" }
