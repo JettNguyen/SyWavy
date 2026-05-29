@@ -16,8 +16,8 @@ window.SYWAVY = {
       featured: true,
       coverArt: "assets/covers/magnum-opus.png",
       links: [
-        { platform: "Spotify", url: "#" },
-        { platform: "Apple Music", url: "#" }
+        { platform: "Spotify", url: "https://open.spotify.com/album/4hAfaZSwoKQpMaJV4LDgR4?si=VGRSKclBTvacb2WfPETPNA" },
+        { platform: "Apple Music", url: "https://music.apple.com/us/album/magnum-opus/6772945346" }
       ]
     },
     {
