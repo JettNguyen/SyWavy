@@ -15,6 +15,7 @@ window.SYWAVY = {
       date: "2026-05-29",
       featured: true,
       coverArt: "assets/covers/magnum-opus.png",
+      musicVideoId: "EEbRq_fPUnE",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/4hAfaZSwoKQpMaJV4LDgR4?si=VGRSKclBTvacb2WfPETPNA" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/magnum-opus/6772945346" }
@@ -27,6 +28,7 @@ window.SYWAVY = {
       date: "2025-11-14",
       featured: false,
       coverArt: "assets/covers/flame.jpeg",
+      musicVideoId: "qJxKahnEGDY",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/0WaLfswFe4BSvo4k22B4ai" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/flame-single/1853813425" },

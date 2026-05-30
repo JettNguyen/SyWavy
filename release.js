@@ -75,6 +75,29 @@
     </div>
   ` : '';
 
+  // Music video — only shown when musicVideoId is set
+  const musicVideoHTML = release.musicVideoId ? `
+    <div class="release-music-video">
+      <h2 class="release-music-video-heading">Featured Music Video</h2>
+      <div class="release-video-thumb-wrap"
+           data-videoid="${release.musicVideoId}"
+           role="button"
+           tabindex="0"
+           aria-label="Play ${release.title} music video">
+        <img
+          src="https://img.youtube.com/vi/${release.musicVideoId}/hqdefault.jpg"
+          alt="${release.title} music video thumbnail"
+          class="video-thumb"
+        />
+        <div class="video-play-btn" aria-hidden="true">
+          <div class="video-play-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  ` : '';
+
   container.innerHTML = `
     <div class="release-page-inner animate-on-scroll">
       <div class="release-page-cover">
@@ -99,8 +122,28 @@
         ${tracklistHTML}
       </div>
     </div>
+    ${musicVideoHTML}
   `;
 
   observeCards();
+
+  // Click-to-play music video
+  const thumbWrap = container.querySelector('.release-video-thumb-wrap');
+  if (thumbWrap) {
+    const loadVideo = () => {
+      const videoId = thumbWrap.dataset.videoid;
+      const iframeWrap = document.createElement('div');
+      iframeWrap.className = 'video-iframe-wrap';
+      iframeWrap.innerHTML = `<iframe
+        src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+        title="${release.title} music video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>`;
+      thumbWrap.replaceWith(iframeWrap);
+    };
+    thumbWrap.addEventListener('click', loadVideo);
+    thumbWrap.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); } });
+  }
 
 })();
