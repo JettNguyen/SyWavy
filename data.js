@@ -325,6 +325,16 @@ window.SYWAVY = {
 
   videos: [
     {
+      title: "SyWavy - Carolina Herrera (Official Music Video)",
+      youtubeId: "cNYZxzDjoUE",
+      date: "2026-07-03"
+    },
+    {
+      title: "SyWavy - SZA (Official Music Video)",
+      youtubeId: "EEbRq_fPUnE",
+      date: "2026-05-30"
+    },
+    {
       title: "SyWavy - Flame (Official Music Video)",
       youtubeId: "qJxKahnEGDY",
       date: "2025-11-14"
