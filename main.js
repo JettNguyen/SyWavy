@@ -212,7 +212,7 @@ window._SW = {};
 
     featuredWrap.innerHTML = `
       <div class="featured-cover-wrap">
-        <a href="release.html?id=${featured.id}" class="featured-cover-link" aria-label="View ${featured.title}">
+        <a href="/release?id=${featured.id}" class="featured-cover-link" aria-label="View ${featured.title}">
           <img
             src="${featured.coverArt}"
             alt="${featured.title} cover art"
@@ -248,7 +248,7 @@ window._SW = {};
     card.dataset.type = release.type;
 
     card.innerHTML = `
-      <a href="release.html?id=${release.id}" class="release-card-link" aria-label="View ${release.title}">
+      <a href="/release?id=${release.id}" class="release-card-link" aria-label="View ${release.title}">
         <div class="release-card-img-wrap">
           <img
             src="${release.coverArt}"
