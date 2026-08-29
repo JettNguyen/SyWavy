@@ -325,6 +325,11 @@ window.SYWAVY = {
 
   videos: [
     {
+      title: "SyWavy - Rust (Official Music Video)",
+      youtubeId: "u5F1GKy1FKo",
+      date: "2026-08-29"
+    },
+    {
       title: "SyWavy - Carolina Herrera (Official Music Video)",
       youtubeId: "cNYZxzDjoUE",
       date: "2026-07-03"
