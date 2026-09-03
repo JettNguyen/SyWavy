@@ -1,8 +1,8 @@
 window.SYWAVY = {
   artist: {
     name: "SyWavy",
-    descriptor: "ARTIST  ·  VOCALIST  ·  PRODUCER",
-    bio: "SyWavy is an emerging American rapper and artist known for blending elements of hip-hop, R&B, and experimental sounds. From Saint Petersburg, Florida, he first gained attention with his 2021 track \"3AM,\" a track that showcases his diversity and creative lyricism. With a discography that includes releases like \"Japanese Cherry Blossom\" (2022) and \"Deep Voice Bastards\" (2023), SyWavy explores themes of love, self-reflection, and confidence over dynamic production. His later work, such as the introspective \"Flight 370\" (2024), reveals a growing depth, cementing his reputation as a versatile voice in modern music. SyWavy continues to carve his own lane, delivering raw energy and a distinctive vibe that resonates with a new generation of listeners.",
+    descriptor: "Artist · Vocalist · Producer",
+    bio: "SyWavy is a rapper and producer from Saint Petersburg, Florida. He has been putting out records since 2020, moving between hip-hop, R&B, and more experimental sounds depending on what the song calls for. The 2021 track \"3AM\" was the first to get real attention. The albums that followed, \"Japanese Cherry Blossom\" (2022), \"Deep Voice Bastards\" (2023), and \"Flight 370\" (2024), dig into love, self-reflection, and confidence, and each one gets a little more personal than the last. The newest album, \"Magnum Opus\", is out now.",
     location: "Saint Petersburg, FL",
     bookingEmail: "synemaivwave@gmail.com"
   },
@@ -325,119 +325,119 @@ window.SYWAVY = {
 
   videos: [
     {
-      title: "SyWavy - Rust (Official Music Video)",
+      title: "Rust",
       youtubeId: "u5F1GKy1FKo",
       date: "2026-08-29"
     },
     {
-      title: "SyWavy - Carolina Herrera (Official Music Video)",
+      title: "Carolina Herrera",
       youtubeId: "cNYZxzDjoUE",
       date: "2026-07-03"
     },
     {
-      title: "SyWavy - SZA (Official Music Video)",
+      title: "SZA",
       youtubeId: "EEbRq_fPUnE",
       date: "2026-05-30"
     },
     {
-      title: "SyWavy - Flame (Official Music Video)",
+      title: "Flame",
       youtubeId: "qJxKahnEGDY",
       date: "2025-11-14"
     },
     {
-      title: "SyWavy - Wavy Deagle (Official Music Video)",
+      title: "Wavy Deagle",
       youtubeId: "PJ7GmOT6p5g",
       date: "2025-07-25"
     },
     {
-      title: "SyWavy - Put It On! (Official Music Video)",
+      title: "Put It On!",
       youtubeId: "MBIr637uDH8",
       date: "2025-05-09"
     },
     {
-      title: "SyWavy - Awtside (Official Music Video)",
+      title: "Awtside",
       youtubeId: "1HaIyHpOlDI",
       date: "2025-04-04"
     },
     {
-      title: "SyWavy - Imma Floridian (Official Music Video)",
+      title: "Imma Floridian",
       youtubeId: "vq3Tf8Egytk",
       date: "2025-02-28"
     },
     {
-      title: "SyWavy - Clairo (Official Music Video)",
+      title: "Clairo",
       youtubeId: "4Ehm3oK1njg",
       date: "2025-01-04"
     },
     {
-      title: "SyWavy - Tour (Official Music Video)",
+      title: "Tour",
       youtubeId: "5jeHGBiCg_4",
       date: "2024-12-04"
     },
     {
-      title: "SyWavy - Stadium Music (Official Music Video)",
+      title: "Stadium Music",
       youtubeId: "_yAGKWG1V6U",
       date: "2024-06-24"
     },
     {
-      title: "SyWavy - 3AM (Official Music Video)",
+      title: "3AM",
       youtubeId: "wmWg2onm_es",
       date: "2024-02-03"
     },
     {
-      title: "SyWavy - Bruh I'm High asf xD (Official Music Video)",
+      title: "Bruh I'm High asf xD",
       youtubeId: "KMA1LTL9h5U",
       date: "2024-01-03"
     },
     {
-      title: "SyWavy - Aqua Artist (Official Music Video)",
+      title: "Aqua Artist",
       youtubeId: "artnGrvIuKI",
       date: "2023-08-26"
     },
     {
-      title: "SyWavy - Cruise Jam (Official Music Video)",
+      title: "Cruise Jam",
       youtubeId: "_vfXEbK4yQo",
       date: "2023-07-30"
     },
     {
-      title: "SyWavy - Triad (Official Music Video)",
+      title: "Triad",
       youtubeId: "_NcfHiH1ZdM",
       date: "2023-07-09"
     },
     {
-      title: "SyWavy - 3D (Official Music Video)",
+      title: "3D",
       youtubeId: "s3kjWX6Y9Ds",
       date: "2023-06-19"
     },
     {
-      title: "SyWavy - Whirlpool Window (Official Music Video)",
+      title: "Whirlpool Window",
       youtubeId: "gZfzifoETpQ",
       date: "2023-05-21"
     },
     {
-      title: "SyWavy - Out The Blue (Official Music Video)",
+      title: "Out The Blue",
       youtubeId: "Rn3xYSnYXf0",
       date: "2023-04-28"
     },
     {
-      title: "SyWavy - 71% (Official Music Video)",
+      title: "71%",
       youtubeId: "wksJhOPf0vE",
       date: "2023-04-02"
     },
     {
-      title: "SyWavy - Gold Tears (Official Music Video)",
+      title: "Gold Tears",
       youtubeId: "PP2eHD-5Ot8",
       date: "2022-06-03"
     },
     {
-      title: "SyWavy - Chanel Fragrance (Official Music Video)",
+      title: "Chanel Fragrance",
       youtubeId: "6C3kT6fyMf0",
       date: "2022-04-16"
     },
     {
-      title: "SyWavy - No Change (Official Music Video)",
+      title: "No Change",
       youtubeId: "QRE0qpi6Bdc",
-      date: "2020-06-31"
+      date: "2020-06-30"
     }
   ],
 
