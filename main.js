@@ -18,36 +18,33 @@ window._SW = {};
      SVG ICONS
   ---------------------------------------------------------- */
   const ICONS = {
-    Spotify: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>`,
-
-    'Apple Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.05 3H6.95A3.95 3.95 0 003 6.95v10.1A3.95 3.95 0 006.95 21h10.1A3.95 3.95 0 0021 17.05V6.95A3.95 3.95 0 0017.05 3zM15.9 8.1v5.58a2.32 2.32 0 01-1.42 2.14 2.35 2.35 0 01-2.59-.5 2.3 2.3 0 01.35-3.55c.38-.24.82-.36 1.27-.34.21.01.42.05.62.12V9.02l-4.27 1.06v4.73a2.32 2.32 0 01-1.42 2.14 2.35 2.35 0 01-2.59-.5 2.3 2.3 0 01.35-3.55c.38-.24.82-.36 1.27-.34.21.01.42.05.62.12V7.2L15.9 5.4V8.1z"/></svg>`,
-
-    'YouTube Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>`,
-
-    'Amazon Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.699-3.182v.685zm3.186 7.705c-.209.189-.512.201-.745.075-1.047-.871-1.234-1.276-1.814-2.106-1.734 1.768-2.962 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.095v-.41c0-.753.06-1.642-.383-2.294-.385-.579-1.124-.818-1.775-.818-1.203 0-2.278.618-2.54 1.897-.054.285-.261.567-.549.582l-3.061-.331c-.259-.057-.547-.266-.472-.66.641-3.38 3.844-4.397 6.722-4.397 1.461 0 3.371.39 4.524 1.494 1.462 1.364 1.322 3.182 1.322 5.163v4.682c0 1.407.583 2.025 1.133 2.786.19.272.232.593-.01.79l-2.265 1.976zm4.51 1.474c-1.806 1.35-4.43 2.073-6.688 2.073-3.162 0-6.006-1.17-8.158-3.119-.169-.153-.018-.361.185-.242 2.322 1.35 5.194 2.162 8.161 2.162 2.001 0 4.202-.414 6.227-1.27.306-.13.562.2.273.396z"/></svg>`,
-
-    Tidal: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996l4.004 4.004 4.004-4.004 4.004 4.004 4.004-4.004zM8.008 16.004l-4.004-4.004L0 16.004 4.004 20.008l4.004-4.004zm4.004 0l4.004 4.004 4.004-4.004-4.004-4.004-4.004 4.004zm4.004-8.008l-4.004 4.004 4.004 4.004L24 12l-4.004-4.004z"/></svg>`,
-
-    Deezer: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.81 13.17h2.38v1.96h-2.38zm0-3.5h2.38v1.96h-2.38zm-4.06.5h2.38v1.96h-2.38zm0 3h2.38v1.96h-2.38zm-4.06-1h2.38v1.96H10.7zm0 3h2.38v1.96H10.7zm-4.06-2h2.38v1.96H6.63zm0 3h2.38v1.96H6.63zm-4.06-1h2.38v1.96H2.57zm0 3h2.38v1.96H2.57zm16.24-8.5h2.38v1.96h-2.38zm-4.06 1h2.38v1.96h-2.38z"/></svg>`,
-
-    SoundCloud: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.175 12.225c-.015 0-.03.005-.044.007.004-.228.063-.45.163-.635a.98.98 0 01.56-.455c.051-.017.104-.03.158-.038C1.688 11.46 1.38 11.8 1.175 12.225zM24 13.174a3.99 3.99 0 00-3.99-3.99c-.336 0-.662.043-.973.123A5.985 5.985 0 0013.555 5.31a5.985 5.985 0 00-5.985 5.985c0 .132.006.263.016.393H7.57a2.394 2.394 0 000 4.788H20.01A3.99 3.99 0 0024 13.174zM2.38 12.507a1.37 1.37 0 01-.018-.207c0-.756.613-1.37 1.37-1.37.756 0 1.37.614 1.37 1.37v2.387H2.394a1.37 1.37 0 01-.014-2.18zm-1.944.85a1.37 1.37 0 010-2.739c.24 0 .464.063.659.172a2.738 2.738 0 00-.032.417v2.15H.436z"/></svg>`,
-
-    Pandora: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.4v19.2h7.459c5.379 0 9.733-4.354 9.733-9.733V2.4H0zm14.984 9.467c0 4.159-3.366 7.525-7.525 7.525H2.208V4.608h12.776v7.259z"/><path d="M5.533 7.467h3.985a2.266 2.266 0 010 4.532H5.533V7.467z"/></svg>`,
-
-    Instagram: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>`,
-
-    TikTok: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>`,
-
-    YouTube: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`
+    Spotify: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1ED760" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>`,
+    'Apple Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="sw-am" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FB5C74"/><stop offset="1" stop-color="#FA233B"/></linearGradient></defs><path fill="url(#sw-am)" d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/></svg>`,
+    YouTube: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/><path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12z"/></svg>`,
+    'YouTube Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#FF0000" d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228s6.228-2.796 6.228-6.228S15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z"/></svg>`,
+    'Amazon Music': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#46C3D0" d="M14.8454 9.4083c-1.3907 1.0194-3.405 1.563-5.1424 1.563a9.333 9.333 0 0 1-6.2768-2.3835c-.1313-.117-.0143-.277.1415-.1846a12.693 12.693 0 0 0 6.285 1.6574c1.5384 0 3.2348-.318 4.7917-.9764.2359-.0985.4328.1538.203.324h-.002zm.5784-.6564c-.1784-.2257-1.1753-.1087-1.6225-.0554-.1374.0164-.158-.1026-.0349-.1867.796-.5558 2.0984-.3958 2.2502-.2092.1539.1867-.041 1.4872-.7856 2.1087-.1149.0964-.2236.0451-.1723-.082.1682-.4165.5436-1.3498.3651-1.5754zm-1.5917-4.1702v-.5394c0-.082.0615-.1375.1374-.1375h2.4348c.078 0 .1395.0554.1395.1354v.4636c0 .078-.0656.1805-.1846.3405L15.0997 6.635c.4677-.0102.9641.0595 1.3887.2974.0964.0534.123.1334.1292.2113v.5744c0 .082-.0882.1723-.1784.123a2.8163 2.8163 0 0 0-2.5723.0062c-.0861.0451-.1743-.0451-.1743-.1251v-.5477c0-.0882.002-.238.0902-.3713l1.4626-2.0881h-1.2718c-.078 0-.1415-.0534-.1436-.1354l.002.002zm4.808-.7466c1.0995 0 1.6944.9395 1.6944 2.1333 0 1.1528-.6564 2.0676-1.6943 2.0676-1.079 0-1.6656-.9395-1.6656-2.1087 0-1.1774.5948-2.0922 1.6656-2.0922zm.0062.7713c-.5456 0-.5805.7384-.5805 1.202 0 .4615-.0061 1.4481.5744 1.4481.5743 0 .601-.7958.601-1.282 0-.318-.0144-.6994-.1108-1.001-.082-.2625-.2482-.3671-.4841-.3671zm-6.008 3.3414c-.0493.041-.1395.0451-.1744.0164-.2543-.1949-.4246-.4923-.4246-.4923-.4061.4123-.6954.5374-1.2225.5374-.6215 0-1.1077-.3835-1.1077-1.1486a1.2512 1.2512 0 0 1 .7897-1.2041c.402-.1764.9641-.2072 1.3928-.2564 0 0 .0349-.4615-.0902-.6297a.521.521 0 0 0-.4164-.1908c-.2728 0-.5395.1477-.5928.4328-.0144.082-.0739.1518-.1395.1436L9.945 5.08a.1292.1292 0 0 1-.1108-.1537c.1641-.8657.9498-1.1282 1.6554-1.1282.361 0 .8307.0964 1.1158.3671.359.3344.3262.7795.3262 1.2677v1.1487c0 .3446.1436.4964.279.681.0471.0677.0574.1477-.002.197-.1519.125-.5703.4881-.5703.4881zm-.7467-1.7969v-.16c-.5353 0-1.1015.115-1.1015.7426 0 .318.1662.5333.4513.5333.2051 0 .3938-.1272.5128-.3344.1436-.2564.1374-.4943.1374-.7815zM2.9278 7.948c-.0472.041-.1375.045-.1723.0163-.2544-.1949-.4246-.4923-.4246-.4923-.4082.4123-.6954.5374-1.2226.5374-.6235 0-1.1076-.3835-1.1076-1.1486a1.2512 1.2512 0 0 1 .7897-1.2041c.402-.1764.964-.2072 1.3928-.2564 0 0 .0348-.4615-.0903-.6297a.521.521 0 0 0-.4164-.1908c-.2748 0-.5395.1477-.5928.4328-.0143.082-.0759.1518-.1395.1436L.2345 5.08a.1292.1292 0 0 1-.1087-.1537c.162-.8657.9497-1.1282 1.6553-1.1282.361 0 .8308.0964 1.1159.3671.359.3344.324.7795.324 1.2677v1.1487c0 .3446.1437.4964.279.681.0472.0677.0575.1477-.002.197-.1518.125-.5702.4881-.5702.4881zm-.7446-1.797v-.16c-.5354 0-1.1015.115-1.1015.7426 0 .318.164.5333.4512.5333.2052 0 .3939-.1272.5128-.3344.1436-.2564.1375-.4943.1375-.7815zm2.9127-.3343v2.002a.1379.1379 0 0 1-.1395.1374H4.218a.1374.1374 0 0 1-.1395-.1374v-3.766a.1379.1379 0 0 1 .1395-.1375h.6913a.1374.1374 0 0 1 .1374.1374v.482h.0143c.1805-.4758.519-.6994.9744-.6994.4636 0 .7528.2236.962.6995a1.0523 1.0523 0 0 1 1.0215-.6995c.3118 0 .6502.1272.8574.4143.236.318.1867.7795.1867 1.1857v2.3855c0 .076-.0636.1354-.1436.1354H8.181a.1374.1374 0 0 1-.1334-.1354v-2.004c0-.16.0144-.558-.0205-.7077-.0554-.2564-.2215-.3282-.4369-.3282a.4923.4923 0 0 0-.441.3118c-.076.1908-.0698.5087-.0698.724v2.0041c0 .076-.0635.1354-.1435.1354h-.7385a.1374.1374 0 0 1-.1333-.1354v-2.004c0-.4226.0677-1.042-.4574-1.042-.5334 0-.5128.603-.5128 1.042h.002zm16.8077 2.002a.1374.1374 0 0 1-.1374.1374h-.7405a.1374.1374 0 0 1-.1374-.1374v-3.766a.1374.1374 0 0 1 .1374-.1375h.683c.0821 0 .1396.0636.1396.1067v.5764h.0143c.2051-.517.4964-.7631 1.0092-.7631.3323 0 .6564.119.8636.4451.1928.3036.1928.8123.1928 1.1774V7.837a.1395.1395 0 0 1-.1415.119h-.7426a.1395.1395 0 0 1-.1313-.119V5.552c0-.763-.2933-.7856-.4635-.7856-.197 0-.357.1538-.4246.2953a1.7025 1.7025 0 0 0-.1231.722l.002 2.0349zM.1914 20.0582c-.1271 0-.1907-.0615-.1907-.1907v-4.4491c0-.1272.0636-.1908.1907-.1908H.616c.0616 0 .1129.0144.1477.039.0349.0246.0595.0738.0718.1436l.0575.3035c.6133-.4184 1.2102-.6276 1.7907-.6276.5948 0 .9969.2256 1.2081.6769.6318-.4513 1.2636-.677 1.8954-.677.441 0 .7794.1231 1.0153.3693.236.2502.3549.603.3549 1.0584v3.3538c0 .1271-.0656.1907-.1928.1907h-.5641c-.1272 0-.1928-.0615-.1928-.1907v-3.085c0-.318-.0616-.5539-.1805-.7057-.1231-.1538-.3139-.2297-.5744-.2297-.4677 0-.9353.1436-1.4092.4307a.997.997 0 0 1 .0103.1416v3.448c0 .1272-.0636.1908-.1908.1908H3.297c-.1272 0-.1908-.0615-.1908-.1907v-3.085c0-.318-.0615-.5539-.1825-.7057-.1231-.1538-.3139-.2297-.5744-.2297-.4861 0-.9517.1395-1.399.4205v3.5999c0 .1271-.0615.1907-.1907.1907H.1914zm9.731.1436c-.4533 0-.8-.1272-1.044-.3815-.242-.2544-.3631-.6133-.3631-1.0769v-3.321c0-.1292.0615-.1927.1908-.1927h.564c.1293 0 .1929.0635.1929.1907v3.0215c0 .3425.0656.5948.201.7569.1333.162.3487.242.642.242.4595 0 .923-.1518 1.3887-.4574v-3.565c0-.1272.0615-.1908.1908-.1908h.564c.1293 0 .1929.0636.1929.1908v4.4511c0 .1252-.0636.1887-.1928.1887h-.4103c-.0636 0-.1149-.0123-.1497-.0369-.0349-.0266-.0575-.0738-.0718-.1436l-.0657-.3323c-.5948.437-1.204.6564-1.8297.6564zm5.4399 0c-.5374 0-1.0195-.0882-1.4461-.2666a.3754.3754 0 0 1-.158-.1047c-.0287-.039-.043-.0984-.043-.1805v-.2687c0-.1148.0369-.1723.1148-.1723.0452 0 .1231.0205.238.0575.4225.1333.8615.199 1.3128.199.3138 0 .5517-.0616.7138-.1806.164-.121.244-.2954.244-.523a.4923.4923 0 0 0-.1476-.3734 1.606 1.606 0 0 0-.5415-.285l-.8144-.3037c-.7097-.2605-1.0625-.7056-1.0625-1.3333 0-.4143.16-.7487.484-1.001.3221-.2543.7447-.3815 1.2677-.3815a3.487 3.487 0 0 1 1.2164.2195c.076.0246.1313.0574.1641.0985.0308.041.0472.1025.0472.1846v.2584c0 .1149-.041.1723-.123.1723a.8615.8615 0 0 1-.2216-.0472 3.5495 3.5495 0 0 0-1.0359-.1538c-.6112 0-.919.2072-.919.6195 0 .164.0514.2953.154.3897.1025.0964.3035.201.603.3159l.7466.2872c.3774.1436.6482.318.8144.519.1661.1989.2482.4574.2482.7753 0 .4513-.1682.8102-.5067 1.0769-.3385.2666-.7877.4-1.3497.4v.002zm3.0645-.1436c-.1272 0-.1928-.0615-.1928-.1907v-4.4491c0-.1272.0656-.1908.1928-.1908h.5641c.1272 0 .1928.0636.1928.1908v4.4511c0 .1251-.0656.1887-.1928.1887h-.564zm.2872-5.688c-.1846 0-.3303-.0513-.437-.1559a.558.558 0 0 1-.1579-.4143c0-.1724.0534-.3098.158-.4144a.5907.5907 0 0 1 .4369-.158c.1846 0 .3282.0534.4349.158.1066.1026.1579.242.1579.4144 0 .1702-.0513.3076-.158.4143-.1046.1026-.2502.1559-.4348.1559zm4.002 5.7926c-.7529 0-1.3293-.2133-1.7272-.642-.4-.4307-.599-1.0502-.599-1.8625 0-.8061.2052-1.4318.6175-1.8728.4102-.441.9948-.6625 1.7476-.6625.3446 0 .683.0615 1.0154.1825.0697.0247.119.0554.1477.0944s.043.1026.043.1908v.2564c0 .1271-.041.1907-.123.1907-.0329 0-.082-.0082-.1539-.0287a2.8307 2.8307 0 0 0-.7959-.1128c-.5353 0-.923.1333-1.1589.404s-.3528.6996-.3528 1.2924v.123c0 .5764.119 1.001.359 1.2718.24.2687.6174.404 1.1343.404.2666 0 .5538-.043.8615-.1332.0718-.0206.119-.0288.1436-.0288.082 0 .1251.0636.1251.1908v.2585c0 .082-.0123.1435-.039.1805-.0246.0369-.0759.0718-.1518.1025-.3138.1354-.6769.201-1.0933.201z"/></svg>`,
+    Tidal: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#FFFFFF" d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996 4.004 12l4.004-4.004L12.012 12l-4.004 4.004 4.004 4.004 4.004-4.004L12.012 12l4.004-4.004-4.004-4.004zM16.042 7.996l3.979-3.979L24 7.996l-3.979 3.979z"/></svg>`,
+    Deezer: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#A238FF" d="M.693 10.024c.381 0 .693-1.256.693-2.807 0-1.55-.312-2.807-.693-2.807C.312 4.41 0 5.666 0 7.217s.312 2.808.693 2.808ZM21.038 1.56c-.364 0-.684.805-.91 2.096C19.765 1.446 19.184 0 18.526 0c-.78 0-1.464 2.036-1.784 5-.312-2.158-.788-3.536-1.325-3.536-.745 0-1.386 2.704-1.62 6.472-.442-1.932-1.083-3.145-1.793-3.145s-1.35 1.213-1.793 3.145c-.242-3.76-.874-6.463-1.628-6.463-.537 0-1.013 1.378-1.325 3.535C6.938 2.036 6.262 0 5.474 0c-.658 0-1.247 1.447-1.602 3.665-.217-1.291-.546-2.105-.91-2.105-.675 0-1.221 2.807-1.221 6.272 0 3.466.546 6.273 1.221 6.273.277 0 .537-.476.736-1.273.32 2.928.996 4.938 1.776 4.938.606 0 1.143-1.204 1.507-3.11.251 3.622.875 6.195 1.602 6.195.46 0 .875-1.023 1.187-2.677C10.142 21.6 11 24 12.004 24c1.005 0 1.863-2.4 2.235-5.822.312 1.654.727 2.677 1.186 2.677.728 0 1.352-2.573 1.603-6.195.364 1.906.9 3.11 1.507 3.11.78 0 1.455-2.01 1.775-4.938.208.797.46 1.273.737 1.273.675 0 1.22-2.807 1.22-6.273-.008-3.457-.553-6.272-1.23-6.272ZM23.307 10.024c.381 0 .693-1.256.693-2.807 0-1.55-.312-2.807-.693-2.807-.381 0-.693 1.256-.693 2.807s.312 2.808.693 2.808Z"/></svg>`,
+    SoundCloud: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#FF5500" d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z"/></svg>`,
+    Pandora: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#3668FF" d="M1.882 0v24H8.32a1.085 1.085 0 001.085-1.085v-4.61h1.612c7.88 0 11.103-4.442 11.103-9.636C22.119 2.257 17.247 0 12.662 0H1.882Z"/></svg>`,
+    Instagram: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="sw-ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset="0.3" stop-color="#FA7E1E"/><stop offset="0.55" stop-color="#D62976"/><stop offset="0.8" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><path fill="url(#sw-ig)" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>`,
+    TikTok: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#25F4EE" transform="translate(-0.7 -0.7)" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/><path fill="#FE2C55" transform="translate(0.7 0.7)" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/><path fill="#FFFFFF" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>`
   };
 
   function icon(platform) {
-    return ICONS[platform] || `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>`;
+    return ICONS[platform] || `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg>`;
   }
 
   /* ----------------------------------------------------------
-     DATE FORMATTER
+     HELPERS
   ---------------------------------------------------------- */
+  const TYPE_LABEL = { album: 'Album', ep: 'EP', single: 'Single' };
+  const typeLabel = t => TYPE_LABEL[t] || t;
+
+  function escapeHTML(str) {
+    return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
   function formatDate(iso) {
     if (!iso) return '';
     const [y, m, d] = iso.split('-').map(Number);
@@ -57,68 +54,125 @@ window._SW = {};
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   }
 
+  const yearOf = iso => (iso ? iso.slice(0, 4) : '');
+
+  // Responsive cover art: 480w for grids, 1000w for large placements
+  function coverImg(release, { sizes, cls = '', extra = '' }) {
+    const base = `assets/covers/${release.cover}`;
+    return `<img
+      src="${base}-480.webp"
+      srcset="${base}-480.webp 480w, ${base}-1000.webp 1000w"
+      sizes="${sizes}"
+      alt="${escapeHTML(release.title)} cover art"
+      class="${cls}"
+      width="1000"
+      height="1000"
+      loading="lazy"
+      decoding="async"
+      ${extra}
+    />`;
+  }
+
+  function streamLinks(release, ariaPrefix) {
+    return (release.links || [])
+      .filter(l => l.url && l.url !== '#')
+      .map(l => `
+        <a href="${l.url}" class="btn-outline" data-platform="${escapeHTML(l.platform)}" target="_blank" rel="noopener noreferrer" aria-label="${ariaPrefix} on ${escapeHTML(l.platform)}">
+          <span class="btn-platform-icon" aria-hidden="true">${icon(l.platform)}</span>
+          ${escapeHTML(l.platform)}
+        </a>`).join('');
+  }
+
+  function buildCard(release) {
+    const card = document.createElement('article');
+    card.className = 'release-card animate-on-scroll';
+    card.dataset.type = release.type;
+    card.innerHTML = `
+      <a href="/release?id=${release.id}" class="release-card-link" aria-label="${escapeHTML(release.title)}, ${typeLabel(release.type)}">
+        <div class="release-card-img-wrap">
+          ${coverImg(release, { sizes: '(min-width: 1024px) 240px, (min-width: 650px) 30vw, 45vw', cls: 'release-card-img' })}
+        </div>
+        <div class="release-card-body">
+          <h3 class="release-card-title">${escapeHTML(release.title)}</h3>
+          <p class="release-card-meta">${typeLabel(release.type)} · ${yearOf(release.date)}</p>
+        </div>
+      </a>`;
+    return card;
+  }
+
+  function socialLinks(container) {
+    D.socials.forEach(s => {
+      const a = document.createElement('a');
+      a.href = s.url;
+      a.className = 'social-icon-link';
+      a.dataset.platform = s.platform;
+      a.setAttribute('aria-label', `SyWavy on ${s.platform}`);
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+      a.innerHTML = icon(s.platform);
+      container.appendChild(a);
+    });
+  }
+
   /* ----------------------------------------------------------
-     INTERSECTION OBSERVER — scroll animations
+     SCROLL REVEAL
   ---------------------------------------------------------- */
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   function observeCards() {
     const targets = document.querySelectorAll('.animate-on-scroll:not(.visible), .video-item:not(.visible)');
     if (!targets.length) return;
 
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      targets.forEach(el => el.classList.add('visible'));
+      return;
+    }
+
     const observer = new IntersectionObserver((entries) => {
-      const intersecting = entries.filter(e => e.isIntersecting);
-      intersecting.forEach((entry, batchIdx) => {
+      entries.filter(e => e.isIntersecting).forEach((entry, i) => {
         const el = entry.target;
-        const isCard = el.classList.contains('release-card') || el.classList.contains('video-item');
-        const delay = isCard ? batchIdx * 0.07 : 0;
-
-        if (delay > 0) el.style.transitionDelay = `${delay}s`;
+        const stagger = el.classList.contains('release-card') || el.classList.contains('video-item');
+        const delay = stagger ? Math.min(i, 7) * 0.06 : 0;
+        if (delay) el.style.transitionDelay = `${delay}s`;
         el.classList.add('visible');
-
-        // Clear delay after animation so hover transitions are never deferred
-        if (delay > 0) {
-          setTimeout(() => { el.style.transitionDelay = ''; }, delay * 1000 + 850);
-        }
-
+        if (delay) setTimeout(() => { el.style.transitionDelay = ''; }, delay * 1000 + 800);
         observer.unobserve(el);
       });
-    }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 
     targets.forEach(el => observer.observe(el));
   }
 
-  // Expose shared utilities for release.js
-  window._SW.icon = icon;
-  window._SW.formatDate = formatDate;
-  window._SW.observeCards = observeCards;
+  // Shared utilities for release.js
+  Object.assign(window._SW, { icon, formatDate, typeLabel, escapeHTML, coverImg, streamLinks, buildCard, observeCards });
 
   /* ----------------------------------------------------------
-     NAV — scroll class + hamburger toggle
+     NAV + WAVE ENGINE
   ---------------------------------------------------------- */
-  const nav        = document.getElementById('nav');
+  const nav         = document.getElementById('nav');
   const hamburger   = document.getElementById('navHamburger');
   const navMenu     = document.getElementById('navMenu');
   const waveDepthEl = document.getElementById('waveDepth');
   const root        = document.documentElement;
 
-  /* ----------------------------------------------------------
-     WAVE ENGINE — smooth depth-driven RAF loop
-  ---------------------------------------------------------- */
   let scrollDepth  = 0;
   let currentDepth = 0;
   let waveRafId    = null;
 
+  // Waves rise with scroll depth but stay in the lower half of the viewport,
+  // while the deep-water overlay darkens everything behind the content.
   function tickWaves() {
     currentDepth += (scrollDepth - currentDepth) * 0.08;
 
-    const backY  = (-20 + currentDepth * -28).toFixed(2);
-    const midY   = (-20 + currentDepth * -34).toFixed(2);
-    const frontY = (-20 + currentDepth * -40).toFixed(2);
+    const backY  = (-20 + currentDepth * -14).toFixed(2);
+    const midY   = (-20 + currentDepth * -18).toFixed(2);
+    const frontY = (-20 + currentDepth * -22).toFixed(2);
 
     root.style.setProperty('--back-tf',  `translateY(${backY}vh)`);
     root.style.setProperty('--mid-tf',   `translateY(${midY}vh)`);
     root.style.setProperty('--front-tf', `translateY(${frontY}vh)`);
 
-    if (waveDepthEl) waveDepthEl.style.opacity = (currentDepth * 0.5).toFixed(4);
+    if (waveDepthEl) waveDepthEl.style.opacity = (currentDepth * 0.6).toFixed(4);
 
     waveRafId = Math.abs(scrollDepth - currentDepth) < 0.0005
       ? null
@@ -136,25 +190,24 @@ window._SW = {};
     }
     navMenu.querySelectorAll('.nav-link').forEach(link => {
       const href = link.getAttribute('href');
-      link.classList.toggle('nav-link-active',
-        current !== '' && (href === `#${current}` || href === `/#${current}`)
-      );
+      link.classList.toggle('nav-link-active', current !== '' && (href === `#${current}` || href === `/#${current}`));
     });
   }
 
-  window.addEventListener('scroll', () => {
-    if (nav) nav.classList.toggle('scrolled', window.scrollY > 60);
-
-    const maxScroll = document.body.scrollHeight - window.innerHeight;
+  function onScroll() {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
+    const maxScroll = root.scrollHeight - window.innerHeight;
     scrollDepth = maxScroll > 0 ? Math.min(window.scrollY / maxScroll, 1) : 0;
-
     if (!waveRafId) waveRafId = requestAnimationFrame(tickWaves);
-
     updateActiveNav();
-  }, { passive: true });
+  }
 
-  tickWaves();
-  updateActiveNav();
+  // iOS Safari only applies :active pressed states once a touchstart listener exists
+  document.addEventListener('touchstart', () => {}, { passive: true });
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
 
   function closeMenu() {
     if (!navMenu || !hamburger) return;
@@ -165,10 +218,9 @@ window._SW = {};
     document.body.style.overflow = '';
   }
 
-  if (hamburger) {
+  if (hamburger && navMenu) {
     hamburger.addEventListener('click', () => {
-      const isOpen = navMenu.classList.contains('mobile-open');
-      if (isOpen) {
+      if (navMenu.classList.contains('mobile-open')) {
         closeMenu();
       } else {
         navMenu.classList.add('mobile-open');
@@ -178,145 +230,110 @@ window._SW = {};
         document.body.style.overflow = 'hidden';
       }
     });
-  }
-
-  if (navMenu) {
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
+    navMenu.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
   }
 
   /* ----------------------------------------------------------
      HERO
   ---------------------------------------------------------- */
+  const featured = D.releases.find(r => r.featured) || D.releases[0];
+
   const heroNameEl = document.getElementById('heroName');
   const heroDescEl = document.getElementById('heroDescriptor');
+  const heroCta    = document.getElementById('heroCta');
   if (heroNameEl) heroNameEl.textContent = D.artist.name;
   if (heroDescEl) heroDescEl.textContent = D.artist.descriptor;
+  if (heroCta && featured) heroCta.textContent = `Listen to ${featured.title}`;
 
   /* ----------------------------------------------------------
      FEATURED RELEASE
   ---------------------------------------------------------- */
-  const featured = D.releases.find(r => r.featured);
   const featuredWrap = document.getElementById('featuredRelease');
 
   if (featured && featuredWrap) {
-    const linksHTML = featured.links
-      .filter(l => l.url && l.url !== '#')
-      .map(l => `
-        <a href="${l.url}" class="btn-outline" data-platform="${l.platform}" target="_blank" rel="noopener noreferrer" aria-label="Stream on ${l.platform}">
-          <span class="btn-platform-icon" aria-hidden="true">${icon(l.platform)}</span>
-          ${l.platform}
-        </a>
-      `).join('');
-
+    const links = streamLinks(featured, `Stream ${featured.title}`);
     featuredWrap.innerHTML = `
       <div class="featured-cover-wrap">
-        <a href="/release?id=${featured.id}" class="featured-cover-link" aria-label="View ${featured.title}">
-          <img
-            src="${featured.coverArt}"
-            alt="${featured.title} cover art"
-            class="featured-cover"
-            width="600"
-            height="600"
-            loading="lazy"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-          />
-          <div class="featured-cover-fallback" style="display:none" aria-hidden="true"></div>
+        <a href="/release?id=${featured.id}" class="featured-cover-link" aria-label="View ${escapeHTML(featured.title)}">
+          ${coverImg(featured, { sizes: '(min-width: 1024px) 520px, (min-width: 640px) 360px, 90vw', cls: 'featured-cover', extra: 'loading="eager"' })}
         </a>
       </div>
       <div class="featured-info">
-        <span class="featured-badge">${featured.type}</span>
-        <h2 class="featured-title">${featured.title}</h2>
-        ${featured.date ? `<p class="featured-year">${formatDate(featured.date)}</p>` : ''}
+        <p class="eyebrow">Latest ${typeLabel(featured.type)}</p>
+        <h2 class="featured-title" id="featuredTitle"><a href="/release?id=${featured.id}">${escapeHTML(featured.title)}</a></h2>
+        ${featured.date ? `<p class="featured-meta">${formatDate(featured.date)}</p>` : ''}
         <div class="featured-links">
-          ${linksHTML || '<p style="color:var(--color-text-muted);font-size:.9rem">Coming soon to all platforms.</p>'}
+          ${links || '<p class="release-coming-soon">Coming soon to all platforms.</p>'}
         </div>
-      </div>
-    `;
+      </div>`;
   }
 
   /* ----------------------------------------------------------
-     DISCOGRAPHY
+     DISCOGRAPHY — filter + show more
   ---------------------------------------------------------- */
-  const grid = document.getElementById('discographyGrid');
+  const grid       = document.getElementById('discographyGrid');
   const filterBtns = document.querySelectorAll('.filter-btn');
-
-  function buildCard(release) {
-    const card = document.createElement('article');
-    card.className = 'release-card animate-on-scroll';
-    card.dataset.type = release.type;
-
-    card.innerHTML = `
-      <a href="/release?id=${release.id}" class="release-card-link" aria-label="View ${release.title}">
-        <div class="release-card-img-wrap">
-          <img
-            src="${release.coverArt}"
-            alt="${release.title} cover art"
-            class="release-card-img"
-            width="400"
-            height="400"
-            loading="lazy"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-          />
-          <div class="release-card-img-fallback" aria-hidden="true" style="display:none">♪</div>
-          <div class="release-card-hover-overlay" aria-hidden="true"><span>Listen</span></div>
-        </div>
-        <div class="release-card-body">
-          <div class="release-card-meta">
-            <span class="release-card-type">${release.type}</span>
-            <span class="release-card-year">${formatDate(release.date)}</span>
-          </div>
-          <h3 class="release-card-title">${release.title}</h3>
-        </div>
-      </a>
-    `;
-
-    return card;
-  }
+  const moreBtn    = document.getElementById('releasesMore');
+  const RELEASE_LIMIT = 8;
+  const FILTER_NOUN = { all: 'releases', album: 'albums', ep: 'EPs', single: 'singles' };
 
   if (grid) {
     D.releases.forEach(r => grid.appendChild(buildCard(r)));
+    const cards = [...grid.querySelectorAll('.release-card')];
+    let filter = 'all';
+    let expanded = false;
+
+    function applyReleases() {
+      let matching = 0, shown = 0;
+      cards.forEach(card => {
+        const match = filter === 'all' || card.dataset.type === filter;
+        if (match) matching++;
+        const show = match && (expanded || shown < RELEASE_LIMIT);
+        if (show) shown++;
+        card.classList.toggle('hidden', !show);
+      });
+      if (moreBtn) {
+        moreBtn.hidden = expanded || matching <= RELEASE_LIMIT;
+        moreBtn.textContent = `Show all ${matching} ${FILTER_NOUN[filter] || 'releases'}`;
+      }
+      observeCards();
+    }
 
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        filterBtns.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-
-        const filter = btn.dataset.filter;
-        grid.querySelectorAll('.release-card').forEach(card => {
-          const show = filter === 'all' || card.dataset.type === filter;
-          card.classList.toggle('hidden', !show);
-        });
-
-        observeCards();
+        filterBtns.forEach(b => b.setAttribute('aria-pressed', 'false'));
+        btn.setAttribute('aria-pressed', 'true');
+        filter = btn.dataset.filter;
+        applyReleases();
       });
     });
+
+    if (moreBtn) moreBtn.addEventListener('click', () => { expanded = true; applyReleases(); });
+
+    applyReleases();
   }
 
   /* ----------------------------------------------------------
-     VIDEOS
+     VIDEOS — click-to-load embeds + show more
   ---------------------------------------------------------- */
   const videosGrid = document.getElementById('videosGrid');
+  const videosMore = document.getElementById('videosMore');
+  const VIDEO_LIMIT = 6;
 
   if (videosGrid) {
-    D.videos.forEach(v => {
+    D.videos.forEach((v, i) => {
       const item = document.createElement('div');
-      item.className = 'video-item';
-
-      const thumbUrl = `https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`;
-      const isPlaceholder = v.youtubeId === 'YOUTUBE_ID_HERE';
+      item.className = 'video-item' + (i >= VIDEO_LIMIT ? ' hidden' : '');
+      const title = escapeHTML(v.title);
+      const hq  = `https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`;
+      const max = `https://img.youtube.com/vi/${v.youtubeId}/maxresdefault.jpg`;
 
       item.innerHTML = `
-        <div class="video-thumb-wrap" role="button" tabindex="0" aria-label="Play ${v.title}">
-          ${isPlaceholder
-            ? `<div class="video-thumb" style="background:var(--color-surface-2);width:100%;height:100%;display:block;"></div>`
-            : `<img src="${thumbUrl}" alt="${v.title} thumbnail" class="video-thumb" loading="lazy" width="480" height="270" />`
-          }
+        <div class="video-thumb-wrap" role="button" tabindex="0" aria-label="Play ${title}">
+          <img src="${max}" data-fallback="${hq}" alt="" class="video-thumb" loading="lazy" decoding="async" width="1280" height="720"
+               onload="if(this.naturalWidth<400&&this.src!==this.dataset.fallback){this.src=this.dataset.fallback}"
+               onerror="if(this.src!==this.dataset.fallback){this.src=this.dataset.fallback}" />
           <div class="video-play-btn" aria-hidden="true">
             <div class="video-play-icon">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -324,65 +341,56 @@ window._SW = {};
           </div>
         </div>
         <div class="video-meta">
-          <p class="video-title">${v.title}</p>
+          <p class="video-title">${title}</p>
           ${v.date ? `<p class="video-year">${formatDate(v.date)}</p>` : ''}
-        </div>
-      `;
+        </div>`;
 
       const thumbWrap = item.querySelector('.video-thumb-wrap');
-
-      function loadIframe() {
-        if (isPlaceholder) return;
-        const iframeWrap = document.createElement('div');
-        iframeWrap.className = 'video-iframe-wrap';
-        iframeWrap.innerHTML = `<iframe
-          src="https://www.youtube.com/embed/${v.youtubeId}?autoplay=1"
-          title="${v.title}"
+      const loadIframe = () => {
+        const wrap = document.createElement('div');
+        wrap.className = 'video-iframe-wrap';
+        wrap.innerHTML = `<iframe
+          src="https://www.youtube-nocookie.com/embed/${v.youtubeId}?autoplay=1&rel=0"
+          title="SyWavy – ${title} (Official Music Video)"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>`;
-        thumbWrap.replaceWith(iframeWrap);
-      }
-
+          allowfullscreen></iframe>`;
+        thumbWrap.replaceWith(wrap);
+      };
       thumbWrap.addEventListener('click', loadIframe);
       thumbWrap.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          loadIframe();
-        }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadIframe(); }
       });
 
       videosGrid.appendChild(item);
     });
+
+    if (videosMore) {
+      videosMore.hidden = D.videos.length <= VIDEO_LIMIT;
+      videosMore.textContent = `Show all ${D.videos.length} videos`;
+      videosMore.addEventListener('click', () => {
+        videosGrid.querySelectorAll('.video-item.hidden').forEach(el => el.classList.remove('hidden'));
+        videosMore.hidden = true;
+        observeCards();
+      });
+    }
   }
 
   /* ----------------------------------------------------------
      ABOUT
   ---------------------------------------------------------- */
-  const aboutBio = document.getElementById('aboutBio');
+  const aboutBio      = document.getElementById('aboutBio');
   const aboutLocation = document.getElementById('aboutLocation');
-  const aboutSocials = document.getElementById('aboutSocials');
+  const aboutSocials  = document.getElementById('aboutSocials');
 
   if (aboutBio) aboutBio.textContent = D.artist.bio;
-  if (aboutLocation) aboutLocation.textContent = D.artist.location;
-
-  if (aboutSocials) {
-    D.socials.forEach(s => {
-      const a = document.createElement('a');
-      a.href = s.url;
-      a.className = 'social-icon-link';
-      a.dataset.platform = s.platform;
-      a.setAttribute('aria-label', s.platform);
-      a.setAttribute('target', '_blank');
-      a.setAttribute('rel', 'noopener noreferrer');
-      a.innerHTML = icon(s.platform);
-      aboutSocials.appendChild(a);
-    });
+  if (aboutLocation) {
+    aboutLocation.textContent = D.artist.location;
+    aboutLocation.classList.add('eyebrow');
   }
+  if (aboutSocials) socialLinks(aboutSocials);
 
   /* ----------------------------------------------------------
-     CONTACT
+     CONTACT — opens the visitor's email app with a prefilled message
   ---------------------------------------------------------- */
   const emailLink = document.getElementById('contactEmail');
   if (emailLink) {
@@ -394,85 +402,54 @@ window._SW = {};
   const feedback = document.getElementById('formFeedback');
 
   if (form && feedback) {
-    form.addEventListener('submit', async e => {
+    form.addEventListener('submit', e => {
       e.preventDefault();
-      const btn = form.querySelector('.btn-submit');
-      btn.disabled = true;
-      btn.textContent = 'Sending…';
-      feedback.className = 'form-feedback';
-      feedback.textContent = '';
+      if (!form.reportValidity()) return;
 
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { Accept: 'application/json' }
-        });
+      const name    = form.name.value.trim();
+      const email   = form.email.value.trim();
+      const message = form.message.value.trim();
 
-        if (res.ok) {
-          feedback.className = 'form-feedback success';
-          feedback.textContent = "Message sent — I'll be in touch soon.";
-          form.reset();
-        } else {
-          throw new Error('Server error');
-        }
-      } catch {
-        feedback.className = 'form-feedback error';
-        feedback.textContent = 'Something went wrong. Try emailing directly.';
-      } finally {
-        btn.disabled = false;
-        btn.textContent = 'Send Message';
-      }
+      const subject = `Booking / collab inquiry from ${name}`;
+      const body = [`Hi ${D.artist.name},`, '', message, '', `— ${name}`, email].join('\r\n');
+      const mailto = `mailto:${D.artist.bookingEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      feedback.textContent = 'Opening your email app… if nothing happens, use the address below.';
+      window.location.href = mailto;
     });
   }
 
   /* ----------------------------------------------------------
      FOOTER
   ---------------------------------------------------------- */
-  const year = new Date().getFullYear();
   const footerCopy = document.getElementById('footerCopy');
-  if (footerCopy) footerCopy.textContent = `© ${year} ${D.artist.name}. All rights reserved.`;
+  if (footerCopy) footerCopy.textContent = `© ${new Date().getFullYear()} ${D.artist.name}`;
 
   const footerSocials = document.getElementById('footerSocials');
-  if (footerSocials) {
-    D.socials.forEach(s => {
-      const a = document.createElement('a');
-      a.href = s.url;
-      a.className = 'social-icon-link';
-      a.dataset.platform = s.platform;
-      a.setAttribute('aria-label', s.platform);
-      a.setAttribute('target', '_blank');
-      a.setAttribute('rel', 'noopener noreferrer');
-      a.innerHTML = icon(s.platform);
-      footerSocials.appendChild(a);
-    });
-  }
+  if (footerSocials) socialLinks(footerSocials);
 
   /* ----------------------------------------------------------
-     SCROLL ANIMATIONS
+     SCROLL REVEAL + POSITION RESTORE
   ---------------------------------------------------------- */
   observeCards();
 
-  /* ----------------------------------------------------------
-     SCROLL POSITION — save before leaving, restore on return
-  ---------------------------------------------------------- */
-  if (document.getElementById('discographyGrid')) {
-    // Prevent browser from racing against our manual restore
+  if (grid) {
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-    // Save position whenever a release card or featured cover is clicked
     document.addEventListener('click', e => {
-      if (e.target.closest('.release-card-link, .featured-cover-link')) {
+      if (e.target.closest('.release-card-link, .featured-cover-link, .featured-title a')) {
         sessionStorage.setItem('sywavy_scroll', String(window.scrollY));
       }
     });
 
-    // Restore position after dynamic content is in the DOM
     const saved = sessionStorage.getItem('sywavy_scroll');
     if (saved !== null) {
       sessionStorage.removeItem('sywavy_scroll');
+      // Cards past the initial limit may need revealing before we can restore
+      const y = parseInt(saved, 10);
+      if (moreBtn && !moreBtn.hidden && y > root.scrollHeight - window.innerHeight) moreBtn.click();
       requestAnimationFrame(() => requestAnimationFrame(() => {
-        window.scrollTo(0, parseInt(saved, 10));
+        window.scrollTo(0, y);
         updateActiveNav();
       }));
     }

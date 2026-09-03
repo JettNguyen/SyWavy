@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="SyWavy — Artist, Producer, Tampa Bay" />
-  <title>SyWavy</title>
-  <link rel="icon" type="image/png" href="assets/photos/logo.png" />
-  <link rel="apple-touch-icon" href="assets/photos/logo.png" />
+  <title>SyWavy — Rapper &amp; Producer, St. Petersburg FL</title>
+  <meta name="description" content="Official site of SyWavy, rapper and producer from Saint Petersburg, Florida. Stream the new album Magnum Opus, browse the full discography, and watch every music video." />
+  <link rel="canonical" href="https://sywavy.com/" />
+  <meta name="theme-color" content="#0e0e0e" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SyWavy" />
+  <meta property="og:title" content="SyWavy" />
+  <meta property="og:description" content="Rapper and producer from Saint Petersburg, Florida. New album Magnum Opus out now." />
+  <meta property="og:url" content="https://sywavy.com/" />
+  <meta property="og:image" content="https://sywavy.com/assets/photos/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SyWavy" />
+  <meta name="twitter:description" content="Rapper and producer from Saint Petersburg, Florida. New album Magnum Opus out now." />
+  <meta name="twitter:image" content="https://sywavy.com/assets/photos/og.jpg" />
+
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/photos/logo-96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/photos/logo-180.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +30,24 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500&display=swap"
     rel="stylesheet"
   />
-
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "SyWavy",
+    "url": "https://sywavy.com/",
+    "image": "https://sywavy.com/assets/photos/og.jpg",
+    "genre": ["Hip-Hop", "R&B"],
+    "foundingLocation": { "@type": "Place", "name": "Saint Petersburg, Florida" },
+    "sameAs": [
+      "https://www.instagram.com/sywavvy/",
+      "https://www.tiktok.com/@sywavy",
+      "https://www.youtube.com/channel/UC914k5x3iDXPKdHNOSFLY2Q"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -28,9 +60,9 @@
   </div>
 
   <!-- NAV -->
-  <nav id="nav" role="navigation" aria-label="Main navigation">
+  <nav id="nav" aria-label="Main navigation">
     <a href="#" class="nav-wordmark" aria-label="SyWavy home">
-      <img src="assets/photos/logo.png" alt="" class="nav-logo" />
+      <img src="assets/photos/logo-96.png" alt="" class="nav-logo" width="96" height="96" />
       <span class="nav-wordmark-text">SyWavy</span>
     </a>
 
@@ -40,7 +72,7 @@
       <span></span>
     </button>
 
-    <ul class="nav-links" id="navMenu" role="list">
+    <ul class="nav-links" id="navMenu">
       <li><a href="#music" class="nav-link">Music</a></li>
       <li><a href="#videos" class="nav-link">Videos</a></li>
       <li><a href="#about" class="nav-link">About</a></li>
@@ -51,45 +83,71 @@
   <main>
 
     <!-- HERO -->
-    <section id="hero" aria-label="Hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <section id="hero" aria-label="Intro">
+      <picture class="hero-bg" aria-hidden="true">
+        <source
+          media="(min-width: 800px)"
+          srcset="assets/photos/sywavy-portrait-wide-1280.webp 1280w, assets/photos/sywavy-portrait-wide-1920.webp 1920w"
+          sizes="100vw"
+        />
+        <img
+          src="assets/photos/sywavy-portrait-800.webp"
+          srcset="assets/photos/sywavy-portrait-800.webp 800w, assets/photos/sywavy-portrait-1400.webp 1400w"
+          sizes="100vw"
+          alt=""
+          width="800"
+          height="1200"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-content">
         <h1 id="heroName" class="hero-name"></h1>
         <p id="heroDescriptor" class="hero-descriptor"></p>
-        <a href="#music" class="btn-primary">Stream Now</a>
+        <div class="hero-actions">
+          <a href="#music" id="heroCta" class="btn-primary">Listen</a>
+          <a href="#videos" class="btn-outline">Watch videos</a>
+        </div>
       </div>
     </section>
 
     <!-- LATEST RELEASE -->
-    <section id="music" aria-labelledby="musicHeading">
+    <section id="music" aria-labelledby="featuredTitle">
       <div class="container">
         <div id="featuredRelease" class="featured-release animate-on-scroll"></div>
-        <div class="catalog-label">
-          <span>From the catalog</span>
-        </div>
       </div>
     </section>
 
     <!-- DISCOGRAPHY -->
     <section id="discography" aria-labelledby="discographyHeading">
       <div class="container">
-        <h2 id="discographyHeading" class="section-heading sr-only">Discography</h2>
-        <div class="filter-tabs" role="tablist" aria-label="Filter releases">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="filter-btn" data-filter="album" role="tab" aria-selected="false">Albums</button>
-          <button class="filter-btn" data-filter="ep" role="tab" aria-selected="false">EPs</button>
-          <button class="filter-btn" data-filter="single" role="tab" aria-selected="false">Singles</button>
+        <div class="section-head">
+          <h2 id="discographyHeading" class="section-heading">Discography</h2>
+          <div class="filter-tabs" role="group" aria-label="Filter releases">
+            <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="album" aria-pressed="false">Albums</button>
+            <button class="filter-btn" data-filter="ep" aria-pressed="false">EPs</button>
+            <button class="filter-btn" data-filter="single" aria-pressed="false">Singles</button>
+          </div>
         </div>
-        <div id="discographyGrid" class="discography-grid" role="tabpanel"></div>
+        <div id="discographyGrid" class="discography-grid"></div>
+        <div class="show-more-wrap">
+          <button id="releasesMore" class="btn-outline" type="button" hidden>Show all releases</button>
+        </div>
       </div>
     </section>
 
     <!-- VIDEOS -->
     <section id="videos" aria-labelledby="videosHeading">
       <div class="container">
-        <h2 id="videosHeading" class="section-heading">Watch</h2>
+        <div class="section-head">
+          <h2 id="videosHeading" class="section-heading">Videos</h2>
+        </div>
         <div id="videosGrid" class="videos-grid"></div>
+        <div class="show-more-wrap">
+          <button id="videosMore" class="btn-outline" type="button" hidden>Show all videos</button>
+        </div>
       </div>
     </section>
 
@@ -98,18 +156,17 @@
       <div class="container">
         <div class="about-layout animate-on-scroll">
           <div class="about-photo-wrap">
-            <picture>
-              <img
-                src="assets/photos/sywavy-portrait.jpg"
-                alt="SyWavy"
-                class="about-photo"
-                width="600"
-                height="750"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </picture>
-            <div class="about-photo-fallback" aria-hidden="true"></div>
+            <img
+              src="assets/photos/sywavy-portrait-800.webp"
+              srcset="assets/photos/sywavy-portrait-800.webp 800w, assets/photos/sywavy-portrait-1400.webp 1400w"
+              sizes="(min-width: 1024px) 460px, (min-width: 750px) 340px, 80vw"
+              alt="SyWavy standing on the beach in Saint Petersburg"
+              class="about-photo"
+              width="800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="about-text">
             <h2 id="aboutHeading" class="section-heading">About</h2>
@@ -125,15 +182,10 @@
     <section id="contact" aria-labelledby="contactHeading">
       <div class="container">
         <div class="contact-inner animate-on-scroll">
-          <h2 id="contactHeading" class="section-heading">Work Together</h2>
-          <p class="contact-sub">For bookings and collaborations.</p>
+          <h2 id="contactHeading" class="section-heading">Contact</h2>
+          <p class="contact-sub">Bookings, features, and collaborations.</p>
 
-          <form
-            id="contactForm"
-            action="https://formspree.io/f/YOUR_FORM_ID"
-            method="POST"
-            novalidate
-          >
+          <form id="contactForm" novalidate>
             <div class="form-group">
               <label for="formName">Name</label>
               <input type="text" id="formName" name="name" autocomplete="name" required />
@@ -151,7 +203,7 @@
           </form>
 
           <p class="contact-direct">
-            or reach out directly at
+            This opens your email app with the message filled in, or write directly to
             <a id="contactEmail" href="#" class="contact-email-link"></a>
           </p>
         </div>

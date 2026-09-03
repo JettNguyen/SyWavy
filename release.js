@@ -1,6 +1,6 @@
 /* ============================================================
-   release.js — Individual release landing page
-   Reads ?id=<release-id> from URL, renders full release view.
+   release.js — Individual release page
+   Reads ?id=<release-id> from the URL and renders the release.
    Requires data.js and main.js loaded first.
    ============================================================ */
 
@@ -8,142 +8,137 @@
   'use strict';
 
   const D = window.SYWAVY;
-  const utils = window._SW;
-  if (!D || !utils) return;
+  const U = window._SW;
+  if (!D || !U) return;
 
-  const { icon, formatDate, observeCards } = utils;
+  const { formatDate, typeLabel, escapeHTML, coverImg, streamLinks, buildCard, observeCards } = U;
 
-  const params = new URLSearchParams(window.location.search);
-  const releaseId = params.get('id');
-  const release = D.releases.find(r => r.id === releaseId);
+  const params  = new URLSearchParams(window.location.search);
+  const id      = params.get('id');
+  const index   = D.releases.findIndex(r => r.id === id);
+  const release = D.releases[index];
 
   if (!release) {
     window.location.replace('/');
     return;
   }
 
-  // Update page title + meta
-  document.title = `${release.title} — SyWavy`;
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) {
-    metaDesc.content = `${release.title} by SyWavy — stream on Spotify, Apple Music, and more.`;
-  }
-
   const container = document.getElementById('releaseContent');
   if (!container) return;
 
-  const typeLabel = { album: 'Album', ep: 'EP', single: 'Single' }[release.type] || release.type;
+  /* Page metadata */
+  const kind = typeLabel(release.type);
+  document.title = `${release.title} — SyWavy`;
+  const desc = `${release.title}, ${kind.toLowerCase()} by SyWavy${release.date ? ` (${formatDate(release.date)})` : ''}. Stream on Spotify, Apple Music, and more.`;
+  const setMeta = (sel, val) => { const el = document.querySelector(sel); if (el) el.setAttribute('content', val); };
+  setMeta('meta[name="description"]', desc);
+  setMeta('meta[property="og:title"]', `${release.title} — SyWavy`);
+  setMeta('meta[property="og:description"]', desc);
+  setMeta('meta[property="og:image"]', `https://sywavy.com/assets/covers/${release.cover}-1000.webp`);
+  setMeta('meta[name="twitter:image"]', `https://sywavy.com/assets/covers/${release.cover}-1000.webp`);
 
-  // Active streaming links only (skip placeholder #)
-  const activeLinks = (release.links || []).filter(l => l.url && l.url !== '#');
+  /* Streaming links */
+  const links = streamLinks(release, `Stream ${release.title}`);
 
-  const linksHTML = activeLinks.length
-    ? activeLinks.map(l => `
-        <a href="${l.url}"
-           class="btn-outline release-stream-btn"
-           data-platform="${l.platform}"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Stream ${release.title} on ${l.platform}">
-          <span class="btn-platform-icon" aria-hidden="true">${icon(l.platform)}</span>
-          ${l.platform}
-        </a>
-      `).join('')
-    : `<p class="release-coming-soon">Coming soon to all platforms.</p>`;
+  /* Spotify player, derived from the Spotify link (no extra data needed) */
+  const spotify = (release.links || []).find(l => l.platform === 'Spotify' && /open\.spotify\.com\/(album|track)\/([A-Za-z0-9]+)/.test(l.url));
+  let embedHTML = '';
+  if (spotify) {
+    const [, type, sid] = spotify.url.match(/open\.spotify\.com\/(album|track)\/([A-Za-z0-9]+)/);
+    const height = release.type === 'single' ? 152 : 352;
+    embedHTML = `
+      <div class="release-embed" style="height:${height}px">
+        <iframe
+          src="https://open.spotify.com/embed/${type}/${sid}?utm_source=generator&theme=0"
+          height="${height}"
+          title="${escapeHTML(release.title)} on Spotify"
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>`;
+  }
 
-  // Tracklist — only shown for albums/EPs when data is provided
-  const tracklist = release.tracklist;
-  const showTracklist = release.type !== 'single' && Array.isArray(tracklist) && tracklist.length > 0;
-
-  const tracklistHTML = showTracklist ? `
+  /* Optional tracklist (only when data is provided) */
+  const tracklist = Array.isArray(release.tracklist) && release.tracklist.length ? release.tracklist : null;
+  const tracklistHTML = tracklist ? `
     <div class="release-tracklist">
       <h2 class="tracklist-heading">Tracklist</h2>
       <ol class="tracklist">
-        ${tracklist.map((track, i) => {
-          const title = typeof track === 'string' ? track : track.title;
-          const dur = (typeof track === 'object' && track.duration) ? track.duration : '';
-          const feat = (typeof track === 'object' && track.features) ? `<span class="track-features"> feat. ${track.features}</span>` : '';
-          return `
-            <li class="track-item">
-              <span class="track-num">${String(i + 1).padStart(2, '0')}</span>
-              <span class="track-title">${title}${feat}</span>
-              ${dur ? `<span class="track-duration">${dur}</span>` : ''}
-            </li>
-          `;
+        ${tracklist.map((t, i) => {
+          const title = typeof t === 'string' ? t : t.title;
+          const dur   = typeof t === 'object' && t.duration ? `<span class="track-duration">${escapeHTML(t.duration)}</span>` : '';
+          const feat  = typeof t === 'object' && t.features ? `<span class="track-features"> feat. ${escapeHTML(t.features)}</span>` : '';
+          return `<li class="track-item"><span class="track-num">${String(i + 1).padStart(2, '0')}</span><span class="track-title">${escapeHTML(title)}${feat}</span>${dur}</li>`;
         }).join('')}
       </ol>
-    </div>
-  ` : '';
+    </div>` : '';
 
-  // Music video — only shown when musicVideoId is set
-  const musicVideoHTML = release.musicVideoId ? `
-    <div class="release-music-video">
-      <h2 class="release-music-video-heading">Featured Music Video</h2>
-      <div class="release-video-thumb-wrap"
-           data-videoid="${release.musicVideoId}"
-           role="button"
-           tabindex="0"
-           aria-label="Play ${release.title} music video">
-        <img
-          src="https://img.youtube.com/vi/${release.musicVideoId}/hqdefault.jpg"
-          alt="${release.title} music video thumbnail"
-          class="video-thumb"
-        />
+  /* Music video */
+  const videoHTML = release.musicVideoId ? `
+    <section class="release-section" aria-labelledby="releaseVideoHeading">
+      <div class="section-head"><h2 id="releaseVideoHeading" class="section-heading">Music video</h2></div>
+      <div class="video-thumb-wrap release-video-thumb-wrap" role="button" tabindex="0" aria-label="Play the ${escapeHTML(release.title)} music video">
+        <img src="https://img.youtube.com/vi/${release.musicVideoId}/maxresdefault.jpg"
+             data-fallback="https://img.youtube.com/vi/${release.musicVideoId}/hqdefault.jpg"
+             alt="" class="video-thumb" width="1280" height="720" decoding="async"
+             onload="if(this.naturalWidth<400&&this.src!==this.dataset.fallback){this.src=this.dataset.fallback}"
+               onerror="if(this.src!==this.dataset.fallback){this.src=this.dataset.fallback}" />
         <div class="video-play-btn" aria-hidden="true">
-          <div class="video-play-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
-          </div>
+          <div class="video-play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
         </div>
       </div>
-    </div>
-  ` : '';
+    </section>` : '';
 
   container.innerHTML = `
     <div class="release-page-inner animate-on-scroll">
       <div class="release-page-cover">
-        <img
-          src="${release.coverArt}"
-          alt="${release.title} cover art"
-          class="release-cover-img"
-          width="600"
-          height="600"
-          onerror="this.style.opacity='0'"
-        />
+        ${coverImg(release, { sizes: '(min-width: 1024px) 340px, (min-width: 640px) 260px, 80vw', cls: 'release-cover-img', extra: 'loading="eager" fetchpriority="high"' })}
       </div>
       <div class="release-page-info">
-        <span class="featured-badge">${typeLabel}</span>
-        <h1 class="release-page-title">${release.title}</h1>
-        <p class="release-page-artist-date">
-          SyWavy${release.date ? ` · ${formatDate(release.date)}` : ''}
-        </p>
+        <p class="eyebrow">${kind}</p>
+        <h1 class="release-page-title">${escapeHTML(release.title)}</h1>
+        <p class="release-page-meta">SyWavy${release.date ? ` · ${formatDate(release.date)}` : ''}</p>
         <div class="release-page-links">
-          ${linksHTML}
+          ${links || '<p class="release-coming-soon">Coming soon to all platforms.</p>'}
         </div>
+        ${embedHTML}
         ${tracklistHTML}
       </div>
     </div>
-    ${musicVideoHTML}
-  `;
+    ${videoHTML}
+    <section class="release-section" aria-labelledby="relatedHeading">
+      <div class="section-head"><h2 id="relatedHeading" class="section-heading">More from SyWavy</h2></div>
+      <div class="related-grid" id="relatedGrid"></div>
+    </section>`;
+
+  /* Related: the two releases on either side of this one, filled to four */
+  const related = [];
+  for (let step = 1; related.length < 4 && step < D.releases.length; step++) {
+    if (D.releases[index - step]) related.push(D.releases[index - step]);
+    if (related.length < 4 && D.releases[index + step]) related.push(D.releases[index + step]);
+  }
+  related.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  const relatedGrid = document.getElementById('relatedGrid');
+  related.forEach(r => relatedGrid.appendChild(buildCard(r)));
 
   observeCards();
 
-  // Click-to-play music video
+  /* Click-to-play music video */
   const thumbWrap = container.querySelector('.release-video-thumb-wrap');
   if (thumbWrap) {
     const loadVideo = () => {
-      const videoId = thumbWrap.dataset.videoid;
-      const iframeWrap = document.createElement('div');
-      iframeWrap.className = 'video-iframe-wrap';
-      iframeWrap.innerHTML = `<iframe
-        src="https://www.youtube.com/embed/${videoId}?autoplay=1"
-        title="${release.title} music video"
+      const wrap = document.createElement('div');
+      wrap.className = 'video-iframe-wrap release-video-thumb-wrap';
+      wrap.innerHTML = `<iframe
+        src="https://www.youtube-nocookie.com/embed/${release.musicVideoId}?autoplay=1&rel=0"
+        title="SyWavy – ${escapeHTML(release.title)} (Official Music Video)"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>`;
-      thumbWrap.replaceWith(iframeWrap);
+        allowfullscreen></iframe>`;
+      thumbWrap.replaceWith(wrap);
     };
     thumbWrap.addEventListener('click', loadVideo);
-    thumbWrap.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); } });
+    thumbWrap.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); }
+    });
   }
 
 })();

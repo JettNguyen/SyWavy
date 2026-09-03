@@ -3,10 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="SyWavy" />
   <title>SyWavy</title>
-  <link rel="icon" type="image/png" href="assets/photos/logo.png" />
-  <link rel="apple-touch-icon" href="assets/photos/logo.png" />
+  <meta name="description" content="Stream SyWavy on Spotify, Apple Music, and YouTube." />
+  <meta name="theme-color" content="#0e0e0e" />
+
+  <meta property="og:type" content="music.album" />
+  <meta property="og:site_name" content="SyWavy" />
+  <meta property="og:title" content="SyWavy" />
+  <meta property="og:description" content="Stream SyWavy on Spotify, Apple Music, and YouTube." />
+  <meta property="og:image" content="https://sywavy.com/assets/photos/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://sywavy.com/assets/photos/og.jpg" />
+
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/photos/logo-96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/photos/logo-180.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +26,6 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500&display=swap"
     rel="stylesheet"
   />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,9 +39,9 @@
   </div>
 
   <!-- NAV -->
-  <nav id="nav" role="navigation" aria-label="Main navigation">
+  <nav id="nav" aria-label="Main navigation">
     <a href="/" class="nav-wordmark" aria-label="SyWavy home">
-      <img src="assets/photos/logo.png" alt="" class="nav-logo" />
+      <img src="assets/photos/logo-96.png" alt="" class="nav-logo" width="96" height="96" />
       <span class="nav-wordmark-text">SyWavy</span>
     </a>
 
@@ -40,7 +51,7 @@
       <span></span>
     </button>
 
-    <ul class="nav-links" id="navMenu" role="list">
+    <ul class="nav-links" id="navMenu">
       <li><a href="/#music" class="nav-link">Music</a></li>
       <li><a href="/#videos" class="nav-link">Videos</a></li>
       <li><a href="/#about" class="nav-link">About</a></li>
@@ -51,11 +62,11 @@
   <main>
     <section id="release-page">
       <div class="container">
-        <a href="/" class="back-link" aria-label="Back to SyWavy">
+        <a href="/#music" class="back-link">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
           </svg>
-          SyWavy
+          All releases
         </a>
         <div id="releaseContent"></div>
       </div>

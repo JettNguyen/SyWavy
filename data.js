@@ -14,7 +14,7 @@ window.SYWAVY = {
       type: "album",
       date: "2026-05-29",
       featured: true,
-      coverArt: "assets/covers/magnum-opus.png",
+      cover: "magnum-opus",
       musicVideoId: "u5F1GKy1FKo",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/4hAfaZSwoKQpMaJV4LDgR4?si=VGRSKclBTvacb2WfPETPNA" },
@@ -27,7 +27,7 @@ window.SYWAVY = {
       type: "single",
       date: "2025-11-14",
       featured: false,
-      coverArt: "assets/covers/flame.jpeg",
+      cover: "flame",
       musicVideoId: "qJxKahnEGDY",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/0WaLfswFe4BSvo4k22B4ai" },
@@ -41,7 +41,7 @@ window.SYWAVY = {
       type: "single",
       date: "2025-07-25",
       featured: false,
-      coverArt: "assets/covers/wavy-deagle.png",
+      cover: "wavy-deagle",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/3uNqA3foeMEjVJFw5Rw1JI" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/wavy-deagle-single/1827862972" },
@@ -54,7 +54,7 @@ window.SYWAVY = {
       type: "single",
       date: "2025-05-09",
       featured: false,
-      coverArt: "assets/covers/put-it-on.png",
+      cover: "put-it-on",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/2XFFQePnEMHqBNgDBCMKxq" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/put-it-on-feat-the-part-time-models-single/1812873731" },
@@ -67,7 +67,7 @@ window.SYWAVY = {
       type: "single",
       date: "2025-04-04",
       featured: false,
-      coverArt: "assets/covers/awtside.png",
+      cover: "awtside",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/14ve923JA9HEX1tl9w8qWf" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/awtside-single/1805478348" },
@@ -80,7 +80,7 @@ window.SYWAVY = {
       type: "single",
       date: "2025-02-28",
       featured: false,
-      coverArt: "assets/covers/imma-floridian.png",
+      cover: "imma-floridian",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/5Rir6SkxpyUWHvdnU89fD8" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/imma-floridian-single/1799066703" },
@@ -93,7 +93,7 @@ window.SYWAVY = {
       type: "album",
       date: "2024-11-29",
       featured: false,
-      coverArt: "assets/covers/flight-370.jpeg",
+      cover: "flight-370",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/4B3OKpetlnrHKDg6HPNTUU" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/flight-370/1782697824" },
@@ -106,7 +106,7 @@ window.SYWAVY = {
       type: "ep",
       date: "2024-06-21",
       featured: false,
-      coverArt: "assets/covers/gfds.jpg",
+      cover: "gfds",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/4CHWxeIgdCqAIQ6Px0Pbn5" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/gentleman-from-da-south-single/1752975738" },
@@ -119,7 +119,7 @@ window.SYWAVY = {
       type: "album",
       date: "2023-12-22",
       featured: false,
-      coverArt: "assets/covers/dvb.png",
+      cover: "dvb",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/1WK4MQSYhBpgCjTI7LrP20" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/deep-voice-bastards/1722652348" },
@@ -132,7 +132,7 @@ window.SYWAVY = {
       type: "album",
       date: "2023-03-17",
       featured: false,
-      coverArt: "assets/covers/wavy-life.jpg",
+      cover: "wavy-life",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/7ePDLLrFzDw75kn738TLJZ" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/wavy-life/1676929456" },
@@ -145,7 +145,7 @@ window.SYWAVY = {
       type: "ep",
       date: "2022-10-12",
       featured: false,
-      coverArt: "assets/covers/the.jpg",
+      cover: "the",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/5PMP9IA0iptvkT7WiL5bRC" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/the-single/1649527868" },
@@ -158,7 +158,7 @@ window.SYWAVY = {
       type: "single",
       date: "2022-07-15",
       featured: false,
-      coverArt: "assets/covers/high-speed.jpg",
+      cover: "high-speed",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/5w2M6HZbxkGoIBNWCnN7MI" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/high-speed-single/1634319165" },
@@ -171,7 +171,7 @@ window.SYWAVY = {
       type: "album",
       date: "2022-04-15",
       featured: false,
-      coverArt: "assets/covers/jcb.jpg",
+      cover: "jcb",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/6Od5M29vOAG0Ls5cJTqlLY" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/japanese-cherry-blossom/1753204541" },
@@ -184,7 +184,7 @@ window.SYWAVY = {
       type: "single",
       date: "2021-11-26",
       featured: false,
-      coverArt: "assets/covers/night-glow.jpg",
+      cover: "night-glow",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/7txiS2K2OhoWTKbfEFTBwM" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/night-glow-single/1597280066" },
@@ -197,7 +197,7 @@ window.SYWAVY = {
       type: "ep",
       date: "2021-09-24",
       featured: false,
-      coverArt: "assets/covers/LIV.jpg",
+      cover: "LIV",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/52BJgCNnqPTqCuku5odNvs" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/life-is-verses-ep/1586235736" },        
@@ -210,7 +210,7 @@ window.SYWAVY = {
       type: "single",
       date: "2021-07-02",
       featured: false,
-      coverArt: "assets/covers/olympian.jpg",
+      cover: "olympian",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/02davyhOLrc4t8QCiAH0I6" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/olympian-single/1573528940?uo=4" },
@@ -223,7 +223,7 @@ window.SYWAVY = {
       type: "ep",
       date: "2021-04-09",
       featured: false,
-      coverArt: "assets/covers/hurts-to-heal.jpg",
+      cover: "hurts-to-heal",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/6xXRTYCgEO0ri7tlsJuhTR" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/hurts-to-heal-ep/1561704219?uo=4" },
@@ -236,7 +236,7 @@ window.SYWAVY = {
       type: "ep",
       date: "2021-01-15",
       featured: false,
-      coverArt: "assets/covers/why-me.jpg",
+      cover: "why-me",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/2COzO0DgaeNHGdb179ok5G" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/why-me-single/1548137979?uo=4" },
@@ -249,7 +249,7 @@ window.SYWAVY = {
       type: "single",
       date: "2020-12-09",
       featured: false,
-      coverArt: "assets/covers/family-ties.jpg",
+      cover: "family-ties",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/25O2nPUI0yDmaTIcZvnkaM" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/family-ties-single/1543475801?uo=4" },
@@ -262,7 +262,7 @@ window.SYWAVY = {
       type: "single",
       date: "2020-11-14",
       featured: false,
-      coverArt: "assets/covers/14th.jpg",
+      cover: "14th",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/0gkbX42c7ApFBwXxZsn9T4" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/14th-single/1539246012?uo=4" },
@@ -275,7 +275,7 @@ window.SYWAVY = {
       type: "single",
       date: "2020-09-19",
       featured: false,
-      coverArt: "assets/covers/red-lights.jpg",
+      cover: "red-lights",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/376UoQExNo7YRabzRleAr3" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/red-lights-single/1531910812?uo=4" },
@@ -288,7 +288,7 @@ window.SYWAVY = {
       type: "ep",
       date: "2020-08-14",
       featured: false,
-      coverArt: "assets/covers/saturn.jpg",
+      cover: "saturn",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/0WKRqsyrGo8MtsiRGmQBo8" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/saturn-single/1526896543?uo=4" },
@@ -301,7 +301,7 @@ window.SYWAVY = {
       type: "ep",
       date: "2020-06-27",
       featured: false,
-      coverArt: "assets/covers/ear-candi.jpg",
+      cover: "ear-candi",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/0tB8oADagNJ4Tu3SACF2Uo" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/ear-candi-ep/1519819721?uo=4" },
@@ -314,7 +314,7 @@ window.SYWAVY = {
       type: "single",
       date: "2020-03-28",
       featured: false,
-      coverArt: "assets/covers/keys.jpg",
+      cover: "keys",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/4YTpjeI5wwDuqxhHOpiby9" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/keys-single/1504976583?uo=4" },
