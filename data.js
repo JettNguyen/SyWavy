@@ -325,6 +325,11 @@ window.SYWAVY = {
 
   videos: [
     {
+      title: "Yamaha Ridin'",
+      youtubeId: "SOnLkK8uM10",
+      date: "2026-10-03"
+    },
+    {
       title: "Rust",
       youtubeId: "u5F1GKy1FKo",
       date: "2026-08-29"
