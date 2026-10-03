@@ -15,7 +15,7 @@ window.SYWAVY = {
       date: "2026-05-29",
       featured: true,
       cover: "magnum-opus",
-      musicVideoId: "u5F1GKy1FKo",
+      musicVideoId: "SOnLkK8uM10",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/4hAfaZSwoKQpMaJV4LDgR4?si=VGRSKclBTvacb2WfPETPNA" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/magnum-opus/6772945346" }
