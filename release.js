@@ -1,6 +1,8 @@
 /* ============================================================
    release.js — Individual release page
-   Reads ?id=<release-id> from the URL and renders the release.
+   Renders the release named in <body data-release>, which
+   build.js writes into each release page (sywavy.com/flame).
+   Old ?id= links land on release.html and forward from there.
    Requires data.js and main.js loaded first.
    ============================================================ */
 
@@ -13,29 +15,21 @@
 
   const { formatDate, typeLabel, escapeHTML, coverImg, streamLinks, buildCard, observeCards } = U;
 
-  const params  = new URLSearchParams(window.location.search);
-  const id      = params.get('id');
+  const baked   = document.body.dataset.release;
+  const id      = baked || new URLSearchParams(window.location.search).get('id');
   const index   = D.releases.findIndex(r => r.id === id);
   const release = D.releases[index];
 
-  if (!release) {
-    window.location.replace('/');
+  if (!baked || !release) {
+    window.location.replace(release ? `/${release.id}` : '/');
     return;
   }
 
   const container = document.getElementById('releaseContent');
   if (!container) return;
 
-  /* Page metadata */
+  /* Title and link preview tags are written by build.js */
   const kind = typeLabel(release.type);
-  document.title = `${release.title} — SyWavy`;
-  const desc = `${release.title}, ${kind.toLowerCase()} by SyWavy${release.date ? ` (${formatDate(release.date)})` : ''}. Stream on Spotify, Apple Music, and more.`;
-  const setMeta = (sel, val) => { const el = document.querySelector(sel); if (el) el.setAttribute('content', val); };
-  setMeta('meta[name="description"]', desc);
-  setMeta('meta[property="og:title"]', `${release.title} — SyWavy`);
-  setMeta('meta[property="og:description"]', desc);
-  setMeta('meta[property="og:image"]', `https://sywavy.com/assets/covers/${release.cover}-1000.webp`);
-  setMeta('meta[name="twitter:image"]', `https://sywavy.com/assets/covers/${release.cover}-1000.webp`);
 
   /* Streaming links */
   const links = streamLinks(release, `Stream ${release.title}`);

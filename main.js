@@ -96,7 +96,7 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
     card.className = 'release-card animate-on-scroll';
     card.dataset.type = release.type;
     card.innerHTML = `
-      <a href="/release?id=${release.id}" class="release-card-link" aria-label="${escapeHTML(release.title)}, ${typeLabel(release.type)}">
+      <a href="/${release.id}" class="release-card-link" aria-label="${escapeHTML(release.title)}, ${typeLabel(release.type)}">
         <div class="release-card-img-wrap">
           ${coverImg(release, { sizes: '(min-width: 1024px) 240px, (min-width: 650px) 30vw, 45vw', cls: 'release-card-img' })}
         </div>
@@ -263,13 +263,13 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
     const links = streamLinks(featured, `Stream ${featured.title}`);
     featuredWrap.innerHTML = `
       <div class="featured-cover-wrap">
-        <a href="/release?id=${featured.id}" class="featured-cover-link" aria-label="View ${escapeHTML(featured.title)}">
+        <a href="/${featured.id}" class="featured-cover-link" aria-label="View ${escapeHTML(featured.title)}">
           ${coverImg(featured, { sizes: '(min-width: 1024px) 520px, (min-width: 640px) 360px, 90vw', cls: 'featured-cover', extra: 'loading="eager"' })}
         </a>
       </div>
       <div class="featured-info">
         <p class="eyebrow">Latest ${typeLabel(featured.type)}</p>
-        <h2 class="featured-title" id="featuredTitle"><a href="/release?id=${featured.id}">${escapeHTML(featured.title)}</a></h2>
+        <h2 class="featured-title" id="featuredTitle"><a href="/${featured.id}">${escapeHTML(featured.title)}</a></h2>
         ${featured.date ? `<p class="featured-meta">${formatDate(featured.date)}</p>` : ''}
         <div class="featured-links">
           ${links || '<p class="release-coming-soon">Coming soon to all platforms.</p>'}
