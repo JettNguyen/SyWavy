@@ -5,6 +5,14 @@
 
 window._SW = {};
 
+/* Old links to release.html or index.html still load, so swap the address bar
+   to the clean url the site links to now. Only on the live site, since a local
+   server would not find the page again on reload. */
+if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
+  const clean = location.pathname.replace(/(index)?\.html$/, '');
+  history.replaceState(null, '', clean + location.search + location.hash);
+}
+
 (function () {
   'use strict';
 
