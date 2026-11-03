@@ -7,5 +7,8 @@
       "Bash(Format-Table -AutoSize)",
       "Bash(node -e ' *)"
     ]
+  },
+  "env": {
+    "CLAUDE_CODE_ENABLE_CFC": "0"
   }
 }
