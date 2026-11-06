@@ -15,7 +15,7 @@ window.SYWAVY = {
       date: "2026-05-29",
       featured: true,
       cover: "magnum-opus",
-      musicVideoId: "SOnLkK8uM10",
+      musicVideoId: "5mAE4k32Hpg",
       links: [
         { platform: "Spotify", url: "https://open.spotify.com/album/4hAfaZSwoKQpMaJV4LDgR4?si=VGRSKclBTvacb2WfPETPNA" },
         { platform: "Apple Music", url: "https://music.apple.com/us/album/magnum-opus/6772945346" }
@@ -324,6 +324,11 @@ window.SYWAVY = {
   ],
 
   videos: [
+    {
+      title: "Slow? Never",
+      youtubeId: "5mAE4k32Hpg",
+      date: "2026-11-06"
+    },
     {
       title: "Yamaha Ridin'",
       youtubeId: "SOnLkK8uM10",
