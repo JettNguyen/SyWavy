@@ -20,7 +20,7 @@ const vm   = require('vm');
 
 const ROOT = __dirname;
 const OUT  = path.join(ROOT, '_site');
-const SKIP = new Set(['_site', 'build.js', 'node_modules']);
+const SKIP = new Set(['_site', 'build.js', 'node_modules', 'lyrics']);
 const SITE = 'https://sywavy.com';
 
 // data.js and render.js expect a browser window, so run them against a stand-in
