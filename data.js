@@ -2,7 +2,7 @@ window.SYWAVY = {
   artist: {
     name: "SyWavy",
     descriptor: "Artist · Vocalist · Producer",
-    bio: "SyWavy is a rapper and producer from Saint Petersburg, Florida. He has been putting out records since 2020, moving between hip-hop, R&B, and more experimental sounds depending on what the song calls for. Listeners compare him to Drake, Kid Cudi, and Kanye West, and hear The Weeknd in the atmosphere of the production, but he doesn't sound like any one of them. The 2021 track \"3AM\" was the first to get real attention. The albums that followed, \"Japanese Cherry Blossom\" (2022), \"Deep Voice Bastards\" (2023), and \"Flight 370\" (2024), dig into love, self-reflection, and confidence, and each one gets a little more personal than the last. The newest album, \"Magnum Opus\", is out now.",
+    bio: "SyWavy is an emerging American rapper and producer from Saint Petersburg, Florida, known for blending hip-hop, R&B, and experimental sounds. He has been putting out records since 2020 and first got attention with his 2021 track \"3AM,\" which shows off his range and creative lyricism. Listeners compare him to Drake, Kid Cudi, and Kanye West, and hear The Weeknd in the atmosphere of the production, but he carves his own lane and doesn't sound like any one of them. With releases like \"Japanese Cherry Blossom\" (2022), \"Deep Voice Bastards\" (2023), and \"Flight 370\" (2024), he explores love, self-reflection, and confidence over dynamic production. His newest album, the introspective \"Magnum Opus\" (2026), shows a growing depth.",
     location: "Saint Petersburg, FL",
     genres: ["Hip-Hop", "R&B"],
     bookingEmail: "synemaivwave@gmail.com"
