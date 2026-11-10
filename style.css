@@ -23,6 +23,9 @@
 
   --radius-art: 4px;
   --radius:     10px;
+  /* A cover stacked above its title on phones. Short of full width, so the title,
+     buttons and player fit on the same screen as the art */
+  --cover-stacked: min(60vw, 400px);
   --pill:       999px;
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -567,8 +570,11 @@ a, button, [role="button"] { touch-action: manipulation; }
   padding-block: var(--section-pad) calc(var(--section-pad) * 0.75);
 }
 
+/* isolation keeps the cover's glow in front of the hero's shading, which
+   would otherwise cut a hard line through the glow where the hero ends */
 .featured-release {
   position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 2.5rem;
@@ -589,10 +595,10 @@ a, button, [role="button"] { touch-action: manipulation; }
   opacity: 0.4;
 }
 
-.featured-glow { left: 0; top: 0; width: min(580px, 100%); aspect-ratio: 1; }
-@media (min-width: 900px) { .featured-glow { width: min(580px, 51%); } }
-
-.featured-cover-link { display: block; max-width: 580px; }
+/* Phones and tablets stack the release and center it, so the smaller cover
+   leaves no gap on one side */
+.featured-glow { left: 0; right: 0; top: 0; margin-inline: auto; width: var(--cover-stacked); aspect-ratio: 1; }
+.featured-cover-link { display: block; width: var(--cover-stacked); margin-inline: auto; }
 
 .featured-cover {
   width: 100%;
@@ -606,10 +612,13 @@ a, button, [role="button"] { touch-action: manipulation; }
 .featured-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.4rem;
   min-width: 0;
+  text-align: center;
 }
+.featured-info .kicker,
+.featured-info .stream-links { justify-content: center; }
 
 .featured-title {
   font-size: clamp(3rem, 7.4vw, 7rem);
@@ -638,6 +647,11 @@ a, button, [role="button"] { touch-action: manipulation; }
     grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
     gap: clamp(3rem, 6vw, 6.5rem);
   }
+  .featured-glow { right: auto; margin-inline: 0; width: min(580px, 51%); }
+  .featured-cover-link { width: auto; max-width: 580px; margin-inline: 0; }
+  .featured-info { align-items: flex-start; text-align: left; }
+  .featured-info .kicker,
+  .featured-info .stream-links { justify-content: flex-start; }
 }
 
 /* ============================================================
@@ -1126,8 +1140,8 @@ a, button, [role="button"] { touch-action: manipulation; }
 
 #releaseContent { position: relative; }
 
-.release-glow { left: 0; top: 0; width: min(460px, 100%); aspect-ratio: 1; }
-@media (min-width: 800px) { .release-glow { width: min(46%, 600px); } }
+.release-glow { left: 0; right: 0; top: 0; margin-inline: auto; width: var(--cover-stacked); aspect-ratio: 1; }
+@media (min-width: 800px) { .release-glow { right: auto; margin-inline: 0; width: min(46%, 600px); } }
 
 .back-link {
   display: inline-flex;
@@ -1150,7 +1164,8 @@ a, button, [role="button"] { touch-action: manipulation; }
   gap: 2.5rem;
 }
 
-.release-page-cover { width: 100%; max-width: 460px; }
+/* Stacked on phones and tablets, centered like the latest release on the home page */
+.release-page-cover { width: var(--cover-stacked); margin-inline: auto; }
 
 .release-cover-img {
   width: 100%;
@@ -1163,10 +1178,13 @@ a, button, [role="button"] { touch-action: manipulation; }
 .release-page-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.2rem;
   min-width: 0;
+  text-align: center;
 }
+.release-page-info .kicker,
+.release-page-info .stream-links { justify-content: center; }
 
 .release-page-title {
   font-size: clamp(2.75rem, 6.4vw, 5.75rem);
@@ -1195,11 +1213,14 @@ a, button, [role="button"] { touch-action: manipulation; }
     gap: clamp(3rem, 6vw, 5.5rem);
     align-items: start;
   }
-  .release-page-cover { max-width: 100%; position: sticky; top: 6.5rem; }
+  .release-page-cover { width: 100%; margin-inline: 0; position: sticky; top: 6.5rem; }
+  .release-page-info { align-items: flex-start; text-align: left; }
+  .release-page-info .kicker,
+  .release-page-info .stream-links { justify-content: flex-start; }
 }
 
 /* Tracklist (rendered when a release has tracklist data) */
-.release-tracklist { width: 100%; margin-top: 1rem; }
+.release-tracklist { width: 100%; margin-top: 1rem; text-align: left; }
 .tracklist-heading { font-size: 0.9rem; font-weight: 600; color: var(--muted); padding-bottom: 0.75rem; border-bottom: 1px solid var(--line); }
 .track-item { display: flex; align-items: baseline; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
 .track-num { min-width: 22px; font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
