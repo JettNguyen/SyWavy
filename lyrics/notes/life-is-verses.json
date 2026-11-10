@@ -49,6 +49,7 @@
     "4": {
       "title": "Life is Verses",
       "notes": [
+        { "lines": [16, 16], "kind": "story", "body": "Care and urgent turned around make urgent care, the walk-in clinic.", "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Shundor", "body": "Bengali for beautiful, and one of the names he calls himself. The rest of the line translates it.", "ref": {"name": "Shundor", "category": "other"}, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Popeye", "body": "The sailor cartoon who gets his strength from spinach. Strong is slang for potent weed, and spinach stands in for what he's smoking.", "ref": {"name": "Popeye", "category": "anime-cartoon"}, "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Mia Khalifa", "body": "Going M.I.A. means disappearing, and with Khalifa after it the letters spell Mia Khalifa, the internet personality who first got famous for adult films.", "ref": {"name": "Mia Khalifa", "category": "person"}, "draft": true },

@@ -4,6 +4,7 @@
     "1": {
       "title": "Vertex",
       "notes": [
+        { "lines": [24, 24], "kind": "reference", "title": "Emerson", "body": "A member of The Part Time Models, who's in the Put It On! video.", "ref": { "name": "Emerson (The Part Time Models)", "category": "person" }, "draft": true },
         { "lines": [1, 2], "kind": "story", "body": "Magnum Opus starts here, and the title says where it starts: a vertex is the highest point, the tip of the curve. The opening lines are about getting the room moving before he says anything else.", "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "CeeLo Green", "body": "The Atlanta singer from Goodie Mob and Gnarls Barkley. The line turns his name around so the color comes first.", "ref": { "name": "CeeLo Green", "category": "musician" }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Dsquared2", "body": "The fashion label run out of Milan by Canadian twin brothers Dean and Dan Caten. He shrugs it off as everyday wear.", "ref": { "name": "Dsquared2", "category": "brand" }, "draft": true },
@@ -73,6 +74,7 @@
     "5": {
       "title": "Carolina Herrera",
       "notes": [
+        { "lines": [3, 3], "kind": "story", "body": "Heal sounds like heel, and Carolina Herrera is known for heels: its Good Girl perfume comes in a bottle shaped like a stiletto. Cat makes it a dirty joke too.", "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Carolina Herrera", "body": "The Venezuelan-born designer and the New York fashion house she built, also known for perfumes like Good Girl. Later he splits the name around spraying it, a nod to the fragrances.", "ref": { "name": "Carolina Herrera", "category": "brand" }, "draft": true },
         { "lines": [12, 12], "kind": "reference", "title": "Saddam Hussein", "body": "Iraq's leader from 1979 to 2003. Hussein rhymes with insane, and Usain does it again in the next line.", "ref": { "name": "Saddam Hussein", "category": "person" }, "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "Usain Bolt", "body": "The Jamaican sprinter who holds the world records in the 100 and 200 meters. The line runs his name backward, and it leads straight into the Jamaican run that follows.", "ref": { "name": "Usain Bolt", "category": "athlete" }, "draft": true },
@@ -143,6 +145,7 @@
     "9": {
       "title": "Proceed",
       "notes": [
+        { "lines": [31, 31], "kind": "reference", "title": "Los Angeles Sparks", "body": "The WNBA team, right before the Indiana Fever. Spark is also lighting up.", "ref": { "name": "Los Angeles Sparks", "category": "team" }, "draft": true },
         { "lines": [38, 38], "kind": "reference", "title": "LiAngelo Ball", "body": "The middle Ball brother, who goes by Gelo. Jell-O sounds just like it, keeping the run of Ball brothers going, and his 2025 song Tweaker is what got him moving as an artist.", "ref": { "name": "LiAngelo Ball", "category": "athlete" }, "draft": true },
         { "lines": [5, 8], "kind": "story", "body": "The opening is a bowling joke. He needs her PIN to get in and her pin to knock down, while someone with slow hands has been rolling for two hours, a ball in the joke and a blunt in real life.", "draft": true },
         { "lines": [9, 12], "kind": "story", "body": "The hook hangs on one word with two meanings. Proceeds are the money a sale brings in, and to proceed is to keep going. He spends, she dances, and the money and the night both keep moving.", "draft": true },
@@ -158,6 +161,7 @@
     "10": {
       "title": "Please lmk",
       "notes": [
+        { "lines": [13, 15], "kind": "story", "body": "California stands for its wildfires here, the kind that burned through Los Angeles in January 2025. Burning woods sets it up.", "draft": true },
         { "lines": [7, 7], "kind": "story", "body": "A T break is a tolerance break, time off from weed so it hits harder later. Right off the bat it makes him rabid, and bats are known for carrying rabies.", "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Tom Hanks", "body": "The two-time Oscar-winning actor. T. Hanks is his name and thanks at the same time, so the line says both.", "ref": { "name": "Tom Hanks", "category": "film-tv" }, "draft": true },
         { "lines": [9, 9], "kind": "reference", "title": "The Green Mile", "body": "The 1999 prison drama starring Tom Hanks, which drew four Oscar nominations. Green has its other meaning here too.", "ref": { "name": "The Green Mile", "category": "film-tv" }, "draft": true },
@@ -189,7 +193,7 @@
         { "lines": [42, 42], "kind": "reference", "title": "Tom Joyner", "body": "The radio host whose Tom Joyner Morning Show ran on Black radio for 25 years, until 2019. A morning conversation calls up his name.", "ref": { "name": "Tom Joyner", "category": "person" }, "draft": true },
         { "lines": [43, 43], "kind": "reference", "title": "Pop Warner", "body": "The national youth football league, named for coach Glenn Pop Warner. A sack counts on the field and off it.", "ref": { "name": "Pop Warner Little Scholars", "category": "other" }, "draft": true },
         { "lines": [45, 45], "kind": "reference", "title": "Warner Bros.", "body": "Bro and Warner in one line make Warner Bros., the Hollywood studio, one more Warner in the run.", "ref": { "name": "Warner Bros.", "category": "film-tv" }, "draft": true },
-        { "lines": [46, 46], "kind": "reference", "title": "Tijuana", "body": "The Mexican border city just south of San Diego, rhymed into the run here.", "ref": { "name": "Tijuana", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [46, 46], "kind": "reference", "title": "Tijuana", "body": "The Mexican border city, with the juana from marijuana in it, right after rolling up. Rolling flats also makes it Tijuana Flats, the Tex-Mex chain that started in Florida.", "ref": { "name": "Tijuana", "category": "place", "place": { "florida": false } }, "draft": true },
         { "lines": [47, 47], "kind": "reference", "title": "Juwanna Mann", "body": "The 2002 comedy about a suspended NBA player who poses as a woman to play in a women's league. She wants to make films, just not that one.", "ref": { "name": "Juwanna Mann", "category": "film-tv" }, "draft": true },
         { "lines": [48, 48], "kind": "reference", "title": "Nirvana", "body": "The Washington band that led grunge in the early 1990s. Spirit points to their biggest hit, Smells Like Teen Spirit, and nirvana is also the Buddhist word for release from suffering.", "ref": { "name": "Nirvana (band)", "category": "musician" }, "draft": true },
         { "lines": [49, 49], "kind": "reference", "title": "Kurt Cobain", "body": "Nirvana's singer and songwriter, the face of 1990s grunge. The next lines dig into his band's biggest album.", "ref": { "name": "Kurt Cobain", "category": "musician" }, "draft": true },
@@ -236,6 +240,7 @@
     "15": {
       "title": "Wavy Deagle",
       "notes": [
+        { "lines": [22, 22], "kind": "reference", "title": "Nav and Lil Uzi Vert", "body": "Two artists named side by side, and Leaders is a song the two of them made together.", "ref": { "name": "Nav and Lil Uzi Vert", "category": "musician" }, "draft": true },
         { "lines": [3, 4], "kind": "reference", "title": "Pinocchio", "body": "The puppet whose nose grows whenever he lies, and who dreams of being a real boy. In bed, where they lie, something grows, and he swears it's real.", "ref": { "name": "Pinocchio", "category": "anime-cartoon" }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Sade", "body": "The British band fronted by Sade Adu, whose smooth 1980s and 1990s records set the standard for late-night R&B. Her name lands in a hazy line about hope.", "ref": { "name": "Sade", "category": "musician" }, "draft": true },
         { "lines": [7, 8], "kind": "reference", "title": "Desert Eagle", "body": "The heavy pistol known as the Deagle, made famous by movies and games like Counter-Strike. In this song, it's his name for her.", "ref": { "name": "Desert Eagle", "category": "other" }, "draft": true },

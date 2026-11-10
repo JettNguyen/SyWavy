@@ -48,6 +48,8 @@
     "3": {
       "title": "Stigma",
       "notes": [
+        { "lines": [55, 55], "kind": "reference", "title": "Buster Baxter", "body": "The rabbit who's Arthur's best friend on the PBS cartoon Arthur.", "ref": { "name": "Buster Baxter", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [33, 33], "kind": "reference", "title": "A House Is Not a Home", "body": "Luther Vandross's 1981 take on the Burt Bacharach song about a place that's empty without the one you love.", "ref": { "name": "A House Is Not a Home (Luther Vandross)", "category": "musician" }, "draft": true },
         { "lines": [1, 8], "kind": "story", "body": "A stigma is the part of a flower that catches pollen, so the title means both a mark of shame and the spot where something new begins. The hook holds grief and hope the same way: a mourning dove on one side, named for its sad call, and butterflies on the other, with her at the center of what he's telling.", "draft": true },
         { "lines": [9, 17], "kind": "story", "body": "The verse turns the relationship into a book. He numbers his points like a list, wants her name in the front of it, and asks for her number before she walks out. Then he jumps ahead a step, already all in.", "draft": true },
         { "lines": [31, 32], "kind": "reference", "title": "Rocky Balboa", "body": "Things getting rocky means they're falling apart, and Rocky is the underdog boxer Sylvester Stallone wrote and played. Stallone also rhymes with being left alone, which he asks for a line earlier.", "ref": { "name": "Rocky Balboa", "category": "film-tv" }, "draft": true },
@@ -71,6 +73,7 @@
     "5": {
       "title": "Chanel Fragrance",
       "notes": [
+        { "lines": [61, 61], "kind": "reference", "title": "UPS", "body": "The delivery company, followed by down, so it hides ups and downs, with no mail coming.", "ref": { "name": "UPS", "category": "brand" }, "draft": true },
         { "lines": [1, 12], "kind": "story", "body": "He reconnects with a girl he's known for years and invites her back into his life, then fields her questions about why he walked away. His answer is a question of his own about what there was to stay for, and he knows full well he's still on her mind.", "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "Cruella de Vil", "body": "The villain of 101 Dalmatians, who wants the puppies for a fur coat and wears her hair half black, half white. Her black and white look matches Chanel's, which is why he reaches for her.", "ref": { "name": "Cruella de Vil", "category": "film-tv" }, "draft": true },
         { "lines": [16, 16], "kind": "reference", "title": "Steve Lacy", "body": "The Compton singer and guitarist from The Internet, whose 2017 solo demo includes a song spelled with those three letters. Said out loud they make ride, and riding for someone means sticking by them.", "ref": { "name": "Steve Lacy", "category": "musician" }, "draft": true },
@@ -115,6 +118,8 @@
     "8": {
       "title": "Far",
       "notes": [
+        { "lines": [50, 50], "kind": "reference", "title": "The Perfect LUV Tape", "body": "Lil Uzi Vert's 2016 mixtape, which has a song called Money Mitch on it.", "ref": { "name": "The Perfect LUV Tape (Lil Uzi Vert)", "category": "musician" }, "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Florida Panhandle", "body": "The strip of Florida that stretches west along the Gulf.", "ref": { "name": "Florida Panhandle", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "One Piece", "body": "The long-running pirate anime, known for filler, the episodes that pad out a show without moving the story. He wanted the real thing from her and got padding.", "ref": { "name": "One Piece", "category": "anime-cartoon" }, "draft": true },
         { "lines": [7, 7], "kind": "story", "body": "Commercial means an ad and also means made to sell. She says she skips TV, yet she acts like something off of it.", "draft": true },
         { "lines": [10, 10], "kind": "reference", "title": "Princess Daisy", "body": "Princess Daisy and Princess Peach are the two princesses of Nintendo's Mario games, often paired up like sisters. Calling her Daisy lets the peach she sends him be both the other princess and an emoji.", "ref": { "name": "Princess Daisy", "category": "game" }, "draft": true },
@@ -185,6 +190,7 @@
     "12": {
       "title": "Dreamland",
       "notes": [
+        { "lines": [6, 6], "kind": "reference", "title": "The O", "body": "Orlando's nickname. She's from there.", "ref": { "name": "Orlando, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Ichigo Kurosaki", "body": "The orange-haired hero of the anime and manga Bleach. Bleaching skin is the setup for the show's name.", "ref": { "name": "Ichigo Kurosaki", "category": "anime-cartoon" }, "draft": true },
         { "lines": [13, 19], "kind": "story", "body": "Dreamland is the one place he's in charge. The hook goes back and forth between taking over and being trapped there, and he doesn't sound sure which one it is.", "draft": true },
         { "lines": [21, 21], "kind": "story", "body": "Getting free of trouble is also what a fish does when it slips the hook, so he answers with bait.", "draft": true },

@@ -40,6 +40,7 @@
     "2": {
       "title": "Triad",
       "notes": [
+        { "lines": [32, 32], "kind": "reference", "title": "Billy Butcher", "body": "The British vigilante from The Boys who says oi and goes after superheroes.", "ref": { "name": "Billy Butcher", "category": "film-tv" }, "draft": true },
         { "lines": [1, 7], "kind": "story", "body": "The song opens in the cold: winter, an ex spreading stories, a frozen northern team. Against all that chill he's already gone, choosing a plane over a long walk.", "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "The Winter's Tale", "body": "Shakespeare's late play about a king whose jealous accusations nearly destroy his family. Asking if she's Winter when she starts telling stories turns the title into a dig.", "ref": { "name": "The Winter's Tale", "category": "other" }, "draft": true },
         { "lines": [3, 4], "kind": "reference", "title": "Intel", "body": "The computer chip maker. He wants the inside story, then makes clear he doesn't mean the processors.", "ref": { "name": "Intel", "category": "brand" }, "draft": true },
@@ -128,6 +129,8 @@
     "7": {
       "title": "Aqua Artist",
       "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Toucan Sam", "body": "The Froot Loops mascot with a rainbow beak. Fruity and a rainbow read as the pride flag, since she likes girls.", "ref": { "name": "Toucan Sam", "category": "brand" }, "draft": true },
+        { "lines": [24, 24], "kind": "reference", "title": "Blazy Susan", "body": "The pink rolling paper brand.", "ref": { "name": "Blazy Susan", "category": "brand" }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Lindsay Lohan", "body": "She starred in Freaky Friday (2003), where a mother and daughter wake up in each other's bodies. He borrows the title to ask for a wild end to the week.", "ref": { "name": "Lindsay Lohan", "category": "film-tv" }, "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Wolverine", "body": "Logan is Wolverine's real name and the title of his 2017 film. Put ex and man together and you get the X-Men, the team he's best known for.", "ref": { "name": "Wolverine", "category": "film-tv" }, "draft": true },
         { "lines": [9, 9], "kind": "reference", "title": "50 Cent", "body": "His 2003 song Many Men (Wish Death) is about outlasting the people who wanted him gone. He says he was born facing that kind of opposition.", "ref": { "name": "50 Cent", "category": "musician" }, "draft": true },
@@ -190,6 +193,8 @@
     "11": {
       "title": "Fantasia",
       "notes": [
+        { "lines": [8, 8], "kind": "story", "body": "A hot tamale is a cinnamon candy and slang for a good-looking woman, and the heat is going up.", "draft": true },
+        { "lines": [18, 18], "kind": "story", "body": "The title is Disney's Fantasia, the 1940 film set to classical music.", "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "VLONE", "body": "The streetwear label from A$AP Bari of A$AP Mob. Its name is one letter off from alone, which is the joke when a homesick kid wears it.", "ref": { "name": "VLONE", "category": "brand" }, "draft": true },
         { "lines": [1, 4], "kind": "story", "body": "The opening is homesickness. He's been fending for himself for a long stretch, and it's worst late at night when sleep won't come. This is the album's time away.", "draft": true },
         { "lines": [9, 9], "kind": "reference", "title": "La Di Da Di", "body": "The 1985 record by Doug E. Fresh and Slick Rick. Doug E. Fresh was known as the Human Beatbox, which is why it follows beatboxing.", "ref": { "name": "La Di Da Di", "category": "musician" }, "draft": true },

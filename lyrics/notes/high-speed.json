@@ -4,6 +4,9 @@
     "1": {
       "title": "High Speed",
       "notes": [
+        { "lines": [57, 57], "kind": "reference", "title": "Budapest", "body": "Buddha and pest put together make Budapest, Hungary's capital.", "ref": { "name": "Budapest", "category": "place", "place": { "florida": false} }, "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Maurice", "body": "King Julien's right-hand lemur in Madagascar. She wants a king, and Maurice serves one.", "ref": { "name": "Maurice (Madagascar)", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [13, 13], "kind": "story", "body": "M, N, O, P is the alphabet in order. M is a million, N is and, and OP is gamer slang for overpowered.", "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Mercedes-Benz", "body": "The German luxury carmaker. A full plate becomes a license plate, the first car image in a song built on speed.", "ref": { "name": "Mercedes-Benz", "category": "brand" }, "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Trix", "body": "The General Mills cereal whose ads always end with the rabbit being told it's only for kids. Trix also sounds like tricks, so he's past playing games too.", "ref": { "name": "Trix", "category": "brand" }, "draft": true },
         { "lines": [14, 14], "kind": "reference", "title": "Master Chief", "body": "The armored hero of Microsoft's Halo games. To chief is slang for smoking weed hard, so he's mastered that, and the name sets up the Halo line after it.", "ref": { "name": "Master Chief", "category": "game" }, "draft": true },

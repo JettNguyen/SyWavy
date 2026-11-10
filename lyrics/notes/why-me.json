@@ -4,6 +4,7 @@
     "1": {
       "title": "Why",
       "notes": [
+        { "lines": [7, 7], "kind": "reference", "title": "Cry Me a River", "body": "Justin Timberlake's 2002 song about a girlfriend who cheated. He won't be the one crying.", "ref": { "name": "Cry Me a River (Justin Timberlake song)", "category": "musician" }, "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Mac Miller", "body": "The Pittsburgh artist behind Swimming and Circles. He splits the name across the line with a Miller beer on one end, and Mac also sounds like mack, slang for a smooth talker with women.", "ref": {"name": "Mac Miller", "category": "musician"}, "draft": true },
         { "lines": [9, 16], "kind": "story", "body": "The breakup at the center of Why Me? and Hurts to Heal starts here. She'd met his family and he thought she was the one, and she insists she did nothing wrong. The title question grows out of that refusal.", "draft": true },
         { "lines": [26, 29], "kind": "story", "body": "The studio is home, and recording is how he works through it, with friends around and his phone in his hand. Making music to sort out his feelings becomes a thread through everything he makes.", "draft": true },

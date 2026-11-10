@@ -4,6 +4,7 @@
     "1": {
       "title": "Bang Me Up Again",
       "notes": [
+        { "lines": [13, 13], "kind": "reference", "title": "Slay3r", "body": "Playboi Carti's song from Whole Lotta Red, the 2020 album that made black and red and the rage sound his look.", "ref": { "name": "Slay3r (Playboi Carti song)", "category": "musician" }, "draft": true },
         { "lines": [1, 7], "kind": "story", "body": "The album opens on someone leaving. He's angry about how she went and still in love with her, and that pull runs under all the bravado that follows.", "draft": true },
         { "lines": [8, 14], "kind": "story", "body": "The first verse says the album's name out loud, a nod to his low voice and the crew around him. Between the boasts, he thanks her for teaching him patience.", "draft": true },
         { "lines": [14, 14], "kind": "reference", "title": "OnlyFans", "body": "The subscription site where fans pay creators. He flips the name: he's her only fan, and he's never paid.", "ref": { "name": "OnlyFans", "category": "brand" }, "draft": true },
@@ -29,6 +30,7 @@
     "3": {
       "title": "She's The Wettest",
       "notes": [
+        { "lines": [22, 22], "kind": "reference", "title": "Lester Crest", "body": "The hacker who plans the heists in Grand Theft Auto V. RP is the game's role-play servers, so the line stays in the game.", "ref": { "name": "Lester Crest", "category": "game" }, "draft": true },
         { "lines": [1, 8], "kind": "story", "body": "The intro is honest about being stuck. He can't tell whose fault it is, admits it's confusing, and lands on the one thing he's sure of: he wants her.", "draft": true },
         { "lines": [17, 17], "kind": "story", "body": "Deeper goes two ways here: the low voice the album is named for, and the bedroom.", "draft": true },
         { "lines": [24, 24], "kind": "reference", "title": "Goodfellas", "body": "Martin Scorsese's 1990 mob film, nearly two and a half hours long. He wants something long playing in the background.", "ref": { "name": "Goodfellas", "category": "film-tv" }, "draft": true },
@@ -39,8 +41,10 @@
     "4": {
       "title": "White Girls Call Me Hot",
       "notes": [
+        { "lines": [51, 52], "kind": "reference", "title": "Miami Heat", "body": "Miami's NBA team. Florida heat is the weather and the team at once.", "ref": { "name": "Miami Heat", "category": "team" }, "draft": true },
+        { "lines": [14, 14], "kind": "story", "body": "Her legs up make a V, and Vermont starts with one.", "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Vetements", "body": "The Paris fashion label co-founded by Demna. Said out loud, its name sounds close to vitamins, which is the joke.", "ref": { "name": "Vetements", "category": "brand" }, "draft": true },
-        { "lines": [2, 2], "kind": "reference", "title": "Von Dutch", "body": "The trucker-hat brand that defined early-2000s celebrity style and came back with the Y2K revival.", "ref": { "name": "Von Dutch", "category": "brand" }, "draft": true },
+        { "lines": [2, 2], "kind": "reference", "title": "Von Dutch", "body": "The trucker-hat brand that defined early-2000s celebrity style. Orange is the Dutch national color, which fits the orange fit, and a Dutch is a cigar people roll up with.", "ref": { "name": "Von Dutch", "category": "brand" }, "draft": true },
         { "lines": [19, 19], "kind": "reference", "title": "Old Spice", "body": "The men's grooming brand, whose ads end with a whistled sailor tune. The whistle a couple of lines earlier sets it up.", "ref": { "name": "Old Spice", "category": "brand" }, "draft": true },
         { "lines": [20, 20], "kind": "reference", "title": "Ice Spice", "body": "The Bronx artist who broke out in 2022 with Munch (Feelin' U). Her name rhymes with Old Spice in the line before.", "ref": { "name": "Ice Spice", "category": "musician" }, "draft": true },
         { "lines": [32, 40], "kind": "story", "body": "Under the boasting is an admission. He admits love is beyond him, and what he has instead is his crew, the club the album is named for.", "draft": true },
@@ -64,6 +68,7 @@
     "6": {
       "title": "AudioSlave",
       "notes": [
+        { "lines": [5, 6], "kind": "reference", "title": "St. Anthony's Hospital", "body": "The hospital in St. Pete, used here for a crude joke about her throat.", "ref": { "name": "St. Anthony's Hospital", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [8, 9], "kind": "reference", "title": "Dutty Wine", "body": "A Jamaican dancehall move built on fast neck rolls, made famous by Tony Matterhorn's 2006 song of the same name.", "ref": { "name": "Dutty Wine", "category": "other" }, "draft": true },
         { "lines": [10, 13], "kind": "story", "body": "The hook is the title explained: the music has a hold on him, and whatever hurts travels through it. Said quickly, entering runs into entertain, so walking in and putting on a show are one move.", "draft": true },
         { "lines": [17, 17], "kind": "reference", "title": "Harley-Davidson", "body": "The motorcycle maker, named for founders William Harley and Arthur Davidson. He rules out Pete Davidson, the comedian, and takes the bike instead.", "ref": { "name": "Harley-Davidson", "category": "brand" }, "draft": true },
@@ -124,6 +129,7 @@
     "10": {
       "title": "Coaster",
       "notes": [
+        { "lines": [31, 31], "kind": "story", "body": "Scotch on the rocks with his dad, and pops and rocks together make Pop Rocks, the candy that crackles in your mouth.", "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Wii Nunchuk", "body": "The Nintendo Wii's second controller, which plugs into the main remote. He hears console inside reconcile, so making up means plugging back in.", "ref": { "name": "Wii Nunchuk", "category": "game" }, "draft": true },
         { "lines": [10, 10], "kind": "reference", "title": "Weeki Wachee Springs", "body": "The spring north of Tampa Bay famous for its live mermaid shows since 1947. It brings the water imagery to a Florida landmark.", "ref": { "name": "Weeki Wachee Springs", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "Six Flags", "body": "The theme park chain known for its roller coasters, keeping the song's ride going. Six flags on a person are also six red flags.", "ref": { "name": "Six Flags", "category": "brand" }, "draft": true },

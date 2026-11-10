@@ -4,6 +4,9 @@
     "1": {
       "title": "Family Ties.",
       "notes": [
+        { "lines": [28, 28], "kind": "story", "body": "Pompeii is one of his own songs, a single that's out on streaming. When people said he couldn't sing, he put it out.", "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "Ariana Grande", "body": "The pop singer, named by her last name.", "ref": { "name": "Ariana Grande", "category": "musician" }, "draft": true },
+        { "lines": [14, 14], "kind": "story", "body": "A twist on ride or die. Some people won't ride with you all the way to the end, the hearse.", "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Kobe Bryant", "body": "Kobe wore 8 for his first ten seasons with the Lakers and 24 for his last ten, and both numbers are retired. Together they make 24/8, a day more than around the clock, which is how much he's there for his family.", "ref": {"name": "Kobe Bryant", "category": "athlete"}, "draft": true },
         { "lines": [5, 8], "kind": "story", "body": "He opens on the house he grew up in: two parents at odds, him at nine already scheming about money, a sibling getting him in trouble. He tells it plainly and with a little humor, which makes it hit harder.", "draft": true },
         { "lines": [19, 21], "kind": "story", "body": "The hook is the center of the song: holding his family tight, and the worry that he's falling short for them. He doesn't settle it. He just names it as part of life.", "draft": true },

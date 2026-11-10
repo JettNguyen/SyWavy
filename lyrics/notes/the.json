@@ -4,6 +4,7 @@
     "1": {
       "title": "The Team",
       "notes": [
+        { "lines": [28, 28], "kind": "reference", "title": "Kumba", "body": "The roller coaster at Busch Gardens Tampa. Its name means roar.", "ref": { "name": "Kumba (Busch Gardens Tampa)", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [1, 2], "kind": "story", "body": "The opener asks for commitment in sports terms. He wants her to sign on with him as if he's filling a roster spot, and the song closes on the same ask.", "draft": true },
         { "lines": [2, 3], "kind": "reference", "title": "Eve", "body": "The Philadelphia rapper Eve had a 2007 hit called Tambourine. So when he blames Eve for his rib on the next line, she's the rapper as well as the woman from Genesis.", "ref": { "name": "Eve (rapper)", "category": "musician" }, "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Adam and Eve", "body": "In the Book of Genesis, God makes Eve from one of Adam's ribs. He blames his sore side on her, casting himself as Adam.", "ref": { "name": "Adam and Eve", "category": "other" }, "draft": true },

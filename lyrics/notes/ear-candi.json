@@ -20,6 +20,7 @@
     "2": {
       "title": "Weeknd",
       "notes": [
+        { "lines": [4, 4], "kind": "reference", "title": "Sour Patch Kids", "body": "Patch and sour make Sour Patch Kids, the candy, on an EP called Ear Candi.", "ref": { "name": "Sour Patch Kids", "category": "brand" }, "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "The Weeknd", "body": "The Toronto singer's fourth album came out in March 2020, three months before this EP, and its title runs through the hook. The song's own title spells weekend his way.", "ref": {"name": "The Weeknd", "category": "musician"}, "draft": true },
         { "lines": [9, 12], "kind": "story", "body": "He turns on someone who acts like family but isn't, and the way they've treated him feels strange to him. The pun between family and familiar carries the verse.", "draft": true },
         { "lines": [18, 18], "kind": "reference", "title": "What a Time to Be Alive", "body": "Drake and Future's 2015 joint mixtape. Live From the Gutter is one of its songs, so the line names the tape and a track off it.", "ref": {"name": "What a Time to Be Alive", "category": "musician"}, "draft": true },

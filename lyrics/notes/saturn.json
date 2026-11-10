@@ -24,6 +24,7 @@
     "2": {
       "title": "Love to See It",
       "notes": [
+        { "lines": [49, 49], "kind": "reference", "title": "Pain 1993", "body": "Drake's song with Playboi Carti from Dark Lane Demo Tapes, out in May 2020, a few months before this one.", "ref": { "name": "Pain 1993 (Drake song)", "category": "musician" }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Ocean Drive", "body": "The Art Deco strip along South Beach in Miami Beach, lined with neon-lit hotels. It's the trip he wants to take with her.", "ref": {"name": "Ocean Drive", "category": "place", "place": {"florida": true}}, "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Shy Guy", "body": "The masked, robed enemy from Nintendo's Mario games. Covered up and quiet, he's playing one.", "ref": {"name": "Shy Guy", "category": "game"}, "draft": true },
         { "lines": [11, 11], "kind": "reference", "title": "Casper the Friendly Ghost", "body": "The friendly ghost from the classic cartoons and the 1995 movie. In his love life, the women end up ghosting him.", "ref": {"name": "Casper the Friendly Ghost", "category": "anime-cartoon"}, "draft": true },
