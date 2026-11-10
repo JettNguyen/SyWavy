@@ -1316,6 +1316,9 @@ a, button, [role="button"] { touch-action: manipulation; }
 
 .lyrics { font-size: clamp(1.05rem, 1.45vw, 1.2rem); line-height: 1.75; }
 .verse + .verse { margin-top: 1.5em; }
+.verse-tag { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; color: var(--muted); }
+.verse + .verse-tag { margin-top: 1.9rem; }
+.verse-tag + .verse { margin-top: 0.3rem; }
 .line {
   display: block;
   width: fit-content;

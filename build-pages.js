@@ -96,7 +96,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
     };
 
     const lyricsHTML = hasLyrics(song)
-      ? `<div class="lyrics" id="lyrics">${verses.map(v => `<p class="verse">${v.map(lineHTML).join('')}</p>`).join('')}</div>`
+      ? `<div class="lyrics" id="lyrics">${verses.map(v => `${v[0].tag ? `<p class="verse-tag">${esc(v[0].tag)}</p>` : ''}<p class="verse">${v.map(lineHTML).join('')}</p>`).join('')}</div>`
       : `<p class="lyrics-missing">The lyrics for this one aren't up yet.</p>`;
 
     const noteHTML = (n, k) => `
@@ -319,7 +319,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
       const near = clusters.find(c => Math.hypot(c.x - x, c.y - y) < 26);
       if (near) { near.keys.push(k); near.names.push(e.name); } else clusters.push({ x, y, keys: [k], names: [e.name] });
     });
-    const pins = clusters.map(c => `<g class="fl-pin" data-place="${c.keys.join(' ')}" transform="translate(${c.x} ${c.y})" tabindex="0" role="button" aria-label="${esc(c.names.join(' and '))}"><circle r="16" class="fl-pin-hit" /><circle r="6" class="fl-pin-dot" /></g>`).join('');
+    const pins = clusters.map(c => `<g class="fl-pin" data-place="${c.keys.join(' ')}" transform="translate(${c.x} ${c.y})" tabindex="0" role="button" aria-label="${esc(c.names.length > 1 ? `${c.names.slice(0, -1).join(', ')} and ${c.names[c.names.length - 1]}` : c.names[0])}"><circle r="16" class="fl-pin-hit" /><circle r="6" class="fl-pin-dot" /></g>`).join('');
 
     return `
       <header class="page-head animate-on-scroll">

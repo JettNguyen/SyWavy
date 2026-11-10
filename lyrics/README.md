@@ -3,12 +3,15 @@
 One file per release, oldest first. Each song starts with a `## N. Title` heading, and a blank line
 starts a new verse. build.js turns these into the song pages at sywavy.com/lyrics/.
 
+To show who's on a part, put their name in square brackets on its own line before it, like `[Kuy]`
+or `[SyWavy]`. The page shows it as a small label, and it doesn't count as a line, so notes stay put.
+
 THEMES.md stays on this Mac. Git ignores it.
 
 ## Notes on lines
 
 `notes/<release id>.json` holds the notes for one release. A note points at the lines it is about by
-number. Lines are counted from 1 within each song, skipping blank lines. To see the numbers:
+number. Lines are counted from 1 within each song, skipping blank lines and [tags]. To see the numbers:
 
     node build-lyrics.js number <release id>
 

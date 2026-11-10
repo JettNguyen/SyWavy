@@ -3,7 +3,8 @@
    - lyrics/<date>-<release id>.md holds one release, with
      "## 1. Title" before each song. Every line that isn't blank
      is numbered from 1 within its song, and a blank line starts
-     a new verse.
+     a new verse. A line in square brackets, like [Kuy], names
+     who's on the lines after it and isn't numbered.
    - lyrics/notes/<release id>.json holds the notes for that
      release. A note points at line numbers, never at the words,
      so editing a note never touches the lyrics.
@@ -42,11 +43,17 @@ function parseRelease(file) {
     if (!m) throw new Error(`${path.basename(file)}: can't read the song heading "${head}"`);
     const lines = [];
     let gap = false;
+    let tag = null;
     for (const raw of body) {
       const t = raw.trim();
       if (!t) { gap = lines.length > 0; continue; }
-      lines.push({ n: lines.length + 1, text: t, verseStart: gap || lines.length === 0 });
+      // A line in square brackets, like [Kuy], says who's on the next lines. It isn't counted,
+      // so adding one never moves the notes.
+      const isTag = t.match(/^\[(.+)\]$/);
+      if (isTag) { tag = isTag[1].trim(); continue; }
+      lines.push({ n: lines.length + 1, text: t, verseStart: gap || lines.length === 0 || Boolean(tag), ...(tag ? { tag } : {}) });
       gap = false;
+      tag = null;
     }
     return { track: Number(m[1]), title: m[2], lines };
   });
