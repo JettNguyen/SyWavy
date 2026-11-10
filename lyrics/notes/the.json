@@ -25,6 +25,7 @@
     "2": {
       "title": "The Oath",
       "notes": [
+        { "lines": [40, 40], "kind": "reference", "title": "Shundor", "body": "Bengali for beautiful, and a name he calls himself, here in the third person. It's also on Red Lights and Life is Verses.", "ref": { "name": "Shundor", "category": "other" }, "draft": true },
         { "lines": [5, 7], "kind": "story", "body": "The verse turns three animals into accusations. The laughing scavenger stands for gossip, the fastest cat sounds like a cheater, and the king of the jungle sounds like a liar.", "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Mariah Carey", "body": "Mariah Carey's 1994 holiday hit is about wanting one person more than any gift, and the line before borrows that idea. Then her last name turns into a verb.", "ref": { "name": "Mariah Carey", "category": "musician" }, "draft": true },
         { "lines": [12, 12], "kind": "reference", "title": "42 Dugg", "body": "The Detroit rapper signed to Yo Gotti's and Lil Baby's labels. The words right before his name sound like his number.", "ref": { "name": "42 Dugg", "category": "musician" }, "draft": true },

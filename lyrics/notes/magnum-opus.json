@@ -156,6 +156,7 @@
     "11": {
       "title": "Favorite Meme",
       "notes": [
+        { "lines": [24, 24], "kind": "reference", "title": "The O", "body": "Orlando's nickname, and the Magic are its NBA team. He waves off the team and the city in one line.", "ref": { "name": "Orlando, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Dolce & Gabbana", "body": "The Milan fashion house known by its initials, sunglasses included.", "ref": { "name": "Dolce & Gabbana", "category": "brand" }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Deal or No Deal", "body": "The Howie Mandel game show built on choosing briefcases, with a million dollars at the top. It starts a run of million-dollar names.", "ref": { "name": "Deal or No Deal", "category": "film-tv" }, "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Slumdog Millionaire", "body": "Danny Boyle's 2008 Best Picture winner about a Mumbai teen on a TV quiz show. The line splits its title, right after another million-dollar game show.", "ref": { "name": "Slumdog Millionaire", "category": "film-tv" }, "draft": true },
