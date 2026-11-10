@@ -1,0 +1,38 @@
+{
+  "release": "saturn",
+  "songs": {
+    "1": {
+      "title": "Float",
+      "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Raf Simons", "body": "The Belgian designer whose adidas line made the chunky Ozweego runner a fashion staple. He opens the song in a pair.", "ref": {"name": "Raf Simons", "category": "brand"}, "draft": true },
+        { "lines": [4, 4], "kind": "reference", "title": "Genovese crime family", "body": "One of the Five Families of the New York Mafia, known for keeping its business quiet. Secrecy is the family code.", "ref": {"name": "Genovese crime family", "category": "other"}, "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Money Trees", "body": "Kendrick Lamar's 2012 song with Jay Rock from good kid, m.A.A.d city, about wanting to sit in the shade of a tree that grows cash. He's already there.", "ref": {"name": "Money Trees", "category": "musician"}, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Yeezus", "body": "Kanye West's 2013 album. One of its centerpieces samples Nina Simone's Strange Fruit, and that song's title finishes the line, tying back to the trees before it.", "ref": {"name": "Yeezus", "category": "musician"}, "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Kirby", "body": "Nintendo's pink hero, who swallows enemies whole to copy their powers.", "ref": {"name": "Kirby", "category": "game"}, "draft": true },
+        { "lines": [13, 19], "kind": "story", "body": "Floating is the Wavy persona in one word: water, ease, never fighting the rhythm. The hook repeats it until the song does what it says.", "draft": true },
+        { "lines": [22, 22], "kind": "reference", "title": "Joe Biden", "body": "When this came out in August 2020, Biden was days from accepting the Democratic nomination for president. He pins a quote he can't place on him.", "ref": {"name": "Joe Biden", "category": "person"}, "draft": true },
+        { "lines": [23, 23], "kind": "reference", "title": "King Midas", "body": "The king from Greek myth who turned everything he touched into gold.", "ref": {"name": "King Midas", "category": "other"}, "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Raven", "body": "The quiet, hooded member of the Teen Titans in the Cartoon Network series. With a hood up, he's her.", "ref": {"name": "Raven (Teen Titans)", "category": "anime-cartoon"}, "draft": true },
+        { "lines": [48, 56], "kind": "story", "body": "The last verse is a run of puns built on a puzzle game, a cartoon detective and a sitcom. It ends on pride in being Black.", "draft": true },
+        { "lines": [48, 48], "kind": "reference", "title": "Tetris", "body": "The 1984 falling-block puzzle game where every piece has to slot into place.", "ref": {"name": "Tetris", "category": "game"}, "draft": true },
+        { "lines": [51, 52], "kind": "reference", "title": "Inspector Gadget", "body": "The 1980s cartoon detective with a tool for every situation. His name is split across two lines.", "ref": {"name": "Inspector Gadget", "category": "anime-cartoon"}, "draft": true },
+        { "lines": [55, 55], "kind": "reference", "title": "Arrested Development", "body": "The Fox sitcom about the Bluth family, which shares its name with a 90s hip-hop group. He turns the title into an arrest.", "ref": {"name": "Arrested Development", "category": "film-tv"}, "draft": true }
+      ]
+    },
+    "2": {
+      "title": "Love to See It",
+      "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Ocean Drive", "body": "The Art Deco strip along South Beach in Miami Beach, lined with neon-lit hotels. It's the trip he wants to take with her.", "ref": {"name": "Ocean Drive", "category": "place", "place": {"florida": true}}, "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Shy Guy", "body": "The masked, robed enemy from Nintendo's Mario games. Covered up and quiet, he's playing one.", "ref": {"name": "Shy Guy", "category": "game"}, "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Casper the Friendly Ghost", "body": "The friendly ghost from the classic cartoons and the 1995 movie. In his love life, the women end up ghosting him.", "ref": {"name": "Casper the Friendly Ghost", "category": "anime-cartoon"}, "draft": true },
+        { "lines": [13, 13], "kind": "story", "body": "This is the first time he draws the line on record between being an artist and being boxed in as a rap act. It's a stance he's held since, from directing his own visuals to claiming R&B as his lane.", "draft": true },
+        { "lines": [18, 19], "kind": "reference", "title": "Toronto Raptors", "body": "Toronto's NBA team. Drake nicknamed the city the 6, which makes six the Raptors' number too.", "ref": {"name": "Toronto Raptors", "category": "team"}, "draft": true },
+        { "lines": [22, 22], "kind": "reference", "title": "Tiger Woods", "body": "The golf great. His first name and golf's wooden clubs carry the joke, and Topgolf, the driving range chain, finishes it.", "ref": {"name": "Tiger Woods", "category": "athlete"}, "draft": true },
+        { "lines": [33, 33], "kind": "reference", "title": "Dwyane Wade", "body": "The Miami Heat legend wore number 3 through all three of the team's championships. He picks three as his favorite, and in Florida that number belongs to Wade.", "ref": {"name": "Dwyane Wade", "category": "athlete"}, "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Yak", "body": "Slang for cognac, Hennessy above all.", "ref": {"name": "Yak", "category": "other"}, "draft": true },
+        { "lines": [39, 40], "kind": "story", "body": "He says he had no heart at all, a store dummy, until love brought the feeling back. It's the turn the whole song hangs on.", "draft": true },
+        { "lines": [49, 52], "kind": "story", "body": "The ending is gracious. He wishes her the best with the man she's with now and goes out on the image he started with, time standing still.", "draft": true }
+      ]
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "release": "deep-voice-bastards",
+  "songs": {
+    "1": {
+      "title": "Bang Me Up Again",
+      "notes": [
+        { "lines": [1, 7], "kind": "story", "body": "The album opens on someone leaving. He's angry about how she went and still in love with her, and that pull runs under all the bravado that follows.", "draft": true },
+        { "lines": [8, 14], "kind": "story", "body": "The first verse says the album's name out loud, a nod to his low voice and the crew around him. Between the boasts, he thanks her for teaching him patience.", "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "OnlyFans", "body": "The subscription site where fans pay creators. He flips the name: he's her only fan, and he's never paid.", "ref": { "name": "OnlyFans", "category": "brand" }, "draft": true },
+        { "lines": [53, 60], "kind": "story", "body": "He turns to a younger guy with advice: don't spend on someone who's only after your money. He's proud that no one has ever played him.", "draft": true },
+        { "lines": [55, 55], "kind": "reference", "title": "Hermès Birkin", "body": "Hermès' handbag, often priced in the tens of thousands of dollars. It's his example of what someone after your money will ask for.", "ref": { "name": "Hermès Birkin", "category": "brand" }, "draft": true }
+      ]
+    },
+    "2": {
+      "title": "Bruh I'm High asf xD",
+      "notes": [
+        { "lines": [9, 11], "kind": "story", "body": "Saying hi here is a pun on the title. The voice greeting him by name echoes the tag from 71% on Wavy Life.", "draft": true },
+        { "lines": [12, 13], "kind": "reference", "title": "Wu-Tang Clan", "body": "Their song C.R.E.A.M., from their 1993 debut, stands for cash rules everything around me. He swaps the first letter to make it about dreamers, who get no love.", "ref": { "name": "Wu-Tang Clan", "category": "musician" }, "draft": true },
+        { "lines": [17, 17], "kind": "reference", "title": "Johnny Cage", "body": "The Hollywood action star fighter in Mortal Kombat, never without his sunglasses. Oakley shades make the match.", "ref": { "name": "Johnny Cage", "category": "game" }, "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Amerie", "body": "The R&B singer's 2005 hit is 1 Thing, and the line before sets it up.", "ref": { "name": "Amerie", "category": "musician" }, "draft": true },
+        { "lines": [41, 41], "kind": "reference", "title": "Michael Jackson", "body": "P.Y.T. (Pretty Young Thing) is a song from his 1982 album Thriller. He uses the initials as a compliment.", "ref": { "name": "Michael Jackson", "category": "musician" }, "draft": true },
+        { "lines": [41, 41], "kind": "reference", "title": "TLC", "body": "The Atlanta group's name comes from its members T-Boz, Left Eye and Chilli, and also spells tender loving care, which is what he's offering.", "ref": { "name": "TLC", "category": "musician" }, "draft": true },
+        { "lines": [45, 48], "kind": "story", "body": "The outro chants the album's name, and the laugh at the end matches the xD in the title. This is the album at its loosest.", "draft": true }
+      ]
+    },
+    "3": {
+      "title": "She's The Wettest",
+      "notes": [
+        { "lines": [1, 8], "kind": "story", "body": "The intro is honest about being stuck. He can't tell whose fault it is, admits it's confusing, and lands on the one thing he's sure of: he wants her.", "draft": true },
+        { "lines": [24, 24], "kind": "reference", "title": "Goodfellas", "body": "Martin Scorsese's 1990 mob film, nearly two and a half hours long. He wants something long playing in the background.", "ref": { "name": "Goodfellas", "category": "film-tv" }, "draft": true },
+        { "lines": [37, 42], "kind": "story", "body": "This song carries Wavy Life's water imagery into the bedroom. He measures her in seas and pools, the bigger the better.", "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Shamu", "body": "The name SeaWorld gave its star orcas, the face of its parks, including SeaWorld Orlando. He reaches for the biggest splash he can think of.", "ref": { "name": "Shamu", "category": "other" }, "draft": true }
+      ]
+    },
+    "4": {
+      "title": "White Girls Call Me Hot",
+      "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Vetements", "body": "The Paris fashion label co-founded by Demna. Said out loud, its name sounds close to vitamins, which is the joke.", "ref": { "name": "Vetements", "category": "brand" }, "draft": true },
+        { "lines": [2, 2], "kind": "reference", "title": "Von Dutch", "body": "The trucker-hat brand that defined early-2000s celebrity style and came back with the Y2K revival.", "ref": { "name": "Von Dutch", "category": "brand" }, "draft": true },
+        { "lines": [19, 19], "kind": "reference", "title": "Old Spice", "body": "The men's grooming brand, whose ads end with a whistled sailor tune. The whistle a couple of lines earlier sets it up.", "ref": { "name": "Old Spice", "category": "brand" }, "draft": true },
+        { "lines": [20, 20], "kind": "reference", "title": "Ice Spice", "body": "The Bronx artist who broke out in 2022 with Munch (Feelin' U). Her name rhymes with Old Spice in the line before.", "ref": { "name": "Ice Spice", "category": "musician" }, "draft": true },
+        { "lines": [32, 40], "kind": "story", "body": "Under the boasting is an admission. He admits love is beyond him, and what he has instead is his crew, the club the album is named for.", "draft": true },
+        { "lines": [49, 52], "kind": "story", "body": "The closing verse is a Florida brag. Where he's from the heat never lets up, so the word belongs to him.", "draft": true }
+      ]
+    },
+    "5": {
+      "title": "Del Rey",
+      "notes": [
+        { "lines": [3, 3], "kind": "reference", "title": "Build-A-Bear Workshop", "body": "At Build-A-Bear, every stuffed animal gets a small heart placed inside before it's sewn up. He hands his over the same way.", "ref": { "name": "Build-A-Bear Workshop", "category": "brand" }, "draft": true },
+        { "lines": [5, 5], "kind": "reference", "title": "Range Rover", "body": "Land Rover's luxury SUV. It's what his mother wants, and the reason he needs to get paid.", "ref": { "name": "Range Rover", "category": "brand" }, "draft": true },
+        { "lines": [19, 27], "kind": "story", "body": "The hook drops the swagger. He keeps coming back to the fear of falling short, breaking off before he finishes the thought, and begs her to stay on the line. It's the crack under the album's bravado.", "draft": true },
+        { "lines": [28, 35], "kind": "story", "body": "He's done with screens and wants her there in person. He's repeated himself and can't see why it isn't landing.", "draft": true },
+        { "lines": [41, 42], "kind": "reference", "title": "Lana Del Rey", "body": "The singer whose 2011 breakout was Video Games, and whose 2012 single Diet Mountain Dew shows up in the next line. He wants a girl straight out of her songs.", "ref": { "name": "Lana Del Rey", "category": "musician" }, "draft": true },
+        { "lines": [44, 45], "kind": "reference", "title": "Green Day", "body": "The California punk band. The next line names their 2004 hit Boulevard of Broken Dreams and says this one has been fixed.", "ref": { "name": "Green Day", "category": "musician" }, "draft": true },
+        { "lines": [47, 48], "kind": "story", "body": "He ends the verse by putting up a boundary between them. Then he says it again with one sound changed, so the barrier becomes a promise not to cause hurt.", "draft": true }
+      ]
+    },
+    "6": {
+      "title": "AudioSlave",
+      "notes": [
+        { "lines": [8, 9], "kind": "reference", "title": "Dutty Wine", "body": "A Jamaican dancehall move built on fast neck rolls, made famous by Tony Matterhorn's 2006 song of the same name.", "ref": { "name": "Dutty Wine", "category": "other" }, "draft": true },
+        { "lines": [10, 13], "kind": "story", "body": "The hook is the title explained: the music has a hold on him, and whatever hurts travels through it. It's the album's statement on what music costs and what it gives back.", "draft": true },
+        { "lines": [17, 17], "kind": "reference", "title": "Harley-Davidson", "body": "The motorcycle maker, named for founders William Harley and Arthur Davidson. He rules out Pete Davidson, the comedian, and takes the bike instead.", "ref": { "name": "Harley-Davidson", "category": "brand" }, "draft": true },
+        { "lines": [18, 21], "kind": "reference", "title": "Bob Marley", "body": "Buffalo Soldier (1983) is one of his best-known songs, and his name rhymes with the Harley line. He follows through by taking the soldier's name for himself.", "ref": { "name": "Bob Marley", "category": "musician" }, "draft": true },
+        { "lines": [24, 24], "kind": "reference", "title": "Audioslave", "body": "The 2000s rock band formed by Chris Cornell and members of Rage Against the Machine. He borrows the name to say he's bound to the music.", "ref": { "name": "Audioslave", "category": "musician" }, "draft": true },
+        { "lines": [27, 29], "kind": "story", "body": "The roaring plane isn't a plane. It's Jett2Fly, SyWavy's producer, whose name and sound are built on flight the way SyWavy's are built on water.", "draft": true }
+      ]
+    },
+    "7": {
+      "title": "You Better TELL ME.",
+      "notes": [
+        { "lines": [4, 4], "kind": "reference", "title": "Jet Li", "body": "The martial arts star of Hero and Romeo Must Die. Kicking it, as in hanging out, becomes a kick.", "ref": { "name": "Jet Li", "category": "film-tv" }, "draft": true },
+        { "lines": [5, 5], "kind": "reference", "title": "Bic", "body": "The lighter maker, whose 1970s ads made flick my Bic a catchphrase.", "ref": { "name": "Bic", "category": "brand" }, "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "Spike Lee", "body": "The director of Do the Right Thing, who also directed and starred in Nike's late-'80s Air Jordan ads. Shooting means filming here, a fitting boast from an artist who directs, and it leads straight to Nike.", "ref": { "name": "Spike Lee", "category": "film-tv" }, "draft": true },
+        { "lines": [7, 8], "kind": "reference", "title": "Nike Air Max", "body": "Nike's best-known running shoe line. The swoosh is shaped like a check mark, so maxing out and checking are one joke.", "ref": { "name": "Nike Air Max", "category": "brand" }, "draft": true },
+        { "lines": [9, 17], "kind": "story", "body": "He means to stay unless she bails first. What puzzles him is why no one has claimed her yet.", "draft": true },
+        { "lines": [18, 25], "kind": "story", "body": "The hook is a demand for honesty. He already suspects the truth and needs to hear it from her, which is why the title shouts.", "draft": true },
+        { "lines": [26, 33], "kind": "story", "body": "He tells her to stop playing games. He's looking for someone to marry, not a side piece, and he says so plainly.", "draft": true },
+        { "lines": [53, 53], "kind": "reference", "title": "Wallahi", "body": "An Arabic oath meaning I swear by God, common in everyday slang as a way of saying you mean it.", "ref": { "name": "Wallahi", "category": "other" }, "draft": true }
+      ]
+    },
+    "8": {
+      "title": "This Headache Crazzzy",
+      "notes": [
+        { "lines": [1, 6], "kind": "story", "body": "The headache in the title is a person. The hook blames her for scrambling his head, and the rest of the song is him trying to think straight around her.", "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "Salvatore Ferragamo", "body": "The Italian luxury house, known for leather shoes and belts. He ranks it above Coach, the American leather brand, as the difference between aiming high and aiming low.", "ref": { "name": "Salvatore Ferragamo", "category": "brand" }, "draft": true },
+        { "lines": [8, 9], "kind": "reference", "title": "Shrek", "body": "Smash Mouth's cover of I'm a Believer plays in Shrek (2001), so calling himself a believer leads straight to the ogre.", "ref": { "name": "Shrek", "category": "film-tv" }, "draft": true },
+        { "lines": [11, 12], "kind": "reference", "title": "Dodge Challenger SRT Hellcat", "body": "Dodge's Hellcat and Demon are supercharged muscle cars known for their loud whine. He describes a sound that big, then says cars don't mean much to him anymore.", "ref": { "name": "Dodge Challenger SRT Hellcat", "category": "brand" }, "draft": true },
+        { "lines": [15, 15], "kind": "reference", "title": "Alpha Kappa Alpha", "body": "AKA is the first Black Greek-letter sorority, founded at Howard University in 1908. Greek here means sorority, not the country.", "ref": { "name": "Alpha Kappa Alpha", "category": "other" }, "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "Carowinds", "body": "The amusement park on the North and South Carolina line outside Charlotte. Its coasters match the feeling of being on top of the world.", "ref": { "name": "Carowinds", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [37, 40], "kind": "story", "body": "The last verse lowers the temperature. He doesn't want a fight, and the difference between them is reason enough to walk away.", "draft": true }
+      ]
+    },
+    "9": {
+      "title": "Intrusive Thoughts",
+      "notes": [
+        { "lines": [35, 37], "kind": "story", "body": "This stretch is SyWavy quoting himself. The Robin Thicke nod echoes Caution, and the Florida hair line is lifted from Cruise Jam, both on Wavy Life, tying the crew record back to the water album.", "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Robin Thicke", "body": "His 2013 hit Blurred Lines, which SyWavy also borrowed on Caution from Wavy Life.", "ref": { "name": "Robin Thicke", "category": "musician" }, "draft": true },
+        { "lines": [42, 42], "kind": "reference", "title": "Harriet Tubman", "body": "The abolitionist who led enslaved people north on the Underground Railroad. Coming up from underground, he takes her name.", "ref": { "name": "Harriet Tubman", "category": "person" }, "draft": true },
+        { "lines": [58, 65], "kind": "story", "body": "The hook gives the title a punchline instead of a confession. Around it, Kuy joins SyWavy and the two trade verses packed with jokes from movies, sports and TV, the Deep Voice Bastards crew idea in action.", "draft": true }
+      ]
+    },
+    "10": {
+      "title": "Coaster",
+      "notes": [
+        { "lines": [7, 7], "kind": "reference", "title": "Wii Nunchuk", "body": "The Nintendo Wii's second controller, which plugs into the main remote. He hears console inside reconcile, so making up means plugging back in.", "ref": { "name": "Wii Nunchuk", "category": "game" }, "draft": true },
+        { "lines": [10, 10], "kind": "reference", "title": "Weeki Wachee Springs", "body": "The spring north of Tampa Bay famous for its live mermaid shows since 1947. It brings the water imagery to a Florida landmark.", "ref": { "name": "Weeki Wachee Springs", "category": "place", "place": { "florida": true } }, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Six Flags", "body": "The theme park chain known for its roller coasters, keeping the song's ride going.", "ref": { "name": "Six Flags", "category": "brand" }, "draft": true },
+        { "lines": [18, 19], "kind": "reference", "title": "Stephen A. Smith", "body": "The ESPN host of First Take, a morning debate show built on his loud, theatrical arguing. Fussing like him means making a big show of it.", "ref": { "name": "Stephen A. Smith", "category": "person" }, "draft": true },
+        { "lines": [29, 29], "kind": "reference", "title": "JNCO", "body": "The '90s jeans brand famous for enormous leg openings, back in style with the Y2K revival.", "ref": { "name": "JNCO", "category": "brand" }, "draft": true },
+        { "lines": [33, 37], "kind": "story", "body": "This verse is a horror-movie lineup that ends at Florida's biggest Halloween event. He takes on each villain's role and slips in a nod to his own Wavy Life.", "draft": true },
+        { "lines": [33, 33], "kind": "reference", "title": "Jason Voorhees", "body": "The masked killer of the Friday the 13th movies. The date sets him up.", "ref": { "name": "Jason Voorhees", "category": "film-tv" }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Freddy Krueger", "body": "The villain of A Nightmare on Elm Street, who attacks people in their dreams. Falling asleep brings him on.", "ref": { "name": "Freddy Krueger", "category": "film-tv" }, "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Poltergeist", "body": "The 1982 horror film where a little girl talks to spirits through a staticky TV. The TV is the link.", "ref": { "name": "Poltergeist", "category": "film-tv" }, "draft": true },
+        { "lines": [36, 36], "kind": "reference", "title": "Halloween Horror Nights", "body": "Universal Orlando's fall event, built from haunted houses based on horror films and TV. It ties the whole run together.", "ref": { "name": "Halloween Horror Nights", "category": "place", "place": { "florida": true } }, "draft": true },
+        { "lines": [38, 45], "kind": "story", "body": "The bridge makes the relationship the ride: up, down and never stalled. He doesn't want it to end, and he's trying to stay focused long enough to write it all down.", "draft": true }
+      ]
+    }
+  }
+}

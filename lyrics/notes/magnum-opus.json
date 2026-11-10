@@ -1,0 +1,273 @@
+{
+  "release": "magnum-opus",
+  "songs": {
+    "1": {
+      "title": "Vertex",
+      "notes": [
+        { "lines": [1, 2], "kind": "story", "body": "Magnum Opus starts here, and the title says where it starts: a vertex is the highest point, the tip of the curve. The opening lines are about getting the room moving before he says anything else.", "draft": true },
+        { "lines": [3, 3], "kind": "reference", "title": "CeeLo Green", "body": "The Atlanta singer from Goodie Mob and Gnarls Barkley. The line turns his name around so the color comes first.", "ref": { "name": "CeeLo Green", "category": "musician" }, "draft": true },
+        { "lines": [4, 4], "kind": "reference", "title": "Dsquared2", "body": "The fashion label run out of Milan by Canadian twin brothers Dean and Dan Caten. He shrugs it off as everyday wear.", "ref": { "name": "Dsquared2", "category": "brand" }, "draft": true },
+        { "lines": [22, 23], "kind": "reference", "title": "Like a G6", "body": "Far East Movement's 2010 hit, named for a Gulfstream private jet. It lands right after a Jett2Fly ad-lib, and flight is the running image for his producer's name.", "ref": { "name": "Like a G6 (Far East Movement song)", "category": "musician" }, "draft": true },
+        { "lines": [26, 27], "kind": "story", "body": "He treats the verse like pottery, fired until it's hard enough to last, then puts the song's name up in the sky like an ad. It's the album's opener announcing itself.", "draft": true },
+        { "lines": [33, 33], "kind": "reference", "title": "Turks and Caicos Islands", "body": "The Caribbean islands southeast of the Bahamas, a getaway spot. The name also rhymes with closing a case.", "ref": { "name": "Turks and Caicos Islands", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Rihanna", "body": "The Barbados-born singer. The line names two of her albums back to back, from 2009 and 2011.", "ref": { "name": "Rihanna", "category": "musician" }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Barbados", "body": "Rihanna's home island in the eastern Caribbean. He borrows her albums and her accent in one line.", "ref": { "name": "Barbados", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [45, 45], "kind": "reference", "title": "Nicolas Cage", "body": "The actor known for going all the way in every role. His name, with the cage in it, becomes a boast about going hard without stopping.", "ref": { "name": "Nicolas Cage", "category": "film-tv" }, "draft": true },
+        { "lines": [68, 68], "kind": "reference", "title": "Erykah Badu", "body": "The Dallas singer who led neo-soul with her 1997 album Baduizm. The line borrows the title of her first single, and she sets up the OutKast song that follows, which André 3000 wrote about their breakup and her mother.", "ref": { "name": "Erykah Badu", "category": "musician" }, "draft": true },
+        { "lines": [70, 71], "kind": "reference", "title": "Ms. Jackson", "body": "OutKast's 2000 hit, André 3000's apology to the mother of his ex, the singer named two lines earlier.", "ref": { "name": "Ms. Jackson (OutKast song)", "category": "musician" }, "draft": true },
+        { "lines": [76, 77], "kind": "story", "body": "Three times the outro repeats the OutKast apology, and the last time he takes the apology back entirely. The album's first song ends on a smirk instead of a sorry.", "draft": true }
+      ]
+    },
+    "2": {
+      "title": "Rust",
+      "notes": [
+        { "lines": [1, 5], "kind": "story", "body": "The question the whole song asks is what's been building up between them while nobody was looking. Rust is slow damage that forms when something is left out too long, and that's how he sees a love that's been neglected.", "draft": true },
+        { "lines": [35, 42], "kind": "story", "body": "The bridge bends the words people say at funerals by changing one letter. He refuses to sit still and corrode, and he can't rest while it's happening.", "draft": true },
+        { "lines": [49, 49], "kind": "reference", "title": "Deadstock", "body": "Sneaker and resale slang for old stock that was never sold or worn, still new in the box. His trust is just that: held back and never used.", "ref": { "name": "Deadstock", "category": "other" }, "draft": true }
+      ]
+    },
+    "3": {
+      "title": "To Two B*tches",
+      "notes": [
+        { "lines": [9, 12], "kind": "story", "body": "He opens on defense. Accused of cheating, he denies it and asks for proof. Then he turns it around: two women on his phone, as permanent as the ink on his arm.", "draft": true },
+        { "lines": [24, 24], "kind": "reference", "title": "Palm Angels", "body": "The streetwear label Francesco Ragazzi started in Milan in 2015. A brand named for angels should come with working wings, and he says these don't, so he's out.", "ref": { "name": "Palm Angels", "category": "brand" }, "draft": true },
+        { "lines": [44, 51], "kind": "story", "body": "The bridge drops the bragging for something closer to thanks. Each woman changed him: one by showing him the warning signs, the other by showing him a bigger life.", "draft": true },
+        { "lines": [71, 71], "kind": "reference", "title": "E.T. the Extra-Terrestrial", "body": "Steven Spielberg's 1982 film about a stranded alien who just wants to call his planet. The line turns that famous plea into asking her to bring him home.", "ref": { "name": "E.T. the Extra-Terrestrial", "category": "film-tv" }, "draft": true },
+        { "lines": [72, 72], "kind": "reference", "title": "Dior", "body": "The French fashion house, whose menswear line was long called Dior Homme. The line trades that for a home of his own.", "ref": { "name": "Dior", "category": "brand" }, "draft": true },
+        { "lines": [75, 75], "kind": "reference", "title": "Batman", "body": "DC's caped hero, known as the world's greatest detective. Even he didn't find out, which is the point right after hiding the evidence in the car.", "ref": { "name": "Batman", "category": "film-tv" }, "draft": true },
+        { "lines": [76, 80], "kind": "story", "body": "The ending cracks the bravado. He insists he never cheated, says the hurt is all coming from her, and wonders out loud whether better even exists.", "draft": true },
+        { "lines": [81, 81], "kind": "reference", "title": "Shannon Sharpe", "body": "The Hall of Fame tight end turned TV host, whose personal life became headline news in 2024 and 2025. He closes by saying he won't play that role.", "ref": { "name": "Shannon Sharpe", "category": "athlete" }, "draft": true }
+      ]
+    },
+    "4": {
+      "title": "SZA",
+      "notes": [
+        { "lines": [1, 2], "kind": "reference", "title": "Good Days", "body": "SZA's 2020 single about holding on to hope after a love ends. The hook opens on its title and puts those days in the past.", "ref": { "name": "Good Days (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [5, 5], "kind": "reference", "title": "Snooze", "body": "SZA's 2022 hit from SOS about never wanting to miss a minute with someone. He wishes he could press it on the breakup instead.", "ref": { "name": "Snooze (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [11, 23], "kind": "story", "body": "The verse runs through everything this relationship has a hold on, and nothing is left out, which suits a song named for the singer whose debut album is Ctrl. He knows they're bad for each other and still can't end it, which is all the hook says.", "draft": true },
+        { "lines": [37, 38], "kind": "reference", "title": "Broken Clocks", "body": "A 2017 single from SZA's Ctrl about time moving on while she looks back. Here it's a moment with her that stopped time.", "ref": { "name": "Broken Clocks (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [57, 57], "kind": "story", "body": "From here to the end of the bridge, nearly every line is built from SZA song titles out of Ctrl (2017) and SOS (2022). He tells the story of this relationship in her words, the same way the song borrows her name.", "draft": true },
+        { "lines": [58, 58], "kind": "reference", "title": "Love Galore", "body": "Ctrl's 2017 single with Travis Scott, about wanting more from someone who keeps it casual.", "ref": { "name": "Love Galore (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [59, 59], "kind": "reference", "title": "Wavy (Interlude)", "body": "A short Ctrl track featuring James Fauntleroy. Its title is half his name, so he slips himself into her album.", "ref": { "name": "Wavy (Interlude) (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [60, 60], "kind": "reference", "title": "Prom", "body": "A Ctrl song about not being ready to grow up. He pairs it with the school night he says he never had.", "ref": { "name": "Prom (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [61, 61], "kind": "reference", "title": "Supermodel", "body": "The song that opens Ctrl, an open letter to someone who left her feeling like she wasn't enough.", "ref": { "name": "Supermodel (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [62, 62], "kind": "reference", "title": "Drew Barrymore", "body": "Ctrl's lead single, named for the actor, about feeling out of place and wanting to be wanted. Barrymore herself appears in the video.", "ref": { "name": "Drew Barrymore (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [63, 63], "kind": "reference", "title": "Go Gina", "body": "A Ctrl song about letting loose and refusing to be held back, chanted here like a cheer.", "ref": { "name": "Go Gina (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [64, 64], "kind": "reference", "title": "Pretty Little Birds", "body": "A slow Ctrl track featuring Isaiah Rashad, and one more title in the run.", "ref": { "name": "Pretty Little Birds (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [65, 65], "kind": "reference", "title": "SOS", "body": "SZA's 2022 album, named for the distress signal. The line spells out the phrase those letters are often said to stand for.", "ref": { "name": "SOS (SZA album)", "category": "musician" }, "draft": true },
+        { "lines": [66, 66], "kind": "reference", "title": "Love Language", "body": "An SOS song about learning how to love someone the way they need. The line folds another SOS title in right before it.", "ref": { "name": "Love Language (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [67, 67], "kind": "reference", "title": "Used", "body": "An SOS track featuring Don Toliver, tucked into the start of the line.", "ref": { "name": "Used (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [68, 68], "kind": "reference", "title": "Gone Girl", "body": "An SOS song about needing space and still wanting to be held onto. The line pairs it with another SOS title and repeats it like a plea.", "ref": { "name": "Gone Girl (SZA song)", "category": "musician" }, "draft": true },
+        { "lines": [71, 71], "kind": "reference", "title": "SZA", "body": "Solána Rowe, the St. Louis-born, New Jersey-raised R&B singer behind Ctrl and SOS. The song is named for her and built from her catalog, and the last line asks someone to be that kind of friend to him.", "ref": { "name": "SZA", "category": "musician" }, "draft": true }
+      ]
+    },
+    "5": {
+      "title": "Carolina Herrera",
+      "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Carolina Herrera", "body": "The Venezuelan-born designer and the New York fashion house she built, also known for perfumes like Good Girl. Later he splits the name around spraying it, a nod to the fragrances.", "ref": { "name": "Carolina Herrera", "category": "brand" }, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Usain Bolt", "body": "The Jamaican sprinter who holds the world records in the 100 and 200 meters. The line runs his name backward, and it leads straight into the Jamaican run that follows.", "ref": { "name": "Usain Bolt", "category": "athlete" }, "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "Jamaican Patois", "body": "The English-based language spoken across Jamaica, which dancehall carried around the world.", "ref": { "name": "Jamaican Patois", "category": "other" }, "draft": true },
+        { "lines": [15, 15], "kind": "reference", "title": "Jamaica", "body": "The Caribbean island nation. He says he isn't from there, but its listeners treat him like he is.", "ref": { "name": "Jamaica", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Popcaan", "body": "The Jamaican dancehall star of the Unruly crew, later signed to Drake's OVO Sound. Being embraced like him is the compliment.", "ref": { "name": "Popcaan", "category": "musician" }, "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "Kevin Durant", "body": "The scoring star who spent his first nine seasons with the Sonics and Thunder, then left for Golden State in 2016 without a title in Oklahoma City. That sets up the next two lines.", "ref": { "name": "Kevin Durant", "category": "athlete" }, "draft": true },
+        { "lines": [22, 23], "kind": "reference", "title": "Shai Gilgeous-Alexander", "body": "The Canadian guard who became the Thunder's star after Durant, and in 2025 won league MVP and the team's first title in Oklahoma City. His first name sounds like shy.", "ref": { "name": "Shai Gilgeous-Alexander", "category": "athlete" }, "draft": true },
+        { "lines": [24, 24], "kind": "reference", "title": "Oklahoma City Thunder", "body": "The NBA team that won the 2025 championship. Paired with the sprinter from earlier in the verse, it makes lightning.", "ref": { "name": "Oklahoma City Thunder", "category": "team" }, "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Pope Leo XIV", "body": "Robert Prevost, elected in May 2025 as the first pope from the United States, was born in Chicago. He says he isn't from there, and the next line says where he is from.", "ref": { "name": "Pope Leo XIV", "category": "person" }, "draft": true },
+        { "lines": [41, 41], "kind": "reference", "title": "St. Petersburg, Florida", "body": "His city, known locally as the Burg, which he reps with his friends.", "ref": { "name": "St. Petersburg, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
+        { "lines": [43, 43], "kind": "reference", "title": "Martin Luther King Jr.", "body": "The civil rights leader whose 1963 speech at the March on Washington is remembered for its dream. Here it's Jett2Fly sharing a dream for their music.", "ref": { "name": "Martin Luther King Jr.", "category": "person" }, "draft": true },
+        { "lines": [45, 45], "kind": "reference", "title": "Better Call Saul", "body": "The Breaking Bad spinoff (2015 to 2022) about the lawyer Saul Goodman. The line turns telling her to go call someone else into the show's title.", "ref": { "name": "Better Call Saul", "category": "film-tv" }, "draft": true },
+        { "lines": [48, 48], "kind": "reference", "title": "Tigger", "body": "The bouncing tiger from Winnie the Pooh, a fair picture of how he moves on a beat.", "ref": { "name": "Tigger", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [66, 69], "kind": "story", "body": "He points back to Wavy Life, his 2023 album about water, freedom and coming home grown, and says he's living it now. Three years on, it isn't just an album title to him anymore.", "draft": true },
+        { "lines": [74, 74], "kind": "reference", "title": "Pink Tape", "body": "Lil Uzi Vert's 2023 album. Spinning it again works as a dance move and as playing the record one more time.", "ref": { "name": "Pink Tape (Lil Uzi Vert album)", "category": "musician" }, "draft": true },
+        { "lines": [77, 78], "kind": "story", "body": "The song ends on Jett2Fly. His beats sound like a pair of jets taking off, which fits a producer whose name is about flying. Earlier, the song credits Jett with dreaming big for the music the two of them make together.", "draft": true }
+      ]
+    },
+    "6": {
+      "title": "Slow? Never",
+      "notes": [
+        { "lines": [9, 16], "kind": "story", "body": "The title gets its answer in the hook: he won't ease off a love he expected to keep for life. He's tried everything to set it right, and she still won't give.", "draft": true },
+        { "lines": [52, 58], "kind": "story", "body": "By now the hurt shows up even in a smile. He knows her well enough to see the tears coming, and the last line runs his own name into the slang for crying, so the waves and the tears are the same water.", "draft": true },
+        { "lines": [59, 66], "kind": "story", "body": "The relationship becomes a car that won't start, and he keeps pushing it anyway. Exhaust works two ways here, the fumes and how tired he is. He still believes it can be fixed.", "draft": true }
+      ]
+    },
+    "7": {
+      "title": "YAMAHA RIDIN'",
+      "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Kawasaki", "body": "The Japanese motorcycle maker. The song opens on a rival bike before settling on Yamaha, and every ride in it means two things.", "ref": { "name": "Kawasaki", "category": "brand" }, "draft": true },
+        { "lines": [3, 3], "kind": "reference", "title": "Indianapolis 500", "body": "The century-old Memorial Day weekend race, 200 laps around the Indianapolis Motor Speedway. He treats the night like a race.", "ref": { "name": "Indianapolis 500", "category": "other" }, "draft": true },
+        { "lines": [4, 4], "kind": "reference", "title": "300", "body": "Zack Snyder's film with Gerard Butler as the Spartan king Leonidas. The line names the actor and the movie together.", "ref": { "name": "300 (film)", "category": "film-tv" }, "draft": true },
+        { "lines": [5, 5], "kind": "reference", "title": "Stevie Wonder", "body": "The Motown great, a keyboard player first. The line flips his name around and leads with keys, which is also the name of SyWavy's 2020 single, Keys'.", "ref": { "name": "Stevie Wonder", "category": "musician" }, "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "Isn't She Lovely", "body": "Stevie Wonder's 1976 song for his newborn daughter, from Songs in the Key of Life. That album title ties back to the keys in the line before.", "ref": { "name": "Isn't She Lovely (Stevie Wonder song)", "category": "musician" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Peyton Manning", "body": "The Hall of Fame quarterback, famous for shouting Omaha at the line to change the play. The call also rhymes into Yamaha.", "ref": { "name": "Peyton Manning", "category": "athlete" }, "draft": true },
+        { "lines": [10, 11], "kind": "reference", "title": "Yamaha", "body": "The Japanese name on motorcycles and on pianos and keyboards. The song rides both meanings: the bike and the keys.", "ref": { "name": "Yamaha", "category": "brand" }, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Helmut Lang", "body": "The Austrian designer and his minimal label, a 1990s favorite. On a song about bikes, his first name turns into a helmet.", "ref": { "name": "Helmut Lang", "category": "brand" }, "draft": true },
+        { "lines": [27, 30], "kind": "story", "body": "The ride turns into a band: drums to beat, strings to play. Yamaha makes those too, so the hook's double meaning moves from the bike to the instruments.", "draft": true },
+        { "lines": [31, 31], "kind": "reference", "title": "Bunraku", "body": "Traditional Japanese puppet theater from Osaka, where the puppeteers work in plain sight. It shows up right after strings, next to a bit of French.", "ref": { "name": "Bunraku", "category": "other" }, "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "Wendy Wu: Homecoming Warrior", "body": "The 2006 Disney Channel movie with Brenda Song as a teen who learns she's a destined warrior. The next line takes the warrior straight to basketball.", "ref": { "name": "Wendy Wu: Homecoming Warrior", "category": "film-tv" }, "draft": true },
+        { "lines": [33, 33], "kind": "reference", "title": "Golden State Warriors", "body": "The Bay Area team whose dynasty won four titles in eight years. He says that story is over.", "ref": { "name": "Golden State Warriors", "category": "team" }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Klay Thompson", "body": "The Warriors sharpshooter who won all four of those titles and left for the Dallas Mavericks in 2024. His name stands in for play.", "ref": { "name": "Klay Thompson", "category": "athlete" }, "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Dallas Mavericks", "body": "Klay Thompson's team after he left Golden State, which is why the Mavs come right after him.", "ref": { "name": "Dallas Mavericks", "category": "team" }, "draft": true },
+        { "lines": [37, 37], "kind": "reference", "title": "Soulja Boy", "body": "The artist whose 2008 hit with Sammie was about kissing over the phone. The ringing in the next lines answers it.", "ref": { "name": "Soulja Boy", "category": "musician" }, "draft": true },
+        { "lines": [42, 47], "kind": "story", "body": "Keys' is SyWavy's March 2020 single, his first record with Jett2Fly. The song keeps saying it has put miles on, and with Yamaha making keyboards, the ride and the record turn into one image. Here he claims it outright, down to the year.", "draft": true },
+        { "lines": [50, 50], "kind": "reference", "title": "Jeff Bezos", "body": "Amazon's founder. The line pairs him with the two-day shipping that made Prime famous, picking up the Prime from two lines earlier.", "ref": { "name": "Jeff Bezos", "category": "person" }, "draft": true },
+        { "lines": [63, 63], "kind": "reference", "title": "Line 6", "body": "The California maker of guitar amps and effects, one more piece of music gear in a song built on Yamaha's double life.", "ref": { "name": "Line 6", "category": "brand" }, "draft": true },
+        { "lines": [64, 64], "kind": "reference", "title": "Mercedes-Benz", "body": "The German luxury carmaker. He'd take the Yamaha, bike or keyboard, over a Benz.", "ref": { "name": "Mercedes-Benz", "category": "brand" }, "draft": true },
+        { "lines": [73, 73], "kind": "reference", "title": "Dapper Dan", "body": "The Harlem tailor who remade luxury logos for hip-hop stars in the 1980s and now works with Gucci. He sets his Florida style apart from the Harlem original's.", "ref": { "name": "Dapper Dan", "category": "brand" }, "draft": true }
+      ]
+    },
+    "8": {
+      "title": "Shameless Guy",
+      "notes": [
+        { "lines": [1, 4], "kind": "story", "body": "The hook owns everything. Shameless here means he admits his mistakes out loud instead of hiding them, even though the verse later says he isn't proud of it.", "draft": true },
+        { "lines": [6, 7], "kind": "reference", "title": "The Goonies", "body": "The 1985 adventure film about kids hunting for pirate treasure. He bends its name, then borrows Sloth's famous shout to the kids to get people streaming his music.", "ref": { "name": "The Goonies", "category": "film-tv" }, "draft": true },
+        { "lines": [12, 12], "kind": "reference", "title": "Nevel Papperman", "body": "The rival kid on Nickelodeon's iCarly, always scheming from behind a computer. Calling someone a Nevel makes him a petty schemer chasing money through a screen.", "ref": { "name": "Nevel Papperman", "category": "film-tv" }, "draft": true },
+        { "lines": [36, 39], "kind": "story", "body": "He watches every front give way, one per line, until even the truth turns out to be an act.", "draft": true },
+        { "lines": [44, 54], "kind": "story", "body": "The outro is everyone weighing in. He's tired of the commentary, and the song ends with him telling shame itself to be quiet.", "draft": true }
+      ]
+    },
+    "9": {
+      "title": "Proceed",
+      "notes": [
+        { "lines": [5, 8], "kind": "story", "body": "The opening is a bowling joke. He needs her pin to get in and wants to knock her down like a strike, while someone else is still taking forever with his roll.", "draft": true },
+        { "lines": [9, 12], "kind": "story", "body": "The hook hangs on one word with two meanings. Proceeds are the money a sale brings in, and to proceed is to keep going. He spends, she dances, and the money and the night both keep moving.", "draft": true },
+        { "lines": [23, 23], "kind": "reference", "title": "Nike", "body": "The sportswear giant, named for the Greek goddess of victory, right after he compares his build to Greek myth. Its swoosh is a check mark, which is how checking becomes Nike.", "ref": { "name": "Nike", "category": "brand" }, "draft": true },
+        { "lines": [25, 25], "kind": "reference", "title": "The Dark Side of the Moon", "body": "Pink Floyd's 1973 album. One word is swapped so the line points at smoke instead of the moon.", "ref": { "name": "The Dark Side of the Moon (Pink Floyd album)", "category": "musician" }, "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "Caitlin Clark", "body": "The record-setting guard who went from Iowa to the WNBA's Indiana Fever in 2024. Catching a fever means catching her team.", "ref": { "name": "Caitlin Clark", "category": "athlete" }, "draft": true },
+        { "lines": [33, 35], "kind": "reference", "title": "LaVar Ball", "body": "The outspoken father of NBA players Lonzo and LaMelo Ball. Ball is the family name, and raising sons is his claim to fame, which turns into a boast about treating rivals like his kids.", "ref": { "name": "LaVar Ball", "category": "person" }, "draft": true },
+        { "lines": [36, 36], "kind": "reference", "title": "LaMelo Ball", "body": "The youngest Ball brother, a Charlotte Hornets star. Mellow sounds like his name.", "ref": { "name": "LaMelo Ball", "category": "athlete" }, "draft": true },
+        { "lines": [39, 40], "kind": "reference", "title": "Lonzo Ball", "body": "The oldest Ball brother. The Lakers drafted him in 2017 and he later played for the Chicago Bulls, so these two lines trace his career.", "ref": { "name": "Lonzo Ball", "category": "athlete" }, "draft": true },
+        { "lines": [68, 68], "kind": "reference", "title": "Mighty Morphin Power Rangers", "body": "The 1990s kids' show where teenagers team up and combine their machines into one giant robot. Uniting is the whole point.", "ref": { "name": "Mighty Morphin Power Rangers", "category": "film-tv" }, "draft": true }
+      ]
+    },
+    "10": {
+      "title": "Please lmk",
+      "notes": [
+        { "lines": [8, 8], "kind": "reference", "title": "Tom Hanks", "body": "The two-time Oscar-winning actor. Clipped down, his name sounds like thanks.", "ref": { "name": "Tom Hanks", "category": "film-tv" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "The Green Mile", "body": "The 1999 prison drama starring Tom Hanks, which drew four Oscar nominations. Green has its other meaning here too.", "ref": { "name": "The Green Mile", "category": "film-tv" }, "draft": true },
+        { "lines": [18, 25], "kind": "story", "body": "The hook asks for a straight answer: who showed her the best time, and where does he stand now. He can't read anything between them, so he needs her to say it.", "draft": true },
+        { "lines": [30, 30], "kind": "reference", "title": "Anne Hathaway", "body": "The Oscar-winning actor from Les Misérables. Her last name sounds like having to wait, and her 2024 romance comes in the next line.", "ref": { "name": "Anne Hathaway", "category": "film-tv" }, "draft": true },
+        { "lines": [31, 31], "kind": "reference", "title": "The Idea of You", "body": "Anne Hathaway's 2024 Prime Video romance, about a single mom who falls for a younger boy band singer. The title becomes someone he's holding out for.", "ref": { "name": "The Idea of You", "category": "film-tv" }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "The Sweet Escape", "body": "Gwen Stefani's 2006 hit with Akon, which leads into the lines about her.", "ref": { "name": "The Sweet Escape (Gwen Stefani song)", "category": "musician" }, "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Gwen Stefani", "body": "The singer who fronted No Doubt before her solo career. Her first name sounds like went.", "ref": { "name": "Gwen Stefani", "category": "musician" }, "draft": true },
+        { "lines": [36, 36], "kind": "reference", "title": "No Doubt", "body": "Gwen Stefani's band from Anaheim, California, whose 1995 breakout single finishes the line.", "ref": { "name": "No Doubt", "category": "musician" }, "draft": true },
+        { "lines": [56, 61], "kind": "story", "body": "The song ends on a choice. Someone changed him, and he says he'd put her ahead of the habits he's been leaning on.", "draft": true }
+      ]
+    },
+    "11": {
+      "title": "Favorite Meme",
+      "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Dolce & Gabbana", "body": "The Milan fashion house known by its initials, sunglasses included.", "ref": { "name": "Dolce & Gabbana", "category": "brand" }, "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "Deal or No Deal", "body": "The Howie Mandel game show built on choosing briefcases, with a million dollars at the top. It starts a run of million-dollar names.", "ref": { "name": "Deal or No Deal", "category": "film-tv" }, "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Slumdog Millionaire", "body": "Danny Boyle's 2008 Best Picture winner about a Mumbai teen on a TV quiz show. The line splits its title, right after another million-dollar game show.", "ref": { "name": "Slumdog Millionaire", "category": "film-tv" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Roy Jones Jr.", "body": "The boxing great who won world titles from middleweight all the way up to heavyweight. He sets himself next to a fighter who kept moving up.", "ref": { "name": "Roy Jones Jr.", "category": "athlete" }, "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "VLONE", "body": "The streetwear label from the A$AP Mob circle, known for its big orange V. He's done talking about it.", "ref": { "name": "VLONE", "category": "brand" }, "draft": true },
+        { "lines": [12, 12], "kind": "reference", "title": "Paco Rabanne Invictus", "body": "Paco Rabanne's 2013 men's fragrance, named for the Latin word for unconquered. He wears the word the way he wears the scent.", "ref": { "name": "Paco Rabanne Invictus", "category": "brand" }, "draft": true },
+        { "lines": [18, 19], "kind": "reference", "title": "Michael Jackson", "body": "The King of Pop. The lines take the title of his 1979 album and his backward glide across the stage, in the black loafers he danced in.", "ref": { "name": "Michael Jackson", "category": "musician" }, "draft": true },
+        { "lines": [23, 24], "kind": "reference", "title": "Black Clover", "body": "The anime and manga about Asta, a boy born with no magic in a world that runs on it. That's why the next line shrugs magic off.", "ref": { "name": "Black Clover", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [25, 25], "kind": "reference", "title": "St. Petersburg, Florida", "body": "His city, known locally as the Burg. He's headed there because it's on the rise.", "ref": { "name": "St. Petersburg, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
+        { "lines": [32, 35], "kind": "story", "body": "The hook is about betrayal. Someone crossed a line he'd never cross, and it showed him who they really are.", "draft": true },
+        { "lines": [41, 41], "kind": "reference", "title": "Time Warner", "body": "The media giant that became WarnerMedia after AT&T bought it in 2018, while its cable arm became Spectrum. A company that changed its name, like the person in the line.", "ref": { "name": "Time Warner", "category": "brand" }, "draft": true },
+        { "lines": [42, 42], "kind": "reference", "title": "Tom Joyner", "body": "The radio host whose Tom Joyner Morning Show ran on Black radio for 25 years, until 2019. A morning conversation calls up his name.", "ref": { "name": "Tom Joyner", "category": "person" }, "draft": true },
+        { "lines": [43, 43], "kind": "reference", "title": "Pop Warner", "body": "The national youth football league, named for coach Glenn Pop Warner. A sack counts on the field and off it.", "ref": { "name": "Pop Warner Little Scholars", "category": "other" }, "draft": true },
+        { "lines": [46, 46], "kind": "reference", "title": "Tijuana", "body": "The Mexican border city just south of San Diego, rhymed into the run here.", "ref": { "name": "Tijuana", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [47, 47], "kind": "reference", "title": "Juwanna Mann", "body": "The 2002 comedy about a suspended NBA player who poses as a woman to play in a women's league. She wants to make films, just not that one.", "ref": { "name": "Juwanna Mann", "category": "film-tv" }, "draft": true },
+        { "lines": [48, 48], "kind": "reference", "title": "Nirvana", "body": "The Washington band that led grunge in the early 1990s. The word also means release from suffering in Buddhism, which fits calling on his spirit.", "ref": { "name": "Nirvana (band)", "category": "musician" }, "draft": true },
+        { "lines": [49, 49], "kind": "reference", "title": "Kurt Cobain", "body": "Nirvana's singer and songwriter, the face of 1990s grunge. The next lines dig into his band's biggest album.", "ref": { "name": "Kurt Cobain", "category": "musician" }, "draft": true },
+        { "lines": [50, 50], "kind": "reference", "title": "In Bloom", "body": "A Nirvana song from the band's 1991 album. The same line works in another song from that record.", "ref": { "name": "In Bloom (Nirvana song)", "category": "musician" }, "draft": true },
+        { "lines": [51, 51], "kind": "reference", "title": "Nevermind", "body": "Nirvana's 1991 album, the one with the baby swimming after a dollar on the cover. He uses its title to brush her off.", "ref": { "name": "Nevermind (Nirvana album)", "category": "musician" }, "draft": true },
+        { "lines": [68, 68], "kind": "reference", "title": "Knives Out", "body": "Rian Johnson's 2019 murder mystery, paired with a dinner pun. It starts the film talk that closes the song.", "ref": { "name": "Knives Out", "category": "film-tv" }, "draft": true },
+        { "lines": [69, 72], "kind": "story", "body": "The song closes on his other craft. He directs, and the final word blends his name with cinema, a signature for the films he makes.", "draft": true }
+      ]
+    },
+    "12": {
+      "title": "Gorgeous So Fye",
+      "notes": [
+        { "lines": [8, 10], "kind": "story", "body": "A straight love song. In his eyes she was his partner from the start, and a ring wouldn't change anything that was already true.", "draft": true },
+        { "lines": [16, 19], "kind": "story", "body": "He asks to hold the moment still like a paused shot, a film term from someone who directs his own videos.", "draft": true },
+        { "lines": [38, 44], "kind": "story", "body": "The outro is about responsibility. He takes on keeping her safe, the way he loves her, even how she looks, and owning all of it is how he shows he's serious.", "draft": true }
+      ]
+    },
+    "13": {
+      "title": "Steer",
+      "notes": [
+        { "lines": [5, 7], "kind": "story", "body": "His mind is the car in this verse, running on its own and a little twisted. All he wants is her relaxed and along for the ride.", "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Vine", "body": "Twitter's six-second video app, shut down in 2017. The line jokes about how fast it was over.", "ref": { "name": "Vine", "category": "brand" }, "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Young Dolph", "body": "The Memphis artist who built his own label, Paper Route Empire, and stayed independent. His name works as a verb here.", "ref": { "name": "Young Dolph", "category": "musician" }, "draft": true },
+        { "lines": [28, 28], "kind": "reference", "title": "Passenger princess", "body": "Internet slang for a partner who always rides up front while someone else drives.", "ref": { "name": "Passenger princess", "category": "other" }, "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "NASCAR", "body": "American stock car racing, run out of Daytona Beach, Florida, home of the Daytona 500. It fits a song about steering.", "ref": { "name": "NASCAR", "category": "other" }, "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Ralph Lauren", "body": "The American fashion house, welded here to a denim label to make one name.", "ref": { "name": "Ralph Lauren", "category": "brand" }, "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "True Religion", "body": "The Los Angeles denim brand known for the horseshoe stitching on its back pockets. It's the other half of the blend.", "ref": { "name": "True Religion", "category": "brand" }, "draft": true },
+        { "lines": [41, 47], "kind": "story", "body": "Steer and stir sound almost alike, and the song uses both. Someone is stirring up trouble, and he takes control of the car to swerve away from it.", "draft": true }
+      ]
+    },
+    "14": {
+      "title": "Tower of Tears",
+      "notes": [
+        { "lines": [3, 3], "kind": "reference", "title": "The Twilight Zone Tower of Terror", "body": "The elevator drop ride at Disney's Hollywood Studios, part of Walt Disney World in Florida. The title trades its terror for tears, and the elevator a few lines later rides the same shaft.", "ref": { "name": "The Twilight Zone Tower of Terror", "category": "place", "place": { "florida": true } }, "draft": true },
+        { "lines": [5, 8], "kind": "story", "body": "Love here is an elevator, rising and dropping, and she stands taller than everything he's afraid of. He gave things up for her, and he hasn't moved since.", "draft": true },
+        { "lines": [18, 18], "kind": "reference", "title": "Pink + White", "body": "A song from Frank Ocean's 2016 album Blonde, its colors flipped here.", "ref": { "name": "Pink + White (Frank Ocean song)", "category": "musician" }, "draft": true },
+        { "lines": [19, 19], "kind": "reference", "title": "Blonde", "body": "Frank Ocean's 2016 album, the one the line before borrows from. Here it's something only the two of them share.", "ref": { "name": "Blonde (Frank Ocean album)", "category": "musician" }, "draft": true },
+        { "lines": [30, 34], "kind": "story", "body": "The bridge is memory slipping. He's losing hold of what her touch felt like, and he can't get the tears out on his own.", "draft": true },
+        { "lines": [48, 48], "kind": "reference", "title": "Rapunzel", "body": "The Brothers Grimm fairy tale about a girl locked in a tower who lets down her long hair. On a song built on towers, it's the way up.", "ref": { "name": "Rapunzel", "category": "other" }, "draft": true },
+        { "lines": [49, 49], "kind": "reference", "title": "Tangled", "body": "Disney's 2010 animated take on Rapunzel. The title becomes wanting the two of them wrapped up together.", "ref": { "name": "Tangled", "category": "anime-cartoon" }, "draft": true }
+      ]
+    },
+    "15": {
+      "title": "Wavy Deagle",
+      "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Sade", "body": "The British band fronted by Sade Adu, whose smooth 1980s and 1990s records set the standard for late-night R&B. Her name lands in a hazy line about hope.", "ref": { "name": "Sade", "category": "musician" }, "draft": true },
+        { "lines": [7, 8], "kind": "reference", "title": "Desert Eagle", "body": "The heavy pistol known as the Deagle, made famous by movies and games like Counter-Strike. In this song, it's his name for her.", "ref": { "name": "Desert Eagle", "category": "other" }, "draft": true },
+        { "lines": [11, 12], "kind": "reference", "title": "Bill Gates", "body": "Microsoft's co-founder. The lines split his name: the gates he hopes his friends reach, then no bill.", "ref": { "name": "Bill Gates", "category": "person" }, "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "Mitski", "body": "The Japanese American singer-songwriter behind raw indie songs like Nobody. Her name sets up the rhyme.", "ref": { "name": "Mitski", "category": "musician" }, "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "St. Petersburg, Florida", "body": "His city, known locally as the Burg, which he's making his own through the songs.", "ref": { "name": "St. Petersburg, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
+        { "lines": [34, 35], "kind": "story", "body": "He names the album here, in a single that came out in July 2025, ten months before Magnum Opus did. A magnum opus is an artist's greatest work, and the word also belongs to Magnum Research, the company behind the Desert Eagle, which ties the album's title to this song.", "draft": true },
+        { "lines": [36, 38], "kind": "story", "body": "He calls out his own double meanings, and the verse ends by sending whatever jams back to the sea, home ground for someone named Wavy.", "draft": true },
+        { "lines": [51, 51], "kind": "reference", "title": "KP & Envyi", "body": "The R&B duo behind the 1998 hit Shorty (You Keep Playin' with My Mind). He reaches for late-90s R&B as a mood.", "ref": { "name": "KP & Envyi", "category": "musician" }, "draft": true },
+        { "lines": [52, 52], "kind": "reference", "title": "Mase", "body": "The Harlem artist whose 1997 debut Harlem World made him Bad Boy Records' breakout star. He wants that run without the label's founder.", "ref": { "name": "Mase", "category": "musician" }, "draft": true },
+        { "lines": [53, 53], "kind": "reference", "title": "Sean John", "body": "The clothing line Sean Combs started in 1998. After Combs's 2024 arrest, he wants no part of it and dresses his own way.", "ref": { "name": "Sean John", "category": "brand" }, "draft": true },
+        { "lines": [59, 59], "kind": "reference", "title": "Tony Hawk", "body": "The skater whose name is on the Pro Skater video games. Gliding over a beat becomes a grind down a rail.", "ref": { "name": "Tony Hawk", "category": "athlete" }, "draft": true }
+      ]
+    },
+    "16": {
+      "title": "Flame",
+      "notes": [
+        { "lines": [5, 12], "kind": "story", "body": "The hook holds two things at once: real hurt, and someone who still lights him up. Even after she disappointed him, the spark is hers.", "draft": true },
+        { "lines": [29, 36], "kind": "story", "body": "The bridge plays like an interrogation. He asks why she left and who she's with now, and tags each one as a question still waiting for an answer.", "draft": true },
+        { "lines": [37, 42], "kind": "story", "body": "Moving on isn't happening, and neither is lighting up for anyone else. So he waits, asking her not to disappoint him again.", "draft": true }
+      ]
+    },
+    "17": {
+      "title": "Put It On!",
+      "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Rick Owens", "body": "The California-born designer known for dark, draped clothes and sculpted sneakers. She wants his look head to toe.", "ref": { "name": "Rick Owens", "category": "brand" }, "draft": true },
+        { "lines": [2, 2], "kind": "reference", "title": "Takashi Murakami", "body": "The Japanese artist behind the smiling flowers, the cover of Kanye West's Graduation and years of Louis Vuitton bags. A tidal wave of his work suits someone named Wavy.", "ref": { "name": "Takashi Murakami", "category": "person" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Prada", "body": "The Milan fashion house, here a bag he hands over.", "ref": { "name": "Prada", "category": "brand" }, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Cam'ron", "body": "The Harlem artist who led the Diplomats, or Dipset, and whose pink mink at New York Fashion Week in 2002 became a style landmark. His name doubles as come on.", "ref": { "name": "Cam'ron", "category": "musician" }, "draft": true },
+        { "lines": [17, 22], "kind": "story", "body": "The song steps into the closet. She raids it while he's still wearing things, vintage tees included, and getting dressed is treated as art, worth more than most people earn.", "draft": true },
+        { "lines": [23, 38], "kind": "story", "body": "The hook is the compliment he keeps hearing. The title means getting dressed and pulling it off at the same time.", "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Comme des Garçons", "body": "Rei Kawakubo's Tokyo label, a pillar of experimental fashion. She wants the clothes but won't show love for the music.", "ref": { "name": "Comme des Garçons", "category": "brand" }, "draft": true },
+        { "lines": [42, 43], "kind": "reference", "title": "Back to the Future", "body": "The 1985 time-travel classic. Switching outfits through the decades is his time machine.", "ref": { "name": "Back to the Future", "category": "film-tv" }, "draft": true }
+      ]
+    },
+    "18": {
+      "title": "Awtside",
+      "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Ben Roethlisberger", "body": "The Pittsburgh Steelers quarterback who won two Super Bowls. Stealing sounds like Steelers, which is how he gets into the line.", "ref": { "name": "Ben Roethlisberger", "category": "athlete" }, "draft": true },
+        { "lines": [2, 2], "kind": "reference", "title": "Vetements", "body": "The Paris label known for oversized fits and logo jokes, founded by Demna in 2014. It's the fit he comes back in.", "ref": { "name": "Vetements", "category": "brand" }, "draft": true },
+        { "lines": [4, 4], "kind": "reference", "title": "Dennis Rodman", "body": "The Hall of Fame rebounder as famous for his piercings, tattoos and dyed hair as for his five titles. He wants the look to match.", "ref": { "name": "Dennis Rodman", "category": "athlete" }, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "The Curious Case of Benjamin Button", "body": "The 2008 film where Brad Pitt ages backward. Something getting old is the opposite of Button, and the name hands off to money in the next line.", "ref": { "name": "The Curious Case of Benjamin Button", "category": "film-tv" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Benjamin Franklin", "body": "Benjamins are $100 bills, which carry Franklin's face, so the Button line turns into money. A word in the next line keeps the Franklin joke going.", "ref": { "name": "Benjamin Franklin", "category": "person" }, "draft": true },
+        { "lines": [21, 24], "kind": "story", "body": "Awtside is outside spelled the way he says it, and being outside means being out, seen and in demand. The hook keeps him there, with a crowd that keeps asking for more.", "draft": true },
+        { "lines": [25, 25], "kind": "reference", "title": "Martin Lawrence", "body": "The comedian behind the 1990s sitcom Martin. He starred with Eddie Murphy in the 1999 comedy Life, which the line slips in.", "ref": { "name": "Martin Lawrence", "category": "film-tv" }, "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Eddie Murphy", "body": "The comedy star of Coming to America, which the line nods to. It leads into one of his family comedies in the next line.", "ref": { "name": "Eddie Murphy", "category": "film-tv" }, "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "Daddy Day Care", "body": "Eddie Murphy's 2003 comedy about laid-off dads who open a day care. It plays off the line about not having a kid.", "ref": { "name": "Daddy Day Care", "category": "film-tv" }, "draft": true },
+        { "lines": [28, 28], "kind": "reference", "title": "Denim Tears", "body": "Tremaine Emory's label, known for jeans printed with cotton wreaths that speak to Black American history. Too many jeans sounds like too many genes.", "ref": { "name": "Denim Tears", "category": "brand" }, "draft": true },
+        { "lines": [29, 32], "kind": "story", "body": "He traces his path: he came up rapping, then added singing, and now he does both. Then the moment that proves it: at his shows, the crowd answers back when he calls out Wave.", "draft": true },
+        { "lines": [62, 62], "kind": "reference", "title": "Bloomingdale's", "body": "The New York department store, part of a closet he talks about like home.", "ref": { "name": "Bloomingdale's", "category": "brand" }, "draft": true },
+        { "lines": [63, 63], "kind": "reference", "title": "Polo Bear", "body": "Ralph Lauren's teddy bear mascot, knit into its sweaters since 1991.", "ref": { "name": "Polo Bear (Ralph Lauren)", "category": "brand" }, "draft": true },
+        { "lines": [65, 65], "kind": "reference", "title": "Floyd Mayweather Jr.", "body": "The boxer who retired undefeated at 50 and 0. The weather in the line before finishes his name.", "ref": { "name": "Floyd Mayweather Jr.", "category": "athlete" }, "draft": true },
+        { "lines": [70, 71], "kind": "reference", "title": "PETA", "body": "People for the Ethical Treatment of Animals, the group that campaigns against leather and fur. He wears it anyway.", "ref": { "name": "People for the Ethical Treatment of Animals", "category": "other" }, "draft": true }
+      ]
+    }
+  }
+}

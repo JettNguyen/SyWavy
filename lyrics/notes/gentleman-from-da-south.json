@@ -1,0 +1,45 @@
+{
+  "release": "gentleman-from-da-south",
+  "songs": {
+    "1": {
+      "title": "Stadium Music",
+      "notes": [
+        { "lines": [1, 8], "kind": "story", "body": "The intro sets the gentleman's terms. He trusts himself before anyone else, means no offense by it, and expects others to do the same.", "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "Corinthians", "body": "Two letters from the apostle Paul in the New Testament; the first holds the well-known passage on love read at many weddings. Here it rhymes with Caribbeans.", "ref": { "name": "Corinthians", "category": "other" }, "draft": true },
+        { "lines": [15, 16], "kind": "story", "body": "He runs one famous honor through two letter swaps: first into a place for trash, then into a monument to himself, since Wave is what people call him. It's the stadium-sized ambition of the title in one joke.", "draft": true },
+        { "lines": [17, 24], "kind": "story", "body": "The second verse is a fit check: baggy vintage pants, New Balance, Italian and Swedish labels, and a warning that anyone copying the shirt pays for it. The Batman lines close it with a joke about refusing a pat-down.", "draft": true },
+        { "lines": [18, 18], "kind": "reference", "title": "New Balance", "body": "The Boston sneaker brand, a menswear favorite again. With baggy vintage pants, it sets the look.", "ref": { "name": "New Balance", "category": "brand" }, "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "Zegna", "body": "The Italian menswear house known for fine tailoring.", "ref": { "name": "Zegna", "category": "brand" }, "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "Acne Studios", "body": "The Stockholm label known for its jeans and clean, minimal clothes.", "ref": { "name": "Acne Studios", "category": "brand" }, "draft": true },
+        { "lines": [22, 22], "kind": "reference", "title": "Robert Pattinson", "body": "The actor who played Bruce Wayne in The Batman (2022). Pat also means a pat-down, which he won't allow.", "ref": { "name": "Robert Pattinson", "category": "film-tv" }, "draft": true },
+        { "lines": [23, 24], "kind": "reference", "title": "Nirvana", "body": "Their 1991 song Something in the Way became the theme of The Batman, following on from the Pattinson line.", "ref": { "name": "Nirvana", "category": "musician" }, "draft": true },
+        { "lines": [39, 39], "kind": "reference", "title": "Air Jordan 14 Laney", "body": "The Laney colorway of Michael Jordan's 14th shoe is named for his high school in Wilmington, North Carolina. The number doubles as a rating that goes past ten.", "ref": { "name": "Air Jordan 14 Laney", "category": "brand" }, "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Off-White", "body": "Virgil Abloh's fashion label. A shirt that has faded is not that, and he says so.", "ref": { "name": "Off-White", "category": "brand" }, "draft": true },
+        { "lines": [47, 47], "kind": "reference", "title": "Peyton Manning", "body": "The Hall of Fame quarterback who wore 18 for the Colts and Broncos. The number and the throwing lead to him.", "ref": { "name": "Peyton Manning", "category": "athlete" }, "draft": true },
+        { "lines": [48, 49], "kind": "reference", "title": "Eli Manning", "body": "Peyton's younger brother, who won two Super Bowls with the New York Giants. He makes clear he's no New Yorker: this is Florida.", "ref": { "name": "Eli Manning", "category": "athlete" }, "draft": true }
+      ]
+    },
+    "2": {
+      "title": "I have to leave.",
+      "notes": [
+        { "lines": [9, 16], "kind": "story", "body": "He's the one who left, and he can't see why she's angry when he's hurting too. They never even got to the good part.", "draft": true },
+        { "lines": [17, 22], "kind": "story", "body": "The hook is short and final: staying isn't an option, and he isn't joking. It's the record's regret song, a gentleman explaining an exit.", "draft": true },
+        { "lines": [23, 23], "kind": "reference", "title": "St. Petersburg", "body": "SyWavy's hometown, called the Burg by locals. The painter in the next line keeps the hometown thread going.", "ref": { "name": "St. Petersburg, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
+        { "lines": [24, 24], "kind": "reference", "title": "Salvador Dalí", "body": "The Spanish surrealist known for melting clocks. The largest collection of his work outside Europe is at The Dalí Museum in downtown St. Pete, so naming him right after the Burg is a hometown nod.", "ref": { "name": "Salvador Dalí", "category": "person" }, "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "The Weeknd", "body": "Beauty Behind the Madness is his 2015 album, and The Hills is one of its No. 1 hits. The line strings both together before naming him outright.", "ref": { "name": "The Weeknd", "category": "musician" }, "draft": true },
+        { "lines": [50, 65], "kind": "story", "body": "The bridge turns toward the unknown. He's leaving for a future he can't read, and he wants to learn from her how she stays so steady and so honest. It ends by asking what drove him out in the first place.", "draft": true }
+      ]
+    },
+    "3": {
+      "title": "Talk, Money, Fashion",
+      "notes": [
+        { "lines": [1, 5], "kind": "story", "body": "The title is a three-item list of what he cares about: how he speaks, getting paid, and how he dresses. Everything else in the song hangs off those three.", "draft": true },
+        { "lines": [10, 10], "kind": "reference", "title": "Fenty Beauty", "body": "Rihanna's makeup line, known for its lip gloss. A kiss tastes like it.", "ref": { "name": "Fenty Beauty", "category": "brand" }, "draft": true },
+        { "lines": [15, 24], "kind": "story", "body": "Under the flexing is a request for respect. He says they went through the same pain, that she's the one who makes it better, and that he's grateful even for the hard weather.", "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Metta World Peace", "body": "The NBA forward born Ron Artest, who changed his name to Metta World Peace in 2011. Artest sounds like artist, so the line has him claiming the artist's life and asking for peace in return.", "ref": { "name": "Metta World Peace", "category": "athlete" }, "draft": true },
+        { "lines": [39, 40], "kind": "reference", "title": "Lilo & Stitch", "body": "In the Disney film, Nani is Lilo's older sister and Stitch is the alien Lilo adopts. A vintage single-stitch tee brings in Stitch, then Nani and Lilo follow.", "ref": { "name": "Lilo & Stitch", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [45, 45], "kind": "reference", "title": "Stan Lee", "body": "The Marvel Comics co-creator of Spider-Man and the X-Men. The line reaches his name by way of a Stanley cup and comic books.", "ref": { "name": "Stan Lee", "category": "person" }, "draft": true }
+      ]
+    }
+  }
+}

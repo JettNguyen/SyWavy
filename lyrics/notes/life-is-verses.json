@@ -1,0 +1,90 @@
+{
+  "release": "life-is-verses",
+  "songs": {
+    "1": {
+      "title": "Under",
+      "notes": [
+        { "lines": [1, 5], "kind": "story", "body": "The album opens quiet: time slipping by and two people who've almost stopped talking. The bragging verse that follows sits on top of that distance.", "draft": true },
+        { "lines": [8, 8], "kind": "story", "body": "In the middle of the boasts, one line names police killing Black men without caring whether they can breathe. It came out the year after George Floyd was killed by Minneapolis police, when those words were a protest chant, as they had been after Eric Garner's death in 2014.", "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Leaning Tower of Pisa", "body": "The bell tower in Pisa, Italy, famous for its tilt. A doubled cup has someone leaning just like it.", "ref": {"name": "Leaning Tower of Pisa", "category": "place", "place": {"florida": false}}, "draft": true },
+        { "lines": [12, 12], "kind": "reference", "title": "Trevor Ariza", "body": "The longtime NBA wing known for spotting up in the corner for threes. The corner means one thing on the street and another for Ariza.", "ref": {"name": "Trevor Ariza", "category": "athlete"}, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Keyshia Cole", "body": "The Oakland R&B singer whose 2005 ballad Love made her a star. He splits her name across the line, last name first.", "ref": {"name": "Keyshia Cole", "category": "musician"}, "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Guinness World Records", "body": "The yearly book of world records. He's chasing records too, the kind made in a studio.", "ref": {"name": "Guinness World Records", "category": "other"}, "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "Crème brûlée", "body": "The French custard dessert with a crackled sugar top. It turns a plain word French: we sounds like oui.", "ref": {"name": "Crème brûlée", "category": "other"}, "draft": true },
+        { "lines": [33, 33], "kind": "reference", "title": "Cirque du Soleil", "body": "The Montreal circus company famous for its acrobats and contortionists. She's that flexible.", "ref": {"name": "Cirque du Soleil", "category": "brand"}, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Giannis Antetokounmpo", "body": "The Milwaukee Bucks star won his first championship in July 2021, two months before this came out. A chip is slang for a title, which is how Frito-Lay gets into the line.", "ref": {"name": "Giannis Antetokounmpo", "category": "athlete"}, "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Jrue Holiday", "body": "The guard who won the 2021 title next to Giannis in Milwaukee. The whole line stays on that Bucks team, from the slang for being honest to his last name.", "ref": {"name": "Jrue Holiday", "category": "athlete"}, "draft": true },
+        { "lines": [41, 42], "kind": "reference", "title": "Aladdin", "body": "Disney's 1992 animated film about a street kid who wins over Princess Jasmine. A friend gets the Aladdin comparison, which leaves him looking for a Jasmine of his own.", "ref": {"name": "Aladdin", "category": "anime-cartoon"}, "draft": true },
+        { "lines": [43, 43], "kind": "reference", "title": "Catfish", "body": "The 2010 documentary and MTV series about people who fake who they are online, which made catfishing a verb. The next line keeps the fishing going.", "ref": {"name": "Catfish", "category": "film-tv"}, "draft": true }
+      ]
+    },
+    "2": {
+      "title": "Nick Fury",
+      "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Nick Fury", "body": "Samuel L. Jackson's eye-patched spymaster in the Marvel films, the man who brings the Avengers together. He's assembling a team of his own, of a different kind.", "ref": {"name": "Nick Fury", "category": "film-tv"}, "draft": true },
+        { "lines": [10, 10], "kind": "reference", "title": "Chief Keef", "body": "The Chicago drill pioneer, whose early single Bang put him on the map. He also sings on a Yeezus song about drinking, which the end of the line points to.", "ref": {"name": "Chief Keef", "category": "musician"}, "draft": true },
+        { "lines": [11, 23], "kind": "story", "body": "The hook watches her change as she chases views online, and the hurt is that their relationship was private all along. As she goes public, what they had doesn't exist anywhere anyone can see.", "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Fast & Furious", "body": "The street-racing film series that began in 2001. Its title splits across the line: she's the fast one, and he insists he's not angry.", "ref": {"name": "Fast & Furious", "category": "film-tv"}, "draft": true },
+        { "lines": [50, 50], "kind": "reference", "title": "Tyson Fury", "body": "The British heavyweight and former world champion. Nick Fury turns into Tyson Fury, and he adds right away that he isn't one for fighting.", "ref": {"name": "Tyson Fury", "category": "athlete"}, "draft": true },
+        { "lines": [51, 57], "kind": "story", "body": "By the last verse the anger is gone. He won't judge the guy who wronged her, offers to fix things, and says he holds nothing against her.", "draft": true }
+      ]
+    },
+    "3": {
+      "title": "3AM",
+      "notes": [
+        { "lines": [6, 6], "kind": "reference", "title": "Wagwan", "body": "Jamaican patois for what's going on, now common slang in London and Toronto too. The intro leans into patois before the verse starts.", "ref": {"name": "Wagwan", "category": "other"}, "draft": true },
+        { "lines": [7, 7], "kind": "story", "body": "He opens the verse by admitting he cheated and calling it part of his growth. It's a confession and a joke on himself in the same breath.", "draft": true },
+        { "lines": [18, 18], "kind": "reference", "title": "Robert Downey Jr.", "body": "The actor who played Iron Man, whose chest holds a glowing reactor that keeps shrapnel out of his heart. She runs on the same cold machinery.", "ref": {"name": "Robert Downey Jr.", "category": "film-tv"}, "draft": true },
+        { "lines": [22, 25], "kind": "story", "body": "The hook is the album's late-night center: deep into the night, he's dialing a girl he thought he'd outgrown, one more time. Knowing better and calling anyway is the whole song.", "draft": true },
+        { "lines": [31, 31], "kind": "reference", "title": "Michael Phelps", "body": "The most decorated Olympian ever, with 28 medals, all in the pool. His name becomes a verb for swimming.", "ref": {"name": "Michael Phelps", "category": "athlete"}, "draft": true },
+        { "lines": [36, 36], "kind": "reference", "title": "DJ Envy", "body": "The New York DJ and co-host of the morning radio show The Breakfast Club. The line spells out the show's name across a date.", "ref": {"name": "DJ Envy", "category": "person"}, "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Otis Redding", "body": "The Georgia soul singer behind Try a Little Tenderness and (Sittin' On) The Dock of the Bay. That's the bar he sets when he talks about his own singing.", "ref": {"name": "Otis Redding", "category": "musician"}, "draft": true }
+      ]
+    },
+    "4": {
+      "title": "Life is Verses",
+      "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Shundor", "body": "Bengali for beautiful, and one of the names he calls himself. The rest of the line translates it.", "ref": {"name": "Shundor", "category": "other"}, "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "Popeye", "body": "The sailor cartoon who gets his strength from spinach. Spinach is slang for weed here.", "ref": {"name": "Popeye", "category": "anime-cartoon"}, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Friday", "body": "The 1995 Ice Cube and Chris Tucker comedy, home of the famous goodbye to Felicia. He sends someone off the same way.", "ref": {"name": "Friday (1995 film)", "category": "film-tv"}, "draft": true },
+        { "lines": [10, 10], "kind": "reference", "title": "Yung Miami", "body": "The City Girls rapper from Miami, whose real first name is Caresha. A Miami trip puts her name and her city in one line.", "ref": {"name": "Yung Miami", "category": "musician"}, "draft": true },
+        { "lines": [13, 20], "kind": "story", "body": "The hook explains the title. He describes a life written out longhand, then the pen tossed into a fire so nothing gets rewritten. He ends by asking whether that makes it matter to anyone.", "draft": true },
+        { "lines": [22, 22], "kind": "reference", "title": "Marcus Garvey", "body": "The Jamaican-born leader of the 1920s Back to Africa movement and a lasting symbol of Black pride. He prescribes him for someone who's lost touch with her roots.", "ref": {"name": "Marcus Garvey", "category": "person"}, "draft": true },
+        { "lines": [23, 23], "kind": "reference", "title": "Two-Face", "body": "Batman's villain Harvey Dent, the district attorney with half his face scarred. His names are spread across the line in pieces.", "ref": {"name": "Two-Face", "category": "film-tv"}, "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Bazzi", "body": "The Michigan singer whose 2018 hit Beautiful was remixed with Camila Cabello. He names the song and then the singer.", "ref": {"name": "Bazzi", "category": "musician"}, "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "Mashallah", "body": "Arabic for what God has willed, said to admire something good while giving the credit away. He pairs it with staying humble.", "ref": {"name": "Mashallah", "category": "other"}, "draft": true },
+        { "lines": [28, 28], "kind": "reference", "title": "Astaghfirullah", "body": "Arabic for I seek forgiveness from God, said after a mistake. He follows it with an apology to his mother.", "ref": {"name": "Astaghfirullah", "category": "other"}, "draft": true },
+        { "lines": [29, 30], "kind": "reference", "title": "Inshallah", "body": "Arabic for if God wills it, said about anything hoped for in the future. He uses it about a future with her.", "ref": {"name": "Inshallah", "category": "other"}, "draft": true },
+        { "lines": [33, 40], "kind": "story", "body": "The verse turns into a letter he keeps restarting until he addresses it to himself, and he catches the dear and deer pun on the way. It ends on a late-night phone call where he let his guard down and nobody heard it.", "draft": true }
+      ]
+    },
+    "5": {
+      "title": "Fall Out",
+      "notes": [
+        { "lines": [3, 3], "kind": "reference", "title": "Sanjay and Craig", "body": "The Nickelodeon cartoon about a boy whose best friend is a talking snake. People who keep snakes as friends get the comparison.", "ref": {"name": "Sanjay and Craig", "category": "anime-cartoon"}, "draft": true },
+        { "lines": [9, 17], "kind": "story", "body": "The hook is a quiet shrug. He's hurting, she may not be, and they're going to drift apart either way. He says it without anger, which makes it sadder.", "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "Lauryn Hill", "body": "The New Jersey singer and rapper whose 1998 number one single warned men and women about being used for one thing. He cites her twice in this verse as the last word on it.", "ref": {"name": "Lauryn Hill", "category": "musician"}, "draft": true },
+        { "lines": [22, 22], "kind": "reference", "title": "A$AP Rocky", "body": "The Harlem rapper whose 2013 posse cut is named for a New York subway line. The crew's name and the song's are both in the line.", "ref": {"name": "A$AP Rocky", "category": "musician"}, "draft": true },
+        { "lines": [23, 24], "kind": "reference", "title": "Usain Bolt", "body": "The Jamaican sprinter, the fastest man ever timed. His first name says she ran off fast, and his last name comes back as electricity in the next line.", "ref": {"name": "Usain Bolt", "category": "athlete"}, "draft": true },
+        { "lines": [30, 32], "kind": "story", "body": "He calls her basic, then turns the word into the military's basic training. He wants no part of either.", "draft": true }
+      ]
+    },
+    "6": {
+      "title": "Jorja",
+      "notes": [
+        { "lines": [4, 4], "kind": "reference", "title": "Chrome Hearts", "body": "The Los Angeles luxury label known for heavy silver jewelry covered in gothic crosses. He goes for the chunkiest ones.", "ref": {"name": "Chrome Hearts", "category": "brand"}, "draft": true },
+        { "lines": [6, 7], "kind": "story", "body": "He tells the breakup in the language of a bad signal. The call cuts out, the line goes choppy, and the affection falls behind like a frozen video feed.", "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Jorja Smith", "body": "The British R&B singer from Walsall, known for her smoky voice and songs like Blue Lights. She's his standard for the woman he wants.", "ref": {"name": "Jorja Smith", "category": "musician"}, "draft": true },
+        { "lines": [20, 20], "kind": "reference", "title": "Sonder", "body": "The R&B trio of Brent Faiyaz with producers Dpat and Atu, named for a made-up word about realizing every stranger has a life as full as yours. The name lands at the end of a chain of rhymes.", "ref": {"name": "Sonder", "category": "musician"}, "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "Juice WRLD", "body": "The Chicago artist known for melodic songs about heartbreak, who died in 2019 at 21. He credits Juice with the idea that something can be a blessing and a burden at once.", "ref": {"name": "Juice WRLD", "category": "musician"}, "draft": true },
+        { "lines": [32, 36], "kind": "story", "body": "He makes clear he means Jorja Smith, not the state, and then gets specific about what he wants, down to help with his hair. An apple-shaped figure becomes a Granny Smith, which loops back to her last name.", "draft": true },
+        { "lines": [37, 40], "kind": "story", "body": "Between the boasts he slips in a hard fact: his father wasn't around when he was a kid. It's why he isn't giving up on what he wants.", "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Los Angeles Chargers", "body": "The NFL team that moved from San Diego to Los Angeles in 2017. LA is a city he hasn't visited, but the team name turns into charging after her.", "ref": {"name": "Los Angeles Chargers", "category": "team"}, "draft": true },
+        { "lines": [41, 41], "kind": "reference", "title": "Willy Wonka", "body": "Roald Dahl's candy maker, played by Gene Wilder in 1971 and Johnny Depp in 2005. He invites her into a candy factory of his own.", "ref": {"name": "Willy Wonka", "category": "film-tv"}, "draft": true },
+        { "lines": [42, 42], "kind": "reference", "title": "Don Dada", "body": "Jamaican slang for the boss of bosses, made famous by dancehall star Super Cat's 1992 album of that name. A cigar in his mouth completes the look.", "ref": {"name": "Don Dada", "category": "other"}, "draft": true },
+        { "lines": [43, 43], "kind": "reference", "title": "The Notorious B.I.G.", "body": "The Brooklyn legend whose 1995 hit Big Poppa is named for one of his nicknames. It's the song he puts on to set the mood.", "ref": {"name": "The Notorious B.I.G.", "category": "musician"}, "draft": true },
+        { "lines": [57, 57], "kind": "reference", "title": "Halle Berry", "body": "The Oscar-winning actress, here as shorthand for the woman you'd marry. Her name sets up the rhyme with the proposal that follows.", "ref": {"name": "Halle Berry", "category": "film-tv"}, "draft": true }
+      ]
+    }
+  }
+}

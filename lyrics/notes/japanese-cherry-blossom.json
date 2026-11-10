@@ -1,0 +1,223 @@
+{
+  "release": "japanese-cherry-blossom",
+  "arc": {
+    "draft": true,
+    "summary": "Japanese Cherry Blossom is built as a flight and a season at once. Jett2Fly takes the captain's mic on the opener, and from there the songs follow a cherry blossom's cycle: shedding petals as a relationship falls apart, blooming again after a run of losses, and letting go by the end. It moves from wounded to searching to sure of himself, and it lands on a letter he's still hoping to get.",
+    "tracks": {
+      "1": "Takeoff: Jett2Fly welcomes everyone aboard, and the blossom's story begins.",
+      "2": "The shedding starts: a relationship comes apart and he can't find the brakes.",
+      "3": "Still hopeful, he treats love like a book and hopes she reads it.",
+      "4": "Reaching back out after three years apart, hoping to close the distance.",
+      "5": "Her perfume lingers after she's gone, and he can't stand it or forget it.",
+      "6": "He admits he needs help, then learns the real guidance starts with himself.",
+      "7": "He turns to his mother with the thanks and apologies he never said.",
+      "8": "One more try at a future together, until the distance wins.",
+      "9": "Friends fall away, and he stops caring who approves of him.",
+      "10": "The turn: everything he lost becomes the soil he blooms from.",
+      "11": "Feeling rare and out of place, he claims an endangered animal as family.",
+      "12": "He drifts into a dream world where he calls the shots.",
+      "13": "He keeps clapping for someone who let him down.",
+      "14": "He asks her to stand where he stands and see what he sees.",
+      "15": "Letting go: heading home, he waits on a letter that may not come."
+    }
+  },
+  "songs": {
+    "1": {
+      "title": "Overture",
+      "notes": [
+        { "lines": [1, 12], "kind": "story", "body": "The album opens as a boarding call. Before a single verse, it credits the record to the two of them, counts off all fifteen tracks, and hands the mic to Jett2Fly, who speaks as the captain of an airline named for SyWavy. Their names set the imagery for everything after: Jett2Fly brings the planes, SyWavy brings the water.", "draft": true },
+        { "lines": [40, 43], "kind": "story", "body": "Once the plane is up, the verse turns to someone who left years ago and moved far away. The hurt never faded, and the two of them as a pair is still the picture in his head. It's the loss the rest of the album keeps circling.", "draft": true },
+        { "lines": [44, 47], "kind": "story", "body": "The intro ends on the album's own name, and the last word never finishes. The title breaks off partway through, the way a blossom drops before its season is done, and that small cut sets up everything the album is about to lose.", "draft": true }
+      ]
+    },
+    "2": {
+      "title": "Losing Petals",
+      "notes": [
+        { "lines": [7, 7], "kind": "reference", "title": "Balmain", "body": "The French luxury house founded in Paris in 1945, known for sharp, embellished tailoring. The name stands in for the high end.", "ref": { "name": "Balmain", "category": "brand" }, "draft": true },
+        { "lines": [17, 24], "kind": "story", "body": "The verse runs on puns that come in pairs. Petals sound like pedals, so shedding them turns into losing control of a car, and the brake he can't reach is also the break he needs. Spring shows up as the clocks jumping ahead and fall shows up as leaves piling up in the yard, so the seasons move as fast as he does.", "draft": true },
+        { "lines": [25, 28], "kind": "story", "body": "The hook names the first stage of the cherry blossom's cycle. He's shedding and refuses to make a big deal of it, he's driving too fast, and he's stopped trying to define what the two of them are.", "draft": true },
+        { "lines": [33, 33], "kind": "reference", "title": "Nevel Papperman", "body": "The scheming rival on Nickelodeon's iCarly, a web-savvy kid with a hopeless crush on Carly. He compares a love that only lives on a screen to Nevel's.", "ref": { "name": "Nevel Papperman", "category": "film-tv" }, "draft": true },
+        { "lines": [39, 45], "kind": "story", "body": "The car keeps going after the hook. The wheels are coming off, he can barely steer, everything he left is in the rearview, and the gears won't shift. He can drop petals but he can't cry, which is the hardest thing he admits in the song.", "draft": true },
+        { "lines": [46, 46], "kind": "reference", "title": "Twin flame", "body": "A New Age idea, popular online, that two people can share one soul split in half, a step past soulmates. He waves the idea away.", "ref": { "name": "Twin flame", "category": "other" }, "draft": true }
+      ]
+    },
+    "3": {
+      "title": "Stigma",
+      "notes": [
+        { "lines": [1, 8], "kind": "story", "body": "A stigma is the part of a flower that catches pollen, so the title means both a mark of shame and the spot where something new begins. The hook holds grief and hope the same way: a grieving bird on one side, butterflies on the other, and her at the center of what he's telling.", "draft": true },
+        { "lines": [9, 17], "kind": "story", "body": "The verse turns the relationship into a book. He numbers his points like a list, wants her name in the front of it, and asks for her number before she walks out. Then he jumps ahead a step, already all in.", "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "Rocky Balboa", "body": "The underdog boxer Sylvester Stallone wrote and played in the Rocky films. He fuses the character and the actor into one name, the fighter who keeps getting back up.", "ref": { "name": "Rocky Balboa", "category": "film-tv" }, "draft": true },
+        { "lines": [54, 54], "kind": "reference", "title": "Smucker's", "body": "The Ohio company best known for its jams and jellies. Turning up a song becomes a jar on the shelf.", "ref": { "name": "Smucker's", "category": "brand" }, "draft": true },
+        { "lines": [57, 57], "kind": "reference", "title": "Russell Westbrook", "body": "The former NBA MVP who made the number 0 famous over his years in Oklahoma City. His promise that he'll be somebody turns into a nod to Westbrook's jersey.", "ref": { "name": "Russell Westbrook", "category": "athlete" }, "draft": true },
+        { "lines": [58, 65], "kind": "story", "body": "The song ends with him still holding the book out to her. He's proud of what he wrote, he can't tell whether she's even started it, and all he can do is wait for her to keep going.", "draft": true }
+      ]
+    },
+    "4": {
+      "title": "Partake",
+      "notes": [
+        { "lines": [1, 12], "kind": "story", "body": "He opens by checking in with someone he hasn't talked to in a long time, and he can't believe he still crosses their mind. He talks himself up as the catch, but the clock running out at the end of the verse gives away how much the wait is costing him.", "draft": true },
+        { "lines": [13, 16], "kind": "story", "body": "The hook asks to close the distance after a long gap. He sings the same request four times in a row, which says more about how badly he wants it than any verse could.", "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "Subhanallah", "body": "An Arabic phrase meaning glory be to God, said in praise or wonder. He says it about getting through on his own.", "ref": { "name": "Subhanallah", "category": "other" }, "draft": true },
+        { "lines": [36, 38], "kind": "story", "body": "He puts a number on it: three years since things changed, a change that began in his last year of high school. Seeing her again still sends him off fast.", "draft": true },
+        { "lines": [39, 39], "kind": "reference", "title": "Brother Bear", "body": "Disney's 2003 animated film about a young hunter who is turned into a bear and learns what being a brother means. That's how he feels about his friends.", "ref": { "name": "Brother Bear", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Miguel", "body": "The Los Angeles R&B singer whose 2012 single from Kaleidoscope Dream wonders how much a date needs to drink before she'll leave with him. He borrows that song's question.", "ref": { "name": "Miguel", "category": "musician" }, "draft": true }
+      ]
+    },
+    "5": {
+      "title": "Chanel Fragrance",
+      "notes": [
+        { "lines": [1, 12], "kind": "story", "body": "He reconnects with a girl he's known for years and invites her back into his life, then fields her questions about why he walked away. His answer is a question of his own about what there was to stay for, and he knows full well he's still on her mind.", "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Cruella de Vil", "body": "The villain of 101 Dalmatians, who wants the puppies for a fur coat and wears her hair half black, half white. Her black and white look matches Chanel's, which is why he reaches for her.", "ref": { "name": "Cruella de Vil", "category": "film-tv" }, "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Steve Lacy", "body": "The Compton singer and guitarist from The Internet, whose 2017 solo demo includes a song titled with the three letters he spells out here.", "ref": { "name": "Steve Lacy", "category": "musician" }, "draft": true },
+        { "lines": [17, 17], "kind": "reference", "title": "Chanel", "body": "The Paris fashion house Coco Chanel founded, whose logo is two interlocking C's. Its most famous perfume, No. 5, gets a nod three lines down.", "ref": { "name": "Chanel", "category": "brand" }, "draft": true },
+        { "lines": [19, 19], "kind": "reference", "title": "Kenan & Kel", "body": "Kenan Thompson and Kel Mitchell came up together on a Nickelodeon sketch show whose name opens this line, then got a sitcom of their own. Both shows land in one line, casting the two of them as a duo.", "ref": { "name": "Kenan & Kel", "category": "film-tv" }, "draft": true },
+        { "lines": [21, 24], "kind": "story", "body": "The perfume carries their history. The scent bothers him because it's hers, but he still asks her to wear it whenever she misses him, and he'd rather have a straight answer than keep guessing.", "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "Bleu de Chanel", "body": "Chanel's men's fragrance, launched in 2010. He doesn't want a cologne standing in as his signature.", "ref": { "name": "Bleu de Chanel", "category": "brand" }, "draft": true },
+        { "lines": [34, 35], "kind": "story", "body": "After a whole song of hating the smell, he admits he misses it and plays the complaint off as a joke. In the next breath he says he never doubted the two of them, and the act falls apart.", "draft": true },
+        { "lines": [37, 37], "kind": "reference", "title": "Glen Rice", "body": "One of the best shooters of the 1990s, a three-time All-Star who began his career with the Miami Heat and won the 1995 three-point contest. He splits the name in reverse to say he's shooting his shot with her.", "ref": { "name": "Glen Rice", "category": "athlete" }, "draft": true },
+        { "lines": [40, 40], "kind": "reference", "title": "Stone Cold Steve Austin", "body": "The beer-drinking, rule-breaking WWE star of the late 1990s. His nickname turns into friends who've gone cold on him.", "ref": { "name": "Stone Cold Steve Austin", "category": "athlete" }, "draft": true },
+        { "lines": [52, 53], "kind": "reference", "title": "New England Patriots", "body": "The New England Patriots play in the NFL's AFC East and won it nearly every year from 2001 to 2019. He claims the East the way they claimed the division.", "ref": { "name": "New England Patriots", "category": "team" }, "draft": true },
+        { "lines": [54, 54], "kind": "reference", "title": "Ksubi", "body": "An Australian denim label known for its skinny jeans. Its name is said without the K, which is the joke.", "ref": { "name": "Ksubi", "category": "brand" }, "draft": true },
+        { "lines": [55, 55], "kind": "reference", "title": "DDT", "body": "A wrestling move where you lock an opponent's head and fall backward, driving it into the mat, made famous by Jake Roberts. It keeps the wrestling going from the Stone Cold line.", "ref": { "name": "DDT (professional wrestling)", "category": "other" }, "draft": true },
+        { "lines": [58, 58], "kind": "reference", "title": "101 Dalmatians", "body": "Disney's 1961 animated film, from Dodie Smith's novel, about a litter of spotted puppies and Cruella de Vil, who wants their fur. He brings her back and swaps the dogs for colors.", "ref": { "name": "One Hundred and One Dalmatians", "category": "film-tv" }, "draft": true }
+      ]
+    },
+    "6": {
+      "title": "Advisor",
+      "notes": [
+        { "lines": [1, 2], "kind": "story", "body": "He opens by admitting he needs help, and that stubbornness and pride have kept him from asking for it. That admission frames the whole song: who gets to advise him, and whether he'll listen.", "draft": true },
+        { "lines": [3, 3], "kind": "reference", "title": "Green Lantern", "body": "The DC Comics hero powered by a green ring. A trip to Washington, D.C. turns into the comic company's name, and green does double duty.", "ref": { "name": "Green Lantern", "category": "film-tv" }, "draft": true },
+        { "lines": [5, 5], "kind": "reference", "title": "Trae Young", "body": "The point guard who starred for the Atlanta Hawks. Calling himself young and then naming the Hawks points right at him.", "ref": { "name": "Trae Young", "category": "athlete" }, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Tekken 7", "body": "Bandai Namco's long-running fighting game series; its seventh entry came out in arcades in 2015 and on consoles in 2017. He names the number and the game in the same breath.", "ref": { "name": "Tekken 7", "category": "game" }, "draft": true },
+        { "lines": [15, 15], "kind": "reference", "title": "Collin Sexton", "body": "The NBA guard whose nickname is the two words right before his name here. Cleveland drafted him in 2018 for his fearless scoring.", "ref": { "name": "Collin Sexton", "category": "athlete" }, "draft": true },
+        { "lines": [17, 17], "kind": "reference", "title": "Princeton University", "body": "The Ivy League university in New Jersey. A girl who's too good for him turns into a school in the most famous league in college.", "ref": { "name": "Princeton University", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [26, 29], "kind": "story", "body": "A spoken passage cuts in and lands the song's point. Advice from other people only goes so far: growing up means answering to yourself first, and choosing your company with care.", "draft": true },
+        { "lines": [30, 33], "kind": "story", "body": "After all that talk about counting on himself, he closes by asking her for guidance anyway, over and over. Knowing better and still wanting someone in his corner is the most honest part of the song.", "draft": true }
+      ]
+    },
+    "7": {
+      "title": "Gold Tears",
+      "notes": [
+        { "lines": [1, 4], "kind": "story", "body": "The hook is a plea for her to stay. He drops the tough front, and the tears he lets fall are gold: rare, and worth something because he almost never cries.", "draft": true },
+        { "lines": [5, 9], "kind": "story", "body": "The first verse goes back to his teenage years at home. His mother is heading out with a little one again, he's hurting and keeping it to himself, and he spends his weekends at a girl's place instead. He paints himself as a kid who was barely there.", "draft": true },
+        { "lines": [10, 10], "kind": "reference", "title": "Peter Pan", "body": "J.M. Barrie's boy who can fly and never grows up. After a night out he flies off like Peter, the boyish move this verse owns up to.", "ref": { "name": "Peter Pan", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [37, 43], "kind": "story", "body": "The last verse reads like a letter he couldn't say out loud. He tells her to go easy on herself, admits he can't imagine carrying what she carries, and confesses he keeps his feelings switched off. Then he signs it with a postscript to his mother.", "draft": true }
+      ]
+    },
+    "8": {
+      "title": "Far",
+      "notes": [
+        { "lines": [10, 10], "kind": "reference", "title": "Princess Daisy", "body": "Princess Daisy and Princess Peach are the two princesses of Nintendo's Mario games, often paired up like sisters. Calling her Daisy lets the peach she sends him be both the other princess and an emoji.", "ref": { "name": "Princess Daisy", "category": "game" }, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Bo Peep", "body": "The porcelain shepherdess in Pixar's Toy Story films and Woody's love interest. The cowboy's name hides in the line, which is the joke.", "ref": { "name": "Bo Peep", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [15, 15], "kind": "reference", "title": "Mo'Nique", "body": "The stand-up comedian who won an Oscar for her dramatic turn in Precious. He tells someone this isn't a joke and names a comedian to say it.", "ref": { "name": "Mo'Nique", "category": "film-tv" }, "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Mobb Deep", "body": "The Queensbridge duo of Prodigy and Havoc, whose 1995 song about scared, fake tough guys gives the line its phrase.", "ref": { "name": "Mobb Deep", "category": "musician" }, "draft": true },
+        { "lines": [17, 22], "kind": "story", "body": "The hook offers a way forward: leave her past behind and build something that belongs to both of them. The title is about how far the two of them could go, before the song turns it into how far apart they are.", "draft": true },
+        { "lines": [23, 25], "kind": "story", "body": "He notices her eyes are wet and can't tell whether he caused it or allergy season did. On an album named for a flower in bloom, the blossoms themselves could be the reason.", "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Boston Celtics", "body": "The NBA's Irish-themed franchise, whose leprechaun mascot is named Lucky. Not everyone gets that kind of luck.", "ref": { "name": "Boston Celtics", "category": "team" }, "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "Josh Brolin", "body": "The actor behind Thanos in the Avengers films and the lead in No Country for Old Men. He credits her performance like it's one of Brolin's.", "ref": { "name": "Josh Brolin", "category": "film-tv" }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Grateful Dead", "body": "The jam band whose devoted fans call themselves Deadheads. He folds the band and its fans into a request for a little thanks.", "ref": { "name": "Grateful Dead", "category": "musician" }, "draft": true },
+        { "lines": [51, 51], "kind": "reference", "title": "Vicks VapoRub", "body": "The Procter & Gamble chest rub that opens up stuffy airways. It ties back to his cough earlier in the song.", "ref": { "name": "Vicks VapoRub", "category": "brand" }, "draft": true },
+        { "lines": [54, 60], "kind": "story", "body": "By the end, the hope of going far together has flipped. He's put his feelings in the ground and can't find his way out, and the outro leaves him in a fog with her farther away than ever.", "draft": true }
+      ]
+    },
+    "9": {
+      "title": "Starfall",
+      "notes": [
+        { "lines": [1, 8], "kind": "story", "body": "The intro lays out where he stands. People don't get him, he's lost friends more than once, and every choice he made was for himself. He isn't apologizing, and he isn't changing sides.", "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Invader Zim", "body": "The Nickelodeon cartoon about a tiny, furious alien sent to conquer Earth. The show's title is what he says he did.", "ref": { "name": "Invader Zim", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "Tales from the Crypt", "body": "HBO's horror anthology, hosted by the cackling Crypt Keeper. Someone telling stories about him gets filed as a horror tale.", "ref": { "name": "Tales from the Crypt", "category": "film-tv" }, "draft": true },
+        { "lines": [15, 15], "kind": "reference", "title": "Dark Pit", "body": "The shadowy double of Pit from Nintendo's Kid Icarus: Uprising, and a fighter in Super Smash Bros., where his side attack is an electric punch called the Electroshock Arm. Shock is the link.", "ref": { "name": "Dark Pit", "category": "game" }, "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "Rick and Morty", "body": "The Adult Swim cartoon about a reckless scientist and his grandson hopping between planets and dimensions. He flips the order of their names to land the rhyme.", "ref": { "name": "Rick and Morty", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [28, 28], "kind": "reference", "title": "White Chicks", "body": "The 2004 Wayans brothers comedy where two Black FBI agents go undercover as white socialites. He's saying he has never pretended to be anyone but himself.", "ref": { "name": "White Chicks", "category": "film-tv" }, "draft": true },
+        { "lines": [36, 40], "kind": "story", "body": "The bridge is where the swagger turns into self-acceptance. He's at home in his own body, he makes peace with what he's done, and he signs off with a love note to himself styled like a souvenir T-shirt.", "draft": true },
+        { "lines": [49, 58], "kind": "story", "body": "The last verse names the real problem: people size him up before he says a word. He's fine not being what they expected, and he admits he was messing with them all along.", "draft": true }
+      ]
+    },
+    "10": {
+      "title": "Blossom",
+      "notes": [
+        { "lines": [1, 4], "kind": "story", "body": "This is the album's turn. After everything he's lost, he stops sinking and starts to bloom, and the title track is the flower the whole record has been waiting on.", "draft": true },
+        { "lines": [5, 5], "kind": "reference", "title": "A Bathing Ape", "body": "The Tokyo streetwear label known as BAPE, whose shark-face hoodie became its signature piece. He goes from the ocean to its predator to the hoodie in three quick steps.", "ref": { "name": "A Bathing Ape", "category": "brand" }, "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "Nigo", "body": "The Japanese designer who founded BAPE in 1993 and later became artistic director of Kenzo. Naming the founder right after the brand fits an album built on Japan.", "ref": { "name": "Nigo", "category": "person" }, "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Oakland Athletics", "body": "The MLB team known as the A's, based in Oakland when this album came out. Being athletic turns into their nickname, and he runs straight into their division rival, the Los Angeles Angels.", "ref": { "name": "Oakland Athletics", "category": "team" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Ja'Marr Chase", "body": "The Cincinnati Bengals wide receiver who was the 2021 Offensive Rookie of the Year and helped carry them to the Super Bowl that season. Making someone run after him brings the receiver to mind.", "ref": { "name": "Ja'Marr Chase", "category": "athlete" }, "draft": true },
+        { "lines": [10, 10], "kind": "reference", "title": "Fandango", "body": "The website for buying movie tickets. A speeding ticket turns into the kind you pay for online.", "ref": { "name": "Fandango", "category": "brand" }, "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Django Unchained", "body": "Quentin Tarantino's 2012 western, starring Jamie Foxx as a freed slave who sets out to rescue his wife. He uses the title to say he's broken loose.", "ref": { "name": "Django Unchained", "category": "film-tv" }, "draft": true },
+        { "lines": [13, 16], "kind": "story", "body": "He credits an uncle who has since passed for the push he needed: stay proud and provide for his mother. It makes the losses in the hook personal.", "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "KISS", "body": "The face-painted 1970s rock band whose bassist, Gene Simmons, made sticking his tongue out a trademark.", "ref": { "name": "KISS", "category": "musician" }, "draft": true },
+        { "lines": [30, 30], "kind": "reference", "title": "Spike Spiegel", "body": "The laid-back bounty hunter at the center of the 1998 anime Cowboy Bebop. He names the show and its coolest character in one breath.", "ref": { "name": "Spike Spiegel", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [32, 32], "kind": "reference", "title": "The Dark Knight", "body": "Batman's nickname, and the title of Christopher Nolan's 2008 film. Anyone joking with him gets cast as the Joker.", "ref": { "name": "Batman", "category": "film-tv" }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Carhartt", "body": "The Detroit workwear brand whose canvas pants and jackets turned into streetwear staples. It sets up the pants in the same line.", "ref": { "name": "Carhartt", "category": "brand" }, "draft": true },
+        { "lines": [37, 40], "kind": "story", "body": "He sends the listener to the record itself: the pink cover and its Japanese theme. Then he turns the cherry blossom into a dance and repeats it three times, like the bloom has finally arrived.", "draft": true },
+        { "lines": [56, 56], "kind": "reference", "title": "Royal Rumble", "body": "WWE's yearly match where wrestlers enter one at a time and get tossed over the top rope until one is left. Getting knocked out turns into a wrestling event.", "ref": { "name": "Royal Rumble", "category": "other" }, "draft": true }
+      ]
+    },
+    "11": {
+      "title": "Red Panda",
+      "notes": [
+        { "lines": [1, 3], "kind": "story", "body": "He's sure she doesn't love him and insists he's numb to it, then names the red panda as kin. Red pandas are endangered, they live alone, and they're the only species left in their family, which is how he sees himself here.", "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Cleveland Cavaliers", "body": "Cleveland calls itself the Land, and its NBA team is the Cavaliers. Heading north, he casts himself as one.", "ref": { "name": "Cleveland Cavaliers", "category": "team" }, "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "The Suite Life of Zack & Cody", "body": "The Disney Channel sitcom about twin brothers, played by Dylan and Cole Sprouse, growing up in a Boston hotel. He and his friend are that close.", "ref": { "name": "The Suite Life of Zack & Cody", "category": "film-tv" }, "draft": true },
+        { "lines": [25, 30], "kind": "story", "body": "The second verse takes back the numbness from the hook. He knows their fights had consequences and that her complaints come from frustration, not hate, and he doesn't want to throw away what they built from scratch.", "draft": true },
+        { "lines": [37, 37], "kind": "reference", "title": "Detroit Pistons", "body": "The late 1980s Detroit Pistons were the Bad Boys, a rough, physical team that won back-to-back titles while playing at the Palace of Auburn Hills. He claims a spot on that roster.", "ref": { "name": "Detroit Pistons", "category": "team" }, "draft": true },
+        { "lines": [38, 38], "kind": "reference", "title": "Florida panther", "body": "Florida's state animal, an endangered big cat that survives in the swamps and forests of South Florida. As a Floridian he should be one, but he picks the red panda, another animal on the brink.", "ref": { "name": "Florida panther", "category": "other" }, "draft": true },
+        { "lines": [49, 51], "kind": "story", "body": "He takes the comparison all the way. He wears the animal on his sleeve, feels like a species running out of room, and treats every day as hard work.", "draft": true }
+      ]
+    },
+    "12": {
+      "title": "Dreamland",
+      "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Ichigo Kurosaki", "body": "The orange-haired hero of the anime and manga Bleach. Bleaching skin is the setup for the show's name.", "ref": { "name": "Ichigo Kurosaki", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [13, 19], "kind": "story", "body": "Dreamland is the one place he's in charge. The hook goes back and forth between taking over and being trapped there, and he doesn't sound sure which one it is.", "draft": true },
+        { "lines": [26, 27], "kind": "story", "body": "He hands off to the following track by name. A sable is a small animal prized for its fur, so the fur talk sets up Sable, the song that comes right after this one.", "draft": true },
+        { "lines": [36, 39], "kind": "story", "body": "The bridge splits the title into its two halves and pushes the first into the second. Dreamland stops being a place he's trapped and becomes one he's making.", "draft": true }
+      ]
+    },
+    "13": {
+      "title": "Sable",
+      "notes": [
+        { "lines": [4, 4], "kind": "reference", "title": "Call of Duty", "body": "Activision's shooter series, where spinning all the way around before a sniper shot became the flashiest trick in online play. He spins for her the same way.", "ref": { "name": "Call of Duty", "category": "game" }, "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "Fruitvale Station", "body": "Ryan Coogler's 2013 film about a young man's last day in Oakland, starring Michael B. Jordan. The line builds the actor's name from a dancer named Michael and a ballplayer named Jordan.", "ref": { "name": "Fruitvale Station", "category": "film-tv" }, "draft": true },
+        { "lines": [10, 17], "kind": "story", "body": "The hook warns someone to stop acting the way they've been acting, then tells them to clap anyway. Applause runs through the whole song, and it never sounds like a celebration.", "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "The Conjuring", "body": "The Nun is a 2018 horror film spun off from The Conjuring series. He spells none like the movie's title and follows it with the series it came from.", "ref": { "name": "The Conjuring", "category": "film-tv" }, "draft": true },
+        { "lines": [24, 24], "kind": "reference", "title": "Vince Lombardi Trophy", "body": "The trophy that goes to the Super Bowl champion, so calling himself super leads straight to it. The line opens on a nod to Playboi Carti, the Atlanta rapper known for yelped one-word ad-libs.", "ref": { "name": "Vince Lombardi Trophy", "category": "other" }, "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Lenox Square", "body": "The upscale mall in Atlanta's Buckhead neighborhood. He calls the shoppers square before naming it, and Ari is Ariana Grande.", "ref": { "name": "Lenox Square", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [28, 31], "kind": "story", "body": "Midway through, he asks for the applause to stop. The praise rings hollow while he's hurting, and he admits there's no going back.", "draft": true },
+        { "lines": [41, 41], "kind": "reference", "title": "Damian Lillard", "body": "The NBA point guard famous for game-winning shots, a habit fans call Dame Time. He made his name with the Portland Trail Blazers.", "ref": { "name": "Damian Lillard", "category": "athlete" }, "draft": true },
+        { "lines": [42, 42], "kind": "reference", "title": "Nick Saban", "body": "The football coach who won six national titles at Alabama, a school whose logo is a single capital A. The grade he earns doubles as that logo.", "ref": { "name": "Nick Saban", "category": "person" }, "draft": true },
+        { "lines": [45, 49], "kind": "story", "body": "The ending adds up what all of it took out of him, and he keeps clapping anyway. After a whole song of holding back, the applause turns into something he can't help giving.", "draft": true }
+      ]
+    },
+    "14": {
+      "title": "ShapeShift",
+      "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Mason jar", "body": "The glass canning jar John Landis Mason patented in 1858. Leaving a door ajar sets up the jar.", "ref": { "name": "Mason jar", "category": "other" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "MF DOOM", "body": "The masked rapper who built his persona on Marvel's Doctor Doom. Doom's archrival is Mister Fantastic, the stretchy leader of the Fantastic Four, so the line brings both sides of the fight.", "ref": { "name": "MF DOOM", "category": "musician" }, "draft": true },
+        { "lines": [10, 12], "kind": "story", "body": "Room gets tight as they move closer, and the pink he shows her is the album's blossom coming through. Space, and how much of it each of them gets, becomes the thread of the whole song.", "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Up", "body": "Pixar's 2009 film where an old widower ties thousands of balloons to his house and floats away. He pictures the two of them rising the same way.", "ref": { "name": "Up (2009 film)", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [16, 19], "kind": "story", "body": "The hook asks her to trade spots with him. Everything they think they know about each other is secondhand, and standing in each other's shoes is the one way past it.", "draft": true },
+        { "lines": [25, 25], "kind": "reference", "title": "Pleakley", "body": "Wendell Pleakley, the one-eyed alien who poses as an expert on Earth in Disney's Lilo & Stitch. His odd name lands right on the rhyme.", "ref": { "name": "Wendell Pleakley", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [29, 29], "kind": "reference", "title": "Tracy McGrady", "body": "The Hall of Fame scorer known as T-Mac, who won two scoring titles with the Orlando Magic and grew up in Auburndale, Florida. The line spells out his nickname in pieces.", "ref": { "name": "Tracy McGrady", "category": "athlete" }, "draft": true },
+        { "lines": [30, 30], "kind": "reference", "title": "Amy Rose", "body": "The pink hedgehog of Sega's Sonic games. Her last name turns into rising up, and her pink fits the album's cherry blossoms.", "ref": { "name": "Amy Rose", "category": "game" }, "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Panic! at the Disco", "body": "The pop rock band led by Brendon Urie. He splits its name across the line.", "ref": { "name": "Panic! at the Disco", "category": "musician" }, "draft": true },
+        { "lines": [46, 46], "kind": "reference", "title": "Dune", "body": "Frank Herbert's science fiction novel, adapted by Denis Villeneuve into a 2021 film. Sy is his name and also the first sound of sci-fi.", "ref": { "name": "Dune", "category": "film-tv" }, "draft": true },
+        { "lines": [56, 59], "kind": "story", "body": "The song runs out of room and ends on him asking for somewhere of his own. After all the talk of trading spots, what he needs in the end is a place to stand.", "draft": true }
+      ]
+    },
+    "15": {
+      "title": "Postal",
+      "notes": [
+        { "lines": [1, 4], "kind": "story", "body": "The last song starts with letters sent to places he used to live, and one comes back with nothing inside. He's heading home, and the trip is ending. On an album that took off in its first song, this is the landing.", "draft": true },
+        { "lines": [6, 6], "kind": "reference", "title": "The Dakotas", "body": "North Dakota and South Dakota are stacked on the map. Heading downhill and then looking up takes him from one to the other.", "ref": { "name": "The Dakotas", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Grover", "body": "The frantic, chatty blue monster from Sesame Street. He's the comparison for someone who can't control what comes out of their mouth.", "ref": { "name": "Grover", "category": "film-tv" }, "draft": true },
+        { "lines": [18, 23], "kind": "story", "body": "He asks for an actual letter, the kind with a stamp, from someone who's gone quiet since moving away. They've been acting like strangers, and a letter is the slow, old way of reaching across that distance.", "draft": true },
+        { "lines": [25, 26], "kind": "reference", "title": "Earth, Wind & Fire", "body": "The band's 1978 hit is named for the month he brings up just before naming them. Bending earth, air and fire comes straight from Avatar: The Last Airbender.", "ref": { "name": "Earth, Wind & Fire", "category": "musician" }, "draft": true },
+        { "lines": [31, 31], "kind": "reference", "title": "GameStop", "body": "The video game chain known for offering very little when you trade in a game. He has nothing to offer in a trade either.", "ref": { "name": "GameStop", "category": "brand" }, "draft": true },
+        { "lines": [35, 35], "kind": "reference", "title": "Jack and the Beanstalk", "body": "In the English fairy tale, the giant chants four nonsense words before he smells Jack. He breaks the chant apart so its third word turns into an enemy.", "ref": { "name": "Jack and the Beanstalk", "category": "other" }, "draft": true },
+        { "lines": [36, 36], "kind": "reference", "title": "Monkey D. Luffy", "body": "The rubber-bodied pirate of the anime One Piece, whose powers come from the Gum-Gum Fruit. One Piece is told island by island, and he's standing on one by himself.", "ref": { "name": "Monkey D. Luffy", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [50, 53], "kind": "story", "body": "He wants them to part on good terms and to handle the last letter with care. It's the cherry blossom's final stage, letting go without bitterness, and it closes the album's cycle.", "draft": true },
+        { "lines": [55, 55], "kind": "reference", "title": "Madonna", "body": "Madonna's 1985 hit about loving money and nice things gave pop one of its best-known labels. He gives his girl that label.", "ref": { "name": "Madonna", "category": "musician" }, "draft": true }
+      ]
+    }
+  }
+}

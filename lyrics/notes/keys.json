@@ -1,0 +1,23 @@
+{
+  "release": "keys",
+  "songs": {
+    "1": {
+      "title": "Keys'",
+      "notes": [
+        { "lines": [1, 5], "kind": "story", "body": "He opens on his clothes and never strays far from them: patchwork fabric, old pieces worn with pride, and water everywhere. The water lines are an early sign of the Wavy persona that runs through everything he makes after this.", "draft": true },
+        { "lines": [2, 2], "kind": "reference", "title": "Nile River", "body": "The longest river in Africa, and the setup for the old pun on denial. It also keeps the water imagery going.", "ref": {"name": "Nile River", "category": "place", "place": {"florida": false}}, "draft": true },
+        { "lines": [3, 3], "kind": "reference", "title": "Nival", "body": "A rare word for anything to do with snow. He uses it to say his outfit keeps him ice cold.", "ref": {"name": "Nival", "category": "other"}, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Jodeci", "body": "The North Carolina R&B group of K-Ci, JoJo, DeVante Swing and Mr. Dalvin, behind 90s slow jams like Forever My Lady and Come and Talk to Me. It's what he puts on as the night winds down.", "ref": {"name": "Jodeci", "category": "musician"}, "draft": true },
+        { "lines": [12, 12], "kind": "reference", "title": "Soul for Real", "body": "An R&B group of four brothers from Long Island whose first single went top five in 1995. He names the group and that hit in the same line.", "ref": {"name": "Soul for Real", "category": "musician"}, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Pharrell Williams", "body": "The Virginia producer and singer who sang lead on Daft Punk's 2013 hit. The line borrows that song's title and points it at someone else.", "ref": {"name": "Pharrell Williams", "category": "musician"}, "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "Chucky", "body": "The killer doll from the Child's Play horror films. The insult is built out of the series' title.", "ref": {"name": "Chucky", "category": "film-tv"}, "draft": true },
+        { "lines": [15, 16], "kind": "reference", "title": "Buffy the Vampire Slayer", "body": "The late 90s TV series about a teenage girl who hunts vampires. Someone who hides from daylight belongs in her world.", "ref": {"name": "Buffy the Vampire Slayer", "category": "film-tv"}, "draft": true },
+        { "lines": [19, 19], "kind": "reference", "title": "Doja Cat", "body": "Her breakout single was climbing the charts in early 2020, the same season this song came out. He tucks her name and that song's title into one line.", "ref": {"name": "Doja Cat", "category": "musician"}, "draft": true },
+        { "lines": [27, 32], "kind": "story", "body": "The beat drops back for a spoken passage aimed at a woman across the room. It comes straight out of the 90s R&B slow jams he names earlier in the song, the smooth talk between verses.", "draft": true },
+        { "lines": [34, 34], "kind": "reference", "title": "Amelia Earhart", "body": "The aviation pioneer who disappeared over the Pacific in 1937. Fly means stylish here and also points to flight, the imagery Jett2Fly's name brings into the music.", "ref": {"name": "Amelia Earhart", "category": "person"}, "draft": true },
+        { "lines": [48, 49], "kind": "reference", "title": "SWV", "body": "Sisters With Voices, the New York trio behind some of the biggest R&B hits of 1993. He works two of their best known songs into back-to-back lines.", "ref": {"name": "SWV", "category": "musician"}, "draft": true },
+        { "lines": [59, 59], "kind": "story", "body": "The last line credits the song to the two of them as a team. Jett2Fly and SyWavy make nearly everything themselves, and this early single says so on the record.", "draft": true }
+      ]
+    }
+  }
+}

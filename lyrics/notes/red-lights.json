@@ -1,0 +1,18 @@
+{
+  "release": "red-lights",
+  "songs": {
+    "1": {
+      "title": "Red Lights",
+      "notes": [
+        { "lines": [5, 5], "kind": "reference", "title": "Detroit Pistons", "body": "Detroit's NBA team, whose rough title teams of 1989 and 1990 were called the Bad Boys. She likes bad boys, and he's never been one.", "ref": {"name": "Detroit Pistons", "category": "team"}, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Mike Lowrey", "body": "Will Smith's Miami detective in the Bad Boys films. Bad Boys for Life had come out that January, and the name follows the bad boy line before it.", "ref": {"name": "Mike Lowrey", "category": "film-tv"}, "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Jadeveon Clowney", "body": "The defensive end who became famous at South Carolina for a helmet-popping hit in the 2013 Outback Bowl in Tampa. Hitting hard is the point.", "ref": {"name": "Jadeveon Clowney", "category": "athlete"}, "draft": true },
+        { "lines": [13, 13], "kind": "reference", "title": "Downy Unstopables", "body": "Downy's laundry scent beads. Anyone who acts invincible gets compared to fabric softener.", "ref": {"name": "Downy Unstopables", "category": "brand"}, "draft": true },
+        { "lines": [15, 16], "kind": "story", "body": "His exes compare notes in a group chat and agree they saw his fall coming. It's a funny image, and the kind of phone drama that runs all through his songs.", "draft": true },
+        { "lines": [26, 26], "kind": "reference", "title": "Swimming Pools (Drank)", "body": "Kendrick Lamar's 2012 single about drinking and peer pressure. He squeezes its hook into half a line.", "ref": {"name": "Swimming Pools (Drank)", "category": "musician"}, "draft": true },
+        { "lines": [33, 39], "kind": "story", "body": "He tells the relationship like a road test she failed, which fits a song named for red lights. By the end of the verse he's tried again, it's over, and he's worn down but at peace with it.", "draft": true },
+        { "lines": [69, 69], "kind": "reference", "title": "Shundor", "body": "In Bengali, shundor means beautiful. He uses it as a name for himself, signs this song off with it, and brings it back on Life is Verses.", "ref": {"name": "Shundor", "category": "other"}, "draft": true }
+      ]
+    }
+  }
+}
