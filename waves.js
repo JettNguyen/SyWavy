@@ -22,6 +22,9 @@
   // Pages with a hero (the home page, and the 404 which asks for it) start with the
   // lines up behind the name. Every other page starts with them already settled low.
   const heroMode = !!document.getElementById('hero') || document.body.dataset.waves === 'hero';
+  // On wide screens the home page photo fades out on the left, and the lines start
+  // at the photo's sea level there, so the ocean carries on into the dark as lines
+  const seaLevel = !!document.getElementById('hero');
 
   const LINES = 9;
   const TEAL = [86, 226, 211];
@@ -54,7 +57,8 @@
 
     // Behind the name at first, then low and quiet at the bottom of the screen
     const small = w < 700;
-    const base = h * ((small ? 0.8 : 0.79) + settle * 0.13);
+    const start = seaLevel && w >= 900 ? 0.43 : (small ? 0.8 : 0.79);
+    const base = h * (start + settle * (0.92 - start));
     const fade = 1 - settle * 0.45;
     const gap = small ? 7 : 10;
     const amp1 = small ? 16 : 26;
@@ -62,9 +66,12 @@
     const k1 = (Math.PI * 2) / Math.max(w * 0.95, 520);
     const k2 = (Math.PI * 2) / Math.max(w * 0.38, 240);
 
+    // teal to blue across the screen, easing in and out at the edges
     const grad = ctx.createLinearGradient(0, 0, w, 0);
-    grad.addColorStop(0, `rgb(${TEAL})`);
-    grad.addColorStop(1, `rgb(${BLUE})`);
+    grad.addColorStop(0, `rgba(${TEAL},0)`);
+    grad.addColorStop(0.12, `rgba(${TEAL},1)`);
+    grad.addColorStop(0.88, `rgba(${BLUE},1)`);
+    grad.addColorStop(1, `rgba(${BLUE},0)`);
     ctx.strokeStyle = grad;
     ctx.lineWidth = 1;
 

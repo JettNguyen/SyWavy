@@ -442,24 +442,30 @@ a, button, [role="button"] { touch-action: manipulation; }
   display: block;
 }
 
-/* On wide screens the photo rides a little high, so the name sits under his chin */
-@media (min-width: 800px) {
-  .hero-photo { inset: -9% 0 9% 0; }
+/* Wide screens: the photo stands as a tall panel on the right, showing him from
+   head to waist. The name runs across the bottom of it, over his shirt, and his
+   face stays clear at every screen size. */
+@media (min-width: 900px) {
+  .hero-photo {
+    left: auto;
+    width: min(64vw, 108vh);
+    width: min(64vw, 108svh);
+  }
 }
 
 .hero-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 18%;
+  object-position: 10% 18%;  /* he stands left of the photo's center */
   filter: contrast(1.06) saturate(1.08);
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0, 0, 0, 0.45) 74%, transparent 96%);
   mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0, 0, 0, 0.45) 74%, transparent 96%);
   animation: heroPhoto 2.2s var(--ease-out) both;
 }
 
-@media (min-width: 800px) {
-  .hero-photo img { object-position: 50% 30%; }
+@media (min-width: 900px) {
+  .hero-photo img { object-position: 10% 22%; }
   .hero-name { font-size: clamp(4.2rem, 15.5vw, 14.5rem); }
 }
 
@@ -848,72 +854,71 @@ a, button, [role="button"] { touch-action: manipulation; }
    ============================================================ */
 #about { padding-block: var(--section-pad); }
 
+/* Wide on bigger screens, closer on phones (the page picks the crop) */
+.about-photo-wrap { margin-bottom: clamp(2.25rem, 5vw, 3.75rem); }
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: var(--radius-art);
+  background: var(--bg-raise);
+}
+
+@media (min-width: 800px) {
+  .about-photo { aspect-ratio: 16 / 9; }
+}
+
+/* The bio on the left; facts and follow links beside it */
 .about-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 2.75rem;
 }
 
-.about-photo {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: 50% 28%;
-  border-radius: var(--radius-art);
+@media (min-width: 900px) {
+  .about-layout {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    gap: clamp(3rem, 6vw, 6.5rem);
+    align-items: start;
+  }
 }
 
-.about-text .section-heading { margin-bottom: clamp(1.5rem, 3vw, 2.25rem); }
-
 .about-lede {
-  font-size: clamp(1.45rem, 2.5vw, 2.05rem);
+  font-size: clamp(1.5rem, 2.8vw, 2.35rem);
   font-stretch: 108%;
   font-weight: 620;
-  line-height: 1.2;
+  line-height: 1.16;
   letter-spacing: -0.025em;
   text-wrap: balance;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-rest {
-  max-width: 62ch;
-  font-size: 1.04rem;
+  max-width: 64ch;
+  font-size: 1.05rem;
   line-height: 1.75;
   color: var(--text-soft);
   text-wrap: pretty;
 }
 
-.about-facts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 2.5rem;
-  border-top: 1px solid var(--line);
+.about-facts { border-top: 1px solid var(--line); }
+
+.about-facts > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.9rem 0;
   border-bottom: 1px solid var(--line);
 }
 
-.about-facts > div { padding: 1.1rem 1rem 1.1rem 0; }
-.about-facts > div + div { padding-left: 1rem; border-left: 1px solid var(--line); }
-.about-facts dt { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.3rem; }
-.about-facts dd { font-size: 1rem; font-weight: 600; line-height: 1.3; font-variant-numeric: tabular-nums; }
-
-/* On phones the facts read as label and value rows */
-@media (max-width: 599px) {
-  .about-facts { grid-template-columns: minmax(0, 1fr); border-bottom: 0; }
-  .about-facts > div,
-  .about-facts > div + div {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    padding: 0.85rem 0;
-    border-left: 0;
-    border-bottom: 1px solid var(--line);
-  }
-  .about-facts dt { margin-bottom: 0; font-size: 0.88rem; }
-  .about-facts dd { text-align: right; }
-}
+.about-facts dt { font-size: 0.88rem; color: var(--muted); }
+.about-facts dd { font-size: 1rem; font-weight: 600; line-height: 1.3; text-align: right; }
 
 .about-follow-label {
-  margin: 2.25rem 0 0.9rem;
+  margin: 2rem 0 0.9rem;
   font-size: 0.88rem;
   font-weight: 560;
   color: var(--text);
@@ -936,14 +941,6 @@ a, button, [role="button"] { touch-action: manipulation; }
 }
 .follow-icon { display: inline-flex; width: 17px; height: 17px; }
 .follow-icon svg { width: 17px; height: 17px; }
-
-@media (min-width: 800px) {
-  .about-layout {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-    gap: clamp(3rem, 6vw, 6.5rem);
-    align-items: start;
-  }
-}
 
 /* ============================================================
    CONTACT

@@ -69,15 +69,16 @@
 
     <!-- HERO -->
     <section id="hero" aria-label="Intro">
+      <!-- On wide screens the beach behind him fades into the page, so the waves can carry the sea on -->
       <picture class="hero-photo" aria-hidden="true">
         <source
-          media="(min-width: 800px)"
-          srcset="/assets/photos/sywavy-portrait-wide-1280.webp 1280w, /assets/photos/sywavy-portrait-wide-1920.webp 1920w"
-          sizes="100vw"
+          media="(min-width: 900px)"
+          srcset="/assets/photos/sywavy-hero-1000.webp 1000w, /assets/photos/sywavy-hero-1600.webp 1600w, /assets/photos/sywavy-hero-2200.webp 2200w"
+          sizes="64vw"
         />
         <img
           src="/assets/photos/sywavy-portrait-800.webp"
-          srcset="/assets/photos/sywavy-portrait-800.webp 800w, /assets/photos/sywavy-portrait-1400.webp 1400w"
+          srcset="/assets/photos/sywavy-portrait-800.webp 800w, /assets/photos/sywavy-portrait-1400.webp 1400w, /assets/photos/sywavy-portrait-2000.webp 2000w"
           sizes="100vw"
           alt=""
           width="800"
@@ -138,23 +139,34 @@
     <!-- ABOUT -->
     <section id="about" aria-labelledby="aboutHeading">
       <div class="container">
-        <div class="about-layout">
-          <div class="about-photo-wrap animate-on-scroll">
+        <div class="section-head">
+          <h2 id="aboutHeading" class="section-heading">About</h2>
+        </div>
+        <div class="about-photo-wrap animate-on-scroll">
+          <picture>
+            <source
+              media="(min-width: 800px)"
+              srcset="/assets/photos/sywavy-studio-wide-1280.webp 1280w, /assets/photos/sywavy-studio-wide-2000.webp 2000w"
+              sizes="(min-width: 1440px) 1220px, 92vw"
+              width="1280"
+              height="720"
+            />
             <img
-              src="/assets/photos/sywavy-portrait-800.webp"
-              srcset="/assets/photos/sywavy-portrait-800.webp 800w, /assets/photos/sywavy-portrait-1400.webp 1400w"
-              sizes="(min-width: 1024px) 520px, (min-width: 800px) 42vw, 92vw"
-              alt="SyWavy standing on the beach in Saint Petersburg"
+              src="/assets/photos/sywavy-studio-800.webp"
+              srcset="/assets/photos/sywavy-studio-800.webp 800w, /assets/photos/sywavy-studio-1200.webp 1200w"
+              sizes="92vw"
+              alt="SyWavy, on the right, posing in front of a white backdrop"
               class="about-photo"
               width="800"
-              height="1200"
+              height="640"
               loading="lazy"
               decoding="async"
             />
-          </div>
-          <div class="about-text animate-on-scroll">
-            <h2 id="aboutHeading" class="section-heading">About</h2>
-            <div id="aboutBio" class="about-bio"></div>
+          </picture>
+        </div>
+        <div class="about-layout">
+          <div id="aboutBio" class="about-bio animate-on-scroll"></div>
+          <div class="about-side animate-on-scroll">
             <dl id="aboutFacts" class="about-facts"></dl>
             <p class="about-follow-label">Follow SyWavy</p>
             <div id="aboutSocials" class="follow-links"></div>
