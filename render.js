@@ -230,11 +230,25 @@ window._SWR = (function () {
      ABOUT
   ---------------------------------------------------------- */
 
-  // The first sentence of the bio leads in large type, the rest follows
+  // Periods that don't end a sentence, like the one in "St. Petersburg"
+  const ABBREVIATION = /\b(?:St|Mt|Ft|Mr|Mrs|Ms|Dr|Jr|Sr|vs)\.$/;
+
+  // The first sentence of the bio leads in large type, the rest follows.
+  // A blank line in the bio starts a new paragraph.
   function aboutBio(bio) {
-    const m = String(bio).match(/^(.+?[.!?])\s+(?=[A-Z"])([\s\S]+)$/);
-    if (!m) return `<p class="about-lede">${escapeHTML(bio)}</p>`;
-    return `<p class="about-lede">${escapeHTML(m[1])}</p><p class="about-rest">${escapeHTML(m[2])}</p>`;
+    const paras = String(bio).split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    if (!paras.length) return '';
+    const first = paras.shift();
+    const ends = /[.!?]["”)]?(?=\s+["“A-Z])/g;
+    let cut = -1, m;
+    while ((m = ends.exec(first))) {
+      const end = m.index + m[0].length;
+      if (!ABBREVIATION.test(first.slice(0, end))) { cut = end; break; }
+    }
+    const lede = cut < 0 ? first : first.slice(0, cut);
+    const rest = cut < 0 ? paras : [first.slice(cut).trim(), ...paras];
+    return `<p class="about-lede">${escapeHTML(lede)}</p>` +
+      rest.map(p => `<p class="about-rest">${escapeHTML(p)}</p>`).join('');
   }
 
   // Plain facts, all worked out from data.js

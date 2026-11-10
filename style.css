@@ -920,6 +920,8 @@ a, button, [role="button"] { touch-action: manipulation; }
   text-wrap: pretty;
 }
 
+.about-rest + .about-rest { margin-top: 1.1em; }
+
 .about-facts { border-top: 1px solid var(--line); }
 
 .about-facts > div {
