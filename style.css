@@ -64,7 +64,7 @@ body {
 
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
-ul { list-style: none; }
+ul, ol { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: var(--font); color: inherit; }
 
 /* Interactive elements: no grey tap flash (we draw our own pressed states), no double-tap zoom delay */
@@ -1243,6 +1243,287 @@ a, button, [role="button"] { touch-action: manipulation; }
 }
 
 @media (min-width: 650px) { .related-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem 1.5rem; } }
+
+/* ============================================================
+   LYRICS: song pages, the hub, References, the Florida map,
+   and an album's track by track
+   ============================================================ */
+.page {
+  padding-top: clamp(6rem, 12vw, 8.5rem);
+  padding-bottom: var(--section-pad);
+  min-height: 100dvh;
+}
+
+.page-head { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.page-intro { max-width: 60ch; margin-top: 1.1rem; font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); }
+.page-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.6rem; }
+
+.note-draft {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.55rem;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--pill);
+  font-size: 0.72rem;
+  font-weight: 560;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+/* Song page: cover, title, where it's from */
+.song-head {
+  display: grid;
+  grid-template-columns: clamp(84px, 17vw, 190px) minmax(0, 1fr);
+  gap: 0 clamp(1.1rem, 3vw, 2.5rem);
+  align-items: end;
+  padding-bottom: clamp(1.75rem, 3vw, 2.5rem);
+  margin-bottom: clamp(2.25rem, 5vw, 3.75rem);
+  border-bottom: 1px solid var(--line);
+}
+.song-cover-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-art);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.9);
+}
+.song-title {
+  margin-top: 0.55rem;
+  font-size: clamp(2.3rem, 6vw, 5rem);
+  font-stretch: 115%;
+  font-weight: 760;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.song-artist { margin-top: 0.6rem; font-size: 1.05rem; font-weight: 500; color: var(--text-soft); }
+.song-artist span { color: var(--muted); }
+.song-cover { grid-row: 1 / span 2; }
+.song-head > .stream-links { grid-column: 2; margin-top: 1.2rem; }
+/* On a phone the buttons get the full width under the cover */
+@media (max-width: 599px) {
+  .song-head { align-items: start; }
+  .song-cover { grid-row: auto; }
+  .song-head > .stream-links { grid-column: 1 / -1; }
+}
+
+/* The lyrics, with the notes beside them on a wide screen */
+.song-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+@media (min-width: 900px) {
+  .song-body.has-notes { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(2.5rem, 5vw, 5rem); }
+}
+
+.lyrics { font-size: clamp(1.05rem, 1.45vw, 1.2rem); line-height: 1.75; }
+.verse + .verse { margin-top: 1.5em; }
+.line {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: -0.4em;
+  padding: 0.04em 0.4em;
+  border-radius: 5px;
+  transition: background-color var(--t-fast), color var(--t-fast);
+}
+.line.noted { background: rgba(255, 255, 255, 0.065); cursor: pointer; }
+.line.noted + .line.noted { margin-top: 2px; }
+.line.noted.is-active { background: rgba(86, 226, 211, 0.17); color: #fff; }
+.line.is-landed { background: rgba(86, 226, 211, 0.24); }
+.lyrics-missing { color: var(--muted); }
+
+.note {
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-raise);
+}
+.note + .note { margin-top: 0.85rem; }
+.note-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.7rem; font-size: 0.8rem; font-weight: 520; color: var(--muted); }
+.note-kind { color: var(--text); font-weight: 620; }
+.note-story .note-kind,
+.note-studio .note-kind { color: var(--accent); }
+.note-title { margin-top: 0.55rem; font-size: 1.15rem; font-weight: 680; letter-spacing: -0.01em; }
+.note-body { margin-top: 0.5rem; line-height: 1.65; color: var(--text-soft); }
+
+.song-notes-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.song-notes-hint { font-size: 0.92rem; color: var(--muted); }
+.song-notes-close { display: none; width: 40px; height: 40px; flex: none; border-radius: 50%; color: var(--text-soft); }
+.song-notes-close svg { width: 20px; height: 20px; margin: auto; }
+.song-notes-list { margin-top: 1rem; }
+
+/* With scripts, a note shows when its line is tapped */
+.notes-ready.notes-open .song-notes-hint { display: none; }
+.notes-ready.notes-open .song-notes-close { display: flex; }
+.notes-ready.notes-open .song-notes-list { margin-top: 0; }
+
+@media (min-width: 900px) {
+  .notes-ready .song-notes-panel { position: sticky; top: 6.5rem; }
+  .notes-ready.notes-open .song-notes-panel { margin-top: var(--note-top, 0); transition: margin-top 0.35s var(--ease-out); }
+  .notes-ready.notes-open .song-notes-head { position: absolute; right: 0.5rem; top: 0.5rem; z-index: 1; }
+}
+
+/* On a phone the notes slide up from the bottom, with a peek bar until then */
+@media (max-width: 899px) {
+  .notes-ready .song-notes-panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 90;
+    max-height: 62dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.9rem var(--gutter) calc(1.1rem + env(safe-area-inset-bottom));
+    background: rgba(17, 19, 23, 0.96);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border-top: 1px solid var(--line-strong);
+    border-radius: 16px 16px 0 0;
+    transform: translateY(calc(100% - 3.4rem - env(safe-area-inset-bottom)));
+    transition: transform 0.4s var(--ease-out);
+  }
+  .notes-ready.notes-open .song-notes-panel { transform: none; }
+  .notes-ready .song-notes-hint { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .notes-ready.notes-open .song-notes-head { justify-content: flex-end; margin-bottom: 0.3rem; }
+  .notes-ready .note { padding: 0; border: 0; background: none; }
+  .notes-ready .note + .note { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--line); border-radius: 0; }
+  /* Room at the very bottom so the peek bar never covers the footer */
+  body:has(.notes-ready) { padding-bottom: calc(3.4rem + env(safe-area-inset-bottom)); }
+}
+
+/* Previous and next song */
+.song-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.song-step { display: flex; flex-direction: column; gap: 0.2rem; max-width: 46%; min-height: 44px; }
+.song-step-next { margin-left: auto; text-align: right; align-items: flex-end; }
+.song-step-label { font-size: 0.8rem; color: var(--muted); }
+.song-step-title { font-size: 1.1rem; font-weight: 640; transition: color var(--t-fast); }
+
+/* Tracklists that link to the lyrics */
+.lyrics-tracklist .track-item { display: block; padding: 0; }
+.track-link { display: flex; align-items: baseline; gap: 1rem; width: 100%; min-height: 44px; padding: 0.75rem 0; }
+.track-link .track-title { transition: color var(--t-fast); }
+.track-link.is-empty { color: var(--muted); }
+.track-item.is-current .track-title { color: var(--accent); }
+.lyrics-note-count { margin-left: auto; padding-left: 1rem; font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+.release-lyrics-link { margin-top: 0.2rem; }
+
+/* Lyrics hub */
+.lyrics-releases { display: grid; gap: clamp(3rem, 6vw, 4.5rem) clamp(2.5rem, 5vw, 4.5rem); }
+@media (min-width: 1000px) { .lyrics-releases { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.lyrics-release { display: grid; grid-template-columns: clamp(72px, 13vw, 140px) minmax(0, 1fr); gap: clamp(1.1rem, 2.5vw, 2rem); align-items: start; }
+.lyrics-release-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-art); }
+.lyrics-release-title {
+  margin: 0.35rem 0 0.6rem;
+  font-size: clamp(1.45rem, 2.6vw, 2.05rem);
+  font-stretch: 112%;
+  font-weight: 740;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+/* References */
+.ref-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.75rem; }
+.ref-filter {
+  min-height: 40px;
+  padding: 0.45rem 0.95rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--pill);
+  font-size: 0.88rem;
+  font-weight: 540;
+  color: var(--text-soft);
+  transition: background-color var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+}
+.ref-filter.is-on { background: var(--text); border-color: var(--text); color: var(--bg); }
+.ref-group + .ref-group { margin-top: clamp(2.75rem, 5vw, 4rem); }
+.ref-group-title { margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--line); font-size: 0.95rem; font-weight: 600; color: var(--muted); }
+.ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 1rem; }
+.ref { padding: 1.25rem 1.3rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(17, 19, 23, 0.7); }
+.ref-name { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; font-size: 1.1rem; font-weight: 680; letter-spacing: -0.01em; }
+.ref-body { margin-top: 0.45rem; font-size: 0.95rem; line-height: 1.6; color: var(--text-soft); }
+.ref-songs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.9rem; }
+.ref-song {
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--pill);
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 0.82rem;
+  font-weight: 560;
+  transition: background-color var(--t-fast), color var(--t-fast);
+}
+
+/* SyWavy's Florida */
+.fl-layout { display: grid; gap: clamp(2rem, 4vw, 3.5rem); }
+@media (min-width: 900px) {
+  .fl-layout { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); align-items: start; }
+  .fl-map { position: sticky; top: 6.5rem; }
+}
+.fl-map svg { display: block; width: 100%; height: auto; overflow: visible; }
+.fl-outline { fill: rgba(255, 255, 255, 0.025); stroke: var(--line-strong); stroke-width: 1.6; stroke-linejoin: round; }
+.fl-keys { fill: none; stroke: var(--line-strong); stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 1 11; }
+.fl-home circle { fill: none; stroke: var(--accent); stroke-width: 1.5; opacity: 0.55; }
+.fl-home text { fill: var(--muted); font-family: var(--font); font-size: 22px; font-weight: 560; }
+.fl-pin { cursor: pointer; outline: none; }
+.fl-pin-hit { fill: transparent; }
+.fl-pin-dot { fill: var(--text); transform-box: fill-box; transform-origin: center; transition: transform 0.25s var(--ease-out), fill var(--t-fast); }
+.fl-pin.is-on .fl-pin-dot,
+.fl-pin:focus-visible .fl-pin-dot { fill: var(--accent); transform: scale(1.6); }
+/* The map shrinks on a phone, so its pins and label grow to stay easy to see and tap */
+@media (max-width: 599px) {
+  .fl-pin-dot { r: 13px; }
+  .fl-pin-hit { r: 34px; }
+  .fl-home circle { r: 26px; stroke-width: 3; }
+  .fl-home text { font-size: 40px; transform: translate(18px, 6px); }
+}
+.fl-places { display: grid; gap: 0.75rem; }
+.fl-place { padding: 1.1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); transition: border-color var(--t-fast); scroll-margin: 6rem; }
+.fl-place.is-on { border-color: rgba(86, 226, 211, 0.5); }
+.fl-place-name { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; font-size: 1.1rem; font-weight: 680; }
+.fl-place-body { margin-top: 0.35rem; font-size: 0.95rem; line-height: 1.6; color: var(--text-soft); }
+
+/* Track by track: a line through the album, drawn as the page scrolls */
+.arc-summary { max-width: 62ch; margin-bottom: clamp(2rem, 4vw, 2.75rem); font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); }
+.arc-body { position: relative; padding-left: 3rem; }
+.arc-path { position: absolute; left: 0; top: 0; width: 40px; height: 100%; overflow: visible; pointer-events: none; }
+.arc-path path { fill: none; stroke-width: 1.5; stroke-linecap: round; }
+.arc-path-base { stroke: var(--line-strong); }
+.arc-path-drawn { stroke: var(--accent); opacity: 0.75; }
+.arc[data-motif="flight"] .arc-path-base { stroke-dasharray: 2 8; }
+.arc-list { display: grid; gap: clamp(1.6rem, 3vw, 2.25rem); }
+.arc-stop { position: relative; }
+.arc-mark {
+  position: absolute;
+  left: calc(-3rem + 20px - 5px);
+  top: 0.6em;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 50%;
+  background: var(--bg);
+  transition: border-color 0.6s ease, transform 1.1s var(--ease-out);
+}
+.arc-stop.visible .arc-mark { border-color: var(--accent); }
+.arc[data-motif="blossom"] .arc-mark { border-radius: 0 70% 0 70%; transform: rotate(-35deg) translateY(-4px); }
+.arc[data-motif="blossom"] .arc-stop.visible .arc-mark { transform: rotate(20deg) translateY(2px); }
+.arc[data-motif="flight"] .arc-mark { border-radius: 2px; transform: rotate(45deg) scale(0.85); }
+.arc-title { display: inline-flex; align-items: baseline; gap: 0.8rem; min-height: 44px; font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 680; letter-spacing: -0.01em; transition: color var(--t-fast); }
+.arc-line { max-width: 58ch; margin-top: -0.35rem; color: var(--text-soft); }
+
+@media (hover: hover) {
+  .line.noted:hover { background: rgba(255, 255, 255, 0.11); }
+  .line.noted.is-active:hover { background: rgba(86, 226, 211, 0.22); }
+  .song-step:hover .song-step-title,
+  .track-link:hover .track-title,
+  .arc-title:hover { color: var(--accent); }
+  .ref-song:hover { background: rgba(255, 255, 255, 0.14); }
+  .ref-filter:not(.is-on):hover { border-color: var(--text-soft); color: var(--text); }
+  .song-notes-close:hover { color: var(--text); background: rgba(255, 255, 255, 0.06); }
+}
 
 /* ============================================================
    404

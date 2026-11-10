@@ -276,14 +276,16 @@ window._SWR = (function () {
     return related.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   }
 
-  function releasePage(release, releases) {
+  // extras come from build.js: the tracklist with links to the lyrics, and an
+  // album's track by track. The page reads fine without them.
+  function releasePage(release, releases, extras = {}) {
     const kind  = typeLabel(release.type);
     const links = streamLinks(release, `Stream ${release.title}`);
     const embedHTML = spotifyEmbed(release, release.type === 'single' ? 152 : 352);
 
     /* Optional tracklist (only when data is provided) */
     const tracklist = Array.isArray(release.tracklist) && release.tracklist.length ? release.tracklist : null;
-    const tracklistHTML = tracklist ? `
+    const tracklistHTML = extras.tracks ? extras.tracks : !tracklist ? '' : `
     <div class="release-tracklist">
       <h2 class="tracklist-heading">Tracklist</h2>
       <ol class="tracklist">
@@ -294,7 +296,7 @@ window._SWR = (function () {
           return `<li class="track-item"><span class="track-num">${String(i + 1).padStart(2, '0')}</span><span class="track-title">${escapeHTML(title)}${feat}</span>${dur}</li>`;
         }).join('')}
       </ol>
-    </div>` : '';
+    </div>`;
 
     /* Music video */
     const videoHTML = release.musicVideoId ? `
@@ -323,6 +325,7 @@ window._SWR = (function () {
         ${tracklistHTML}
       </div>
     </div>
+    ${extras.arc || ''}
     ${videoHTML}
     <section class="release-section" aria-labelledby="relatedHeading">
       <div class="section-head"><h2 id="relatedHeading" class="section-heading section-heading-sm">More from SyWavy</h2></div>
@@ -331,7 +334,7 @@ window._SWR = (function () {
   }
 
   return {
-    icon, monoIcon, typeLabel, escapeHTML, formatDate,
+    icon, monoIcon, typeLabel, escapeHTML, formatDate, streamLinks,
     RELEASE_LIMIT, VIDEO_LIMIT, featuredOf,
     heroRelease, discography, featuredRelease, videos, videoIframe,
     socialLinks, followLinks, aboutBio, aboutFacts, releasePage

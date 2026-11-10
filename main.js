@@ -103,8 +103,9 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
       const el = byId(id);
       if (el && el.offsetTop <= scrollMid) current = id;
     }
-    // Discography belongs to Music
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
+    // Discography belongs to Music. Links to other pages (Lyrics) keep the
+    // active state their page was built with.
+    navMenu.querySelectorAll('.nav-link[href*="#"]').forEach(link => {
       const href = link.getAttribute('href');
       link.classList.toggle('nav-link-active', current !== '' && (href === `#${current}` || href === `/#${current}`));
     });

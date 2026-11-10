@@ -9,19 +9,26 @@
      own title, text, and cover art for link previews
    - adds structured data that says who SyWavy is and what he
      has released, plus a sitemap listing every page
+   - writes the lyrics pages from lyrics/ (build-lyrics.js reads
+     them, build-pages.js lays them out): a page per song with its
+     notes, the lyrics hub, the references, and the Florida map
    The deploy workflow runs this on every push.
 
    Preview locally:  node build.js && npx serve _site
+   With draft notes: node build.js --drafts && npx serve _site
    ============================================================ */
 
 const fs   = require('fs');
 const path = require('path');
 const vm   = require('vm');
+const { loadSongs, loadNotes } = require('./build-lyrics');
+const buildPages = require('./build-pages');
 
 const ROOT = __dirname;
 const OUT  = path.join(ROOT, '_site');
-const SKIP = new Set(['_site', 'build.js', 'node_modules', 'lyrics']);
+const SKIP = new Set(['_site', 'build.js', 'build-lyrics.js', 'build-pages.js', 'page.html', 'node_modules', 'lyrics']);
 const SITE = 'https://sywavy.com';
+const DRAFTS = process.argv.includes('--drafts');
 
 // data.js and render.js expect a browser window, so run them against a stand-in
 const sandbox = vm.createContext({ window: {} });
@@ -124,6 +131,15 @@ home = addToHead(home, jsonLd(artistData));
 fs.writeFileSync(path.join(OUT, 'index.html'), home);
 
 /* ------------------------------------------------------------
+   Lyrics and notes (draft notes only with --drafts)
+------------------------------------------------------------ */
+const { songs, byRelease } = loadSongs(D.releases);
+const { arcs } = loadNotes(byRelease, { drafts: DRAFTS });
+const placesFile = path.join(ROOT, 'lyrics', 'notes', 'places.json');
+const places = fs.existsSync(placesFile) ? JSON.parse(fs.readFileSync(placesFile, 'utf8')) : {};
+const P = buildPages({ D, R, songs, byRelease, arcs, places });
+
+/* ------------------------------------------------------------
    One page per release
 ------------------------------------------------------------ */
 const template = fs.readFileSync(path.join(ROOT, 'release.html'), 'utf8');
@@ -152,7 +168,7 @@ for (const r of D.releases) {
   html = swap(html, /(<meta property="og:site_name"[^>]*>)/, m =>
     `${m}\n  <meta property="og:url" content="${url}" />\n  <link rel="canonical" href="${url}" />`);
   html = swap(html, /<body>/, () => `<body data-release="${r.id}">`);
-  html = setInner(html, 'releaseContent', R.releasePage(r, D.releases));
+  html = setInner(html, 'releaseContent', R.releasePage(r, D.releases, P.releaseExtras(r)));
   html = fillFooter(html);
   html = addToHead(html, jsonLd({
     ...albumData(r),
@@ -164,10 +180,74 @@ for (const r of D.releases) {
 }
 
 /* ------------------------------------------------------------
-   Sitemap: the home page and every release page
+   Lyrics pages: sywavy.com/lyrics/, /lyrics/<song>, /references
+   and /florida, all from page.html
 ------------------------------------------------------------ */
-const urls = [`${SITE}/`, ...D.releases.map(r => `${SITE}/${r.id}`)];
+const pageTemplate = fs.readFileSync(path.join(ROOT, 'page.html'), 'utf8');
+const pageUrls = [];
+
+function writePage(file, { url, title, desc, content, data }) {
+  let html = pageTemplate;
+  html = swap(html, /<title>[^<]*<\/title>/, () => `<title>${escapeHTML(title)}</title>`);
+  html = metaContent(html, 'name', 'description', desc);
+  html = metaContent(html, 'property', 'og:title', title);
+  html = metaContent(html, 'property', 'og:description', desc);
+  html = swap(html, /(<meta property="og:site_name"[^>]*>)/, m =>
+    `${m}\n  <meta property="og:url" content="${url}" />\n  <link rel="canonical" href="${url}" />`);
+  html = swap(html, /(<a href="\/lyrics\/" class="nav-link)(")/, (m, a, b) => `${a} nav-link-active${b}`);
+  html = setInner(html, 'pageContent', content);
+  html = fillFooter(html);
+  if (data) html = addToHead(html, jsonLd(data));
+  fs.mkdirSync(path.dirname(path.join(OUT, file)), { recursive: true });
+  fs.writeFileSync(path.join(OUT, file), html);
+  pageUrls.push(url);
+}
+
+writePage('lyrics/index.html', {
+  url: `${SITE}/lyrics/`,
+  title: 'SyWavy Lyrics',
+  desc: 'Lyrics to every SyWavy song, with notes on the lines.',
+  content: P.hubPage()
+});
+
+for (const s of songs) {
+  if (!s.lines.length) continue;
+  const rel = D.releases.find(r => r.id === s.releaseId);
+  writePage(`lyrics/${s.slug}.html`, {
+    url: `${SITE}/lyrics/${s.slug}`,
+    title: `${s.title} Lyrics by SyWavy`,
+    desc: `Lyrics to ${s.title} by SyWavy, track ${s.track} on ${rel.title}${(s.notes || []).length ? `, with notes on the lines` : ''}.`,
+    content: P.songPage(s),
+    data: {
+      '@type': 'MusicRecording',
+      name: s.title,
+      url: `${SITE}/lyrics/${s.slug}`,
+      byArtist: artistRef,
+      inAlbum: { '@type': 'MusicAlbum', name: rel.title, url: `${SITE}/${rel.id}` }
+    }
+  });
+}
+
+if (P.refCount()) writePage('references.html', {
+  url: `${SITE}/references`,
+  title: 'References in SyWavy Songs',
+  desc: 'Every athlete, artist, show, game, brand and place SyWavy names in his songs.',
+  content: P.referencesPage()
+});
+
+if (P.floridaCount()) writePage('florida.html', {
+  url: `${SITE}/florida`,
+  title: "SyWavy's Florida",
+  desc: 'The Florida places SyWavy names in his songs, on a map.',
+  content: P.floridaPage()
+});
+
+/* ------------------------------------------------------------
+   Sitemap: the home page, every release page, and the lyrics pages
+------------------------------------------------------------ */
+const urls = [`${SITE}/`, ...D.releases.map(r => `${SITE}/${r.id}`), ...pageUrls];
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`);
 
-console.log(`Built _site with ${D.releases.length} release pages and a sitemap.`);
+const noteCount = songs.reduce((n, s) => n + (s.notes || []).length, 0);
+console.log(`Built _site with ${D.releases.length} release pages, ${pageUrls.length} lyrics pages (${noteCount} notes${DRAFTS ? ', drafts included' : ''}), and a sitemap.`);
