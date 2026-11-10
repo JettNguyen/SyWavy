@@ -4,7 +4,7 @@
     "1": {
       "title": "Why",
       "notes": [
-        { "lines": [1, 1], "kind": "reference", "title": "Mac Miller", "body": "The Pittsburgh artist behind Swimming and Circles. He splits the name across the line: himself on one side, a Miller beer on the other.", "ref": {"name": "Mac Miller", "category": "musician"}, "draft": true },
+        { "lines": [1, 1], "kind": "reference", "title": "Mac Miller", "body": "The Pittsburgh artist behind Swimming and Circles. He splits the name across the line with a Miller beer on one end, and Mac also sounds like mack, slang for a smooth talker with women.", "ref": {"name": "Mac Miller", "category": "musician"}, "draft": true },
         { "lines": [9, 16], "kind": "story", "body": "The breakup at the center of Why Me? and Hurts to Heal starts here. She'd met his family and he thought she was the one, and she insists she did nothing wrong. The title question grows out of that refusal.", "draft": true },
         { "lines": [26, 29], "kind": "story", "body": "The studio is home, and recording is how he works through it, with friends around and his phone in his hand. Making music to sort out his feelings becomes a thread through everything he makes.", "draft": true },
         { "lines": [54, 54], "kind": "reference", "title": "VLONE", "body": "The streetwear label from the A$AP Mob circle, known for its big orange V. Its name comes from the motto live alone, die alone, so it's what he's wearing now that he's by himself.", "ref": {"name": "VLONE", "category": "brand"}, "draft": true },
@@ -15,15 +15,17 @@
       "title": "Me",
       "notes": [
         { "lines": [6, 7], "kind": "reference", "title": "Martin", "body": "Martin Lawrence's 90s sitcom, where Martin and Gina were the couple everyone wanted to be and Pam was Gina's best friend. She wants to be Gina but doesn't have a Pam.", "ref": {"name": "Martin (TV series)", "category": "film-tv"}, "draft": true },
-        { "lines": [8, 8], "kind": "reference", "title": "Dunkin'", "body": "The donut and coffee chain. Her coffee order sets up a basketball joke about dunking.", "ref": {"name": "Dunkin'", "category": "brand"}, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Dunkin'", "body": "The donut and coffee chain. Dunkin' sets up a slam dunk, and slam is also slang for the men she sleeps with.", "ref": {"name": "Dunkin'", "category": "brand"}, "draft": true },
         { "lines": [11, 11], "kind": "reference", "title": "Usher", "body": "The R&B star, whose 2016 single with Young Thug gives the line its opening words. His name also stands for the person who shows you to your seat.", "ref": {"name": "Usher", "category": "musician"}, "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "50 Cent", "body": "The Queens rapper and businessman. The joke is on sense and cents: his troubles don't add up, and the name is a sum of money.", "ref": {"name": "50 Cent", "category": "musician"}, "draft": true },
-        { "lines": [27, 27], "kind": "reference", "title": "Bantu knots", "body": "A protective hairstyle of small coiled knots, named for the Bantu-speaking peoples of Africa. Tied up in each other, they're knotted the same way.", "ref": {"name": "Bantu knots", "category": "other"}, "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "Bantu knots", "body": "A protective hairstyle of small coiled knots, named for the Bantu-speaking peoples of Africa. Knot also sounds like not, so they're tied together and not together in the same breath.", "ref": {"name": "Bantu knots", "category": "other"}, "draft": true },
         { "lines": [28, 30], "kind": "story", "body": "He can't figure her out, loves her anyway, and ends the same thought cursing her. Three feelings in three lines, none of them canceling the others.", "draft": true },
         { "lines": [33, 33], "kind": "reference", "title": "Giveon", "body": "The deep-voiced Long Beach R&B singer who broke through in 2020. One of his songs from that year shares its title with what he says he isn't.", "ref": {"name": "Giveon", "category": "musician"}, "draft": true },
+        { "lines": [40, 41], "kind": "story", "body": "The title for what they had is in the past tense now. The next line turns tense into the other kind, wound up and stressed.", "draft": true },
         { "lines": [57, 57], "kind": "reference", "title": "Amazon Alexa", "body": "Amazon's voice assistant, there every time you call its name. That's how dependable he wanted her to be.", "ref": {"name": "Amazon Alexa", "category": "brand"}, "draft": true },
         { "lines": [59, 60], "kind": "story", "body": "His mother tells him the pain is temporary. The song turns forward from there, to new stories and then a new girl calling.", "draft": true },
-        { "lines": [62, 64], "kind": "reference", "title": "Slick Rick", "body": "The London-born storyteller of 80s hip-hop, famous for his eye patch and gold chains. His breakout 1985 record with Doug E. Fresh is named for a live performance, which he admits he hasn't done yet.", "ref": {"name": "Slick Rick", "category": "musician"}, "draft": true }
+        { "lines": [62, 64], "kind": "reference", "title": "Slick Rick", "body": "The London-born storyteller of 80s hip-hop, famous for his eye patch and gold chains. His breakout 1985 record with Doug E. Fresh is named for a live performance, which he admits he hasn't done yet.", "ref": {"name": "Slick Rick", "category": "musician"}, "draft": true },
+        { "lines": [63, 63], "kind": "reference", "title": "Lil Uzi Vert", "body": "The Philadelphia artist's 2017 album Luv Is Rage 2 includes The Way Life Goes, one of its biggest songs. Rage and that title both fit in one line.", "ref": {"name": "Lil Uzi Vert", "category": "musician"}, "draft": true }
       ]
     },
     "3": {
@@ -32,6 +34,7 @@
         { "lines": [3, 3], "kind": "reference", "title": "Nicki Minaj", "body": "The Trinidad-born, Queens-raised rap star. Her last name sounds like ménage, as in a threesome.", "ref": {"name": "Nicki Minaj", "category": "musician"}, "draft": true },
         { "lines": [24, 24], "kind": "reference", "title": "Star Crunch", "body": "Little Debbie's chocolate-covered snack cake of crispy rice and caramel.", "ref": {"name": "Star Crunch", "category": "brand"}, "draft": true },
         { "lines": [26, 34], "kind": "story", "body": "Being too nice got him burned, so he talks himself into the opposite. Then he admits that isn't who he is, says the lesson stuck and he's past it, and owns how it all sounds.", "draft": true },
+        { "lines": [49, 50], "kind": "story", "body": "Being grounded means staying humble, and a basement sits under the ground, so the weed keeps him low both ways. The box is the vocal booth, filled with smoke.", "draft": true },
         { "lines": [50, 53], "kind": "story", "body": "The song ends with him saying he put everything he had into the track, then calling it done. The question mark in the title stays open.", "draft": true }
       ]
     }

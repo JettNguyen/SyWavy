@@ -13,7 +13,8 @@
         { "lines": [30, 31], "kind": "reference", "title": "Flashing Lights", "body": "Kanye West's 2007 single from his album Graduation. The next line turns that album's title into a joke about his own schooling.", "ref": {"name": "Flashing Lights", "category": "musician"}, "draft": true },
         { "lines": [40, 40], "kind": "reference", "title": "Boy Meets World", "body": "The 90s sitcom where Cory Matthews and Topanga Lawrence grow from classmates into a married couple. He casts himself as Cory, with a Topanga of his own.", "ref": {"name": "Boy Meets World", "category": "film-tv"}, "draft": true },
         { "lines": [43, 43], "kind": "reference", "title": "Timmy Turner", "body": "The kid from Nickelodeon's The Fairly OddParents, known for his big pink cap. His own hat would never sit like that.", "ref": {"name": "Timmy Turner", "category": "anime-cartoon"}, "draft": true },
-        { "lines": [45, 49], "kind": "story", "body": "He comes back to the sample, a gospel record, and makes clear the joy runs deep. There was no blueprint to copy either: he built the song out of his own life.", "draft": true }
+        { "lines": [45, 49], "kind": "story", "body": "He comes back to the sample, a gospel record, and makes clear the joy runs deep. There was no blueprint to copy either: he built the song out of his own life.", "draft": true },
+        { "lines": [49, 49], "kind": "reference", "title": "Good Morning", "body": "The opening track on Kanye West's Graduation, the album he joked about earlier in the song. Coming first is what this song and that one have in common.", "ref": {"name": "Good Morning", "category": "musician"}, "draft": true }
       ]
     },
     "2": {
@@ -21,14 +22,17 @@
       "notes": [
         { "lines": [2, 2], "kind": "reference", "title": "The Weeknd", "body": "The Toronto singer's fourth album came out in March 2020, three months before this EP, and its title runs through the hook. The song's own title spells weekend his way.", "ref": {"name": "The Weeknd", "category": "musician"}, "draft": true },
         { "lines": [9, 12], "kind": "story", "body": "He turns on someone who acts like family but isn't, and the way they've treated him feels strange to him. The pun between family and familiar carries the verse.", "draft": true },
+        { "lines": [18, 18], "kind": "reference", "title": "What a Time to Be Alive", "body": "Drake and Future's 2015 joint mixtape. Live From the Gutter is one of its songs, so the line names the tape and a track off it.", "ref": {"name": "What a Time to Be Alive", "category": "musician"}, "draft": true },
         { "lines": [19, 19], "kind": "reference", "title": "Tory Burch", "body": "The American fashion label known for flats and sandals with a double T logo. Her pair is a yellow shade.", "ref": {"name": "Tory Burch", "category": "brand"}, "draft": true },
         { "lines": [26, 26], "kind": "reference", "title": "Sneaky link", "body": "Slang for someone you hook up with in secret. The phrase spread across social media in 2020, the year this came out.", "ref": {"name": "Sneaky link", "category": "other"}, "draft": true },
-        { "lines": [29, 31], "kind": "story", "body": "In the middle of the party talk, he asks what she cares about beyond the party and she comes up empty. That one exchange turns a weekend song into a picture of someone he can't reach.", "draft": true }
+        { "lines": [29, 31], "kind": "story", "body": "In the middle of the party talk, he asks what she cares about beyond the party and she comes up empty. That one exchange turns a weekend song into a picture of someone he can't reach.", "draft": true },
+        { "lines": [56, 60], "kind": "reference", "title": "Heartless", "body": "One of the first singles from The Weeknd's After Hours, the album the hook keeps naming. He flips its title around and calls himself the opposite.", "ref": {"name": "Heartless (The Weeknd song)", "category": "musician"}, "draft": true }
       ]
     },
     "3": {
       "title": "Peace of Mind",
       "notes": [
+        { "lines": [1, 1], "kind": "story", "body": "The line plays miss two ways: never missing a shot, and missing a person. He's good at the first and stuck on the second.", "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Dennis the Menace", "body": "Hank Ketcham's comic strip kid who leaves trouble everywhere he goes. She's no more blameless than Dennis.", "ref": {"name": "Dennis the Menace", "category": "anime-cartoon"}, "draft": true },
         { "lines": [8, 11], "kind": "story", "body": "Time stands still, every argument goes nowhere, and what's left of the relationship sits in old texts. Phones as the place where love fades out becomes a thread through his music.", "draft": true },
         { "lines": [19, 20], "kind": "story", "body": "This early on, he's already the one behind the camera for his own visuals. Directing has stayed part of what he does, alongside the music he makes with Jett2Fly.", "draft": true },
@@ -41,10 +45,11 @@
       "notes": [
         { "lines": [5, 6], "kind": "reference", "title": "Aston Martin", "body": "The British luxury car maker. He stretches its name across two lines, sound by sound.", "ref": {"name": "Aston Martin", "category": "brand"}, "draft": true },
         { "lines": [9, 13], "kind": "story", "body": "He's moving fast here, with new music and beats that hit hard. He also nods to Keys', his single from that March, now finished and locked away.", "draft": true },
+        { "lines": [27, 27], "kind": "reference", "title": "World's smallest violin", "body": "The joke of rubbing two fingers together to play a tiny violin for someone's sob story. He plays one for a sad story, which means he isn't moved.", "ref": {"name": "World's smallest violin", "category": "other"}, "draft": true },
         { "lines": [29, 29], "kind": "reference", "title": "Jawn", "body": "Philadelphia slang that can stand in for almost any noun. Here it means people he used to know.", "ref": {"name": "Jawn", "category": "other"}, "draft": true },
         { "lines": [32, 36], "kind": "story", "body": "People ask where the beats come from, and he shuts down the idea that they're free beats off YouTube. They're Jett2Fly's, which is why the next line calls the two of them a buddy movie.", "draft": true },
         { "lines": [36, 36], "kind": "reference", "title": "Rush Hour", "body": "The 1998 action comedy that paired Jackie Chan and Chris Tucker as mismatched partners. That's his working relationship with Jett2Fly: two different styles that click.", "ref": {"name": "Rush Hour", "category": "film-tv"}, "draft": true },
-        { "lines": [37, 37], "kind": "reference", "title": "Austin Powers", "body": "Mike Myers' spy parody series, soaked in loud 1960s colors and patterns. The colors he's wearing are just as far out.", "ref": {"name": "Austin Powers", "category": "film-tv"}, "draft": true },
+        { "lines": [37, 37], "kind": "reference", "title": "Austin Powers", "body": "Mike Myers' spy parody series, soaked in loud 1960s colors and patterns. Groovy is the hero's favorite word, and it's the one he picks for what he's wearing.", "ref": {"name": "Austin Powers", "category": "film-tv"}, "draft": true },
         { "lines": [43, 43], "kind": "reference", "title": "The Matrix", "body": "The 1999 sci-fi film, famous for Neo bending backward to dodge bullets in a long black coat. He strikes the same pose in photos.", "ref": {"name": "The Matrix", "category": "film-tv"}, "draft": true }
       ]
     },

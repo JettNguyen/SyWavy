@@ -5,8 +5,8 @@
       "title": "High Speed",
       "notes": [
         { "lines": [6, 6], "kind": "reference", "title": "Mercedes-Benz", "body": "The German luxury carmaker. A full plate becomes a license plate, the first car image in a song built on speed.", "ref": { "name": "Mercedes-Benz", "category": "brand" }, "draft": true },
-        { "lines": [8, 8], "kind": "reference", "title": "Trix", "body": "The General Mills cereal whose ads always end with the rabbit being told the cereal is only for children. He's too old for that now.", "ref": { "name": "Trix", "category": "brand" }, "draft": true },
-        { "lines": [14, 14], "kind": "reference", "title": "Master Chief", "body": "The armored super soldier who stars in Microsoft's Halo games. The name sets up the Halo lines that follow.", "ref": { "name": "Master Chief", "category": "game" }, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Trix", "body": "The General Mills cereal whose ads always end with the rabbit being told it's only for kids. Trix also sounds like tricks, so he's past playing games too.", "ref": { "name": "Trix", "category": "brand" }, "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "Master Chief", "body": "The armored hero of Microsoft's Halo games. To chief is slang for smoking weed hard, so he's mastered that, and the name sets up the Halo line after it.", "ref": { "name": "Master Chief", "category": "game" }, "draft": true },
         { "lines": [15, 15], "kind": "reference", "title": "Halo: Reach", "body": "Bungie's 2010 prequel in the Halo series. He wants a halo, the kind angels wear, and the game's title tells you it's out of his grasp.", "ref": { "name": "Halo: Reach", "category": "game" }, "draft": true },
         { "lines": [17, 18], "kind": "reference", "title": "Teena Marie", "body": "The Motown singer and songwriter known as Lady T, whose biggest solo hit, from 1981, is named at the start of the next line. He splits her name in two to get there.", "ref": { "name": "Teena Marie", "category": "musician" }, "draft": true },
         { "lines": [21, 22], "kind": "story", "body": "The hook is a chase. He's trying to get away, something is right behind him at full speed, and the title names how fast it's gaining.", "draft": true },
@@ -16,6 +16,8 @@
         { "lines": [41, 41], "kind": "reference", "title": "Ex-Factor", "body": "Lauryn Hill's 1998 breakup song from The Miseducation of Lauryn Hill. He borrows the plea from its chorus and its title in one line.", "ref": { "name": "Ex-Factor", "category": "musician" }, "draft": true },
         { "lines": [42, 42], "kind": "reference", "title": "Devonta Freeman", "body": "The former Atlanta Falcons running back and two-time Pro Bowler, a Miami native who played at Florida State. His last name spells out what he wants to be.", "ref": { "name": "Devonta Freeman", "category": "athlete" }, "draft": true },
         { "lines": [53, 56], "kind": "story", "body": "The title comes back three times like an engine revving, then the song flips. Whatever had him locked up, he gets himself out and keeps the way out in his own hands.", "draft": true },
+        { "lines": [59, 59], "kind": "story", "body": "Wavy Life became the name of his next album, which came out the following March.", "draft": true },
+        { "lines": [62, 62], "kind": "reference", "title": "Kryptonite", "body": "The glowing rock from Superman's home planet, the one thing that can take him down. His past does that to him.", "ref": { "name": "Kryptonite", "category": "film-tv" }, "draft": true },
         { "lines": [63, 68], "kind": "story", "body": "At the end the decision gets handed back to him, by name, again and again. A song about running ends on him choosing, and the last words are about making peace with where he is.", "draft": true }
       ]
     }
