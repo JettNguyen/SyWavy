@@ -6,7 +6,7 @@
   <title>SyWavy | Rapper and Producer from St. Petersburg, FL</title>
   <meta name="description" content="Official site of SyWavy, rapper and producer from Saint Petersburg, Florida. Stream the new album Magnum Opus, browse the full discography, and watch every music video." />
   <link rel="canonical" href="https://sywavy.com/" />
-  <meta name="theme-color" content="#0e0e0e" />
+  <meta name="theme-color" content="#08090b" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SyWavy" />
@@ -21,41 +21,33 @@
   <meta name="twitter:description" content="Rapper and producer from Saint Petersburg, Florida. New album Magnum Opus out now." />
   <meta name="twitter:image" content="https://sywavy.com/assets/photos/og.jpg" />
 
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/photos/logo-96.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/photos/logo-180.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/photos/logo-96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/photos/logo-180.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,200..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script>document.documentElement.classList.add('js')</script>
 
   <!-- build.js adds the structured data and writes each section's text into the page -->
 </head>
 <body>
 
-  <!-- WAVE BACKGROUND -->
+  <!-- WAVES (waves.js draws them) -->
   <div id="waveBg" aria-hidden="true">
-    <div class="wave-layer wave-back"></div>
-    <div class="wave-layer wave-mid"></div>
-    <div class="wave-layer wave-front"></div>
     <div id="waveDepth"></div>
+    <canvas id="waves"></canvas>
   </div>
+
+  <a href="#music" class="skip-link">Skip to the music</a>
 
   <!-- NAV -->
   <nav id="nav" aria-label="Main navigation">
     <a href="#" class="nav-wordmark" aria-label="SyWavy home">
-      <img src="assets/photos/logo-96.png" alt="" class="nav-logo" width="96" height="96" />
+      <img src="/assets/photos/logo-96.png" alt="" class="nav-logo" width="96" height="96" />
       <span class="nav-wordmark-text">SyWavy</span>
     </a>
-
-    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
 
     <ul class="nav-links" id="navMenu">
       <li><a href="#music" class="nav-link">Music</a></li>
@@ -63,21 +55,29 @@
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
+
+    <div class="nav-end">
+      <a href="#music" class="nav-cta">Listen</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </nav>
 
   <main>
 
     <!-- HERO -->
     <section id="hero" aria-label="Intro">
-      <picture class="hero-bg" aria-hidden="true">
+      <picture class="hero-photo" aria-hidden="true">
         <source
           media="(min-width: 800px)"
-          srcset="assets/photos/sywavy-portrait-wide-1280.webp 1280w, assets/photos/sywavy-portrait-wide-1920.webp 1920w"
+          srcset="/assets/photos/sywavy-portrait-wide-1280.webp 1280w, /assets/photos/sywavy-portrait-wide-1920.webp 1920w"
           sizes="100vw"
         />
         <img
-          src="assets/photos/sywavy-portrait-800.webp"
-          srcset="assets/photos/sywavy-portrait-800.webp 800w, assets/photos/sywavy-portrait-1400.webp 1400w"
+          src="/assets/photos/sywavy-portrait-800.webp"
+          srcset="/assets/photos/sywavy-portrait-800.webp 800w, /assets/photos/sywavy-portrait-1400.webp 1400w"
           sizes="100vw"
           alt=""
           width="800"
@@ -86,14 +86,13 @@
           decoding="async"
         />
       </picture>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-content">
-        <h1 id="heroName" class="hero-name"></h1>
-        <p id="heroDescriptor" class="hero-descriptor"></p>
-        <div class="hero-actions">
-          <a href="#music" id="heroCta" class="btn-primary">Listen</a>
-          <a href="#videos" class="btn-outline">Watch videos</a>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-title">
+          <p id="heroDescriptor" class="hero-descriptor"></p>
+          <h1 id="heroName" class="hero-name"></h1>
         </div>
+        <a href="#music" id="heroRelease" class="hero-release"></a>
       </div>
     </section>
 
@@ -108,7 +107,7 @@
     <section id="discography" aria-labelledby="discographyHeading">
       <div class="container">
         <div class="section-head">
-          <h2 id="discographyHeading" class="section-heading">Discography</h2>
+          <h2 id="discographyHeading" class="section-heading">Discography<span id="releaseCount" class="section-count"></span></h2>
           <div class="filter-tabs" role="group" aria-label="Filter releases">
             <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
             <button class="filter-btn" data-filter="album" aria-pressed="false">Albums</button>
@@ -127,7 +126,7 @@
     <section id="videos" aria-labelledby="videosHeading">
       <div class="container">
         <div class="section-head">
-          <h2 id="videosHeading" class="section-heading">Videos</h2>
+          <h2 id="videosHeading" class="section-heading">Videos<span id="videoCount" class="section-count"></span></h2>
         </div>
         <div id="videosGrid" class="videos-grid"></div>
         <div class="show-more-wrap">
@@ -139,25 +138,26 @@
     <!-- ABOUT -->
     <section id="about" aria-labelledby="aboutHeading">
       <div class="container">
-        <div class="about-layout animate-on-scroll">
-          <div class="about-photo-wrap">
+        <div class="about-layout">
+          <div class="about-photo-wrap animate-on-scroll">
             <img
-              src="assets/photos/sywavy-portrait-800.webp"
-              srcset="assets/photos/sywavy-portrait-800.webp 800w, assets/photos/sywavy-portrait-1400.webp 1400w"
-              sizes="(min-width: 1024px) 460px, (min-width: 750px) 340px, 80vw"
+              src="/assets/photos/sywavy-portrait-800.webp"
+              srcset="/assets/photos/sywavy-portrait-800.webp 800w, /assets/photos/sywavy-portrait-1400.webp 1400w"
+              sizes="(min-width: 1024px) 520px, (min-width: 800px) 42vw, 92vw"
               alt="SyWavy standing on the beach in Saint Petersburg"
               class="about-photo"
               width="800"
-              height="1000"
+              height="1200"
               loading="lazy"
               decoding="async"
             />
           </div>
-          <div class="about-text">
+          <div class="about-text animate-on-scroll">
             <h2 id="aboutHeading" class="section-heading">About</h2>
-            <p id="aboutBio" class="about-bio"></p>
-            <p id="aboutLocation" class="about-location eyebrow"></p>
-            <div id="aboutSocials" class="about-socials"></div>
+            <div id="aboutBio" class="about-bio"></div>
+            <dl id="aboutFacts" class="about-facts"></dl>
+            <p class="about-follow-label">Follow SyWavy</p>
+            <div id="aboutSocials" class="follow-links"></div>
           </div>
         </div>
       </div>
@@ -166,31 +166,37 @@
     <!-- CONTACT -->
     <section id="contact" aria-labelledby="contactHeading">
       <div class="container">
-        <div class="contact-inner animate-on-scroll">
-          <h2 id="contactHeading" class="section-heading">Contact</h2>
-          <p class="contact-sub">Bookings, features, and collaborations.</p>
+        <div class="contact-layout animate-on-scroll">
+          <div class="contact-intro">
+            <h2 id="contactHeading" class="section-heading">Contact</h2>
+            <p class="contact-sub">Bookings, features, and collaborations.</p>
+            <p class="contact-direct">
+              <span>Write directly to</span>
+              <a id="contactEmail" href="#" class="contact-email"></a>
+            </p>
+          </div>
 
-          <form id="contactForm" novalidate>
-            <div class="form-group">
-              <label for="formName">Name</label>
-              <input type="text" id="formName" name="name" autocomplete="name" required />
-            </div>
-            <div class="form-group">
-              <label for="formEmail">Email</label>
-              <input type="email" id="formEmail" name="email" autocomplete="email" required />
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName">Name</label>
+                <input type="text" id="formName" name="name" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Email</label>
+                <input type="email" id="formEmail" name="email" autocomplete="email" required />
+              </div>
             </div>
             <div class="form-group">
               <label for="formMessage">Message</label>
               <textarea id="formMessage" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn-primary btn-submit">Send Message</button>
+            <div class="form-submit">
+              <button type="submit" class="btn-primary">Send message</button>
+              <p class="form-note">Opens your email app with the message filled in.</p>
+            </div>
             <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
           </form>
-
-          <p class="contact-direct">
-            This opens your email app with the message filled in, or write directly to
-            <a id="contactEmail" href="#" class="contact-email-link"></a>
-          </p>
         </div>
       </div>
     </section>
@@ -200,13 +206,24 @@
   <!-- FOOTER -->
   <footer id="footer">
     <div class="container footer-inner">
-      <p class="footer-copy" id="footerCopy"></p>
+      <a href="#" class="footer-brand" aria-label="Back to the top">
+        <img src="/assets/photos/logo-96.png" alt="" width="96" height="96" loading="lazy" />
+        <span>SyWavy</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="#music">Music</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
       <div id="footerSocials" class="footer-socials"></div>
+      <p class="footer-copy" id="footerCopy"></p>
     </div>
   </footer>
 
-  <script src="data.js"></script>
-  <script src="render.js"></script>
-  <script src="main.js"></script>
+  <script src="/data.js"></script>
+  <script src="/render.js"></script>
+  <script src="/waves.js"></script>
+  <script src="/main.js"></script>
 </body>
 </html>

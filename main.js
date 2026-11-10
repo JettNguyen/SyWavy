@@ -2,7 +2,7 @@
    main.js: SyWavy artist site
    Reads from window.SYWAVY (data.js) and writes markup with
    window._SWR (render.js), then adds the clicks, filters, and
-   scroll effects
+   scroll effects. waves.js draws the background on its own.
    ============================================================ */
 
 window._SW = {};
@@ -30,6 +30,7 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
   function fill(el, html) {
     if (el && !el.hasChildNodes()) el.innerHTML = html;
   }
+  const byId = id => document.getElementById(id);
 
   /* ----------------------------------------------------------
      SCROLL REVEAL
@@ -49,10 +50,10 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
       entries.filter(e => e.isIntersecting).forEach((entry, i) => {
         const el = entry.target;
         const stagger = el.classList.contains('release-card') || el.classList.contains('video-item');
-        const delay = stagger ? Math.min(i, 7) * 0.06 : 0;
+        const delay = stagger ? Math.min(i, 7) * 0.05 : 0;
         if (delay) el.style.transitionDelay = `${delay}s`;
         el.classList.add('visible');
-        if (delay) setTimeout(() => { el.style.transitionDelay = ''; }, delay * 1000 + 800);
+        if (delay) setTimeout(() => { el.style.transitionDelay = ''; }, delay * 1000 + 900);
         observer.unobserve(el);
       });
     }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
@@ -86,37 +87,12 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
   Object.assign(window._SW, { observeCards, playOnClick });
 
   /* ----------------------------------------------------------
-     NAV + WAVE ENGINE
+     NAV
   ---------------------------------------------------------- */
-  const nav         = document.getElementById('nav');
-  const hamburger   = document.getElementById('navHamburger');
-  const navMenu     = document.getElementById('navMenu');
-  const waveDepthEl = document.getElementById('waveDepth');
-  const root        = document.documentElement;
-
-  let scrollDepth  = 0;
-  let currentDepth = 0;
-  let waveRafId    = null;
-
-  // Waves rise with scroll depth but stay in the lower half of the viewport,
-  // while the deep-water overlay darkens everything behind the content.
-  function tickWaves() {
-    currentDepth += (scrollDepth - currentDepth) * 0.08;
-
-    const backY  = (-20 + currentDepth * -14).toFixed(2);
-    const midY   = (-20 + currentDepth * -18).toFixed(2);
-    const frontY = (-20 + currentDepth * -22).toFixed(2);
-
-    root.style.setProperty('--back-tf',  `translateY(${backY}vh)`);
-    root.style.setProperty('--mid-tf',   `translateY(${midY}vh)`);
-    root.style.setProperty('--front-tf', `translateY(${frontY}vh)`);
-
-    if (waveDepthEl) waveDepthEl.style.opacity = (currentDepth * 0.6).toFixed(4);
-
-    waveRafId = Math.abs(scrollDepth - currentDepth) < 0.0005
-      ? null
-      : requestAnimationFrame(tickWaves);
-  }
+  const nav       = byId('nav');
+  const hamburger = byId('navHamburger');
+  const navMenu   = byId('navMenu');
+  const root      = document.documentElement;
 
   function updateActiveNav() {
     if (!navMenu) return;
@@ -124,9 +100,10 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
     const ids = ['music', 'videos', 'about', 'contact'];
     let current = '';
     for (const id of ids) {
-      const el = document.getElementById(id);
+      const el = byId(id);
       if (el && el.offsetTop <= scrollMid) current = id;
     }
+    // Discography belongs to Music
     navMenu.querySelectorAll('.nav-link').forEach(link => {
       const href = link.getAttribute('href');
       link.classList.toggle('nav-link-active', current !== '' && (href === `#${current}` || href === `/#${current}`));
@@ -135,9 +112,6 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
 
   function onScroll() {
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
-    const maxScroll = root.scrollHeight - window.innerHeight;
-    scrollDepth = maxScroll > 0 ? Math.min(window.scrollY / maxScroll, 1) : 0;
-    if (!waveRafId) waveRafId = requestAnimationFrame(tickWaves);
     updateActiveNav();
   }
 
@@ -152,6 +126,7 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
     if (!navMenu || !hamburger) return;
     navMenu.classList.remove('mobile-open');
     hamburger.classList.remove('open');
+    nav.classList.remove('menu-open');
     hamburger.setAttribute('aria-expanded', 'false');
     hamburger.setAttribute('aria-label', 'Open menu');
     document.body.style.overflow = '';
@@ -164,6 +139,7 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
       } else {
         navMenu.classList.add('mobile-open');
         hamburger.classList.add('open');
+        nav.classList.add('menu-open');
         hamburger.setAttribute('aria-expanded', 'true');
         hamburger.setAttribute('aria-label', 'Close menu');
         document.body.style.overflow = 'hidden';
@@ -178,28 +154,28 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
   ---------------------------------------------------------- */
   const featured = R.featuredOf(D.releases);
 
-  const heroNameEl = document.getElementById('heroName');
-  const heroDescEl = document.getElementById('heroDescriptor');
-  const heroCta    = document.getElementById('heroCta');
+  const heroNameEl = byId('heroName');
+  const heroDescEl = byId('heroDescriptor');
   if (heroNameEl) heroNameEl.textContent = D.artist.name;
   if (heroDescEl) heroDescEl.textContent = D.artist.descriptor;
-  if (heroCta && featured) heroCta.textContent = `Listen to ${featured.title}`;
+  if (featured) fill(byId('heroRelease'), R.heroRelease(featured));
 
   /* ----------------------------------------------------------
      FEATURED RELEASE
   ---------------------------------------------------------- */
-  const featuredWrap = document.getElementById('featuredRelease');
-
-  if (featured && featuredWrap) fill(featuredWrap, R.featuredRelease(featured));
+  if (featured) fill(byId('featuredRelease'), R.featuredRelease(featured));
 
   /* ----------------------------------------------------------
-     DISCOGRAPHY — filter + show more
+     DISCOGRAPHY: filter + show more
   ---------------------------------------------------------- */
-  const grid       = document.getElementById('discographyGrid');
+  const grid       = byId('discographyGrid');
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const moreBtn    = document.getElementById('releasesMore');
+  const moreBtn    = byId('releasesMore');
   const RELEASE_LIMIT = R.RELEASE_LIMIT;
   const FILTER_NOUN = { all: 'releases', album: 'albums', ep: 'EPs', single: 'singles' };
+
+  fill(byId('releaseCount'), String(D.releases.length));
+  fill(byId('videoCount'), String(D.videos.length));
 
   if (grid) {
     fill(grid, R.discography(D.releases));
@@ -238,10 +214,10 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
   }
 
   /* ----------------------------------------------------------
-     VIDEOS — click-to-load embeds + show more
+     VIDEOS: click-to-load embeds + show more
   ---------------------------------------------------------- */
-  const videosGrid = document.getElementById('videosGrid');
-  const videosMore = document.getElementById('videosMore');
+  const videosGrid = byId('videosGrid');
+  const videosMore = byId('videosMore');
 
   if (videosGrid) {
     fill(videosGrid, R.videos(D.videos));
@@ -261,25 +237,21 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
   /* ----------------------------------------------------------
      ABOUT
   ---------------------------------------------------------- */
-  const aboutBio      = document.getElementById('aboutBio');
-  const aboutLocation = document.getElementById('aboutLocation');
-  const aboutSocials  = document.getElementById('aboutSocials');
-
-  if (aboutBio) aboutBio.textContent = D.artist.bio;
-  if (aboutLocation) aboutLocation.textContent = D.artist.location;
-  fill(aboutSocials, R.socialLinks(D.socials));
+  fill(byId('aboutBio'), R.aboutBio(D.artist.bio));
+  fill(byId('aboutFacts'), R.aboutFacts(D));
+  fill(byId('aboutSocials'), R.followLinks([...(D.streamingPages || []), ...D.socials]));
 
   /* ----------------------------------------------------------
-     CONTACT — opens the visitor's email app with a prefilled message
+     CONTACT: opens the visitor's email app with a prefilled message
   ---------------------------------------------------------- */
-  const emailLink = document.getElementById('contactEmail');
+  const emailLink = byId('contactEmail');
   if (emailLink) {
     emailLink.href = `mailto:${D.artist.bookingEmail}`;
     emailLink.textContent = D.artist.bookingEmail;
   }
 
-  const form = document.getElementById('contactForm');
-  const feedback = document.getElementById('formFeedback');
+  const form = byId('contactForm');
+  const feedback = byId('formFeedback');
 
   if (form && feedback) {
     form.addEventListener('submit', e => {
@@ -291,10 +263,10 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
       const message = form.message.value.trim();
 
       const subject = `Booking / collab inquiry from ${name}`;
-      const body = [`Hi ${D.artist.name},`, '', message, '', `— ${name}`, email].join('\r\n');
+      const body = [`Hi ${D.artist.name},`, '', message, '', name, email].join('\r\n');
       const mailto = `mailto:${D.artist.bookingEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-      feedback.textContent = 'Opening your email app… if nothing happens, use the address below.';
+      feedback.textContent = 'Opening your email app. If nothing happens, write to the address on the left.';
       window.location.href = mailto;
     });
   }
@@ -302,11 +274,9 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
   /* ----------------------------------------------------------
      FOOTER
   ---------------------------------------------------------- */
-  const footerCopy = document.getElementById('footerCopy');
+  const footerCopy = byId('footerCopy');
   if (footerCopy) footerCopy.textContent = `© ${new Date().getFullYear()} ${D.artist.name}`;
-
-  const footerSocials = document.getElementById('footerSocials');
-  fill(footerSocials, R.socialLinks(D.socials));
+  fill(byId('footerSocials'), R.socialLinks([...(D.streamingPages || []), ...D.socials]));
 
   /* ----------------------------------------------------------
      SCROLL REVEAL + POSITION RESTORE
@@ -317,7 +287,7 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
     document.addEventListener('click', e => {
-      if (e.target.closest('.release-card-link, .featured-cover-link, .featured-title a')) {
+      if (e.target.closest('.release-card-link, .featured-cover-link, .featured-title a, .featured-info .text-link')) {
         sessionStorage.setItem('sywavy_scroll', String(window.scrollY));
       }
     });

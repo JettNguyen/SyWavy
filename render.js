@@ -30,11 +30,26 @@ window._SWR = (function () {
     return ICONS[platform] || `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg>`;
   }
 
+  // The same mark in one color (the text color), for quiet places like the
+  // footer and on light buttons. Drops the extra layers that only make sense in color.
+  function monoIcon(platform) {
+    const svg = ICONS[platform];
+    if (!svg) return icon(platform);
+    return svg
+      .replace(/<defs>[\s\S]*?<\/defs>/, '')
+      .replace(/<path fill="#FFFFFF" d="M9\.545[^"]*"\/>/, '')           // YouTube's white triangle
+      .replace(/<path fill="[^"]*" transform="[^"]*" d="[^"]*"\/>/g, '') // TikTok's offset color layers
+      .replace(/fill="[^"]*"/g, 'fill="currentColor"');
+  }
+
+  const ARROW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
   /* ----------------------------------------------------------
      HELPERS
   ---------------------------------------------------------- */
   const TYPE_LABEL = { album: 'Album', ep: 'EP', single: 'Single' };
   const typeLabel = t => TYPE_LABEL[t] || t;
+  const typeWord  = t => (t === 'ep' ? 'EP' : typeLabel(t).toLowerCase());
 
   function escapeHTML(str) {
     return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -52,13 +67,13 @@ window._SWR = (function () {
   const yearOf = iso => (iso ? iso.slice(0, 4) : '');
 
   // Responsive cover art: 480w for grids, 1000w for large placements
-  function coverImg(release, { sizes, cls = '', extra = '' }) {
+  function coverImg(release, { sizes, cls = '', extra = '', alt } = {}) {
     const base = `assets/covers/${release.cover}`;
     return `<img
-      src="${base}-480.webp"
-      srcset="${base}-480.webp 480w, ${base}-1000.webp 1000w"
+      src="/${base}-480.webp"
+      srcset="/${base}-480.webp 480w, /${base}-1000.webp 1000w"
       sizes="${sizes}"
-      alt="${escapeHTML(release.title)} cover art"
+      alt="${alt !== undefined ? alt : `${escapeHTML(release.title)} cover art`}"
       class="${cls}"
       width="1000"
       height="1000"
@@ -68,21 +83,57 @@ window._SWR = (function () {
     />`;
   }
 
+  // The cover, blurred and faded, as colored light behind a release
+  const coverGlow = (release, cls) => `
+      <div class="cover-glow ${cls || ''}" aria-hidden="true">
+        <img src="/assets/covers/${release.cover}-480.webp" alt="" width="480" height="480" loading="lazy" decoding="async" />
+      </div>`;
+
+  const liveLinks = release => (release.links || []).filter(l => l.url && l.url !== '#');
+
+  // The first platform is the main button; the rest sit beside it, quieter
   function streamLinks(release, ariaPrefix) {
-    return (release.links || [])
-      .filter(l => l.url && l.url !== '#')
-      .map(l => `
-        <a href="${l.url}" class="btn-outline" data-platform="${escapeHTML(l.platform)}" target="_blank" rel="noopener noreferrer" aria-label="${ariaPrefix} on ${escapeHTML(l.platform)}">
-          <span class="btn-platform-icon" aria-hidden="true">${icon(l.platform)}</span>
+    return liveLinks(release).map((l, i) => `
+        <a href="${l.url}" class="${i === 0 ? 'btn-primary' : 'btn-outline'}" data-platform="${escapeHTML(l.platform)}" target="_blank" rel="noopener noreferrer" aria-label="${ariaPrefix} on ${escapeHTML(l.platform)}">
+          <span class="btn-platform-icon" aria-hidden="true">${i === 0 ? monoIcon(l.platform) : icon(l.platform)}</span>
           ${escapeHTML(l.platform)}
         </a>`).join('');
   }
 
-  // How many releases and videos show before the "Show all" buttons
+  // Spotify player, worked out from the Spotify link (no extra data needed)
+  function spotifyEmbed(release, height) {
+    const spotify = liveLinks(release).find(l => l.platform === 'Spotify' && /open\.spotify\.com\/(album|track)\/([A-Za-z0-9]+)/.test(l.url));
+    if (!spotify) return '';
+    const [, type, sid] = spotify.url.match(/open\.spotify\.com\/(album|track)\/([A-Za-z0-9]+)/);
+    return `
+      <div class="spotify-embed" style="height:${height}px">
+        <iframe
+          src="https://open.spotify.com/embed/${type}/${sid}?utm_source=generator&theme=0"
+          height="${height}"
+          title="${escapeHTML(release.title)} on Spotify"
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>`;
+  }
+
+  // How many releases and videos show before the "Show all" buttons.
+  // The first video plays large, so seven fills the big one plus two rows.
   const RELEASE_LIMIT = 8;
-  const VIDEO_LIMIT = 6;
+  const VIDEO_LIMIT = 7;
 
   const featuredOf = releases => releases.find(r => r.featured) || releases[0];
+
+  /* ----------------------------------------------------------
+     HERO: the newest release, one tap from the top of the page
+  ---------------------------------------------------------- */
+  function heroRelease(featured) {
+    return `<span class="hero-release-art">${coverImg(featured, { sizes: '72px', alt: '', extra: 'loading="eager"' })}</span>
+        <span class="hero-release-text">
+          <span class="hero-release-kicker">Latest ${typeWord(featured.type)}</span>
+          <span class="hero-release-title">${escapeHTML(featured.title)}</span>
+        </span>
+        <span class="hero-release-go" aria-hidden="true">${ARROW}</span>`;
+  }
 
   /* ----------------------------------------------------------
      RELEASES
@@ -91,13 +142,11 @@ window._SWR = (function () {
     return `
       <article class="release-card animate-on-scroll${hidden ? ' hidden' : ''}" data-type="${escapeHTML(release.type)}">
         <a href="/${release.id}" class="release-card-link" aria-label="${escapeHTML(release.title)}, ${typeLabel(release.type)}">
-          <div class="release-card-img-wrap">
-            ${coverImg(release, { sizes: '(min-width: 1024px) 240px, (min-width: 650px) 30vw, 45vw', cls: 'release-card-img' })}
+          <div class="release-card-art">
+            ${coverImg(release, { sizes: '(min-width: 1200px) 290px, (min-width: 650px) 30vw, 45vw', cls: 'release-card-img' })}
           </div>
-          <div class="release-card-body">
-            <h3 class="release-card-title">${escapeHTML(release.title)}</h3>
-            <p class="release-card-meta">${typeLabel(release.type)} · ${yearOf(release.date)}</p>
-          </div>
+          <h3 class="release-card-title">${escapeHTML(release.title)}</h3>
+          <p class="release-card-meta"><span>${typeLabel(release.type)}</span><span>${yearOf(release.date)}</span></p>
         </a>
       </article>`;
   }
@@ -108,18 +157,18 @@ window._SWR = (function () {
   function featuredRelease(featured) {
     const links = streamLinks(featured, `Stream ${featured.title}`);
     return `
-      <div class="featured-cover-wrap">
-        <a href="/${featured.id}" class="featured-cover-link" aria-label="View ${escapeHTML(featured.title)}">
-          ${coverImg(featured, { sizes: '(min-width: 1024px) 520px, (min-width: 640px) 360px, 90vw', cls: 'featured-cover', extra: 'loading="eager"' })}
-        </a>
-      </div>
+      ${coverGlow(featured, 'featured-glow')}
+      <a href="/${featured.id}" class="featured-cover-link" aria-label="Open ${escapeHTML(featured.title)}">
+        ${coverImg(featured, { sizes: '(min-width: 1024px) 560px, (min-width: 640px) 420px, 92vw', cls: 'featured-cover' })}
+      </a>
       <div class="featured-info">
-        <p class="eyebrow">Latest ${typeLabel(featured.type)}</p>
+        <p class="kicker">Latest ${typeWord(featured.type)}${featured.date ? `<span>${formatDate(featured.date)}</span>` : ''}</p>
         <h2 class="featured-title" id="featuredTitle"><a href="/${featured.id}">${escapeHTML(featured.title)}</a></h2>
-        ${featured.date ? `<p class="featured-meta">${formatDate(featured.date)}</p>` : ''}
-        <div class="featured-links">
+        <div class="stream-links">
           ${links || '<p class="release-coming-soon">Coming soon to all platforms.</p>'}
         </div>
+        ${spotifyEmbed(featured, 152)}
+        <a href="/${featured.id}" class="text-link">More on this ${typeWord(featured.type)} ${ARROW}</a>
       </div>`;
   }
 
@@ -139,7 +188,7 @@ window._SWR = (function () {
                onerror="if(this.src!==this.dataset.fallback){this.src=this.dataset.fallback}" />
           <div class="video-play-btn" aria-hidden="true">
             <div class="video-play-icon">
-              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg>
             </div>
           </div>
         </div>`;
@@ -153,23 +202,51 @@ window._SWR = (function () {
           allowfullscreen></iframe>`;
   }
 
-  function videoItem(video, hidden = false) {
+  function videoItem(video, hidden = false, lead = false) {
     return `
-      <div class="video-item${hidden ? ' hidden' : ''}">
-        ${videoThumb(video.youtubeId, video.title, { extra: 'loading="lazy"' })}
+      <div class="video-item${lead ? ' video-lead' : ''}${hidden ? ' hidden' : ''}">
+        ${videoThumb(video.youtubeId, video.title, { extra: lead ? 'loading="lazy" fetchpriority="low"' : 'loading="lazy"' })}
         <div class="video-meta">
+          ${lead ? '<p class="kicker">Newest video</p>' : ''}
           <p class="video-title">${escapeHTML(video.title)}</p>
-          ${video.date ? `<p class="video-year">${formatDate(video.date)}</p>` : ''}
+          ${video.date ? `<p class="video-date">${formatDate(video.date)}</p>` : ''}
         </div>
       </div>`;
   }
 
-  const videos = list => list.map((v, i) => videoItem(v, i >= VIDEO_LIMIT)).join('');
+  const videos = list => list.map((v, i) => videoItem(v, i >= VIDEO_LIMIT, i === 0)).join('');
 
   /* ----------------------------------------------------------
-     SOCIALS
+     SOCIALS AND FOLLOW LINKS
   ---------------------------------------------------------- */
-  const socialLinks = socials => socials.map(s => `<a href="${escapeHTML(s.url)}" class="social-icon-link" data-platform="${escapeHTML(s.platform)}" aria-label="SyWavy on ${escapeHTML(s.platform)}" target="_blank" rel="noopener noreferrer">${icon(s.platform)}</a>`).join('');
+
+  // Icon only, one color (footer)
+  const socialLinks = socials => socials.map(s => `<a href="${escapeHTML(s.url)}" class="social-icon-link" data-platform="${escapeHTML(s.platform)}" aria-label="SyWavy on ${escapeHTML(s.platform)}" target="_blank" rel="noopener noreferrer">${monoIcon(s.platform)}</a>`).join('');
+
+  // Icon and name (About). Streaming pages first, since a follow there is what counts most.
+  const followLinks = pages => pages.map(s => `<a href="${escapeHTML(s.url)}" class="follow-link" data-platform="${escapeHTML(s.platform)}" target="_blank" rel="noopener noreferrer"><span class="follow-icon" aria-hidden="true">${monoIcon(s.platform)}</span>${escapeHTML(s.platform)}</a>`).join('');
+
+  /* ----------------------------------------------------------
+     ABOUT
+  ---------------------------------------------------------- */
+
+  // The first sentence of the bio leads in large type, the rest follows
+  function aboutBio(bio) {
+    const m = String(bio).match(/^(.+?[.!?])\s+(?=[A-Z"])([\s\S]+)$/);
+    if (!m) return `<p class="about-lede">${escapeHTML(bio)}</p>`;
+    return `<p class="about-lede">${escapeHTML(m[1])}</p><p class="about-rest">${escapeHTML(m[2])}</p>`;
+  }
+
+  // Plain facts, all worked out from data.js
+  function aboutFacts(data) {
+    const years = data.releases.map(r => yearOf(r.date)).filter(Boolean).sort();
+    const facts = [
+      ['From', data.artist.location],
+      ['First release', years[0]],
+      ['Releases', String(data.releases.length)]
+    ].filter(([, v]) => v);
+    return facts.map(([k, v]) => `<div><dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd></div>`).join('');
+  }
 
   /* ----------------------------------------------------------
      RELEASE PAGE (sywavy.com/flame and so on)
@@ -188,23 +265,7 @@ window._SWR = (function () {
   function releasePage(release, releases) {
     const kind  = typeLabel(release.type);
     const links = streamLinks(release, `Stream ${release.title}`);
-
-    /* Spotify player, derived from the Spotify link (no extra data needed) */
-    const spotify = (release.links || []).find(l => l.platform === 'Spotify' && /open\.spotify\.com\/(album|track)\/([A-Za-z0-9]+)/.test(l.url));
-    let embedHTML = '';
-    if (spotify) {
-      const [, type, sid] = spotify.url.match(/open\.spotify\.com\/(album|track)\/([A-Za-z0-9]+)/);
-      const height = release.type === 'single' ? 152 : 352;
-      embedHTML = `
-      <div class="release-embed" style="height:${height}px">
-        <iframe
-          src="https://open.spotify.com/embed/${type}/${sid}?utm_source=generator&theme=0"
-          height="${height}"
-          title="${escapeHTML(release.title)} on Spotify"
-          loading="lazy"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      </div>`;
-    }
+    const embedHTML = spotifyEmbed(release, release.type === 'single' ? 152 : 352);
 
     /* Optional tracklist (only when data is provided) */
     const tracklist = Array.isArray(release.tracklist) && release.tracklist.length ? release.tracklist : null;
@@ -224,7 +285,7 @@ window._SWR = (function () {
     /* Music video */
     const videoHTML = release.musicVideoId ? `
     <section class="release-section" aria-labelledby="releaseVideoHeading">
-      <div class="section-head"><h2 id="releaseVideoHeading" class="section-heading">Music video</h2></div>
+      <div class="section-head"><h2 id="releaseVideoHeading" class="section-heading section-heading-sm">Music video</h2></div>
       ${videoThumb(release.musicVideoId, release.title, { cls: 'video-thumb-wrap release-video-thumb-wrap', label: `Play the ${release.title} music video` })}
     </section>` : '';
 
@@ -232,15 +293,16 @@ window._SWR = (function () {
     const related = relatedReleases(releases, index).map(r => releaseCard(r)).join('');
 
     return `
+    ${coverGlow(release, 'release-glow')}
     <div class="release-page-inner animate-on-scroll">
       <div class="release-page-cover">
-        ${coverImg(release, { sizes: '(min-width: 1024px) 340px, (min-width: 640px) 260px, 80vw', cls: 'release-cover-img', extra: 'loading="eager" fetchpriority="high"' })}
+        ${coverImg(release, { sizes: '(min-width: 1024px) 460px, (min-width: 640px) 300px, 88vw', cls: 'release-cover-img', extra: 'loading="eager" fetchpriority="high"' })}
       </div>
       <div class="release-page-info">
-        <p class="eyebrow">${kind}</p>
+        <p class="kicker">${kind}${release.date ? `<span>${formatDate(release.date)}</span>` : ''}</p>
         <h1 class="release-page-title">${escapeHTML(release.title)}</h1>
-        <p class="release-page-meta">SyWavy${release.date ? ` · ${formatDate(release.date)}` : ''}</p>
-        <div class="release-page-links">
+        <p class="release-page-artist">SyWavy</p>
+        <div class="stream-links">
           ${links || '<p class="release-coming-soon">Coming soon to all platforms.</p>'}
         </div>
         ${embedHTML}
@@ -249,14 +311,15 @@ window._SWR = (function () {
     </div>
     ${videoHTML}
     <section class="release-section" aria-labelledby="relatedHeading">
-      <div class="section-head"><h2 id="relatedHeading" class="section-heading">More from SyWavy</h2></div>
+      <div class="section-head"><h2 id="relatedHeading" class="section-heading section-heading-sm">More from SyWavy</h2></div>
       <div class="related-grid" id="relatedGrid">${related}</div>
     </section>`;
   }
 
   return {
-    icon, typeLabel, escapeHTML, formatDate,
+    icon, monoIcon, typeLabel, escapeHTML, formatDate,
     RELEASE_LIMIT, VIDEO_LIMIT, featuredOf,
-    discography, featuredRelease, videos, videoIframe, socialLinks, releasePage
+    heroRelease, discography, featuredRelease, videos, videoIframe,
+    socialLinks, followLinks, aboutBio, aboutFacts, releasePage
   };
 })();

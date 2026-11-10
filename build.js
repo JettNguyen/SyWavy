@@ -67,10 +67,13 @@ const jsonLd = data =>
 
 const addToHead = (html, tag) => swap(html, /<\/head>/, () => `${tag}</head>`);
 
+// Streaming pages first, since a follow there counts most
+const follow = [...(D.streamingPages || []), ...D.socials];
+
 // The footer is on every page
 function fillFooter(html) {
   html = setInner(html, 'footerCopy', escapeHTML(`© ${new Date().getFullYear()} ${D.artist.name}`));
-  return setInner(html, 'footerSocials', R.socialLinks(D.socials));
+  return setInner(html, 'footerSocials', R.socialLinks(follow));
 }
 
 /* ------------------------------------------------------------
@@ -107,13 +110,15 @@ const featured = R.featuredOf(D.releases);
 let home = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 home = setInner(home, 'heroName', escapeHTML(D.artist.name));
 home = setInner(home, 'heroDescriptor', escapeHTML(D.artist.descriptor));
-home = setInner(home, 'heroCta', escapeHTML(`Listen to ${featured.title}`));
+home = setInner(home, 'heroRelease', R.heroRelease(featured));
 home = setInner(home, 'featuredRelease', R.featuredRelease(featured));
+home = setInner(home, 'releaseCount', String(D.releases.length));
 home = setInner(home, 'discographyGrid', R.discography(D.releases));
+home = setInner(home, 'videoCount', String(D.videos.length));
 home = setInner(home, 'videosGrid', R.videos(D.videos));
-home = setInner(home, 'aboutBio', escapeHTML(D.artist.bio));
-home = setInner(home, 'aboutLocation', escapeHTML(D.artist.location));
-home = setInner(home, 'aboutSocials', R.socialLinks(D.socials));
+home = setInner(home, 'aboutBio', R.aboutBio(D.artist.bio));
+home = setInner(home, 'aboutFacts', R.aboutFacts(D));
+home = setInner(home, 'aboutSocials', R.followLinks(follow));
 home = fillFooter(home);
 home = addToHead(home, jsonLd(artistData));
 fs.writeFileSync(path.join(OUT, 'index.html'), home);

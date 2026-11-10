@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Not found — SyWavy</title>
+  <title>Not found | SyWavy</title>
   <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#08090b" />
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/photos/logo-96.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,200..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
 </head>
-<body>
+<body data-waves="hero">
   <div id="waveBg" aria-hidden="true">
-    <div class="wave-layer wave-back"></div>
-    <div class="wave-layer wave-mid"></div>
-    <div class="wave-layer wave-front"></div>
     <div id="waveDepth"></div>
+    <canvas id="waves"></canvas>
   </div>
   <main class="not-found">
-    <p class="eyebrow">404</p>
+    <img src="/assets/photos/logo-96.png" alt="" width="48" height="48" class="not-found-logo" />
     <h1 class="section-heading">Nothing here.</h1>
     <p class="not-found-sub">That page drifted off. Head back to the music.</p>
     <a href="/" class="btn-primary">Back to SyWavy</a>
   </main>
+  <script src="/waves.js"></script>
 </body>
 </html>

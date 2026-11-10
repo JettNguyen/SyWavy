@@ -458,9 +458,9 @@ window.SYWAVY = {
     { platform: "YouTube", url: "https://www.youtube.com/channel/UC914k5x3iDXPKdHNOSFLY2Q" }
   ],
 
-  // Artist pages on streaming services. They don't show on the site; build.js
-  // lists them with the socials in the data search engines read, so Google and
-  // AI tools can tell these profiles are all the same SyWavy.
+  // Artist pages on streaming services. They show first in the About and footer
+  // follow links, and build.js lists them with the socials in the data search
+  // engines read, so Google and AI tools can tell these profiles are all the same SyWavy.
   streamingPages: [
     { platform: "Spotify", url: "https://open.spotify.com/artist/4psqGX1Gk2lv3tK5xx7Pla" },
     { platform: "Apple Music", url: "https://music.apple.com/us/artist/sywavy/1488169235" }
