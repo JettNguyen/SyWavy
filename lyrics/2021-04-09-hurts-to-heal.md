@@ -51,7 +51,7 @@ Damn that shit hurt me
 I know it hurt you too
 I know it hurt you too
 
-Damn that shirt hurt me
+Damn that shit hurt me
 I know it hurt you
 Damn that shit hurt me
 Damn that shit hurt me

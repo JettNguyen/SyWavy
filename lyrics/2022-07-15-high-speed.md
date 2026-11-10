@@ -49,7 +49,7 @@ I'm in the lab cooking up effects
 We can make a movie shoot it FX
 Heyyyy ahhhhh
 
-Rushing up its reeking havoc
+Rushing up its wreaking havoc
 Ask the plug, how much the half is
 All lights on me it's hazard
 Live my life as Wavy the bastard

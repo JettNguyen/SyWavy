@@ -37,7 +37,7 @@ Put my Vertex on a blimp
 Started it off rowdy
 A rebel to the body
 A loose one off the cradle
-I was spinning Dradiel
+I was spinning dreidel
 They just it want it case closed
 I go to Turk Caicos
 Rated R, Talk that Talk like I'm from Barbados
@@ -54,7 +54,7 @@ Vertex
 I need a plan next
 Which place, B the place cause I need it need it safe
 
-The Nicholas Cage, I hit that shit for days
+The Nicolas Cage, I hit that shit for days
 Flame head, blue flav, day to day, Jett way
 I never let the pocket up
 Remix shit and walk up
@@ -80,7 +80,7 @@ If you were my twin, you would lock in
 Nigga don't tell me that
 Walked in my closet and this bih
 Look like city racks
-I'm going on and on, Eyraka Badu
+I'm going on and on, Eyrkah Badu
 Seen her do it once, damn imma hire you
 I'm sorry Ms. Jackson, I had to grease her
 Had to do that
@@ -362,9 +362,9 @@ Same nigga
 Bitch is Wave
 Go craze
 He Saddam Hussein
-Back on bolts, I go Usian
+Back on bolts, I go Usain
 Same thing she speak Patois
-Yah mon, I'm not Jamican
+Yah mon, I'm not Jamaican
 But they fuck with me like I'm Popcaan
 Make her say bomboclat and fuck sum
 Young nigga I don't know shit
@@ -378,9 +378,9 @@ Been that nigga 2011, I been waiting
 The fuck you, fuck you talm 'bout
 
 Coolin' off it, straight coolin' on ya
-A trending topic, bitch I barley know ya
+A trending topic, bitch I barely know ya
 Coolin' off it, straight coolin' on ya
-A trending topic, bitch I barley know ya
+A trending topic, bitch I barely know ya
 
 She want two of me
 Stack and Smoke
@@ -410,11 +410,11 @@ Same niggas never left corner
 I just left and came back, I fucking own it
 
 Coolin' off it, straight coolin' on ya
-A trending topic, bitch I barley know ya
+A trending topic, bitch I barely know ya
 Coolin' off it, straight coolin' on ya
-A trending topic, bitch I barley know ya
+A trending topic, bitch I barely know ya
 
-Bitch I barley know what the fuck you mean
+Bitch I barely know what the fuck you mean
 I'm back in city, I never I never I never I never I never
 Took X or beans
 I put that shit on my life
@@ -530,7 +530,7 @@ Bud Butler, 300 spartan, film it, get her down
 Keys Wonder Stevie Dreams
 Isn't she lovely
 Now she wanna fuck me
-I was only legal barley
+I was only legal barely
 Call it Omaha
 I got many functions, she gon' ride a Yamaha
 Keys I might play her still a stay at Yamaha
@@ -539,7 +539,7 @@ I got all forms for mini rida
 Helmet lang, Foreign Exchange
 For a bitch that's gang
 Keep it tight on your head
-You were so derranged
+You were so deranged
 Yamaha ride me nice
 You can scream my name
 
@@ -625,7 +625,7 @@ Goonies down, hey you guys, listen stream Wavy
 Arguments turn to settlements, I can't fake it
 Varsity jacket, dyslexic, I can't place it
 Mixed signals, the signs is Bella
-Arbortetum VR it's Neva
+Arboretum VR it's Neva
 You a Nevel nigga stare at screens for cheddar
 
 Hurts been done
@@ -1308,7 +1308,7 @@ I Put It!
 ## 18. Awtside
 
 Steel it from your bitch and ran it up like Ben Rottles
-Came back and told 'em Vetement was perfect timing
+Came back and told 'em Vetements was perfect timing
 Awtside I'm high to Maine Wave never Lion
 Piercings on my face I need 'em tats, Dennis Rodman
 
@@ -1335,7 +1335,7 @@ Awtside with a Wave, she wanna be there
 Awtside too much smoke, I can't see clear
 Awtside with a Wave 'cause I be there
 
-I'm Livin' Life like Martin Lawerence I don't got a kid
+I'm Livin' Life like Martin Lawrence I don't got a kid
 Like Eddie Murphy say I'm coming and she grab the bib
 It's Daddy Day Care Imma lay it, Imma live it here
 I don't mix fashion too many jeans for it denim tears

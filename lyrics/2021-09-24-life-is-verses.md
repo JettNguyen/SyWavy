@@ -5,10 +5,10 @@ EP, 9/24/2021
 ## 1. Under
 
 Time just goes for no reason
-We just barley been speaking
+We just barely been speaking
 I'm tired of hearing you leaving
-And barley I've been speaking
-And barley I've been speaking
+And barely I've been speaking
+And barely I've been speaking
 
 Tell why these bitches be talking bout leaving
 I don't like to talk about these bitches, I don't need it
@@ -20,7 +20,7 @@ Niggas stay posted on corners Ariza
 And wonder like Cole, will she love me like Keyisha
 Shit had an odor I rant bout our secret
 I'm sorry I did it that shit had me livid
-To focused on records I'm moving like Guinness
+Too focused on records I'm moving like Guinness
 Mercy on me but my girl don't play, uh
 Have mercy on me but my girl don't play tennis
 Now pass me the water I need to replenish
@@ -356,7 +356,7 @@ Nice body Apple type call it Smith
 The one that'll do my hair when I ask for the twist
 I'm saying, damn, I want it
 
-You can meet me at the alter
+You can meet me at the altar
 Growing up tough times without a father
 Like why would I give up, 'cause I really want her
 Never been to LA, but I'm gon charge her

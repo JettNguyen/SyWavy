@@ -268,7 +268,7 @@ R.Y.D for me Steve Lacy
 
 Double C and the sign is Chanel
 The fragrance I can't stand the smell
-All that we Keenan and Kel
+All that we Kenan and Kel
 Number one, Number five on sale
 The scent that I got has some history
 Say that you missing me, go spray some mist for me
@@ -294,7 +294,7 @@ Steve Austin it wrestle Stone-Cold friends
 
 Double C and the sign is Chanel
 The fragrance I can't stand the smell
-All that we Keenan and Kel
+All that we Kenan and Kel
 Number one, Number five on sale
 The scent that I got has some history
 Say that you missing me go spray some mist for me
@@ -319,7 +319,7 @@ The spray go well
 
 Double C and the sign is Chanel
 The fragrance I can't stand the smell
-All that we Keenan and Kel
+All that we Kenan and Kel
 Number one, Number five on sale
 The scent that I got has some history
 Say that you missing me go spray some mist for me
@@ -607,7 +607,7 @@ I Bepop and shit I'm cool spike
 Not talking to me check your windpipe
 Why you joking with me? I'm a dark knight
 Slant took a dab like ranch
-Cahartt player come look at pants
+Carhartt player come look at pants
 Pant you tired off a stance
 Baddie I wanted, she moved out to France
 Look at the album it's pink it's Japan
@@ -666,7 +666,7 @@ Up north in the land, I'm a cavalier
 She love doing for me she gon' cheer
 Cheer for me, take it slowly
 Love my homie, we like Zach and Cody
-Don't ask her about me cause she barley know me
+Don't ask her about me cause she barely know me
 Don't ask her, I'm on three my homie
 
 I feel that you don't love me
