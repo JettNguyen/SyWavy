@@ -94,7 +94,11 @@
     "9": {
       "title": "Intrusive Thoughts",
       "notes": [
-        { "lines": [35, 37], "kind": "story", "body": "This stretch is SyWavy quoting himself. The Robin Thicke nod echoes Caution, and the Florida hair line is lifted from Cruise Jam, both on Wavy Life, tying the crew record back to the water album.", "draft": true },
+        { "lines": [2, 3], "kind": "reference", "title": "Annie", "body": "The musical about an orphan taken in by the rich Daddy Warbucks. Its song It's the Hard Knock Life, which Jay-Z sampled in 1998, carries into the next line.", "ref": { "name": "Annie", "category": "film-tv" }, "draft": true },
+        { "lines": [4, 4], "kind": "reference", "title": "Daniel Kaluuya", "body": "The actor who starred in Jordan Peele's Get Out and Nope. The line names both movies on the way to his name.", "ref": { "name": "Daniel Kaluuya", "category": "film-tv" }, "draft": true },
+        { "lines": [29, 29], "kind": "reference", "title": "Cleveland Brown", "body": "Peter Griffin's neighbor on Family Guy, who got his own spinoff, The Cleveland Show, in 2009. Saying he's no family guy sets up the name.", "ref": { "name": "Cleveland Brown", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [31, 31], "kind": "reference", "title": "Kuy", "body": "The artist featured on this song. Instead of chasing big features, SyWavy says he'd just call Kuy.", "ref": { "name": "Kuy", "category": "musician" }, "draft": true },
+        { "lines": [35, 37], "kind": "story", "body": "Kuy borrows from SyWavy here. The Robin Thicke nod echoes Caution, and the Florida hair line is lifted from Cruise Jam, both on Wavy Life, tying the crew record back to the water album.", "draft": true },
         { "lines": [35, 35], "kind": "reference", "title": "Robin Thicke", "body": "His 2013 hit Blurred Lines, which SyWavy also borrowed on Caution from Wavy Life.", "ref": { "name": "Robin Thicke", "category": "musician" }, "draft": true },
         { "lines": [42, 42], "kind": "reference", "title": "Harriet Tubman", "body": "The abolitionist who led enslaved people north on the Underground Railroad. Coming up from underground, he takes her name.", "ref": { "name": "Harriet Tubman", "category": "person" }, "draft": true },
         { "lines": [58, 65], "kind": "story", "body": "The hook gives the title a punchline instead of a confession. Around it, Kuy joins SyWavy and the two trade verses packed with jokes from movies, sports and TV, the Deep Voice Bastards crew idea in action.", "draft": true }

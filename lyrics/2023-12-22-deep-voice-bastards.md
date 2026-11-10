@@ -557,11 +557,13 @@ You make my mind broke
 
 ## 9. Intrusive Thoughts
 
+[SyWavy]
 Left a foster home of kids deep up in the pussy
 Fuck nigga I ain't the pappy, I got Annie looking
 Hard knock life I can't save her twice, and tell her push it
 Told her nope, get out, uh, Kaluuya pulling
 
+[Kuy]
 Bitches wanna hang with me, ain't even make the dinner list
 Tryna bite these flows, you get sent up to the dentist bitch
 Really slanging rod man, I'm on my Dennis shit
@@ -570,12 +572,14 @@ Never hit me back, I been busy, I been talkin' shit
 I'm Mr. Third Leg and they asking how I walk with it
 Talkin' real brazen, man I know, it's the dawg in me
 
+[SyWavy]
 He copped a pack, he flick it dos like it's sweet 'n low
 Rolled a blazy hella strong, think need to bulk
 Told her I like no chase, I never need a pulp
 Nail a bitch to the cross, tell her kiss the pole
 It's the morning, rub my wood, come lick my oak
 
+[Kuy]
 Bitch it's Steve Blazy, bad habits be the death of me
 But fuck it, I'm with Wavy, DVB 'til the rest in peace
 Think I went and lost my mind, and the rest of me
@@ -586,6 +590,7 @@ Spark the spliff up in this bitch
 Got money on they mind, I need money in my hands
 Need to touch that green, Mr. Earthtone
 
+[SyWavy]
 Keep saying that she need it
 One thing, I might bust up on your cleavage
 Two things, only say it when you mean it
@@ -595,6 +600,7 @@ Stop the features, FaceTime Kuy if I need one
 Stop the bitching, it's no fun cause we are young
 Love the motion, how it clap, and how it stay plump
 
+[Kuy]
 She wanna smoke a wood then eat mine, call me, FaceTime
 Shawty on her Robin Thicke, she tryna blur lines
 I been getting fried as fuck since like the first time
@@ -604,6 +610,7 @@ Niggas getting desperate, but I'm separate
 Make sure that these niggas perish, then I cherish it
 Shawty wanna ride the bastard like a chariot
 
+[SyWavy]
 Underground how I'm coming, Sy Harriet
 I could never crash on bitches that's embarrassing
 Feel invincible, beat the kid Valerian
@@ -613,6 +620,7 @@ The way she clap and how it move, it get me hype
 The way she clap and how it move, it get me hype
 The way she clap and how it move, it get me hype
 
+[Kuy]
 Ego bigger than BBL, no you cannot touch these heights
 Steady tryna wish me well, but I been busy catching flights
 I been touchin' so much road, ain't been wastin' time
@@ -622,6 +630,7 @@ Fingers real sticky, real sticky from the residue
 You done fucked up, let that pussy get the best of you
 And I'm just an introvert, rappin' like the rent was due
 
+[SyWavy]
 Intrusive thoughts
 I got intrusive thoughts
 I got intrusive thoughts
