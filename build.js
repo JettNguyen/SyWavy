@@ -99,7 +99,7 @@ const artistData = {
   description: D.artist.bio,
   genre: D.artist.genres,
   foundingLocation: { '@type': 'Place', name: 'Saint Petersburg, Florida' },
-  sameAs: [...D.socials, ...(D.streamingPages || [])].map(p => p.url),
+  sameAs: [...D.socials, ...(D.streamingPages || []), ...(D.musicDatabases || [])].map(p => p.url),
   album: D.releases.map(albumData)
 };
 

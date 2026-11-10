@@ -464,5 +464,13 @@ window.SYWAVY = {
   streamingPages: [
     { platform: "Spotify", url: "https://open.spotify.com/artist/4psqGX1Gk2lv3tK5xx7Pla" },
     { platform: "Apple Music", url: "https://music.apple.com/us/artist/sywavy/1488169235" }
+  ],
+
+  // SyWavy's entries in the open music databases. These are not follow links, so
+  // they stay off the page. build.js adds them to the data search engines read,
+  // because Google and AI tools check these entries to confirm who an artist is.
+  musicDatabases: [
+    { platform: "MusicBrainz", url: "https://musicbrainz.org/artist/d91df7d3-4f0b-4606-a098-8802fca40b85" },
+    { platform: "Wikidata", url: "https://www.wikidata.org/wiki/Q142096555" }
   ]
 };
