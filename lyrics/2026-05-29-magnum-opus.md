@@ -1245,6 +1245,7 @@ Ignite my
 
 ## 17. Put It On!
 
+[SyWavy]
 She want the Rick on body
 She ride Murakami tsunami
 And this the freshest on Gotti
@@ -1262,6 +1263,7 @@ Flash on in my way
 Watch the fit check rep a faker
 The hardest shit to my name
 
+[The Part Time Models]
 She takes the clothes from my closet
 But I'm not even done with that piece yet
 That's a '95 tee did you forget?

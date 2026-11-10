@@ -86,6 +86,7 @@
     "6": {
       "title": "Slow? Never",
       "notes": [
+        { "lines": [1, 1], "kind": "reference", "title": "Treasure", "body": "A nod to Bruno Mars's 2013 single Treasure, a song that calls a girl exactly that.", "ref": { "name": "Treasure (Bruno Mars song)", "category": "musician" }, "draft": true },
         { "lines": [9, 16], "kind": "story", "body": "The title gets its answer in the hook: he won't ease off a love he expected to keep for life. He's tried everything to set it right, and she still won't give.", "draft": true },
         { "lines": [52, 58], "kind": "story", "body": "By now the hurt shows up even in a smile. He knows her well enough to see the tears coming, and the last line runs his own name into the slang for crying, so the waves and the tears are the same water.", "draft": true },
         { "lines": [59, 66], "kind": "story", "body": "The relationship becomes a car that won't start, and he keeps pushing it anyway. Exhaust works two ways here, the fumes and how tired he is. He still believes it can be fixed.", "draft": true }
@@ -129,6 +130,7 @@
     "9": {
       "title": "Proceed",
       "notes": [
+        { "lines": [38, 38], "kind": "reference", "title": "LiAngelo Ball", "body": "The middle Ball brother, who goes by Gelo. Jell-O sounds just like it, keeping the run of Ball brothers going, and his 2025 song Tweaker is what got him moving as an artist.", "ref": { "name": "LiAngelo Ball", "category": "athlete" }, "draft": true },
         { "lines": [5, 8], "kind": "story", "body": "The opening is a bowling joke. He needs her pin to get in and wants to knock her down like a strike, while someone else is still taking forever with his roll.", "draft": true },
         { "lines": [9, 12], "kind": "story", "body": "The hook hangs on one word with two meanings. Proceeds are the money a sale brings in, and to proceed is to keep going. He spends, she dances, and the money and the night both keep moving.", "draft": true },
         { "lines": [23, 23], "kind": "reference", "title": "Nike", "body": "The sportswear giant, named for the Greek goddess of victory, right after he compares his build to Greek myth. Its swoosh is a check mark, which is how checking becomes Nike.", "ref": { "name": "Nike", "category": "brand" }, "draft": true },
@@ -143,7 +145,7 @@
     "10": {
       "title": "Please lmk",
       "notes": [
-        { "lines": [8, 8], "kind": "reference", "title": "Tom Hanks", "body": "The two-time Oscar-winning actor. Clipped down, his name sounds like thanks.", "ref": { "name": "Tom Hanks", "category": "film-tv" }, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Tom Hanks", "body": "The two-time Oscar-winning actor. T. Hanks is his name and thanks at the same time, so the line says both.", "ref": { "name": "Tom Hanks", "category": "film-tv" }, "draft": true },
         { "lines": [9, 9], "kind": "reference", "title": "The Green Mile", "body": "The 1999 prison drama starring Tom Hanks, which drew four Oscar nominations. Green has its other meaning here too.", "ref": { "name": "The Green Mile", "category": "film-tv" }, "draft": true },
         { "lines": [18, 25], "kind": "story", "body": "The hook asks for a straight answer: who showed her the best time, and where does he stand now. He can't read anything between them, so he needs her to say it.", "draft": true },
         { "lines": [30, 30], "kind": "reference", "title": "Anne Hathaway", "body": "The Oscar-winning actor from Les Misérables. Her last name sounds like having to wait, and her 2024 romance comes in the next line.", "ref": { "name": "Anne Hathaway", "category": "film-tv" }, "draft": true },
@@ -193,7 +195,7 @@
       "title": "Steer",
       "notes": [
         { "lines": [5, 7], "kind": "story", "body": "His mind is the car in this verse, running on its own and a little twisted. All he wants is her relaxed and along for the ride.", "draft": true },
-        { "lines": [8, 8], "kind": "reference", "title": "Vine", "body": "Twitter's six-second video app, shut down in 2017. The line jokes about how fast it was over.", "ref": { "name": "Vine", "category": "brand" }, "draft": true },
+        { "lines": [8, 8], "kind": "reference", "title": "Vine", "body": "Twitter's six-second video app, shut down in 2017. Six seconds is also how long he lasted with her, which is the joke.", "ref": { "name": "Vine", "category": "brand" }, "draft": true },
         { "lines": [11, 11], "kind": "reference", "title": "Young Dolph", "body": "The Memphis artist who built his own label, Paper Route Empire, and stayed independent. His name works as a verb here.", "ref": { "name": "Young Dolph", "category": "musician" }, "draft": true },
         { "lines": [28, 28], "kind": "reference", "title": "Passenger princess", "body": "Internet slang for a partner who always rides up front while someone else drives.", "ref": { "name": "Passenger princess", "category": "other" }, "draft": true },
         { "lines": [32, 32], "kind": "reference", "title": "NASCAR", "body": "American stock car racing, run out of Daytona Beach, Florida, home of the Daytona 500. It fits a song about steering.", "ref": { "name": "NASCAR", "category": "other" }, "draft": true },
@@ -245,7 +247,7 @@
         { "lines": [2, 2], "kind": "reference", "title": "Takashi Murakami", "body": "The Japanese artist behind the smiling flowers, the cover of Kanye West's Graduation and years of Louis Vuitton bags. A tidal wave of his work suits someone named Wavy.", "ref": { "name": "Takashi Murakami", "category": "person" }, "draft": true },
         { "lines": [9, 9], "kind": "reference", "title": "Prada", "body": "The Milan fashion house, here a bag he hands over.", "ref": { "name": "Prada", "category": "brand" }, "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "Cam'ron", "body": "The Harlem artist who led the Diplomats, or Dipset, and whose pink mink at New York Fashion Week in 2002 became a style landmark. His name doubles as come on.", "ref": { "name": "Cam'ron", "category": "musician" }, "draft": true },
-        { "lines": [17, 22], "kind": "story", "body": "The song steps into the closet. She raids it while he's still wearing things, vintage tees included, and getting dressed is treated as art, worth more than most people earn.", "draft": true },
+        { "lines": [17, 22], "kind": "story", "body": "The Part Time Models' singer takes this part and steps into the closet. She raids it before he's done with a piece, vintage tees included, and getting dressed is treated as art, worth more than most people earn.", "draft": true },
         { "lines": [23, 38], "kind": "story", "body": "The hook is the compliment he keeps hearing. The title means getting dressed and pulling it off at the same time.", "draft": true },
         { "lines": [40, 40], "kind": "reference", "title": "Comme des Garçons", "body": "Rei Kawakubo's Tokyo label, a pillar of experimental fashion. She wants the clothes but won't show love for the music.", "ref": { "name": "Comme des Garçons", "category": "brand" }, "draft": true },
         { "lines": [42, 43], "kind": "reference", "title": "Back to the Future", "body": "The 1985 time-travel classic. Switching outfits through the decades is his time machine.", "ref": { "name": "Back to the Future", "category": "film-tv" }, "draft": true }
@@ -258,7 +260,7 @@
         { "lines": [2, 2], "kind": "reference", "title": "Vetements", "body": "The Paris label known for oversized fits and logo jokes, founded by Demna in 2014. It's the fit he comes back in.", "ref": { "name": "Vetements", "category": "brand" }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Dennis Rodman", "body": "The Hall of Fame rebounder as famous for his piercings, tattoos and dyed hair as for his five titles. He wants the look to match.", "ref": { "name": "Dennis Rodman", "category": "athlete" }, "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "The Curious Case of Benjamin Button", "body": "The 2008 film where Brad Pitt ages backward. Something getting old is the opposite of Button, and the name hands off to money in the next line.", "ref": { "name": "The Curious Case of Benjamin Button", "category": "film-tv" }, "draft": true },
-        { "lines": [9, 9], "kind": "reference", "title": "Benjamin Franklin", "body": "Benjamins are $100 bills, which carry Franklin's face, so the Button line turns into money. A word in the next line keeps the Franklin joke going.", "ref": { "name": "Benjamin Franklin", "category": "person" }, "draft": true },
+        { "lines": [9, 10], "kind": "reference", "title": "Benjamin Franklin", "body": "Benjamins are $100 bills, which carry Franklin's face, so the Button line turns into money. Frankly, on the next line, finishes his name.", "ref": { "name": "Benjamin Franklin", "category": "person" }, "draft": true },
         { "lines": [21, 24], "kind": "story", "body": "Awtside is outside spelled the way he says it, and being outside means being out, seen and in demand. The hook keeps him there, with a crowd that keeps asking for more.", "draft": true },
         { "lines": [25, 25], "kind": "reference", "title": "Martin Lawrence", "body": "The comedian behind the 1990s sitcom Martin. He starred with Eddie Murphy in the 1999 comedy Life, which the line slips in.", "ref": { "name": "Martin Lawrence", "category": "film-tv" }, "draft": true },
         { "lines": [26, 26], "kind": "reference", "title": "Eddie Murphy", "body": "The comedy star of Coming to America, which the line nods to. It leads into one of his family comedies in the next line.", "ref": { "name": "Eddie Murphy", "category": "film-tv" }, "draft": true },
