@@ -80,6 +80,9 @@ a, button, [role="button"] { touch-action: manipulation; }
   border-radius: 4px;
 }
 
+/* A section that a link moved focus to (main.js) needs no ring of its own */
+[tabindex="-1"]:focus { outline: none; }
+
 .skip-link {
   position: fixed;
   top: 0.75rem;

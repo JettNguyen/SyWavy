@@ -279,29 +279,129 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
   fill(byId('footerSocials'), R.socialLinks([...(D.streamingPages || []), ...D.socials]));
 
   /* ----------------------------------------------------------
-     SCROLL REVEAL + POSITION RESTORE
+     SCROLL REVEAL
   ---------------------------------------------------------- */
   observeCards();
 
-  if (grid) {
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  /* ----------------------------------------------------------
+     SECTION LINKS WITHOUT A # IN THE ADDRESS
+     Links to a section (#music, or /#discography on a release
+     page) keep their # so they still work without scripts and in
+     a new tab. A plain click scrolls there and leaves the address
+     clean. Between pages the section is handed over in
+     sessionStorage, and a # that still arrives (an old or shared
+     link) is scrolled to and then taken off the address.
+     The browser keeps its own scroll memory, so a reload or the
+     back button returns to the same spot instead of the top.
+  ---------------------------------------------------------- */
+  const GOTO_KEY = 'sywavy_goto';
+  const SPOT_KEY = 'sywavy_scroll';
+  const isHomePath = p => p === '/' || p === '/index.html';
+  const hashId = hash => {
+    try { return decodeURIComponent(hash.slice(1)); } catch (_) { return ''; }
+  };
 
-    document.addEventListener('click', e => {
-      if (e.target.closest('.release-card-link, .featured-cover-link, .featured-title a, .featured-info .text-link')) {
-        sessionStorage.setItem('sywavy_scroll', String(window.scrollY));
-      }
+  function take(key) {
+    try {
+      const value = sessionStorage.getItem(key);
+      sessionStorage.removeItem(key);
+      return value;
+    } catch (_) { return null; }
+  }
+  function keep(key, value) {
+    try { sessionStorage.setItem(key, value); } catch (_) { /* storage turned off */ }
+  }
+
+  // The stylesheet makes scrolling glide, but landing on a spot as a page opens shouldn't
+  function jump(scroll) {
+    root.style.scrollBehavior = 'auto';
+    scroll();
+    root.style.scrollBehavior = '';
+  }
+
+  // Scroll to a section, or the top for no id, and move keyboard focus
+  // there the way following a #link does
+  function goToSection(id, glide) {
+    const target = id ? byId(id) : null;
+    const behavior = glide && !reduceMotion ? 'smooth' : 'auto';
+    const scroll = () => target
+      ? target.scrollIntoView({ behavior, block: 'start' })
+      : window.scrollTo({ top: 0, behavior });
+    if (behavior === 'smooth') scroll(); else jump(scroll);
+
+    const focusTo = target || document.querySelector('.skip-link');
+    if (!focusTo) return;
+    if (target && !target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    focusTo.focus({ preventScroll: true });
+  }
+
+  document.addEventListener('click', e => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const link = e.target.closest('a[href*="#"]');
+    if (!link || link.target === '_blank') return;
+    const url = new URL(link.href, location.href);
+    if (url.origin !== location.origin) return;
+    const id = hashId(url.hash);
+    const samePage = url.pathname === location.pathname ||
+      (isHomePath(url.pathname) && isHomePath(location.pathname));
+
+    if (samePage) {
+      if (id && !byId(id)) return;
+      e.preventDefault();
+      closeMenu();
+      goToSection(id, true);
+    } else if (id && isHomePath(url.pathname)) {
+      e.preventDefault();
+      keep(GOTO_KEY, id);
+      location.href = url.pathname + url.search;
+    }
+  });
+
+  // Land on a spot as the page opens. Fonts and images that arrive afterwards
+  // can still move things, so land again once they're in, unless the visitor
+  // has started scrolling by then.
+  function landOn(scroll) {
+    let touched = false;
+    const stop = () => { touched = true; };
+    ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(type =>
+      window.addEventListener(type, stop, { once: true, passive: true }));
+    const land = () => {
+      if (touched) return;
+      jump(scroll);
+      updateActiveNav();
+    };
+    requestAnimationFrame(() => requestAnimationFrame(land));
+    if (document.fonts) document.fonts.ready.then(land);
+    window.addEventListener('load', land, { once: true });
+  }
+
+  const dropHash = () => history.replaceState(history.state, '', location.pathname + location.search);
+
+  if (grid) {
+    const goto = take(GOTO_KEY) || hashId(location.hash);
+    if (location.hash) dropHash();
+
+    // A # typed into the address while already on the page
+    window.addEventListener('hashchange', () => {
+      if (byId(hashId(location.hash))) dropHash();
     });
 
-    const saved = sessionStorage.getItem('sywavy_scroll');
-    if (saved !== null) {
-      sessionStorage.removeItem('sywavy_scroll');
-      // Cards past the initial limit may need revealing before we can restore
-      const y = parseInt(saved, 10);
+    // Going back to Discography from a release page returns to the card that was clicked
+    const spot = take(SPOT_KEY);
+    document.addEventListener('click', e => {
+      if (e.target.closest('.release-card-link')) keep(SPOT_KEY, String(window.scrollY));
+    });
+
+    if (goto === 'discography' && spot !== null) {
+      const y = parseInt(spot, 10);
+      // Cards past the first few may need showing before that spot exists
       if (moreBtn && !moreBtn.hidden && y > root.scrollHeight - window.innerHeight) moreBtn.click();
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        window.scrollTo(0, y);
-        updateActiveNav();
-      }));
+      landOn(() => window.scrollTo(0, y));
+    } else if (goto && byId(goto)) {
+      const target = byId(goto);
+      if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+      landOn(() => target.scrollIntoView({ block: 'start' }));
     }
   }
 
