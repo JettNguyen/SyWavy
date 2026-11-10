@@ -44,7 +44,7 @@ Put in your heart
 Put in your
 Put in your heart, don't see it
 Everything I got is furnished
-She sit down me and earned it
+She sit down on me and earned it
 The Faneto of the verses
 I live my life in the cursive
 
