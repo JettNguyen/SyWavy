@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>SyWavy — Rapper &amp; Producer, St. Petersburg FL</title>
+  <title>SyWavy | Rapper and Producer from St. Petersburg, FL</title>
   <meta name="description" content="Official site of SyWavy, rapper and producer from Saint Petersburg, Florida. Stream the new album Magnum Opus, browse the full discography, and watch every music video." />
   <link rel="canonical" href="https://sywavy.com/" />
   <meta name="theme-color" content="#0e0e0e" />
@@ -32,22 +32,7 @@
   />
   <link rel="stylesheet" href="style.css" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "SyWavy",
-    "url": "https://sywavy.com/",
-    "image": "https://sywavy.com/assets/photos/og.jpg",
-    "genre": ["Hip-Hop", "R&B"],
-    "foundingLocation": { "@type": "Place", "name": "Saint Petersburg, Florida" },
-    "sameAs": [
-      "https://www.instagram.com/sywavvy/",
-      "https://www.tiktok.com/@sywavy",
-      "https://www.youtube.com/channel/UC914k5x3iDXPKdHNOSFLY2Q"
-    ]
-  }
-  </script>
+  <!-- build.js adds the structured data and writes each section's text into the page -->
 </head>
 <body>
 
@@ -171,7 +156,7 @@
           <div class="about-text">
             <h2 id="aboutHeading" class="section-heading">About</h2>
             <p id="aboutBio" class="about-bio"></p>
-            <p id="aboutLocation" class="about-location"></p>
+            <p id="aboutLocation" class="about-location eyebrow"></p>
             <div id="aboutSocials" class="about-socials"></div>
           </div>
         </div>
@@ -221,6 +206,7 @@
   </footer>
 
   <script src="data.js"></script>
+  <script src="render.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

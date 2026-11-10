@@ -1,0 +1,5 @@
+# Every crawler is welcome here, AI ones included
+User-agent: *
+Allow: /
+
+Sitemap: https://sywavy.com/sitemap.xml

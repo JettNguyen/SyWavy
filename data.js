@@ -2,8 +2,9 @@ window.SYWAVY = {
   artist: {
     name: "SyWavy",
     descriptor: "Artist · Vocalist · Producer",
-    bio: "SyWavy is a rapper and producer from Saint Petersburg, Florida. He has been putting out records since 2020, moving between hip-hop, R&B, and more experimental sounds depending on what the song calls for. The 2021 track \"3AM\" was the first to get real attention. The albums that followed, \"Japanese Cherry Blossom\" (2022), \"Deep Voice Bastards\" (2023), and \"Flight 370\" (2024), dig into love, self-reflection, and confidence, and each one gets a little more personal than the last. The newest album, \"Magnum Opus\", is out now.",
+    bio: "SyWavy is a rapper and producer from Saint Petersburg, Florida. He has been putting out records since 2020, moving between hip-hop, R&B, and more experimental sounds depending on what the song calls for. Listeners compare him to Drake, Kid Cudi, and Kanye West, and hear The Weeknd in the atmosphere of the production, but he doesn't sound like any one of them. The 2021 track \"3AM\" was the first to get real attention. The albums that followed, \"Japanese Cherry Blossom\" (2022), \"Deep Voice Bastards\" (2023), and \"Flight 370\" (2024), dig into love, self-reflection, and confidence, and each one gets a little more personal than the last. The newest album, \"Magnum Opus\", is out now.",
     location: "Saint Petersburg, FL",
+    genres: ["Hip-Hop", "R&B"],
     bookingEmail: "synemaivwave@gmail.com"
   },
 
@@ -455,5 +456,13 @@ window.SYWAVY = {
     { platform: "Instagram", url: "https://www.instagram.com/sywavvy/" },
     { platform: "TikTok", url: "https://www.tiktok.com/@sywavy" },
     { platform: "YouTube", url: "https://www.youtube.com/channel/UC914k5x3iDXPKdHNOSFLY2Q" }
+  ],
+
+  // Artist pages on streaming services. They don't show on the site; build.js
+  // lists them with the socials in the data search engines read, so Google and
+  // AI tools can tell these profiles are all the same SyWavy.
+  streamingPages: [
+    { platform: "Spotify", url: "https://open.spotify.com/artist/4psqGX1Gk2lv3tK5xx7Pla" },
+    { platform: "Apple Music", url: "https://music.apple.com/us/artist/sywavy/1488169235" }
   ]
 };
