@@ -1328,10 +1328,10 @@ a, button, [role="button"] { touch-action: manipulation; }
   border-radius: 5px;
   transition: background-color var(--t-fast), color var(--t-fast);
 }
-.line.noted { background: rgba(255, 255, 255, 0.065); cursor: pointer; }
+.line.noted { background: rgba(255, 255, 255, 0.14); cursor: pointer; }
 .line.noted + .line.noted { margin-top: 2px; }
-.line.noted.is-active { background: rgba(86, 226, 211, 0.17); color: #fff; }
-.line.is-landed { background: rgba(86, 226, 211, 0.24); }
+.line.noted.is-active { background: rgba(86, 226, 211, 0.3); color: #fff; }
+.line.is-landed { background: rgba(86, 226, 211, 0.38); }
 .lyrics-missing { color: var(--muted); }
 
 .note {
@@ -1518,8 +1518,8 @@ a, button, [role="button"] { touch-action: manipulation; }
 .arc-line { max-width: 58ch; margin-top: -0.35rem; color: var(--text-soft); }
 
 @media (hover: hover) {
-  .line.noted:hover { background: rgba(255, 255, 255, 0.11); }
-  .line.noted.is-active:hover { background: rgba(86, 226, 211, 0.22); }
+  .line.noted:hover { background: rgba(255, 255, 255, 0.22); }
+  .line.noted.is-active:hover { background: rgba(86, 226, 211, 0.36); }
   .song-step:hover .song-step-title,
   .track-link:hover .track-title,
   .arc-title:hover { color: var(--accent); }
