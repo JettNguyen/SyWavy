@@ -101,6 +101,7 @@
     "7": {
       "title": "Bulky Jewelry",
       "notes": [
+        { "lines": [40, 40], "kind": "story", "body": "A necklace that looks like a cab is yellow gold, the color of a taxi.", "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Love Scars", "body": "Trippie Redd's breakout song, from his 2017 mixtape A Love Letter to You. Here the scars are the marks left on her neck.", "ref": { "name": "Love Scars (Trippie Redd song)", "category": "musician" }, "draft": true },
         { "lines": [12, 12], "kind": "reference", "title": "The Legend of Zelda: The Wind Waker", "body": "Nintendo's 2002 sailing adventure, whose cartoon-style hero fans call Toon Link. He splits the title into waking her up, and the hero's name sets up the link in the next line.", "ref": { "name": "The Legend of Zelda: The Wind Waker", "category": "game" }, "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "Cuban link chain", "body": "The thick, tightly woven chain that's a staple of hip-hop jewelry. He jokes that his Cuban talks in Spanish, then plays on link as in meeting up.", "ref": { "name": "Cuban link chain", "category": "other" }, "draft": true },
@@ -115,6 +116,8 @@
     "8": {
       "title": "We're Not sAFe",
       "notes": [
+        { "lines": [19, 19], "kind": "story", "body": "Inside and outside are where a pitch crosses the plate, so the baseball run keeps going right after the Sox and the slide.", "draft": true },
+        { "lines": [3, 3], "kind": "story", "body": "The capital AF in the title reads as the usual as f***, meaning really not safe. It also happens to be Air France's code, and Air France Flight 447 vanished over the Atlantic in 2009, one more lost flight on an album named for one.", "draft": true },
         { "lines": [1, 16], "kind": "story", "body": "The song opens in the middle of an argument. He's tired of being blamed and of trying to fix her doubts, and says he had to step back for his own sake. He doesn't want to leave, but he no longer feels safe staying.", "draft": true },
         { "lines": [18, 18], "kind": "reference", "title": "Chicago White Sox", "body": "The Chicago baseball club. He names both Sox teams and slides into base in one line, starting a baseball thread that runs to the end of the song. Read another way, it's an outfit: socks worn with slides.", "ref": { "name": "Chicago White Sox", "category": "team" }, "draft": true },
         { "lines": [18, 18], "kind": "reference", "title": "Boston Red Sox", "body": "The Boston baseball club, paired with the White Sox in the same line to set up the song's talk of bases and being safe.", "ref": { "name": "Boston Red Sox", "category": "team" }, "draft": true },
@@ -128,6 +131,7 @@
     "9": {
       "title": "Self Melting Love",
       "notes": [
+        { "lines": [27, 27], "kind": "reference", "title": "A BOY IS A GUN*", "body": "Tyler, the Creator's song from his 2019 album IGOR. Here it's flipped, and the girl is the gun.", "ref": { "name": "A BOY IS A GUN* (Tyler, the Creator song)", "category": "musician" }, "draft": true },
         { "lines": [1, 12], "kind": "story", "body": "Melting is the whole idea: falling for someone so hard he loses his shape. His heart skips and races, and he can't stop wanting more of her.", "draft": true },
         { "lines": [10, 10], "kind": "story", "body": "A bayou is a slow, swampy river in the Deep South, and said fast it sounds like by you. The water fits the wet earlier in the line.", "draft": true },
         { "lines": [23, 23], "kind": "reference", "title": "Wu-Tang Clan", "body": "The Staten Island group behind the 1993 album Enter the Wu-Tang (36 Chambers). He name-checks them, then borrows one of their best-known hooks.", "ref": { "name": "Wu-Tang Clan", "category": "musician" }, "draft": true },

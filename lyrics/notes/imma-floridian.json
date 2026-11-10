@@ -4,6 +4,7 @@
     "1": {
       "title": "Imma Floridian",
       "notes": [
+        { "lines": [14, 14], "kind": "story", "body": "A burna is a burner phone, the cheap prepaid kind you can toss.", "draft": true },
         { "lines": [1, 8], "kind": "story", "body": "She's on her way out and talking about designer bags, and he answers with where he's from. He's Southern, but not the Texas kind, and the rhymes run straight into the title.", "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "Birkin", "body": "The Hermès Birkin, a handbag with long waitlists and five-figure prices. She brings it up as she's heading out the door.", "ref": { "name": "Birkin bag", "category": "brand" }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Hermès", "body": "The French fashion house behind the Birkin, known for its H logo. She wants all of it, from the logo on up.", "ref": { "name": "Hermès", "category": "brand" }, "draft": true },
