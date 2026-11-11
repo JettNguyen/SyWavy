@@ -34,6 +34,10 @@ jobs:
       - name: Build
         run: node build.js
 
+      - name: Find pages that changed
+        run: node indexnow.js check
+        continue-on-error: true
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -42,3 +46,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Tell Bing which pages changed
+        run: node indexnow.js send
+        continue-on-error: true
