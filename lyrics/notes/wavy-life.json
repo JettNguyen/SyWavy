@@ -40,6 +40,7 @@
     "2": {
       "title": "Triad",
       "notes": [
+        { "lines": [14, 15], "kind": "story", "body": "It's the playground rhyme where love comes first, then marriage, then a baby in a baby carriage. She wants a carat for the wedding, and the baby after.", "draft": true },
         { "lines": [32, 32], "kind": "reference", "title": "Billy Butcher", "body": "The British vigilante from The Boys who says oi and goes after superheroes.", "ref": { "name": "Billy Butcher", "category": "film-tv" }, "draft": true },
         { "lines": [1, 7], "kind": "story", "body": "The song opens in the cold: winter, an ex spreading stories, a frozen northern team. Against all that chill he's already gone, choosing a plane over a long walk.", "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "The Winter's Tale", "body": "Shakespeare's late play about a king whose jealous accusations nearly destroy his family. Asking if she's Winter when she starts telling stories turns the title into a dig.", "ref": { "name": "The Winter's Tale", "category": "other" }, "draft": true },
@@ -129,6 +130,8 @@
     "7": {
       "title": "Aqua Artist",
       "notes": [
+        { "lines": [42, 42], "kind": "reference", "title": "Poland Spring", "body": "The bottled water brand from Maine, at home on an album about water.", "ref": { "name": "Poland Spring", "category": "brand" }, "draft": true },
+        { "lines": [4, 4], "kind": "reference", "title": "The Omen", "body": "Playboi Carti put out a song called The Omen in 2015, so fifteen is the year it came out.", "ref": { "name": "The Omen (Playboi Carti song)", "category": "musician" }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Toucan Sam", "body": "The Froot Loops mascot with a rainbow beak. Fruity and a rainbow read as the pride flag, since she likes girls.", "ref": { "name": "Toucan Sam", "category": "brand" }, "draft": true },
         { "lines": [24, 24], "kind": "reference", "title": "Blazy Susan", "body": "The pink rolling paper brand.", "ref": { "name": "Blazy Susan", "category": "brand" }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Lindsay Lohan", "body": "She starred in Freaky Friday (2003), where a mother and daughter wake up in each other's bodies. He borrows the title to ask for a wild end to the week.", "ref": { "name": "Lindsay Lohan", "category": "film-tv" }, "draft": true },
@@ -147,6 +150,9 @@
     "8": {
       "title": "Caution",
       "notes": [
+        { "lines": [18, 18], "kind": "story", "body": "Being in la la land means daydreaming. She isn't paying attention.", "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Walter White", "body": "The chemistry teacher at the center of Breaking Bad, who goes by Walt. His name keeps the rhyme going between the Star Wars queen before it and the Warriors forward after it.", "ref": { "name": "Walter White", "category": "film-tv" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Magic Conch", "body": "The toy shell in SpongeBob SquarePants that answers whatever you ask it. That's where he goes for advice.", "ref": { "name": "Magic Conch (SpongeBob SquarePants)", "category": "anime-cartoon" }, "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "Ariel", "body": "The mermaid from Disney's The Little Mermaid. Calling her his Ariel keeps the album's water theme going.", "ref": { "name": "Ariel", "category": "anime-cartoon" }, "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Robin Thicke", "body": "His 2013 hit Blurred Lines is the reference, set up by blurry signs that keep the song's road-sign theme going.", "ref": { "name": "Robin Thicke", "category": "musician" }, "draft": true },
         { "lines": [5, 11], "kind": "story", "body": "The first verse is set at the gym. He counts down a lift and splits one piece of equipment across two lines so its second half rhymes with how she makes him feel. Being around her has become a workout, and he wants his guard back up.", "draft": true },
@@ -168,6 +174,7 @@
     "9": {
       "title": "Telly",
       "notes": [
+        { "lines": [1, 8], "kind": "story", "body": "Telly is slang for a hotel, and the first verse is a night at one, paid for so they can stay.", "draft": true },
         { "lines": [9, 17], "kind": "story", "body": "The second verse is pure daydream: a rocket, a fairy tale, a video game. She's the clear sky after the clouds, and every image has him rising.", "draft": true },
         { "lines": [10, 10], "kind": "reference", "title": "Tinker Bell", "body": "The fairy from Peter Pan. Pairing a bell with Tink spells out her full name, and a fairy tale follows in the next line.", "ref": { "name": "Tinker Bell", "category": "anime-cartoon" }, "draft": true },
         { "lines": [12, 13], "kind": "reference", "title": "Final Fantasy", "body": "Square Enix's long-running role-playing series. His last fantasy and the game's name are the same words, and the cloud his head was in is also Cloud, the hero of Final Fantasy VII.", "ref": { "name": "Final Fantasy", "category": "game" }, "draft": true },
@@ -193,6 +200,8 @@
     "11": {
       "title": "Fantasia",
       "notes": [
+        { "lines": [32, 32], "kind": "reference", "title": "Andrew Schulz", "body": "The comedian whose podcast was first called Flagrant 2. Being flagrant too says the show's old name out loud, and the odd spelling is his last name.", "ref": { "name": "Andrew Schulz", "category": "film-tv" }, "draft": true },
+        { "lines": [7, 7], "kind": "story", "body": "Scotti is a weed strain, so he's asking if she wants to smoke. The same strain came up on Why Me?, in ? (Cry).", "draft": true },
         { "lines": [8, 8], "kind": "story", "body": "A hot tamale is a cinnamon candy and slang for a good-looking woman, and the heat is going up.", "draft": true },
         { "lines": [18, 18], "kind": "story", "body": "The title is Disney's Fantasia, the 1940 film set to classical music.", "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "VLONE", "body": "The streetwear label from A$AP Bari of A$AP Mob. Its name is one letter off from alone, which is the joke when a homesick kid wears it.", "ref": { "name": "VLONE", "category": "brand" }, "draft": true },
@@ -211,7 +220,7 @@
         { "lines": [1, 4], "kind": "reference", "title": "The Legend of Zelda: The Wind Waker", "body": "Nintendo's GameCube Zelda, set on a flooded world where Link sails between islands and uses a baton to steer the wind. It's a fitting finale for a water album.", "ref": { "name": "The Legend of Zelda: The Wind Waker", "category": "game" }, "draft": true },
         { "lines": [1, 2], "kind": "reference", "title": "Polaroid", "body": "The instant camera. Shaking the photo to develop it was made famous by OutKast's Hey Ya!, though Polaroid itself said not to.", "ref": { "name": "Polaroid", "category": "brand" }, "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Chrollo Lucilfer", "body": "The calm, sharp-dressed leader of the Phantom Troupe in Hunter x Hunter. He borrows the character's cool.", "ref": { "name": "Chrollo Lucilfer", "category": "anime-cartoon" }, "draft": true },
-        { "lines": [7, 7], "kind": "reference", "title": "Call of Duty", "body": "Danger Close is a Call of Duty perk that boosts explosive damage, best known from Modern Warfare 2. He's the big threat with the upgrade on.", "ref": { "name": "Call of Duty", "category": "game" }, "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Call of Duty", "body": "Danger Close is a perk in Call of Duty: Black Ops 2 that makes explosives hit harder. He's the big threat with the upgrade on.", "ref": { "name": "Call of Duty", "category": "game" }, "draft": true },
         { "lines": [8, 9], "kind": "reference", "title": "Dirk Nowitzki", "body": "The Dallas Mavericks star who wore 41 and made the one-legged fadeaway his signature. The fadeaway and his name come first, then the number.", "ref": { "name": "Dirk Nowitzki", "category": "athlete" }, "draft": true },
         { "lines": [9, 14], "kind": "story", "body": "This is the homecoming the album has been building to. He turns around, asks what's changed, and heads back to St. Pete sure that he's coming back with something to show for it.", "draft": true },
         { "lines": [12, 12], "kind": "reference", "title": "St. Petersburg", "body": "SyWavy's hometown, called the Burg by locals. Heading back there is where Wavy Life ends up.", "ref": { "name": "St. Petersburg, Florida", "category": "place", "place": { "florida": true } }, "draft": true },

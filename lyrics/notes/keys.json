@@ -4,6 +4,7 @@
     "1": {
       "title": "Keys'",
       "notes": [
+        { "lines": [42, 42], "kind": "reference", "title": "F*ck the World", "body": "Brent Faiyaz's album, out in February 2020, less than two months before Keys'. The R&B singer's title opens the line.", "ref": { "name": "F*ck the World (Brent Faiyaz album)", "category": "musician" }, "draft": true },
         { "lines": [1, 5], "kind": "story", "body": "He opens on his clothes and never strays far from them: patchwork fabric, old pieces worn with pride, and water everywhere. The water lines are an early sign of the Wavy persona that runs through everything he makes after this.", "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "Nile River", "body": "The longest river in Africa, and the setup for the old pun on denial. It also keeps the water imagery going.", "ref": {"name": "Nile River", "category": "place", "place": {"florida": false}}, "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Nival", "body": "A rare word for anything to do with snow. He uses it to say his outfit keeps him ice cold.", "ref": {"name": "Nival", "category": "other"}, "draft": true },

@@ -4,9 +4,10 @@
     "1": {
       "title": "Vertex",
       "notes": [
+        { "lines": [7, 7], "kind": "reference", "title": "Genie in a Bottle", "body": "Christina Aguilera's 1999 debut single, whose hook is about being rubbed the right way. The rubbing comes first, then the genie.", "ref": { "name": "Genie in a Bottle (Christina Aguilera song)", "category": "musician" }, "draft": true },
         { "lines": [24, 24], "kind": "reference", "title": "Emerson", "body": "A member of The Part Time Models, who's in the Put It On! video.", "ref": { "name": "Emerson (The Part Time Models)", "category": "person" }, "draft": true },
         { "lines": [1, 2], "kind": "story", "body": "Magnum Opus starts here, and the title says where it starts: a vertex is the highest point, the tip of the curve. The opening lines are about getting the room moving before he says anything else.", "draft": true },
-        { "lines": [3, 3], "kind": "reference", "title": "CeeLo Green", "body": "The Atlanta singer from Goodie Mob and Gnarls Barkley. The line turns his name around so the color comes first.", "ref": { "name": "CeeLo Green", "category": "musician" }, "draft": true },
+        { "lines": [3, 3], "kind": "reference", "title": "CeeLo Green", "body": "The Atlanta singer from Goodie Mob and Gnarls Barkley. The line turns his name around so the color comes first, and the green carries over to the Athletics, the baseball team that played across the bay from San Francisco in Oakland, in green and gold.", "ref": { "name": "CeeLo Green", "category": "musician" }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Dsquared2", "body": "The fashion label run out of Milan by Canadian twin brothers Dean and Dan Caten. He shrugs it off as everyday wear.", "ref": { "name": "Dsquared2", "category": "brand" }, "draft": true },
         { "lines": [8, 9], "kind": "reference", "title": "Magic Johnson", "body": "The Lakers great, his name split across the line. Magic follows the genie she wants, and Johnson is slang for what she grabs.", "ref": { "name": "Magic Johnson", "category": "athlete" }, "draft": true },
         { "lines": [19, 20], "kind": "story", "body": "Right after skipping safe sex, he needs a plan, and the next line lands on B. Plan B is the morning-after pill.", "draft": true },
@@ -35,6 +36,7 @@
     "3": {
       "title": "To Two B*tches",
       "notes": [
+        { "lines": [43, 43], "kind": "reference", "title": "Hannah Montana", "body": "The Disney Channel show about a girl living a double life as a pop star, played by Miley Cyrus. Its theme song is The Best of Both Worlds, and his two worlds are two women.", "ref": { "name": "Hannah Montana", "category": "film-tv" }, "draft": true },
         { "lines": [9, 12], "kind": "story", "body": "He opens on defense. Accused of cheating, he denies it and asks for proof. Then he turns it around: two women on his phone, as permanent as the ink on his arm.", "draft": true },
         { "lines": [24, 24], "kind": "reference", "title": "Palm Angels", "body": "The streetwear label Francesco Ragazzi started in Milan in 2015. A brand named for angels should come with working wings, and he says these don't, so he's out.", "ref": { "name": "Palm Angels", "category": "brand" }, "draft": true },
         { "lines": [25, 25], "kind": "story", "body": "Breaking ankles is basketball talk for a crossover so quick the defender falls. She's up in heels that high and still won't go down for his moves.", "draft": true },
@@ -108,10 +110,11 @@
     "7": {
       "title": "YAMAHA RIDIN'",
       "notes": [
+        { "lines": [13, 13], "kind": "reference", "title": "The Foreign Exchange", "body": "The R&B duo of the singer Phonte and the Dutch producer Nicolay, who made their first album trading files online before they ever met. It works the plain way too, as foreign money.", "ref": { "name": "The Foreign Exchange", "category": "musician" }, "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Kawasaki", "body": "The Japanese motorcycle maker. The song opens on a rival bike before settling on Yamaha, and every ride in it means two things.", "ref": { "name": "Kawasaki", "category": "brand" }, "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Indianapolis 500", "body": "The century-old Memorial Day weekend race, 200 laps around the Indianapolis Motor Speedway. He treats the night like a race.", "ref": { "name": "Indianapolis 500", "category": "other" }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "300", "body": "Zack Snyder's film with Gerard Butler as the Spartan king Leonidas. The line names the actor and the movie together.", "ref": { "name": "300 (film)", "category": "film-tv" }, "draft": true },
-        { "lines": [5, 5], "kind": "reference", "title": "Stevie Wonder", "body": "The Motown great, a keyboard player first. The line flips his name around and leads with keys, which is also the name of SyWavy's 2020 single, Keys'.", "ref": { "name": "Stevie Wonder", "category": "musician" }, "draft": true },
+        { "lines": [5, 5], "kind": "reference", "title": "Stevie Wonder", "body": "The Motown great, a keyboard player first. The line flips his name around and leads with keys, which is also the name of SyWavy's 2020 single, Keys'. Dreams adds a second Stevie: it's Stevie Nicks's 1977 hit with Fleetwood Mac.", "ref": { "name": "Stevie Wonder", "category": "musician" }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Isn't She Lovely", "body": "Stevie Wonder's 1976 song for his newborn daughter, from Songs in the Key of Life. That album title ties back to the keys in the line before.", "ref": { "name": "Isn't She Lovely (Stevie Wonder song)", "category": "musician" }, "draft": true },
         { "lines": [9, 9], "kind": "reference", "title": "Peyton Manning", "body": "The Hall of Fame quarterback, famous for shouting Omaha at the line to change the play. The call also rhymes into Yamaha.", "ref": { "name": "Peyton Manning", "category": "athlete" }, "draft": true },
         { "lines": [10, 11], "kind": "reference", "title": "Yamaha", "body": "The Japanese name on motorcycles and on pianos and keyboards. The song rides both meanings: the bike and the keys.", "ref": { "name": "Yamaha", "category": "brand" }, "draft": true },
@@ -124,7 +127,7 @@
         { "lines": [35, 35], "kind": "reference", "title": "Dallas Mavericks", "body": "Klay Thompson's team after he left Golden State, which is why the Mavs come right after him.", "ref": { "name": "Dallas Mavericks", "category": "team" }, "draft": true },
         { "lines": [37, 37], "kind": "reference", "title": "Soulja Boy", "body": "The artist whose 2008 hit with Sammie was about kissing over the phone. The ringing in the next lines answers it.", "ref": { "name": "Soulja Boy", "category": "musician" }, "draft": true },
         { "lines": [42, 47], "kind": "story", "body": "Keys' is SyWavy's March 2020 single, his first record with Jett2Fly. The song keeps saying it has put miles on, and with Yamaha making keyboards, the ride and the record turn into one image. Here he claims it outright, down to the year.", "draft": true },
-        { "lines": [48, 50], "kind": "reference", "title": "Jeff Bezos", "body": "Amazon's founder. Prime Student is Amazon's cheaper plan for college students, and two-day shipping is what made Prime famous, so these lines all run through his company.", "ref": { "name": "Jeff Bezos", "category": "person" }, "draft": true },
+        { "lines": [48, 50], "kind": "reference", "title": "Jeff Bezos", "body": "Amazon's founder, and his name stands for money here. Prime Student is Amazon's cheaper plan for college students, and two-day shipping is what made Prime famous, so these lines all run through his company.", "ref": { "name": "Jeff Bezos", "category": "person" }, "draft": true },
         { "lines": [63, 63], "kind": "reference", "title": "Line 6", "body": "The California maker of guitar amps and effects, one more piece of music gear in a song built on Yamaha's double life.", "ref": { "name": "Line 6", "category": "brand" }, "draft": true },
         { "lines": [64, 64], "kind": "reference", "title": "Mercedes-Benz", "body": "The German luxury carmaker. Amends, said quickly, ends in a Benz, and he'd still take the Yamaha, bike or keyboard, over one.", "ref": { "name": "Mercedes-Benz", "category": "brand" }, "draft": true },
         { "lines": [73, 73], "kind": "reference", "title": "Dapper Dan", "body": "The Harlem tailor who remade luxury logos for hip-hop stars in the 1980s and now works with Gucci. He sets his Florida style apart from the Harlem original's.", "ref": { "name": "Dapper Dan", "category": "brand" }, "draft": true }
@@ -133,6 +136,8 @@
     "8": {
       "title": "Shameless Guy",
       "notes": [
+        { "lines": [10, 10], "kind": "reference", "title": "Bella Thorne", "body": "The actress who got her start on Disney Channel's Shake It Up. She's the one he names for the mixed signals.", "ref": { "name": "Bella Thorne", "category": "film-tv" }, "draft": true },
+        { "lines": [39, 39], "kind": "reference", "title": "Wallah", "body": "Arabic for I swear to God. Closing the verse with it, he swears every word is true.", "ref": { "name": "Wallah", "category": "other" }, "draft": true },
         { "lines": [1, 4], "kind": "story", "body": "The hook owns everything. Shameless here means he admits his mistakes out loud instead of hiding them, even though the verse later says he isn't proud of it.", "draft": true },
         { "lines": [6, 7], "kind": "reference", "title": "The Goonies", "body": "The 1985 adventure film about kids hunting for pirate treasure. He bends its name, then borrows Sloth's famous shout to the kids to get people streaming his music.", "ref": { "name": "The Goonies", "category": "film-tv" }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Netflix", "body": "Flix is Netflix, and the line is the Netflix and chill joke: a movie's on, and nobody's watching it.", "ref": { "name": "Netflix", "category": "brand" }, "draft": true },
@@ -164,7 +169,7 @@
         { "lines": [13, 15], "kind": "story", "body": "California stands for its wildfires here, the kind that burned through Los Angeles in January 2025. Burning woods sets it up.", "draft": true },
         { "lines": [7, 7], "kind": "story", "body": "A T break is a tolerance break, time off from weed so it hits harder later. Right off the bat it makes him rabid, and bats are known for carrying rabies.", "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Tom Hanks", "body": "The two-time Oscar-winning actor. T. Hanks is his name and thanks at the same time, so the line says both.", "ref": { "name": "Tom Hanks", "category": "film-tv" }, "draft": true },
-        { "lines": [9, 9], "kind": "reference", "title": "The Green Mile", "body": "The 1999 prison drama starring Tom Hanks, which drew four Oscar nominations. Green has its other meaning here too.", "ref": { "name": "The Green Mile", "category": "film-tv" }, "draft": true },
+        { "lines": [9, 10], "kind": "reference", "title": "The Green Mile", "body": "The 1999 prison drama starring Tom Hanks, which drew four Oscar nominations. Green has its other meaning here too, and the Academy, the group that hands out the Oscars, comes right after.", "ref": { "name": "The Green Mile", "category": "film-tv" }, "draft": true },
         { "lines": [11, 13], "kind": "story", "body": "Three five, Q and zip are weed amounts: 3.5 grams, or an eighth, then a quarter ounce and a full ounce. Woods are Backwoods, the cigars people roll blunts in, and he's trying to stop burning them.", "draft": true },
         { "lines": [18, 25], "kind": "story", "body": "The hook asks for a straight answer: who showed her the best time, and where does he stand now. He can't read anything between them, so he needs her to say it.", "draft": true },
         { "lines": [30, 30], "kind": "reference", "title": "Anne Hathaway", "body": "The Oscar-winning actor from Les Misérables. Her last name sounds like having to wait, and her 2024 romance comes in the next line.", "ref": { "name": "Anne Hathaway", "category": "film-tv" }, "draft": true },
@@ -214,10 +219,12 @@
     "13": {
       "title": "Steer",
       "notes": [
+        { "lines": [38, 38], "kind": "story", "body": "The 25th is his birthday, December 25.", "draft": true },
+        { "lines": [34, 35], "kind": "reference", "title": "Bow Wow", "body": "Byron is Bow Wow's character in Tyler Perry's Madea's Big Happy Family (2011), and Lottery Ticket is the 2010 comedy he starred in, about a kid who wins the lottery. Two of his movies, back to back.", "ref": { "name": "Bow Wow", "category": "film-tv" }, "draft": true },
         { "lines": [3, 4], "kind": "story", "body": "A wreck and erect sound almost the same, so the crash in one line turns into a sex joke in the next.", "draft": true },
         { "lines": [5, 7], "kind": "story", "body": "His mind is the car in this verse, running on its own and a little twisted. All he wants is her relaxed and along for the ride.", "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Vine", "body": "Twitter's six-second video app, shut down in 2017. Six seconds is also how long he lasted with her, which is the joke.", "ref": { "name": "Vine", "category": "brand" }, "draft": true },
-        { "lines": [11, 11], "kind": "reference", "title": "Young Dolph", "body": "The Memphis artist who built his own label, Paper Route Empire, and stayed independent. His name works as a verb here.", "ref": { "name": "Young Dolph", "category": "musician" }, "draft": true },
+        { "lines": [11, 11], "kind": "reference", "title": "Young Dolph", "body": "The Memphis artist who built his own label, Paper Route Empire, and stayed independent. His name works as a verb here, and with M.I.A., Miami's airport code, in front of it, the line spells out the Miami Dolphins.", "ref": { "name": "Young Dolph", "category": "musician" }, "draft": true },
         { "lines": [28, 28], "kind": "reference", "title": "Passenger princess", "body": "Internet slang for a partner who always rides up front while someone else drives.", "ref": { "name": "Passenger princess", "category": "other" }, "draft": true },
         { "lines": [32, 32], "kind": "reference", "title": "NASCAR", "body": "American stock car racing, run out of Daytona Beach, Florida, home of the Daytona 500. It fits a song about steering.", "ref": { "name": "NASCAR", "category": "other" }, "draft": true },
         { "lines": [40, 40], "kind": "reference", "title": "Ralph Lauren", "body": "The American fashion house, welded here to a denim label to make one name.", "ref": { "name": "Ralph Lauren", "category": "brand" }, "draft": true },
@@ -228,6 +235,7 @@
     "14": {
       "title": "Tower of Tears",
       "notes": [
+        { "lines": [51, 51], "kind": "reference", "title": "Empire", "body": "Fox's drama about the Lyon family and the record label they fight over, which ran from 2015 to 2020.", "ref": { "name": "Empire (TV series)", "category": "film-tv" }, "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "The Twilight Zone Tower of Terror", "body": "The elevator drop ride at Disney's Hollywood Studios, part of Walt Disney World in Florida. The title trades its terror for tears, and the elevator a few lines later rides the same shaft.", "ref": { "name": "The Twilight Zone Tower of Terror", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [5, 8], "kind": "story", "body": "Love here is an elevator, rising and dropping, and she stands taller than everything he's afraid of. He gave things up for her, and he hasn't moved since.", "draft": true },
         { "lines": [18, 18], "kind": "reference", "title": "Pink + White", "body": "A song from Frank Ocean's 2016 album Blonde, its colors flipped here.", "ref": { "name": "Pink + White (Frank Ocean song)", "category": "musician" }, "draft": true },
@@ -268,6 +276,7 @@
     "17": {
       "title": "Put It On!",
       "notes": [
+        { "lines": [3, 3], "kind": "reference", "title": "John Gotti", "body": "The New York mob boss, nicknamed the Dapper Don for his expensive suits. Being the freshest on Gotti means dressing like him.", "ref": { "name": "John Gotti", "category": "person" }, "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Rick Owens", "body": "The California-born designer known for dark, draped clothes and sculpted sneakers. She wants his look head to toe.", "ref": { "name": "Rick Owens", "category": "brand" }, "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "Takashi Murakami", "body": "The Japanese artist behind the smiling flowers, the cover of Kanye West's Graduation and years of Louis Vuitton bags. A tidal wave of his work suits someone named Wavy.", "ref": { "name": "Takashi Murakami", "category": "person" }, "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Thrift Shop", "body": "The hook of Macklemore and Ryan Lewis's 2012 hit about buying secondhand clothes, a fit for a song full of vintage pieces. Za is slang for weed.", "ref": { "name": "Thrift Shop (Macklemore & Ryan Lewis song)", "category": "musician" }, "draft": true },
@@ -282,6 +291,10 @@
     "18": {
       "title": "Awtside",
       "notes": [
+        { "lines": [67, 67], "kind": "reference", "title": "Jordan Poole", "body": "The NBA guard who won a title with the Golden State Warriors in 2022. A pool gets you wetter, and Poole spells it his way.", "ref": { "name": "Jordan Poole", "category": "athlete" }, "draft": true },
+        { "lines": [66, 66], "kind": "reference", "title": "FUBU", "body": "The streetwear label Daymond John and his friends started in Queens in 1992. Its name stands for For Us, By Us.", "ref": { "name": "FUBU", "category": "brand" }, "draft": true },
+        { "lines": [39, 39], "kind": "reference", "title": "Benihana", "body": "The Japanese steakhouse chain where the chef chops and cooks at your table. Chopping it up is also slang for talking.", "ref": { "name": "Benihana", "category": "brand" }, "draft": true },
+        { "lines": [11, 11], "kind": "story", "body": "Thrax is a weed strain, and sticky hands come from breaking down the good stuff.", "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Ben Roethlisberger", "body": "The Pittsburgh Steelers quarterback who won two Super Bowls. Stealing sounds like Steelers, which is how he gets into the line.", "ref": { "name": "Ben Roethlisberger", "category": "athlete" }, "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "Vetements", "body": "The Paris label known for oversized fits and logo jokes, founded by Demna in 2014. It's the fit he comes back in.", "ref": { "name": "Vetements", "category": "brand" }, "draft": true },
         { "lines": [3, 3], "kind": "story", "body": "Lion sounds like lyin', so Wave never lies, and the Maine right before it sounds like a lion's mane.", "draft": true },

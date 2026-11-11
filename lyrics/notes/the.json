@@ -4,6 +4,8 @@
     "1": {
       "title": "The Team",
       "notes": [
+        { "lines": [31, 31], "kind": "reference", "title": "Krusty Krab Training Video", "body": "The 2002 SpongeBob episode where a fish keeps yelling hoopla at the narrator until someone knocks him out with a brick. The scream is his.", "ref": { "name": "Krusty Krab Training Video (SpongeBob SquarePants)", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [12, 13], "kind": "story", "body": "He asks what it would take for the two of them to get in the zone. She likes to smoke, and smoke drifts up toward the ozone, the layer around the earth with zone in its name.", "draft": true },
         { "lines": [28, 28], "kind": "reference", "title": "Kumba", "body": "The roller coaster at Busch Gardens Tampa. Its name means roar.", "ref": { "name": "Kumba (Busch Gardens Tampa)", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [1, 2], "kind": "story", "body": "The opener asks for commitment in sports terms. He wants her to sign on with him as if he's filling a roster spot, and the song closes on the same ask.", "draft": true },
         { "lines": [2, 3], "kind": "reference", "title": "Eve", "body": "The Philadelphia rapper Eve had a 2007 hit called Tambourine. So when he blames Eve for his rib on the next line, she's the rapper as well as the woman from Genesis.", "ref": { "name": "Eve (rapper)", "category": "musician" }, "draft": true },
@@ -29,6 +31,7 @@
     "2": {
       "title": "The Oath",
       "notes": [
+        { "lines": [11, 11], "kind": "story", "body": "Coffee beans end up in a mug, so bean and mug belong together.", "draft": true },
         { "lines": [40, 40], "kind": "reference", "title": "Shundor", "body": "Bengali for beautiful, and a name he calls himself, here in the third person. It's also on Red Lights and Life is Verses.", "ref": { "name": "Shundor", "category": "other" }, "draft": true },
         { "lines": [5, 7], "kind": "story", "body": "The verse turns three animals into accusations. The laughing scavenger stands for gossip, the fastest cat sounds like a cheater, and the king of the jungle sounds like a liar.", "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Mariah Carey", "body": "Mariah Carey's 1994 holiday hit is about wanting one person more than any gift, and the line before borrows that idea. Then her last name turns into a verb.", "ref": { "name": "Mariah Carey", "category": "musician" }, "draft": true },

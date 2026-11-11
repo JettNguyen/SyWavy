@@ -4,6 +4,7 @@
     "1": {
       "title": "Bang Me Up Again",
       "notes": [
+        { "lines": [9, 9], "kind": "story", "body": "Pigs stand for gluttony, but he's never had bacon, because he doesn't eat pork.", "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "Slay3r", "body": "Playboi Carti's song from Whole Lotta Red, the 2020 album that made black and red and the rage sound his look.", "ref": { "name": "Slay3r (Playboi Carti song)", "category": "musician" }, "draft": true },
         { "lines": [1, 7], "kind": "story", "body": "The album opens on someone leaving. He's angry about how she went and still in love with her, and that pull runs under all the bravado that follows.", "draft": true },
         { "lines": [8, 14], "kind": "story", "body": "The first verse says the album's name out loud, a nod to his low voice and the crew around him. Between the boasts, he thanks her for teaching him patience.", "draft": true },
@@ -68,6 +69,7 @@
     "6": {
       "title": "AudioSlave",
       "notes": [
+        { "lines": [40, 40], "kind": "reference", "title": "Zendaya", "body": "The actress from Euphoria and Spider-Man. Charades is acting things out, so she's putting on an act, playing a part the way Zendaya does for a living.", "ref": { "name": "Zendaya", "category": "film-tv" }, "draft": true },
         { "lines": [5, 6], "kind": "reference", "title": "St. Anthony's Hospital", "body": "The hospital in St. Pete, used here for a crude joke about her throat.", "ref": { "name": "St. Anthony's Hospital", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [8, 9], "kind": "reference", "title": "Dutty Wine", "body": "A Jamaican dancehall move built on fast neck rolls, made famous by Tony Matterhorn's 2006 song of the same name.", "ref": { "name": "Dutty Wine", "category": "other" }, "draft": true },
         { "lines": [10, 13], "kind": "story", "body": "The hook is the title explained: the music has a hold on him, and whatever hurts travels through it. Said quickly, entering runs into entertain, so walking in and putting on a show are one move.", "draft": true },
@@ -81,6 +83,7 @@
     "7": {
       "title": "You Better TELL ME.",
       "notes": [
+        { "lines": [3, 3], "kind": "reference", "title": "Playboi Carti", "body": "Cardigan points to Middle of the Summer, from Carti's 2018 album Die Lit, which brags about a $3,500 cardigan, and Fetti is one of his early songs. On the surface it's just clothes and money.", "ref": { "name": "Playboi Carti", "category": "musician" }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Jet Li", "body": "The martial arts star of Hero and Romeo Must Die. Kicking it, as in hanging out, becomes a kick.", "ref": { "name": "Jet Li", "category": "film-tv" }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Bic", "body": "The lighter maker, whose 1970s ads made flick my Bic a catchphrase.", "ref": { "name": "Bic", "category": "brand" }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Spike Lee", "body": "The director of Do the Right Thing, whose films are all billed as A Spike Lee Joint, which is why a joint comes first. Shooting means filming, a fitting boast from an artist who directs, and Spike's Air Jordan ads lead to Nike in the next line.", "ref": { "name": "Spike Lee", "category": "film-tv" }, "draft": true },
@@ -109,6 +112,8 @@
     "9": {
       "title": "Intrusive Thoughts",
       "notes": [
+        { "lines": [44, 44], "kind": "reference", "title": "Invincible", "body": "Amazon's animated series about Mark Grayson, a teenager whose superpowers come from his father's alien race. Feeling invincible, he's ready to take on anyone in it.", "ref": { "name": "Invincible (TV series)", "category": "anime-cartoon" }, "draft": true },
+        { "lines": [30, 30], "kind": "reference", "title": "Rylo Rodriguez", "body": "The rapper from Mobile, Alabama, signed to Lil Baby's label, 4PF. Rello rolls right into his name.", "ref": { "name": "Rylo Rodriguez", "category": "musician" }, "draft": true },
         { "lines": [2, 3], "kind": "reference", "title": "Annie", "body": "The musical about an orphan taken in by the rich Daddy Warbucks. Its song It's the Hard Knock Life, which Jay-Z sampled in 1998, carries into the next line.", "ref": { "name": "Annie", "category": "film-tv" }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Daniel Kaluuya", "body": "The actor who starred in Jordan Peele's Get Out and Nope. The line names both movies on the way to his name.", "ref": { "name": "Daniel Kaluuya", "category": "film-tv" }, "draft": true },
         { "lines": [6, 6], "kind": "story", "body": "To bite is to copy someone's style, so Kuy sends the copycats to the dentist.", "draft": true },

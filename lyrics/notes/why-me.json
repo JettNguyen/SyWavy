@@ -32,6 +32,7 @@
     "3": {
       "title": "? (Cry)",
       "notes": [
+        { "lines": [48, 48], "kind": "story", "body": "Scotti is a weed strain. It comes back on Wavy Life, in Fantasia.", "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Nicki Minaj", "body": "The Trinidad-born, Queens-raised rap star. Her last name sounds like ménage, as in a threesome.", "ref": {"name": "Nicki Minaj", "category": "musician"}, "draft": true },
         { "lines": [24, 24], "kind": "reference", "title": "Star Crunch", "body": "Little Debbie's chocolate-covered snack cake of crispy rice and caramel.", "ref": {"name": "Star Crunch", "category": "brand"}, "draft": true },
         { "lines": [26, 34], "kind": "story", "body": "Being too nice got him burned, so he talks himself into the opposite. Then he admits that isn't who he is, says the lesson stuck and he's past it, and owns how it all sounds.", "draft": true },

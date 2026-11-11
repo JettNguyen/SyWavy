@@ -15,6 +15,7 @@
     "2": {
       "title": "Traffic",
       "notes": [
+        { "lines": [49, 53], "kind": "story", "body": "Leakers get hold of songs and post them online before they come out. The hook dreads them.", "draft": true },
         { "lines": [8, 11], "kind": "story", "body": "The hook pairs racing through cars on the road with a feeling that won't wear off. He's weaving toward someone, and what stays with him is how love smells.", "draft": true },
         { "lines": [14, 14], "kind": "reference", "title": "Love Lockdown", "body": "Kanye West's 2008 single from 808s & Heartbreak, an album built on the Roland 808 drum machine. He names the song and the machine in a few words.", "ref": {"name": "Love Lockdown", "category": "musician"}, "draft": true },
         { "lines": [15, 15], "kind": "reference", "title": "Madden NFL", "body": "EA Sports' long-running football video game. Her games are maddening, and Madden is where you call the plays.", "ref": {"name": "Madden NFL", "category": "game"}, "draft": true },
@@ -38,6 +39,7 @@
     "4": {
       "title": "1123",
       "notes": [
+        { "lines": [2, 2], "kind": "story", "body": "Eleven and three are months. November, the eleventh, didn't hurt, but March, the third, did.", "draft": true },
         { "lines": [1, 4], "kind": "story", "body": "He opens with a warning that this is as exposed as he gets. Then come the details that make it real: the post that tells him she's over it, and the song they shared still playing every time his phone rings.", "draft": true },
         { "lines": [8, 8], "kind": "reference", "title": "Ariana Grande", "body": "Her 2018 number one thank u, next is about thanking your exes and moving on. He says nearly the same words right after cutting someone off.", "ref": {"name": "Ariana Grande", "category": "musician"}, "draft": true },
         { "lines": [11, 11], "kind": "reference", "title": "Kevin Durant", "body": "The scoring great who has worn number 35 for most of his career, respected for a jumper almost no one can guard. Taking his chance with a woman earns him the same respect.", "ref": {"name": "Kevin Durant", "category": "athlete"}, "draft": true },

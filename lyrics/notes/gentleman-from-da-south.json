@@ -37,6 +37,7 @@
     "3": {
       "title": "Talk, Money, Fashion",
       "notes": [
+        { "lines": [14, 14], "kind": "reference", "title": "K.C. Undercover", "body": "The Disney Channel show starring Zendaya as a teenage spy. Under and KC make its name, and it keeps the under-the-covers joke going.", "ref": { "name": "K.C. Undercover", "category": "film-tv" }, "draft": true },
         { "lines": [1, 5], "kind": "story", "body": "The title is a three-item list of what he cares about: how he speaks, getting paid, and how he dresses. Everything else in the song hangs off those three.", "draft": true },
         { "lines": [7, 7], "kind": "story", "body": "On a film set, the slate is the clapperboard snapped before a take, and action is what the director calls next. SyWavy directs, so he talks like he's on set.", "draft": true },
         { "lines": [8, 8], "kind": "story", "body": "Threw the roof sounds like through the roof, the saying for something going sky-high, and in a coupe it also means dropping the top.", "draft": true },

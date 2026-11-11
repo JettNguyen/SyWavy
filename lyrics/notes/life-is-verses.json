@@ -4,6 +4,7 @@
     "1": {
       "title": "Under",
       "notes": [
+        { "lines": [17, 18], "kind": "reference", "title": "Cordae", "body": "Have Mercy is a 2019 song by Cordae, who was dating the tennis star Naomi Osaka at the time. His own girl doesn't play tennis, so the line names Cordae's song and then sets her apart from his.", "ref": { "name": "Cordae", "category": "musician" }, "draft": true },
         { "lines": [1, 5], "kind": "story", "body": "The album opens quiet: time slipping by and two people who've almost stopped talking. The bragging verse that follows sits on top of that distance.", "draft": true },
         { "lines": [8, 8], "kind": "story", "body": "In the middle of the boasts, one line names police killing Black men without caring whether they can breathe. It came out the year after George Floyd was killed by Minneapolis police, when those words were a protest chant, as they had been after Eric Garner's death in 2014.", "draft": true },
         { "lines": [11, 11], "kind": "reference", "title": "Leaning Tower of Pisa", "body": "The bell tower in Pisa, Italy, famous for its tilt. A doubled cup has someone leaning just like it.", "ref": {"name": "Leaning Tower of Pisa", "category": "place", "place": {"florida": false}}, "draft": true },
@@ -21,6 +22,7 @@
     "2": {
       "title": "Nick Fury",
       "notes": [
+        { "lines": [35, 35], "kind": "reference", "title": "Mister Ed", "body": "The talking horse from the 1960s sitcom Mister Ed. Left on read, he's asking someone to talk to him, the way you'd ask Ed.", "ref": { "name": "Mister Ed", "category": "film-tv" }, "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Nick Fury", "body": "Samuel L. Jackson's eye-patched spymaster in the Marvel films, the man who brings the Avengers together. He's assembling a team of his own, of a different kind.", "ref": {"name": "Nick Fury", "category": "film-tv"}, "draft": true },
         { "lines": [4, 4], "kind": "story", "body": "Ringing a bell means sounding familiar, and in school the bell rings for dismissal. Either way, he's done listening.", "draft": true },
         { "lines": [10, 10], "kind": "reference", "title": "Chief Keef", "body": "The Chicago drill pioneer, whose early single Bang put him on the map. He also sings on a Yeezus song about drinking, which the end of the line points to.", "ref": {"name": "Chief Keef", "category": "musician"}, "draft": true },
@@ -49,6 +51,8 @@
     "4": {
       "title": "Life is Verses",
       "notes": [
+        { "lines": [11, 12], "kind": "reference", "title": "Stunna 4 Vegas", "body": "The North Carolina rapper who came up with DaBaby and signed to his label. Vegas and stunna in one line put his name together backward.", "ref": { "name": "Stunna 4 Vegas", "category": "musician" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Achieva Credit Union", "body": "The credit union based in Dunedin, near St. Pete. Its name was on the soccer jersey he wore as a kid.", "ref": { "name": "Achieva Credit Union", "category": "brand" }, "draft": true },
         { "lines": [16, 16], "kind": "story", "body": "Care and urgent turned around make urgent care, the walk-in clinic.", "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Shundor", "body": "Bengali for beautiful, and one of the names he calls himself. The rest of the line translates it.", "ref": {"name": "Shundor", "category": "other"}, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Popeye", "body": "The sailor cartoon who gets his strength from spinach. Strong is slang for potent weed, and spinach stands in for what he's smoking.", "ref": {"name": "Popeye", "category": "anime-cartoon"}, "draft": true },
@@ -69,6 +73,7 @@
     "5": {
       "title": "Fall Out",
       "notes": [
+        { "lines": [45, 45], "kind": "story", "body": "Sy is SyWavy himself, and a principal runs the school, so he's calling himself the one in charge.", "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Sanjay and Craig", "body": "The Nickelodeon cartoon about a boy whose best friend is a talking snake. People who keep snakes as friends get the comparison.", "ref": {"name": "Sanjay and Craig", "category": "anime-cartoon"}, "draft": true },
         { "lines": [9, 17], "kind": "story", "body": "The hook is a quiet shrug. He's hurting, she may not be, and they're going to drift apart either way. He says it without anger, which makes it sadder.", "draft": true },
         { "lines": [21, 21], "kind": "reference", "title": "Lauryn Hill", "body": "The New Jersey singer and rapper whose 1998 number one single warned men and women about being used for one thing. He cites her twice in this verse as the last word on it.", "ref": {"name": "Lauryn Hill", "category": "musician"}, "draft": true },

@@ -4,6 +4,7 @@
     "1": {
       "title": "Red Lights",
       "notes": [
+        { "lines": [32, 32], "kind": "reference", "title": "The Rolling Stones", "body": "The British rock band, together since 1962. The crew rolls the way the Stones do.", "ref": { "name": "The Rolling Stones", "category": "musician" }, "draft": true },
         { "lines": [3, 3], "kind": "story", "body": "Crossing people out puts a cross on them, and he adds that it doesn't make him a Christian.", "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Mission: Impossible", "body": "The spy series, on TV from 1966 and in theaters with Tom Cruise since 1996. He pulls the title apart, keeping the missions and throwing out the impossible.", "ref": {"name": "Mission: Impossible", "category": "film-tv"}, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Detroit Pistons", "body": "Detroit's NBA team, whose rough title teams of 1989 and 1990 were called the Bad Boys. She likes bad boys, and he's never been one.", "ref": {"name": "Detroit Pistons", "category": "team"}, "draft": true },

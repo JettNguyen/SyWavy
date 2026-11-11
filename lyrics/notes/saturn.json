@@ -4,6 +4,7 @@
     "1": {
       "title": "Float",
       "notes": [
+        { "lines": [25, 25], "kind": "reference", "title": "Rolling in the Deep", "body": "Adele's 2010 breakup hit. A Dyson vacuum rolls too, so the rolling carries over from her song to the vacuum.", "ref": { "name": "Rolling in the Deep (Adele song)", "category": "musician" }, "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "Raf Simons", "body": "The Belgian designer whose adidas line made the chunky Ozweego runner a fashion staple. He opens the song in a pair.", "ref": {"name": "Raf Simons", "category": "brand"}, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Genovese crime family", "body": "One of the Five Families of the New York Mafia, known for keeping its business quiet. Secrecy is the family code.", "ref": {"name": "Genovese crime family", "category": "other"}, "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Money Trees", "body": "Kendrick Lamar's 2012 song with Jay Rock from good kid, m.A.A.d city, about wanting to sit in the shade of a tree that grows cash. He's already there.", "ref": {"name": "Money Trees", "category": "musician"}, "draft": true },
@@ -24,6 +25,8 @@
     "2": {
       "title": "Love to See It",
       "notes": [
+        { "lines": [50, 50], "kind": "reference", "title": "Jorja Smith", "body": "The British R&B singer. Her 2018 debut album is Lost & Found, and Goodbyes is a song on it, so the whole line is built from her titles.", "ref": { "name": "Jorja Smith", "category": "musician" }, "draft": true },
+        { "lines": [21, 21], "kind": "reference", "title": "1985", "body": "The closing song on J. Cole's 2018 album KOD is called 1985 (Intro to The Fall Off). Jeans from 1985 are old, these ones are about to come off, and the year plus the fall off makes his title.", "ref": { "name": "1985 (J. Cole song)", "category": "musician" }, "draft": true },
         { "lines": [49, 49], "kind": "reference", "title": "Pain 1993", "body": "Drake's song with Playboi Carti from Dark Lane Demo Tapes, out in May 2020, a few months before this one.", "ref": { "name": "Pain 1993 (Drake song)", "category": "musician" }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Ocean Drive", "body": "The Art Deco strip along South Beach in Miami Beach, lined with neon-lit hotels. It's the trip he wants to take with her.", "ref": {"name": "Ocean Drive", "category": "place", "place": {"florida": true}}, "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Shy Guy", "body": "The masked, robed enemy from Nintendo's Mario games. Covered up and quiet, he's playing one.", "ref": {"name": "Shy Guy", "category": "game"}, "draft": true },

@@ -25,6 +25,8 @@
     "1": {
       "title": "Overture",
       "notes": [
+        { "lines": [43, 43], "kind": "reference", "title": "Rochester, New York", "body": "The city in upstate New York on Lake Ontario, a long way from Florida.", "ref": { "name": "Rochester, New York", "category": "place", "place": { "florida": false } }, "draft": true },
+        { "lines": [28, 28], "kind": "reference", "title": "Tracy Morgan", "body": "The comedian from Saturday Night Live and 30 Rock starred in The Last O.G., a TBS comedy about a man coming home from prison. That makes him the OG Tracy.", "ref": { "name": "Tracy Morgan", "category": "film-tv" }, "draft": true },
         { "lines": [1, 12], "kind": "story", "body": "The album opens as a boarding call. Before a single verse, it credits the record to the two of them, counts off all fifteen tracks, and hands the mic to Jett2Fly, who speaks as the captain of an airline named for SyWavy. Their names set the imagery for everything after: Jett2Fly brings the planes, SyWavy brings the water.", "draft": true },
         { "lines": [16, 16], "kind": "story", "body": "An overture's job is to preview what's coming, and he says so outright. The applause he brings up here comes back as the whole subject of Sable, near the end of the album.", "draft": true },
         { "lines": [34, 34], "kind": "story", "body": "A G is slang for staying real, and it's also a gram of weed, set right beside a whole ounce.", "draft": true },
@@ -35,7 +37,7 @@
     "2": {
       "title": "Losing Petals",
       "notes": [
-        { "lines": [7, 7], "kind": "reference", "title": "Balmain", "body": "The French luxury house founded in Paris in 1945, known for sharp, embellished tailoring. The name stands in for the high end.", "ref": { "name": "Balmain", "category": "brand" }, "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Balmain", "body": "The French luxury house founded in Paris in 1945, known for sharp, embellished tailoring. Said out loud, it's also bail, man: she's about to walk out on him.", "ref": { "name": "Balmain", "category": "brand" }, "draft": true },
         { "lines": [14, 14], "kind": "story", "body": "To gut a cigar is to empty out its tobacco so it can be rolled with weed. A gar is also a long-nosed Florida fish, the kind you clean after a day of fishing.", "draft": true },
         { "lines": [17, 24], "kind": "story", "body": "The verse runs on puns that come in pairs. Petals sound like pedals, so shedding them turns into losing control of a car, and the brake he can't reach is also the break he needs. Spring shows up as the clocks jumping ahead and fall shows up as leaves piling up in the yard, so the seasons move as fast as he does.", "draft": true },
         { "lines": [25, 28], "kind": "story", "body": "The hook names the first stage of the cherry blossom's cycle, and petals sound like pedals again. Put one next to metal and it's pedal to the metal: he's flooring it, and he's stopped trying to define what the two of them are.", "draft": true },
@@ -48,6 +50,7 @@
     "3": {
       "title": "Stigma",
       "notes": [
+        { "lines": [34, 34], "kind": "story", "body": "He's a Y2K baby, born at the turn of the millennium. NBA 2K is the basketball game where a hard crossover can break a defender's ankles, so 2K does double duty.", "draft": true },
         { "lines": [55, 55], "kind": "reference", "title": "Buster Baxter", "body": "The rabbit who's Arthur's best friend on the PBS cartoon Arthur.", "ref": { "name": "Buster Baxter", "category": "anime-cartoon" }, "draft": true },
         { "lines": [33, 33], "kind": "reference", "title": "A House Is Not a Home", "body": "Luther Vandross's 1981 take on the Burt Bacharach song about a place that's empty without the one you love.", "ref": { "name": "A House Is Not a Home (Luther Vandross)", "category": "musician" }, "draft": true },
         { "lines": [1, 8], "kind": "story", "body": "A stigma is the part of a flower that catches pollen, so the title means both a mark of shame and the spot where something new begins. The hook holds grief and hope the same way: a mourning dove on one side, named for its sad call, and butterflies on the other, with her at the center of what he's telling.", "draft": true },
@@ -63,6 +66,7 @@
     "4": {
       "title": "Partake",
       "notes": [
+        { "lines": [41, 43], "kind": "reference", "title": "Gill Grunt", "body": "The fish-man with a harpoon gun from the Skylanders games. Skylanders toys only come into the game when you set them on the Portal of Power, a platform, and a platform is all he needed too.", "ref": { "name": "Gill Grunt (Skylanders)", "category": "game" }, "draft": true },
         { "lines": [1, 12], "kind": "story", "body": "He opens by checking in with someone he hasn't talked to in a long time, and he can't believe he still crosses their mind. He talks himself up as the catch, but the clock running out at the end of the verse gives away how much the wait is costing him.", "draft": true },
         { "lines": [13, 16], "kind": "story", "body": "The hook asks to close the distance after a long gap. He sings the same request four times in a row, which says more about how badly he wants it than any verse could.", "draft": true },
         { "lines": [36, 38], "kind": "story", "body": "He puts a number on it: three years since things changed, a change that began in his last year of high school. Seeing her again still sends him off fast.", "draft": true },
@@ -73,6 +77,7 @@
     "5": {
       "title": "Chanel Fragrance",
       "notes": [
+        { "lines": [24, 24], "kind": "reference", "title": "Kim Kardashian", "body": "Her full first name is Kimberly. Keeping it a K, like keeping it a thousand, means being straight with him, and the K is for Kim.", "ref": { "name": "Kim Kardashian", "category": "film-tv" }, "draft": true },
         { "lines": [61, 61], "kind": "reference", "title": "UPS", "body": "The delivery company, followed by down, so it hides ups and downs, with no mail coming.", "ref": { "name": "UPS", "category": "brand" }, "draft": true },
         { "lines": [1, 12], "kind": "story", "body": "He reconnects with a girl he's known for years and invites her back into his life, then fields her questions about why he walked away. His answer is a question of his own about what there was to stay for, and he knows full well he's still on her mind.", "draft": true },
         { "lines": [13, 13], "kind": "reference", "title": "Cruella de Vil", "body": "The villain of 101 Dalmatians, who wants the puppies for a fur coat and wears her hair half black, half white. Her black and white look matches Chanel's, which is why he reaches for her.", "ref": { "name": "Cruella de Vil", "category": "film-tv" }, "draft": true },
@@ -85,7 +90,7 @@
         { "lines": [36, 36], "kind": "reference", "title": "Fisher-Price", "body": "The baby and toddler toy brand. Picturing her as the mother of his kids sends him to the toy aisle, and Fisher-Price belongs to Mattel, the maker of the doll two lines later.", "ref": { "name": "Fisher-Price", "category": "brand" }, "draft": true },
         { "lines": [37, 37], "kind": "reference", "title": "Glen Rice", "body": "One of the best shooters of the 1990s, a three-time All-Star who began his career with the Miami Heat and won the 1995 three-point contest. He splits the name in reverse to say he's shooting his shot with her.", "ref": { "name": "Glen Rice", "category": "athlete" }, "draft": true },
         { "lines": [38, 38], "kind": "reference", "title": "Barbie", "body": "Mattel's doll, and Ken, her boyfriend since 1961. If she's the perfect doll, he's the one made to stand next to her.", "ref": { "name": "Barbie", "category": "brand" }, "draft": true },
-        { "lines": [39, 40], "kind": "reference", "title": "Stone Cold Steve Austin", "body": "The smell has him pinned like a wrestler on the mat, and then Stone Cold Steve Austin, the beer-drinking WWE star of the late 1990s, shows up. His nickname turns into friends who've gone cold on him.", "ref": { "name": "Stone Cold Steve Austin", "category": "athlete" }, "draft": true },
+        { "lines": [39, 40], "kind": "reference", "title": "Stone Cold Steve Austin", "body": "Her Chanel No. 5 has him pinned like a wrestler on the mat, and then Stone Cold Steve Austin, the beer-drinking WWE star of the late 1990s, shows up. His nickname turns into friends who've gone cold on him.", "ref": { "name": "Stone Cold Steve Austin", "category": "athlete" }, "draft": true },
         { "lines": [52, 53], "kind": "reference", "title": "New England Patriots", "body": "The Patriots won the NFL's AFC East nearly every year from 2001 to 2019, and he claims the East the same way. Then their win-loss record flips into recording a show on AMC, one letter off.", "ref": { "name": "New England Patriots", "category": "team" }, "draft": true },
         { "lines": [54, 54], "kind": "reference", "title": "Ksubi", "body": "An Australian denim label known for its skinny jeans. Its name is said without the K, which is the joke.", "ref": { "name": "Ksubi", "category": "brand" }, "draft": true },
         { "lines": [55, 55], "kind": "reference", "title": "DDT", "body": "A wrestling move where you lock an opponent's head and fall backward, driving it into the mat, made famous by Jake Roberts. It keeps the wrestling going from the Stone Cold line.", "ref": { "name": "DDT (professional wrestling)", "category": "other" }, "draft": true },
@@ -118,6 +123,8 @@
     "8": {
       "title": "Far",
       "notes": [
+        { "lines": [48, 48], "kind": "reference", "title": "Finn", "body": "The stormtrooper who walks away from the First Order in Star Wars: The Force Awakens, played by John Boyega. Through the sequels he keeps putting himself between his friends and danger.", "ref": { "name": "Finn (Star Wars)", "category": "film-tv" }, "draft": true },
+        { "lines": [9, 9], "kind": "reference", "title": "Lovelace", "body": "The rockhopper penguin guru in Happy Feet, the 2006 movie about a penguin who tap dances, voiced by Robin Williams. Happy feet is how he moves.", "ref": { "name": "Lovelace (Happy Feet)", "category": "anime-cartoon" }, "draft": true },
         { "lines": [50, 50], "kind": "reference", "title": "The Perfect LUV Tape", "body": "Lil Uzi Vert's 2016 mixtape, which has a song called Money Mitch on it.", "ref": { "name": "The Perfect LUV Tape (Lil Uzi Vert)", "category": "musician" }, "draft": true },
         { "lines": [35, 35], "kind": "reference", "title": "Florida Panhandle", "body": "The strip of Florida that stretches west along the Gulf.", "ref": { "name": "Florida Panhandle", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "One Piece", "body": "The long-running pirate anime, known for filler, the episodes that pad out a show without moving the story. He wanted the real thing from her and got padding.", "ref": { "name": "One Piece", "category": "anime-cartoon" }, "draft": true },
@@ -190,6 +197,8 @@
     "12": {
       "title": "Dreamland",
       "notes": [
+        { "lines": [8, 8], "kind": "story", "body": "Apple Goat is the goat emoji on an iPhone, the one people send to mean the greatest of all time. SyWavy remembers Apple's goat going from white to brown.", "draft": true },
+        { "lines": [7, 7], "kind": "reference", "title": "Los Angeles", "body": "Spanish for the angels. He calls her his angel, and Los starts the city's name.", "ref": { "name": "Los Angeles", "category": "place", "place": { "florida": false } }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "The O", "body": "Orlando's nickname. She's from there.", "ref": { "name": "Orlando, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Ichigo Kurosaki", "body": "The orange-haired hero of the anime and manga Bleach. Bleaching skin is the setup for the show's name.", "ref": { "name": "Ichigo Kurosaki", "category": "anime-cartoon" }, "draft": true },
         { "lines": [13, 19], "kind": "story", "body": "Dreamland is the one place he's in charge. The hook goes back and forth between taking over and being trapped there, and he doesn't sound sure which one it is.", "draft": true },
@@ -202,6 +211,9 @@
     "13": {
       "title": "Sable",
       "notes": [
+        { "lines": [5, 5], "kind": "story", "body": "Fayet hills is Fayetteville with hills in place of the ville.", "draft": true },
+        { "lines": [3, 3], "kind": "reference", "title": "Umar Johnson", "body": "The Philadelphia psychologist and speaker who tells Black men not to date outside their race. He quotes him and goes after white women anyway, and Johnson, slang for a penis, finishes the man's name.", "ref": { "name": "Umar Johnson", "category": "person" }, "draft": true },
+        { "lines": [2, 2], "kind": "story", "body": "A star and a crescent moon together make the symbol of Islam. He's Muslim, so his prayers are under the crescent, not in a synagogue.", "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Call of Duty", "body": "Activision's shooter series, where spinning all the way around before a sniper shot became the flashiest trick in online play. He spins for her the same way.", "ref": { "name": "Call of Duty", "category": "game" }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "Fruitvale Station", "body": "Ryan Coogler's 2013 film about a young man's last day in Oakland, starring Michael B. Jordan. The line builds the actor's name from a dancer named Michael, a ball for the B, and a player named Jordan.", "ref": { "name": "Fruitvale Station", "category": "film-tv" }, "draft": true },
         { "lines": [10, 17], "kind": "story", "body": "The hook warns someone to stop acting the way they've been acting, then tells them to clap anyway. Applause runs through the whole song, and it never sounds like a celebration.", "draft": true },

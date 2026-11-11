@@ -4,6 +4,12 @@
     "1": {
       "title": "Joy",
       "notes": [
+        { "lines": [47, 47], "kind": "reference", "title": "I've Got the Joy", "body": "The Sunday school song I've Got the Joy, Joy, Joy, Joy (Down in My Heart). The song's title, the joy piled on joy and the gospel sample all point back to it, with his soul in place of the heart.", "ref": { "name": "I've Got the Joy (Sunday school song)", "category": "other" }, "draft": true },
+        { "lines": [44, 44], "kind": "story", "body": "He recorded this on an iPhone 8 he was using as a burner, a cheap spare phone.", "draft": true },
+        { "lines": [32, 32], "kind": "story", "body": "CR is short for copyright, as in owning the rights to his music. There was no graduation, but he might get his songs copyrighted, and he's willing to wait for it.", "draft": true },
+        { "lines": [29, 29], "kind": "reference", "title": "Kids' Choice Awards", "body": "Nickelodeon's yearly awards show, where kids vote for the winners. The kid and choice together make its name, and Timmy Turner, from another Nickelodeon show, turns up later in the song.", "ref": { "name": "Kids' Choice Awards", "category": "film-tv" }, "draft": true },
+        { "lines": [16, 16], "kind": "reference", "title": "Future", "body": "The Atlanta rapper hides in the line: seeing the future is also seeing Future.", "ref": { "name": "Future (rapper)", "category": "musician" }, "draft": true },
+        { "lines": [14, 14], "kind": "reference", "title": "J. Cole", "body": "Fayetteville, North Carolina, J. Cole's hometown, goes by the Ville, and Forbidden Fruit is a song from his 2013 album Born Sinner. The trip and the fruit both come from him.", "ref": { "name": "J. Cole", "category": "musician" }, "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "Gravity Falls", "body": "The Disney cartoon about twins Dipper and Mabel Pines spending a summer in a strange Oregon town. Leaving becomes a pun on Dipper's name, which makes Mabel his sister.", "ref": {"name": "Gravity Falls", "category": "anime-cartoon"}, "draft": true },
         { "lines": [3, 10], "kind": "story", "body": "The opener lays out where he stands: he answers to himself, no genre fits him, and a choir sample sits under everything. Everyone else is reaching for something that comes naturally to him.", "draft": true },
         { "lines": [11, 13], "kind": "story", "body": "The title comes into focus here: joy, and gratitude that he never quit making music. He even makes room for the people who will hate on him, and admits he'd feel the same way in their place.", "draft": true },
@@ -20,6 +26,7 @@
     "2": {
       "title": "Weeknd",
       "notes": [
+        { "lines": [27, 27], "kind": "story", "body": "Smeez is slang for fake or messy people, and he keeps his distance from them.", "draft": true },
         { "lines": [4, 4], "kind": "reference", "title": "Sour Patch Kids", "body": "Patch and sour make Sour Patch Kids, the candy, on an EP called Ear Candi.", "ref": { "name": "Sour Patch Kids", "category": "brand" }, "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "The Weeknd", "body": "The Toronto singer's fourth album came out in March 2020, three months before this EP, and its title runs through the hook. The song's own title spells weekend his way.", "ref": {"name": "The Weeknd", "category": "musician"}, "draft": true },
         { "lines": [9, 12], "kind": "story", "body": "He turns on someone who acts like family but isn't, and the way they've treated him feels strange to him. The pun between family and familiar carries the verse.", "draft": true },
@@ -44,6 +51,7 @@
     "4": {
       "title": "I Know",
       "notes": [
+        { "lines": [15, 15], "kind": "reference", "title": "Speckles", "body": "The star-nosed mole from Disney's 2009 movie G-Force, the team's computer expert, voiced by Nicolas Cage. Moles live underground, so coming up from the underground makes him like Speckles.", "ref": { "name": "Speckles (G-Force)", "category": "film-tv" }, "draft": true },
         { "lines": [5, 6], "kind": "reference", "title": "Aston Martin", "body": "The British luxury car maker. He stretches its name across two lines, sound by sound.", "ref": {"name": "Aston Martin", "category": "brand"}, "draft": true },
         { "lines": [9, 13], "kind": "story", "body": "He's moving fast here, with new music and beats that hit hard. He also nods to Keys', his single from that March, now finished and locked away.", "draft": true },
         { "lines": [27, 27], "kind": "reference", "title": "World's smallest violin", "body": "The joke of rubbing two fingers together to play a tiny violin for someone's sob story. He plays one for a sad story, which means he isn't moved.", "ref": {"name": "World's smallest violin", "category": "other"}, "draft": true },
@@ -57,6 +65,7 @@
     "5": {
       "title": "No Change",
       "notes": [
+        { "lines": [8, 9], "kind": "reference", "title": "Miami Hurricanes", "body": "The University of Miami's teams, named for the storms that hit South Florida, and the line means both. The weather keeps going on the next line, with everything coming down like rain.", "ref": { "name": "Miami Hurricanes", "category": "team" }, "draft": true },
         { "lines": [1, 1], "kind": "reference", "title": "OVO", "body": "October's Very Own, Drake's label and clothing line, known for its owl logo.", "ref": {"name": "October's Very Own", "category": "brand"}, "draft": true },
         { "lines": [2, 2], "kind": "reference", "title": "Virgil Abloh", "body": "The designer who founded Off-White and later led menswear at Louis Vuitton; he died in 2021. An Off-White blazer was made by him, so the line credits him as the one who made it.", "ref": {"name": "Virgil Abloh", "category": "brand"}, "draft": true },
         { "lines": [3, 3], "kind": "reference", "title": "Jack Sparrow", "body": "Johnny Depp's pirate captain in the Pirates of the Caribbean films. His first name doubles as getting robbed.", "ref": {"name": "Jack Sparrow", "category": "film-tv"}, "draft": true },
