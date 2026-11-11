@@ -327,21 +327,22 @@ a, button, [role="button"] { touch-action: manipulation; }
 
 .nav-link:focus-visible, .nav-link-active { color: var(--text); }
 
+/* The current section is underlined in teal. The line grows out from the
+   middle as a link becomes current, and shrinks back as it stops being. */
 .nav-link::after {
   content: '';
   position: absolute;
-  left: 50%;
-  bottom: 5px;
-  width: 4px;
-  height: 4px;
-  margin-left: -2px;
-  border-radius: 50%;
+  left: 0.8rem;
+  right: 0.8rem;
+  bottom: 7px;
+  height: 2px;
+  border-radius: 2px;
   background: var(--accent);
-  transform: scale(0);
-  transition: transform 0.3s var(--ease-out);
+  transform: scaleX(0);
+  transition: transform 0.4s var(--ease-out), background-color 0.2s;
 }
 
-.nav-link-active::after { transform: scale(1); }
+.nav-link-active::after { transform: scaleX(1); }
 
 .nav-end {
   position: relative;
@@ -1658,6 +1659,7 @@ a.inspiration-song:hover { opacity: 0.75; }
 
   .nav-wordmark:hover  { opacity: 0.8; }
   .nav-link:hover      { color: var(--text); }
+  .nav-link:not(.nav-link-active):hover::after { transform: scaleX(1); background-color: rgba(238, 241, 243, 0.3); }
   .nav-cta:hover       { background: var(--accent); color: var(--accent-ink); }
   .nav-hamburger:hover { background: rgba(255, 255, 255, 0.07); }
 
@@ -1725,4 +1727,5 @@ a.inspiration-song:hover { opacity: 0.75; }
   .hero-photo img, .hero-descriptor, .hero-name, .hero-release { animation: none; }
   .js .animate-on-scroll, .js .video-item { opacity: 1; transform: none; transition: none; }
   .release-card-img, .video-thumb, .featured-cover, .release-card-art { transition: none; }
+  .nav-link::after { transition: none; }
 }
