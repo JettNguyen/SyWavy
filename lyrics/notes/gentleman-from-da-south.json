@@ -1,5 +1,9 @@
 {
   "release": "gentleman-from-da-south",
+  "sound": {
+    "draft": true,
+    "text": "Gentleman From Da South was made quickly, in the months between Deep Voice Bastards and Flight 370, and it catches a short phase: SyWavy as a Southern gentleman with his eyes on stadiums. Jett2Fly built the three beats to match, Southern in feel and big enough for an arena, starting with Stadium Music."
+  },
   "songs": {
     "1": {
       "title": "Stadium Music",

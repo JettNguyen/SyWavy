@@ -96,7 +96,8 @@ function loadSongs(releases) {
 /* Notes, checked against the lyrics so a note can't point past a song */
 function loadNotes(byRelease, { drafts = false } = {}) {
   const arcs = new Map();
-  if (!fs.existsSync(NOTES)) return { arcs };
+  const sounds = new Map();
+  if (!fs.existsSync(NOTES)) return { arcs, sounds };
   for (const f of fs.readdirSync(NOTES).filter(f => f.endsWith('.json'))) {
     const releaseId = f.slice(0, -5);
     if (releaseId === 'places') continue;
@@ -106,6 +107,11 @@ function loadNotes(byRelease, { drafts = false } = {}) {
     const data = JSON.parse(fs.readFileSync(path.join(NOTES, f), 'utf8'));
 
     if (data.arc && (drafts || !data.arc.draft)) arcs.set(releaseId, data.arc);
+    // A short paragraph on how the project sounds and how it was made
+    if (data.sound) {
+      if (typeof data.sound.text !== 'string' || !data.sound.text.trim()) throw new Error(`${where}: sound needs its text`);
+      if (drafts || !data.sound.draft) sounds.set(releaseId, data.sound);
+    }
 
     for (const [track, entry] of Object.entries(data.songs || {})) {
       const song = list.find(s => s.track === Number(track));
@@ -124,7 +130,7 @@ function loadNotes(byRelease, { drafts = false } = {}) {
       song.notes.sort((x, y) => x.lines[0] - y.lines[0]);
     }
   }
-  return { arcs };
+  return { arcs, sounds };
 }
 
 module.exports = { loadSongs, loadNotes, slugify, KINDS, CATEGORIES };
@@ -138,9 +144,9 @@ if (require.main === module) {
     const sandbox = vm.createContext({ window: {} });
     vm.runInContext(fs.readFileSync(path.join(__dirname, 'data.js'), 'utf8'), sandbox);
     const { songs, byRelease } = loadSongs(sandbox.window.SYWAVY.releases);
-    const { arcs } = loadNotes(byRelease, { drafts: true });
+    const { arcs, sounds } = loadNotes(byRelease, { drafts: true });
     const count = k => songs.reduce((n, s) => n + (s.notes || []).filter(x => x.kind === k).length, 0);
-    console.log(`Notes are valid: ${KINDS.map(k => `${count(k)} ${k}`).join(', ')}, on ${songs.filter(s => (s.notes || []).length).length} songs; ${arcs.size} album arcs.`);
+    console.log(`Notes are valid: ${KINDS.map(k => `${count(k)} ${k}`).join(', ')}, on ${songs.filter(s => (s.notes || []).length).length} songs; ${arcs.size} album arcs; ${sounds.size} sound paragraphs.`);
     process.exit(0);
   }
   if (cmd !== 'number' || !id) { console.log('usage: node build-lyrics.js number <release id> | check'); process.exit(1); }

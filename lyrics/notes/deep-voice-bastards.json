@@ -1,5 +1,9 @@
 {
   "release": "deep-voice-bastards",
+  "sound": {
+    "draft": true,
+    "text": "The deep voices in the title belong to SyWavy and Jett2Fly. Jett2Fly doesn't sing or rap on it, but anyone who's heard the two of them talk would say they both have very deep voices, and SyWavy named the album for them both. The production is loud, with heavy synths that never turn harsh and a lot of bass, and even the slower songs hit hard. Jett2Fly drew on melodic dubstep, especially The Glitch Mob's Fortune Days and We Can Make the World Stop, without making it sound like dubstep, and kept the focus on mood and melody."
+  },
   "songs": {
     "1": {
       "title": "Bang Me Up Again",
@@ -7,7 +11,7 @@
         { "lines": [9, 9], "kind": "story", "body": "Pigs stand for gluttony, but he's never had bacon, because he doesn't eat pork." },
         { "lines": [13, 13], "kind": "reference", "title": "Slay3r", "body": "Playboi Carti's song from Whole Lotta Red, the 2020 album that made black and red and the rage sound his look.", "ref": { "name": "Slay3r (Playboi Carti song)", "category": "musician" } },
         { "lines": [1, 7], "kind": "story", "body": "The album opens on someone leaving. He's angry about how she went and still in love with her, and that pull runs under all the bravado that follows." },
-        { "lines": [8, 14], "kind": "story", "body": "The first verse says the album's name out loud, a nod to his low voice and the crew around him. Between the boasts, he thanks her for teaching him patience." },
+        { "lines": [8, 14], "kind": "story", "body": "The first verse says the album's name out loud. The deep voices are his and his producer Jett2Fly's, and the album is named for the two of them. Between the boasts, he thanks her for teaching him patience." },
         { "lines": [14, 14], "kind": "reference", "title": "OnlyFans", "body": "The subscription site where fans pay creators. He flips the name: he's her only fan, and he's never paid.", "ref": { "name": "OnlyFans", "category": "brand" } },
         { "lines": [43, 43], "kind": "story", "body": "SyWavy was born in 2001, so he's saying he hasn't changed since day one." },
         { "lines": [53, 60], "kind": "story", "body": "He turns to a younger guy with advice: don't spend on someone who's only after your money. He's proud that no one has ever played him." },
@@ -48,7 +52,7 @@
         { "lines": [2, 2], "kind": "reference", "title": "Von Dutch", "body": "The trucker-hat brand that defined early-2000s celebrity style. Orange is the Dutch national color, which fits the orange fit, and a Dutch is a cigar people roll up with.", "ref": { "name": "Von Dutch", "category": "brand" } },
         { "lines": [19, 19], "kind": "reference", "title": "Old Spice", "body": "The men's grooming brand, whose ads end with a whistled sailor tune. The whistle a couple of lines earlier sets it up.", "ref": { "name": "Old Spice", "category": "brand" } },
         { "lines": [20, 20], "kind": "reference", "title": "Ice Spice", "body": "The Bronx artist who broke out in 2022 with Munch (Feelin' U). Her name rhymes with Old Spice in the line before.", "ref": { "name": "Ice Spice", "category": "musician" } },
-        { "lines": [32, 40], "kind": "story", "body": "Under the boasting is an admission. He admits love is beyond him, and what he has instead is his crew, the club the album is named for." },
+        { "lines": [32, 40], "kind": "story", "body": "Under the boasting is an admission. He admits love is beyond him, and what he has instead is wins and the Bastard Club: him and Jett2Fly, the two deep voices the album is named for." },
         { "lines": [49, 52], "kind": "story", "body": "The closing verse is a Florida brag. Where he's from the heat never lets up, so the word belongs to him." }
       ]
     },
@@ -124,11 +128,11 @@
         { "lines": [29, 29], "kind": "reference", "title": "Cleveland Brown", "body": "Peter Griffin's neighbor on Family Guy, who got his own spinoff, The Cleveland Show, in 2009. Saying he's no family guy sets up the name.", "ref": { "name": "Cleveland Brown", "category": "anime-cartoon" } },
         { "lines": [31, 31], "kind": "reference", "title": "Kuy", "body": "The artist featured on this song. Instead of chasing big features, SyWavy says he'd just call Kuy.", "ref": { "name": "Kuy", "category": "musician" } },
         { "lines": [32, 32], "kind": "reference", "title": "fun.", "body": "The band fun. had a 2012 No. 1 with We Are Young. The line puts their name and their biggest hit side by side.", "ref": { "name": "fun.", "category": "musician" } },
-        { "lines": [35, 37], "kind": "story", "body": "Kuy borrows from SyWavy here. The Robin Thicke nod echoes Caution, and the Florida hair line is lifted from Cruise Jam, both on Wavy Life, tying the crew record back to the water album." },
+        { "lines": [35, 37], "kind": "story", "body": "Kuy borrows from SyWavy here. The Robin Thicke nod echoes Caution, and the Florida hair line is lifted from Cruise Jam, both on Wavy Life, tying Deep Voice Bastards back to the water album." },
         { "lines": [35, 35], "kind": "reference", "title": "Robin Thicke", "body": "His 2013 hit Blurred Lines, which SyWavy also borrowed on Caution from Wavy Life.", "ref": { "name": "Robin Thicke", "category": "musician" } },
         { "lines": [42, 42], "kind": "reference", "title": "Harriet Tubman", "body": "The abolitionist who led enslaved people north on the Underground Railroad. Coming up from underground, he takes her name.", "ref": { "name": "Harriet Tubman", "category": "person" } },
         { "lines": [53, 54], "kind": "story", "body": "222 is an angel number, read as a sign that your life is in alignment. Kuy follows triple two with a triple-double, the basketball stat line for a big night." },
-        { "lines": [58, 65], "kind": "story", "body": "The hook gives the title a punchline instead of a confession: thoughts slides into thot. Around it, Kuy joins SyWavy and the two trade verses packed with jokes from movies, sports and TV, the Deep Voice Bastards crew idea in action." }
+        { "lines": [58, 65], "kind": "story", "body": "The hook gives the title a punchline instead of a confession: thoughts slides into thot. Around it, Kuy joins SyWavy and the two trade verses packed with jokes from movies, sports and TV." }
       ]
     },
     "10": {

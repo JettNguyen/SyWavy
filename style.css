@@ -1472,7 +1472,10 @@ a, button, [role="button"] { touch-action: manipulation; }
 
 /* Lyrics hub */
 .lyrics-releases { display: grid; gap: clamp(3rem, 6vw, 4.5rem) clamp(2.5rem, 5vw, 4.5rem); }
-@media (min-width: 1000px) { .lyrics-releases { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Wide screens: one release per row, what it sounds like beside its songs */
+@media (min-width: 1000px) {
+  .lyrics-release-text { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 0 clamp(2.5rem, 5vw, 4.5rem); align-items: start; }
+}
 .lyrics-release { display: grid; grid-template-columns: clamp(72px, 13vw, 140px) minmax(0, 1fr); gap: clamp(1.1rem, 2.5vw, 2rem); align-items: start; }
 .lyrics-release-cover { position: relative; isolation: isolate; display: block; }
 .lyrics-release-cover .art-glow img { filter: blur(30px) saturate(1.5); opacity: 0.45; }
@@ -1550,6 +1553,12 @@ a, button, [role="button"] { touch-action: manipulation; }
 .fl-place.is-on { border-color: rgba(86, 226, 211, 0.5); }
 .fl-place-name { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; font-size: 1.1rem; font-weight: 680; }
 .fl-place-body { margin-top: 0.35rem; font-size: 0.95rem; line-height: 1.6; color: var(--text-soft); }
+
+/* The sound: a short paragraph on how a project sounds and how it was made */
+.sound-text { max-width: 62ch; font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); }
+.lyrics-release-sound { max-width: 62ch; margin-bottom: 0.5rem; font-size: 0.95rem; line-height: 1.65; color: var(--text-soft); }
+.lyrics-release-sound .note-draft { margin-left: 0.2rem; vertical-align: 0.1em; }
+.page-intro-more { margin-top: 0.75rem; }
 
 /* Track by track: a line through the album, drawn as the page scrolls */
 .arc-summary { max-width: 62ch; margin-bottom: clamp(2rem, 4vw, 2.75rem); font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); }

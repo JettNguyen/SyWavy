@@ -1,5 +1,9 @@
 {
   "release": "why-me",
+  "sound": {
+    "draft": true,
+    "text": "Why Me? is where the breakup starts, three songs from a short, bitter stretch of SyWavy's life, and Jett2Fly gave each one its own sound. Why is slow and sad, with a simple beat. Me turns darker and more aggressive, with a few samples mixed in. ? (Cry) ends on something smoother, a steady mix of R&B and rap built on the melody from Future's Solo."
+  },
   "songs": {
     "1": {
       "title": "Why",

@@ -97,7 +97,9 @@ const albumData = r => ({
   url: `${SITE}/${r.id}`,
   image: `${SITE}/assets/covers/${r.cover}-1000.webp`,
   ...(r.date && { datePublished: r.date }),
-  ...(RELEASE_TYPE[r.type] && { albumReleaseType: `https://schema.org/${RELEASE_TYPE[r.type]}` })
+  ...(RELEASE_TYPE[r.type] && { albumReleaseType: `https://schema.org/${RELEASE_TYPE[r.type]}` }),
+  // Jett2Fly made every beat and mixed and mastered every song (Jett, 11/10/2026)
+  producer: { '@type': 'Person', name: 'Jett2Fly' }
 });
 
 const artistData = {
@@ -136,12 +138,12 @@ fs.writeFileSync(path.join(OUT, 'index.html'), home);
 /* ------------------------------------------------------------
    Lyrics and notes (draft notes only with --drafts)
 ------------------------------------------------------------ */
-const { arcs } = loadNotes(byRelease, { drafts: DRAFTS });
+const { arcs, sounds } = loadNotes(byRelease, { drafts: DRAFTS });
 const placesFile = path.join(ROOT, 'lyrics', 'notes', 'places.json');
 const places = fs.existsSync(placesFile) ? JSON.parse(fs.readFileSync(placesFile, 'utf8')) : {};
 const colorsFile = path.join(ROOT, 'assets', 'covers', 'colors.json');
 const colors = fs.existsSync(colorsFile) ? JSON.parse(fs.readFileSync(colorsFile, 'utf8')) : {};
-const P = buildPages({ D, R, songs, byRelease, arcs, places, colors });
+const P = buildPages({ D, R, songs, byRelease, arcs, sounds, places, colors });
 
 /* ------------------------------------------------------------
    One page per release
@@ -176,6 +178,7 @@ for (const r of D.releases) {
   html = fillFooter(html);
   html = addToHead(html, jsonLd({
     ...albumData(r),
+    ...(sounds.has(r.id) && { description: sounds.get(r.id).text }),
     byArtist: artistRef,
     sameAs: (r.links || []).filter(l => l.url && l.url !== '#').map(l => l.url)
   }));

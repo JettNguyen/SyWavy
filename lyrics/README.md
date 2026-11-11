@@ -31,5 +31,18 @@ To check every notes file for mistakes:
 
     node build-lyrics.js check
 
+## The sound
+
+An album or EP's notes file can also have a `sound` paragraph: how the project sounds and how
+Jett2Fly made it, in Jett's words. It shows as "The sound" on the release page and under the
+project on the Lyrics page, and it's hidden while it has `"draft": true`, like a note.
+
+    "sound": { "draft": true, "text": "..." }
+
+While any sound paragraph is published, the Lyrics page also says that SyWavy records his own vocals
+and Jett2Fly makes every beat and mixes and masters each song, and explains the plane tag.
+
+## Places
+
 `notes/places.json` gives each Florida place a pin on the map, as `"Name": [latitude, longitude]`.
 The name must match the note's `ref.name` exactly.

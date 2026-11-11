@@ -1,5 +1,9 @@
 {
   "release": "saturn",
+  "sound": {
+    "draft": true,
+    "text": "Saturn is two songs from the summer of 2020. Jett2Fly gave them a spacey, smooth R&B sound with plenty of room for SyWavy to sing, and on Love to See It, SyWavy calls himself an artist rather than just a rapper for the first time."
+  },
   "songs": {
     "1": {
       "title": "Float",

@@ -277,8 +277,9 @@ window._SWR = (function () {
     return related.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   }
 
-  // extras come from build.js: the tracklist with links to the lyrics, and an
-  // album's track by track. The page reads fine without them.
+  // extras come from build.js: the tracklist with links to the lyrics, a
+  // paragraph on the sound, and an album's track by track. The page reads fine
+  // without them.
   function releasePage(release, releases, extras = {}) {
     const kind  = typeLabel(release.type);
     const links = streamLinks(release, `Stream ${release.title}`);
@@ -326,6 +327,7 @@ window._SWR = (function () {
         ${tracklistHTML}
       </div>
     </div>
+    ${extras.sound || ''}
     ${extras.arc || ''}
     ${videoHTML}
     <section class="release-section" aria-labelledby="relatedHeading">

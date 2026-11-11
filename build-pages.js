@@ -72,7 +72,7 @@ const ARROW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 
 const CLOSE = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 const BACK  = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
-module.exports = function pages({ D, R, songs, byRelease, arcs, places = {}, colors = {} }) {
+module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map(), places = {}, colors = {} }) {
   const { escapeHTML: esc, typeLabel, formatDate } = R;
   const byId = new Map(D.releases.map(r => [r.id, r]));
   const year = r => (r.date || '').slice(0, 4);
@@ -215,7 +215,22 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {}, col
     const tracks = list.length === 1
       ? (hasLyrics(list[0]) ? `<a href="${songHref(list[0])}" class="text-link release-lyrics-link">Read the lyrics${notesOf(list[0]).length ? ` and ${notesOf(list[0]).length} notes` : ''} ${ARROW}</a>` : '')
       : `<div class="release-tracklist"><h2 class="tracklist-heading">Tracklist and lyrics</h2>${tracksHTML(release)}</div>`;
-    return { tracks, arc: arcSection(release) };
+    return { tracks, sound: soundSection(release), arc: arcSection(release) };
+  }
+
+  /* ----------------------------------------------------------
+     THE SOUND: how a project sounds and how it was made
+  ---------------------------------------------------------- */
+  const draftTag = x => (x.draft ? '<span class="note-draft">Draft</span>' : '');
+
+  function soundSection(release) {
+    const sound = sounds.get(release.id);
+    if (!sound) return '';
+    return `
+    <section class="release-section sound" style="${artVars(release)}" aria-labelledby="soundHeading">
+      <div class="section-head"><h2 id="soundHeading" class="section-heading section-heading-sm">The sound</h2>${draftTag(sound)}</div>
+      <p class="sound-text">${esc(sound.text)}</p>
+    </section>`;
   }
 
   /* ----------------------------------------------------------
@@ -259,6 +274,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {}, col
       <header class="page-head animate-on-scroll">
         <h1 class="section-heading">Lyrics<span class="section-count">${total}</span></h1>
         <p class="page-intro">Every SyWavy song${noted ? `, with ${noted} notes on the lines: who and what he's naming${studio ? ', the stories behind them, and how they were made' : ' and the stories behind them'}` : ''}.</p>
+        ${sounds.size ? `<p class="page-intro page-intro-more">SyWavy records his own vocals and sends them to Jett2Fly, who makes every beat and mixes and masters each song in FL Studio. The plane you hear on every song is Jett2Fly's tag, recorded at an airport in Texas when one flew right over his head.</p>` : ''}
         ${refCount() || floridaCount() ? `<div class="page-links">
           ${refCount() ? '<a href="/references" class="btn-outline">References</a>' : ''}
           ${floridaCount() ? `<a href="/florida" class="btn-outline">SyWavy's Florida</a>` : ''}
@@ -268,8 +284,11 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {}, col
         <section class="lyrics-release animate-on-scroll" style="${artVars(r)}" aria-labelledby="lr-${r.id}">
           <a href="/${r.id}" class="lyrics-release-cover" tabindex="-1" aria-hidden="true">${glow(r)}${cover(r, 480, 'lyrics-release-img')}</a>
           <div class="lyrics-release-text">
-            <p class="kicker">${typeLabel(r.type)}<span>${year(r)}</span></p>
-            <h2 class="lyrics-release-title" id="lr-${r.id}"><a href="/${r.id}">${esc(r.title)}</a></h2>
+            <div class="lyrics-release-about">
+              <p class="kicker">${typeLabel(r.type)}<span>${year(r)}</span></p>
+              <h2 class="lyrics-release-title" id="lr-${r.id}"><a href="/${r.id}">${esc(r.title)}</a></h2>
+              ${sounds.has(r.id) ? `<p class="lyrics-release-sound">${esc(sounds.get(r.id).text)} ${draftTag(sounds.get(r.id))}</p>` : ''}
+            </div>
             ${tracksHTML(r)}
           </div>
         </section>`).join('')}
