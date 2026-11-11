@@ -227,6 +227,7 @@ a, button, [role="button"] { touch-action: manipulation; }
 }
 
 .btn-primary:focus-visible { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:focus-visible .btn-platform-icon path { fill: currentColor; }
 .btn-outline:focus-visible { border-color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.05); }
 
 /* Brand marks carry their own official colors inside the SVG */
@@ -1644,11 +1645,12 @@ a.inspiration-song:hover { opacity: 0.75; }
    ============================================================ */
 @media (hover: hover) {
   .btn-primary:hover { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover .btn-platform-icon path { fill: currentColor; }
   .btn-outline:hover { border-color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.05); }
 
   /* Platform brand tint on hover */
   .btn-outline[data-platform="Spotify"]:hover       { border-color: #1DB954; background: rgba(29, 185, 84, 0.08); }
-  .btn-outline[data-platform="Apple Music"]:hover   { border-color: #FA5C6A; background: rgba(250, 36, 60, 0.08); }
+  .btn-outline[data-platform="Apple Music"]:hover   { border-color: #ffffff; background: rgba(255, 255, 255, 0.08); }
   .btn-outline[data-platform="YouTube"]:hover,
   .btn-outline[data-platform="YouTube Music"]:hover { border-color: #FF4E45; background: rgba(255, 0, 0, 0.08); }
   .btn-outline[data-platform="Amazon Music"]:hover  { border-color: #46C3D0; background: rgba(70, 195, 208, 0.08); }
