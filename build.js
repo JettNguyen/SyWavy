@@ -98,8 +98,9 @@ const albumData = r => ({
   image: `${SITE}/assets/covers/${r.cover}-1000.webp`,
   ...(r.date && { datePublished: r.date }),
   ...(RELEASE_TYPE[r.type] && { albumReleaseType: `https://schema.org/${RELEASE_TYPE[r.type]}` }),
-  // Jett2Fly made every beat and mixed and mastered every song (Jett, 11/10/2026)
-  producer: { '@type': 'Person', name: 'Jett2Fly' }
+  // Jett2Fly made every beat and mixed and mastered every song (Jett, 11/10/2026).
+  // The id is the one jett2fly.com gives him, so search engines tie the two sites together.
+  producer: { '@type': 'Person', '@id': 'https://jett2fly.com/#person', name: 'Jett2Fly', url: 'https://jett2fly.com/' }
 });
 
 const artistData = {
