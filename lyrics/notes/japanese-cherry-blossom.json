@@ -197,7 +197,7 @@
     "12": {
       "title": "Dreamland",
       "notes": [
-        { "lines": [8, 8], "kind": "story", "body": "Apple Goat is the goat emoji on an iPhone, the one people send to mean the greatest of all time. SyWavy remembers Apple's goat going from white to brown.", "draft": true },
+        { "lines": [8, 8], "kind": "story", "body": "Apple Goat is the goat emoji on an iPhone, the one people send to mean the greatest of all time. Apple's goat used to be white, like a Saanen dairy goat, and later versions drew it brown.", "draft": true },
         { "lines": [7, 7], "kind": "reference", "title": "Los Angeles", "body": "Spanish for the angels. He calls her his angel, and Los starts the city's name.", "ref": { "name": "Los Angeles", "category": "place", "place": { "florida": false } }, "draft": true },
         { "lines": [6, 6], "kind": "reference", "title": "The O", "body": "Orlando's nickname. She's from there.", "ref": { "name": "Orlando, Florida", "category": "place", "place": { "florida": true } }, "draft": true },
         { "lines": [5, 5], "kind": "reference", "title": "Ichigo Kurosaki", "body": "The orange-haired hero of the anime and manga Bleach. Bleaching skin is the setup for the show's name.", "ref": { "name": "Ichigo Kurosaki", "category": "anime-cartoon" }, "draft": true },
