@@ -110,6 +110,9 @@ const artistData = {
   album: D.releases.map(albumData)
 };
 
+// Every song, read from the lyrics files (the home page counts them)
+const { songs, byRelease } = loadSongs(D.releases);
+
 /* ------------------------------------------------------------
    Home page
 ------------------------------------------------------------ */
@@ -124,7 +127,7 @@ home = setInner(home, 'discographyGrid', R.discography(D.releases));
 home = setInner(home, 'videoCount', String(D.videos.length));
 home = setInner(home, 'videosGrid', R.videos(D.videos));
 home = setInner(home, 'aboutBio', R.aboutBio(D.artist.bio));
-home = setInner(home, 'aboutFacts', R.aboutFacts(D));
+home = setInner(home, 'aboutFacts', R.aboutFacts(D, songs.length));
 home = setInner(home, 'aboutSocials', R.followLinks(follow));
 home = fillFooter(home);
 home = addToHead(home, jsonLd(artistData));
@@ -133,11 +136,12 @@ fs.writeFileSync(path.join(OUT, 'index.html'), home);
 /* ------------------------------------------------------------
    Lyrics and notes (draft notes only with --drafts)
 ------------------------------------------------------------ */
-const { songs, byRelease } = loadSongs(D.releases);
 const { arcs } = loadNotes(byRelease, { drafts: DRAFTS });
 const placesFile = path.join(ROOT, 'lyrics', 'notes', 'places.json');
 const places = fs.existsSync(placesFile) ? JSON.parse(fs.readFileSync(placesFile, 'utf8')) : {};
-const P = buildPages({ D, R, songs, byRelease, arcs, places });
+const colorsFile = path.join(ROOT, 'assets', 'covers', 'colors.json');
+const colors = fs.existsSync(colorsFile) ? JSON.parse(fs.readFileSync(colorsFile, 'utf8')) : {};
+const P = buildPages({ D, R, songs, byRelease, arcs, places, colors });
 
 /* ------------------------------------------------------------
    One page per release

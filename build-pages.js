@@ -42,11 +42,37 @@ const CATEGORY_LABEL = {
   other: 'Everything else'
 };
 
+// The same kinds, one at a time, for the label on a note
+const CATEGORY_ONE = {
+  athlete: 'Athlete',
+  team: 'Team',
+  musician: 'Music',
+  'film-tv': 'Film and TV',
+  'anime-cartoon': 'Animation',
+  game: 'Game',
+  place: 'Place',
+  brand: 'Brand',
+  person: 'Person',
+  other: 'Reference'
+};
+
+// The same hue at half lightness and strong saturation (for tinted fills)
+function deepen([r, g, b]) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min;
+  let h = 0;
+  if (d) h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  h = (h * 60 + 360) % 360;
+  const s = 0.8, l = 0.5, c = (1 - Math.abs(2 * l - 1)) * s, x = c * (1 - Math.abs((h / 60) % 2 - 1)), m = l - c / 2;
+  const [r1, g1, b1] = h < 60 ? [c, x, 0] : h < 120 ? [x, c, 0] : h < 180 ? [0, c, x] : h < 240 ? [0, x, c] : h < 300 ? [x, 0, c] : [c, 0, x];
+  return [r1, g1, b1].map(v => Math.round((v + m) * 255));
+}
+
 const ARROW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const CLOSE = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 const BACK  = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
-module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
+module.exports = function pages({ D, R, songs, byRelease, arcs, places = {}, colors = {} }) {
   const { escapeHTML: esc, typeLabel, formatDate } = R;
   const byId = new Map(D.releases.map(r => [r.id, r]));
   const year = r => (r.date || '').slice(0, 4);
@@ -62,6 +88,19 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
 
   const cover = (r, size, cls = '') =>
     `<img src="/assets/covers/${r.cover}-480.webp" alt="" class="${cls}" width="${size}" height="${size}" loading="lazy" decoding="async" />`;
+
+  // Each release's color, picked from its cover by build-colors.py. Pages set it
+  // as --art (and --art-rgb for see-through tints) on the part that belongs to it.
+  // --art-deep is the same hue, darker and stronger: a light color thinned over
+  // black turns muddy, so see-through fills use this one instead.
+  const artVars = r => {
+    const hex = (r && colors[r.cover]) || '#56e2d3';
+    const n = parseInt(hex.slice(1), 16);
+    const rgb = [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+    return `--art: ${hex}; --art-rgb: ${rgb.join(', ')}; --art-deep: ${deepen(rgb).join(', ')}`;
+  };
+  // The cover again, blurred, as colored light behind it
+  const glow = r => `<span class="art-glow" aria-hidden="true">${cover(r, 480)}</span>`;
 
   const noteCount = s => {
     const n = notesOf(s).length;
@@ -101,7 +140,9 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
 
     const noteHTML = (n, k) => `
           <article class="note note-${n.kind}" id="note-${k}" data-from="${n.lines[0]}" data-to="${n.lines[1]}">
-            <p class="note-meta"><span class="note-kind">${KIND_LABEL[n.kind]}</span><span>${lineLabel(n.lines)}</span>${n.draft ? '<span class="note-draft">Draft</span>' : ''}</p>
+            <p class="note-meta">${n.kind === 'reference'
+              ? `<span class="note-kind" data-cat="${n.ref.category}">${CATEGORY_ONE[n.ref.category] || KIND_LABEL.reference}</span>`
+              : `<span class="note-kind">${KIND_LABEL[n.kind]}</span>`}<span>${lineLabel(n.lines)}</span>${n.draft ? '<span class="note-draft">Draft</span>' : ''}</p>
             ${n.title ? `<h3 class="note-title">${esc(n.title)}</h3>` : ''}
             <p class="note-body">${esc(n.body)}</p>
           </article>`;
@@ -121,11 +162,13 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
     const listenOn = single || rel;
     const links = R.streamLinks ? R.streamLinks(listenOn, `Stream ${song.title}`) : '';
 
-    const step = (s, dir) => s ? `
-        <a href="${songHref(s)}" class="song-step song-step-${dir}">
-          <span class="song-step-label">${dir === 'prev' ? 'Previous' : 'Next'}</span>
-          <span class="song-step-title">${esc(s.title)}</span>
-        </a>` : '<span></span>';
+    const step = (s, dir) => {
+      if (!s) return '<span></span>';
+      const arrow = `<span class="song-step-arrow" aria-hidden="true">${dir === 'prev' ? BACK : ARROW}</span>`;
+      const text = `<span class="song-step-text"><span class="song-step-label">${dir === 'prev' ? 'Previous song' : 'Next song'}</span><span class="song-step-title">${esc(s.title)}</span></span>`;
+      return `
+        <a href="${songHref(s)}" class="song-step song-step-${dir}" rel="${dir}">${dir === 'prev' ? arrow + text : text + arrow}</a>`;
+    };
 
     const tracklist = list.length > 1 ? `
       <section class="release-section" aria-labelledby="tracksHeading">
@@ -134,9 +177,10 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
       </section>` : '';
 
     return `
+      <div class="song-page" style="${artVars(rel)}">
       <a href="/${rel.id}" class="back-link">${BACK}${esc(rel.title)}</a>
       <div class="song-head animate-on-scroll">
-        <a href="/${rel.id}" class="song-cover" aria-label="${esc(rel.title)}">${cover(rel, 480, 'song-cover-img')}</a>
+        <a href="/${rel.id}" class="song-cover" aria-label="${esc(rel.title)}">${glow(rel)}${cover(rel, 480, 'song-cover-img')}</a>
         <div class="song-head-text">
           <p class="kicker">${kicker}</p>
           <h1 class="song-title">${esc(song.title)}</h1>
@@ -149,7 +193,8 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
         ${notesHTML}
       </div>
       ${prev || next ? `<nav class="song-steps" aria-label="More songs">${step(prev, 'prev')}${step(next, 'next')}</nav>` : ''}
-      ${tracklist}`;
+      ${tracklist}
+      </div>`;
   }
 
   /* A release's songs, each linking to its lyrics */
@@ -182,7 +227,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
     const list = byRelease.get(release.id) || [];
     const motif = ARC_MOTIF[release.id] || 'tide';
     return `
-    <section class="release-section arc" data-motif="${motif}" aria-labelledby="arcHeading">
+    <section class="release-section arc" data-motif="${motif}" style="${artVars(release)}" aria-labelledby="arcHeading">
       <div class="section-head"><h2 id="arcHeading" class="section-heading section-heading-sm">Track by track</h2>${arc.draft ? '<span class="note-draft">Draft</span>' : ''}</div>
       ${arc.summary ? `<p class="arc-summary">${esc(arc.summary)}</p>` : ''}
       <div class="arc-body">
@@ -220,8 +265,8 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
         </div>` : ''}
       </header>
       <div class="lyrics-releases">${shown.map(r => `
-        <section class="lyrics-release animate-on-scroll" aria-labelledby="lr-${r.id}">
-          <a href="/${r.id}" class="lyrics-release-cover" tabindex="-1" aria-hidden="true">${cover(r, 480, 'lyrics-release-img')}</a>
+        <section class="lyrics-release animate-on-scroll" style="${artVars(r)}" aria-labelledby="lr-${r.id}">
+          <a href="/${r.id}" class="lyrics-release-cover" tabindex="-1" aria-hidden="true">${glow(r)}${cover(r, 480, 'lyrics-release-img')}</a>
           <div class="lyrics-release-text">
             <p class="kicker">${typeLabel(r.type)}<span>${year(r)}</span></p>
             <h2 class="lyrics-release-title" id="lr-${r.id}"><a href="/${r.id}">${esc(r.title)}</a></h2>
@@ -248,7 +293,8 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, places = {} }) {
     return [...map.values()];
   }
 
-  const useLinks = e => e.uses.map(u => `<a href="${songHref(u.song)}" data-line="${u.line}" class="ref-song">${esc(u.song.title)}</a>`).join('');
+  // Each song wears its release's color, so a list of them shows where they come from
+  const useLinks = e => e.uses.map(u => `<a href="${songHref(u.song)}" data-line="${u.line}" class="ref-song" style="${artVars(homeOf(u.song))}">${esc(u.song.title)}</a>`).join('');
 
   function referencesPage() {
     const refs = collectRefs();

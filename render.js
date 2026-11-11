@@ -251,13 +251,14 @@ window._SWR = (function () {
       rest.map(p => `<p class="about-rest">${escapeHTML(p)}</p>`).join('');
   }
 
-  // Plain facts, all worked out from data.js
-  function aboutFacts(data) {
+  // Plain facts, all worked out from data.js. The song count comes from the
+  // lyrics files, so only build.js knows it; without it the release count shows.
+  function aboutFacts(data, songCount) {
     const years = data.releases.map(r => yearOf(r.date)).filter(Boolean).sort();
     const facts = [
       ['From', data.artist.location],
       ['First release', years[0]],
-      ['Releases', String(data.releases.length)]
+      songCount ? ['Songs', String(songCount)] : ['Releases', String(data.releases.length)]
     ].filter(([, v]) => v);
     return facts.map(([k, v]) => `<div><dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd></div>`).join('');
   }

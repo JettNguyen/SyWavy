@@ -1255,6 +1255,26 @@ a, button, [role="button"] { touch-action: manipulation; }
 }
 
 .page-head { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+
+/* Color on the lyrics pages comes from two places. --art is the release's own
+   color, picked from its cover (build-colors.py) and set on whatever belongs to
+   that release. --cat is one color per kind of reference, so a note's label says
+   what it names before you read it. */
+.song-page, .lyrics-release, .arc, .ref-song { --art: var(--accent); --art-rgb: 86, 226, 211; --art-deep: 26, 230, 209; }
+[data-cat="athlete"]       { --cat: #f2a35e; }
+[data-cat="team"]          { --cat: #ef7f72; }
+[data-cat="musician"]      { --cat: #e88bd2; }
+[data-cat="film-tv"]       { --cat: #ecc75c; }
+[data-cat="anime-cartoon"] { --cat: #72c2f0; }
+[data-cat="game"]          { --cat: #92d67c; }
+[data-cat="place"]         { --cat: #56e2d3; }
+[data-cat="brand"]         { --cat: #ab9cf0; }
+[data-cat="person"]        { --cat: #e2c29b; }
+[data-cat="other"]         { --cat: #a9b3bd; }
+
+/* The cover again, blurred, as colored light behind it */
+.art-glow { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.art-glow img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-art); filter: blur(42px) saturate(1.5); opacity: 0.55; transform: scale(1.1); }
 .page-intro { max-width: 60ch; margin-top: 1.1rem; font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); }
 .page-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.6rem; }
 
@@ -1299,7 +1319,8 @@ a, button, [role="button"] { touch-action: manipulation; }
 }
 .song-artist { margin-top: 0.6rem; font-size: 1.05rem; font-weight: 500; color: var(--text-soft); }
 .song-artist span { color: var(--muted); }
-.song-cover { grid-row: 1 / span 2; }
+.song-cover { grid-row: 1 / span 2; position: relative; isolation: isolate; display: block; }
+.song-page .kicker { color: var(--art); }
 .song-head > .stream-links { grid-column: 2; margin-top: 1.2rem; }
 /* On a phone the buttons get the full width under the cover */
 @media (max-width: 599px) {
@@ -1316,7 +1337,8 @@ a, button, [role="button"] { touch-action: manipulation; }
 
 .lyrics { font-size: clamp(1.05rem, 1.45vw, 1.2rem); line-height: 1.75; }
 .verse + .verse { margin-top: 1.5em; }
-.verse-tag { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; color: var(--muted); }
+.verse-tag { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 620; letter-spacing: 0.02em; color: var(--art); }
+.verse-tag::before { content: ''; width: 1.1rem; height: 1px; background: currentColor; opacity: 0.6; }
 .verse + .verse-tag { margin-top: 1.9rem; }
 .verse-tag + .verse { margin-top: 0.3rem; }
 .line {
@@ -1328,28 +1350,30 @@ a, button, [role="button"] { touch-action: manipulation; }
   border-radius: 5px;
   transition: background-color var(--t-fast), color var(--t-fast);
 }
-.line.noted { background: rgba(255, 255, 255, 0.14); cursor: pointer; }
+.line.noted { background: rgba(var(--art-deep), 0.22); cursor: pointer; }
 .line.noted + .line.noted { margin-top: 2px; }
-.line.noted.is-active { background: rgba(86, 226, 211, 0.3); color: #fff; }
-.line.is-landed { background: rgba(86, 226, 211, 0.38); }
+.line.noted.is-active { background: rgba(var(--art-deep), 0.5); color: #fff; box-shadow: inset 2px 0 0 var(--art); }
+.line.is-landed { background: rgba(var(--art-deep), 0.58); }
 .lyrics-missing { color: var(--muted); }
 
 .note {
   padding: 1.2rem 1.35rem;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(var(--art-rgb), 0.22);
   border-radius: var(--radius);
-  background: var(--bg-raise);
+  background: linear-gradient(rgba(var(--art-deep), 0.08), rgba(var(--art-deep), 0.02)), var(--bg-raise);
 }
 .note + .note { margin-top: 0.85rem; }
 .note-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.7rem; font-size: 0.8rem; font-weight: 520; color: var(--muted); }
-.note-kind { color: var(--text); font-weight: 620; }
-.note-story .note-kind,
+.note-kind { display: inline-flex; align-items: center; gap: 0.45rem; color: var(--art); font-weight: 640; }
+.note-kind[data-cat] { color: var(--cat); }
+.note-kind[data-cat]::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
 .note-studio .note-kind { color: var(--accent); }
 .note-title { margin-top: 0.55rem; font-size: 1.15rem; font-weight: 680; letter-spacing: -0.01em; }
 .note-body { margin-top: 0.5rem; line-height: 1.65; color: var(--text-soft); }
 
 .song-notes-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .song-notes-hint { font-size: 0.92rem; color: var(--muted); }
+.song-notes-hint::before { content: ''; display: inline-block; width: 0.8em; height: 0.8em; margin-right: 0.55em; vertical-align: -0.05em; border-radius: 3px; background: rgba(var(--art-deep), 0.6); }
 .song-notes-close { display: none; width: 40px; height: 40px; flex: none; border-radius: 50%; color: var(--text-soft); }
 .song-notes-close svg { width: 20px; height: 20px; margin: auto; }
 .song-notes-list { margin-top: 1rem; }
@@ -1380,7 +1404,7 @@ a, button, [role="button"] { touch-action: manipulation; }
     background: rgba(17, 19, 23, 0.96);
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
-    border-top: 1px solid var(--line-strong);
+    border-top: 1px solid rgba(var(--art-rgb), 0.45);
     border-radius: 16px 16px 0 0;
     transform: translateY(calc(100% - 3.4rem - env(safe-area-inset-bottom)));
     transition: transform 0.4s var(--ease-out);
@@ -1394,19 +1418,45 @@ a, button, [role="button"] { touch-action: manipulation; }
   body:has(.notes-ready) { padding-bottom: calc(3.4rem + env(safe-area-inset-bottom)); }
 }
 
-/* Previous and next song */
+/* Previous and next song: two buttons, each with its arrow */
 .song-steps {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
   margin-top: clamp(3rem, 6vw, 5rem);
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
 }
-.song-step { display: flex; flex-direction: column; gap: 0.2rem; max-width: 46%; min-height: 44px; }
-.song-step-next { margin-left: auto; text-align: right; align-items: flex-end; }
+.song-step {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-height: 72px;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: rgba(var(--art-deep), 0.07);
+  transition: border-color var(--t-fast), background-color var(--t-fast);
+}
+.song-step-next { grid-column: 2; justify-content: flex-end; text-align: right; }
+.song-step-text { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
 .song-step-label { font-size: 0.8rem; color: var(--muted); }
-.song-step-title { font-size: 1.1rem; font-weight: 640; transition: color var(--t-fast); }
+.song-step-title { font-size: 1.05rem; font-weight: 640; overflow-wrap: anywhere; transition: color var(--t-fast); }
+.song-step-arrow {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(var(--art-rgb), 0.45);
+  border-radius: 50%;
+  color: var(--art);
+  transition: transform var(--t-fast), background-color var(--t-fast);
+}
+.song-step-arrow svg { width: 18px; height: 18px; }
+@media (max-width: 520px) {
+  .song-step { gap: 0.65rem; padding: 0.75rem 0.8rem; }
+  .song-step-arrow { width: 34px; height: 34px; }
+  .song-step-title { font-size: 0.98rem; }
+}
 
 /* Tracklists that link to the lyrics */
 .lyrics-tracklist .track-item { display: block; padding: 0; }
@@ -1414,6 +1464,9 @@ a, button, [role="button"] { touch-action: manipulation; }
 .track-link .track-title { transition: color var(--t-fast); }
 .track-link.is-empty { color: var(--muted); }
 .track-item.is-current .track-title { color: var(--accent); }
+.song-page .track-item.is-current .track-title { color: var(--art); }
+.song-page .lyrics-tracklist .track-num,
+.lyrics-release .track-num { color: var(--art); opacity: 0.85; }
 .lyrics-note-count { margin-left: auto; padding-left: 1rem; font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
 .release-lyrics-link { margin-top: 0.2rem; }
 
@@ -1421,7 +1474,11 @@ a, button, [role="button"] { touch-action: manipulation; }
 .lyrics-releases { display: grid; gap: clamp(3rem, 6vw, 4.5rem) clamp(2.5rem, 5vw, 4.5rem); }
 @media (min-width: 1000px) { .lyrics-releases { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .lyrics-release { display: grid; grid-template-columns: clamp(72px, 13vw, 140px) minmax(0, 1fr); gap: clamp(1.1rem, 2.5vw, 2rem); align-items: start; }
+.lyrics-release-cover { position: relative; isolation: isolate; display: block; }
+.lyrics-release-cover .art-glow img { filter: blur(30px) saturate(1.5); opacity: 0.45; }
 .lyrics-release-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-art); }
+.lyrics-release .kicker { color: var(--art); }
+.lyrics-release-title a { transition: color var(--t-fast); }
 .lyrics-release-title {
   margin: 0.35rem 0 0.6rem;
   font-size: clamp(1.45rem, 2.6vw, 2.05rem);
@@ -1444,8 +1501,12 @@ a, button, [role="button"] { touch-action: manipulation; }
   transition: background-color var(--t-fast), color var(--t-fast), border-color var(--t-fast);
 }
 .ref-filter.is-on { background: var(--text); border-color: var(--text); color: var(--bg); }
+.ref-filter[data-cat]:not([data-cat=""])::before { content: ''; display: inline-block; vertical-align: 0.05em; width: 8px; height: 8px; margin-right: 0.5rem; border-radius: 50%; background: var(--cat); }
+.ref-filter[data-cat]:not([data-cat=""]).is-on { background: var(--cat); border-color: var(--cat); color: #0b0c0e; }
+.ref-filter.is-on::before { background: currentColor; }
 .ref-group + .ref-group { margin-top: clamp(2.75rem, 5vw, 4rem); }
-.ref-group-title { margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--line); font-size: 0.95rem; font-weight: 600; color: var(--muted); }
+.ref-group-title { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--line); font-size: 0.95rem; font-weight: 640; color: var(--cat, var(--muted)); }
+.ref-group-title::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
 .ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 1rem; }
 .ref { padding: 1.25rem 1.3rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(17, 19, 23, 0.7); }
 .ref-name { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; font-size: 1.1rem; font-weight: 680; letter-spacing: -0.01em; }
@@ -1454,9 +1515,10 @@ a, button, [role="button"] { touch-action: manipulation; }
 .ref-song {
   padding: 0.3rem 0.75rem;
   border-radius: var(--pill);
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(var(--art-deep), 0.16);
+  color: var(--art);
   font-size: 0.82rem;
-  font-weight: 560;
+  font-weight: 580;
   transition: background-color var(--t-fast), color var(--t-fast);
 }
 
@@ -1495,7 +1557,7 @@ a, button, [role="button"] { touch-action: manipulation; }
 .arc-path { position: absolute; left: 0; top: 0; width: 40px; height: 100%; overflow: visible; pointer-events: none; }
 .arc-path path { fill: none; stroke-width: 1.5; stroke-linecap: round; }
 .arc-path-base { stroke: var(--line-strong); }
-.arc-path-drawn { stroke: var(--accent); opacity: 0.75; }
+.arc-path-drawn { stroke: var(--art); opacity: 0.75; }
 .arc[data-motif="flight"] .arc-path-base { stroke-dasharray: 2 8; }
 .arc-list { display: grid; gap: clamp(1.6rem, 3vw, 2.25rem); }
 .arc-stop { position: relative; }
@@ -1510,7 +1572,7 @@ a, button, [role="button"] { touch-action: manipulation; }
   background: var(--bg);
   transition: border-color 0.6s ease, transform 1.1s var(--ease-out);
 }
-.arc-stop.visible .arc-mark { border-color: var(--accent); }
+.arc-stop.visible .arc-mark { border-color: var(--art); }
 .arc[data-motif="blossom"] .arc-mark { border-radius: 0 70% 0 70%; transform: rotate(-35deg) translateY(-4px); }
 .arc[data-motif="blossom"] .arc-stop.visible .arc-mark { transform: rotate(20deg) translateY(2px); }
 .arc[data-motif="flight"] .arc-mark { border-radius: 2px; transform: rotate(45deg) scale(0.85); }
@@ -1518,12 +1580,19 @@ a, button, [role="button"] { touch-action: manipulation; }
 .arc-line { max-width: 58ch; margin-top: -0.35rem; color: var(--text-soft); }
 
 @media (hover: hover) {
-  .line.noted:hover { background: rgba(255, 255, 255, 0.22); }
-  .line.noted.is-active:hover { background: rgba(86, 226, 211, 0.36); }
-  .song-step:hover .song-step-title,
+  .line.noted:hover { background: rgba(var(--art-deep), 0.34); }
+  .line.noted.is-active:hover { background: rgba(var(--art-deep), 0.56); }
+  .song-step:hover { border-color: rgba(var(--art-rgb), 0.6); background: rgba(var(--art-deep), 0.16); }
+  .song-step:hover .song-step-arrow { background: rgba(var(--art-deep), 0.3); }
+  .song-step-prev:hover .song-step-arrow { transform: translateX(-3px); }
+  .song-step-next:hover .song-step-arrow { transform: translateX(3px); }
   .track-link:hover .track-title,
   .arc-title:hover { color: var(--accent); }
-  .ref-song:hover { background: rgba(255, 255, 255, 0.14); }
+  .song-page .track-link:hover .track-title,
+  .lyrics-release .track-link:hover .track-title,
+  .lyrics-release-title a:hover,
+  .arc .arc-title:hover { color: var(--art); }
+  .ref-song:hover { background: rgba(var(--art-deep), 0.32); color: #fff; }
   .ref-filter:not(.is-on):hover { border-color: var(--text-soft); color: var(--text); }
   .song-notes-close:hover { color: var(--text); background: rgba(255, 255, 255, 0.06); }
 }
