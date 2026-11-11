@@ -93,14 +93,11 @@ window._SWR = (function () {
   const liveLinks = release => (release.links || []).filter(l => l.url && l.url !== '#');
 
   // The first platform is the main button; the rest sit beside it, quieter
-  // The first link is a light button, so it keeps the brand colors unless the
-  // icon is white and would disappear against it
-  const WHITE_ICONS = new Set(['Apple Music', 'Tidal']);
-
+  // Every streaming button has the same shape, tinted in its service's color (style.css)
   function streamLinks(release, ariaPrefix) {
-    return liveLinks(release).map((l, i) => `
-        <a href="${l.url}" class="${i === 0 ? 'btn-primary' : 'btn-outline'}" data-platform="${escapeHTML(l.platform)}" target="_blank" rel="noopener noreferrer" aria-label="${ariaPrefix} on ${escapeHTML(l.platform)}">
-          <span class="btn-platform-icon" aria-hidden="true">${i === 0 && WHITE_ICONS.has(l.platform) ? monoIcon(l.platform) : icon(l.platform)}</span>
+    return liveLinks(release).map(l => `
+        <a href="${l.url}" class="btn-outline btn-stream" data-platform="${escapeHTML(l.platform)}" target="_blank" rel="noopener noreferrer" aria-label="${ariaPrefix} on ${escapeHTML(l.platform)}">
+          <span class="btn-platform-icon" aria-hidden="true">${icon(l.platform)}</span>
           ${escapeHTML(l.platform)}
         </a>`).join('');
   }

@@ -227,8 +227,20 @@ a, button, [role="button"] { touch-action: manipulation; }
 }
 
 .btn-primary:focus-visible { background: var(--accent); color: var(--accent-ink); }
-.btn-primary:focus-visible .btn-platform-icon path { fill: currentColor; }
 .btn-outline:focus-visible { border-color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.05); }
+
+/* Streaming buttons: one shape for every service, tinted in its own color.
+   --brand is the service's color as r, g, b. */
+.btn-stream { --brand: 255, 255, 255; border-color: rgba(var(--brand), 0.38); background: rgba(var(--brand), 0.08); }
+.btn-stream[data-platform="Spotify"]       { --brand: 30, 215, 96; }
+.btn-stream[data-platform="YouTube"],
+.btn-stream[data-platform="YouTube Music"] { --brand: 255, 40, 40; }
+.btn-stream[data-platform="Amazon Music"]  { --brand: 70, 195, 208; }
+.btn-stream[data-platform="Deezer"]        { --brand: 162, 56, 255; }
+.btn-stream[data-platform="SoundCloud"]    { --brand: 255, 85, 0; }
+.btn-stream[data-platform="Pandora"]       { --brand: 54, 104, 255; }
+/* Apple Music (black and white since 2026) and Tidal keep the white default */
+.btn-stream:focus-visible { border-color: rgba(var(--brand), 0.9); background: rgba(var(--brand), 0.16); }
 
 /* Brand marks carry their own official colors inside the SVG */
 .btn-platform-icon { display: inline-flex; width: 18px; height: 18px; flex-shrink: 0; }
@@ -1645,19 +1657,10 @@ a.inspiration-song:hover { opacity: 0.75; }
    ============================================================ */
 @media (hover: hover) {
   .btn-primary:hover { background: var(--accent); color: var(--accent-ink); }
-  .btn-primary:hover .btn-platform-icon path { fill: currentColor; }
   .btn-outline:hover { border-color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.05); }
 
   /* Platform brand tint on hover */
-  .btn-outline[data-platform="Spotify"]:hover       { border-color: #1DB954; background: rgba(29, 185, 84, 0.08); }
-  .btn-outline[data-platform="Apple Music"]:hover   { border-color: #ffffff; background: rgba(255, 255, 255, 0.08); }
-  .btn-outline[data-platform="YouTube"]:hover,
-  .btn-outline[data-platform="YouTube Music"]:hover { border-color: #FF4E45; background: rgba(255, 0, 0, 0.08); }
-  .btn-outline[data-platform="Amazon Music"]:hover  { border-color: #46C3D0; background: rgba(70, 195, 208, 0.08); }
-  .btn-outline[data-platform="Tidal"]:hover         { border-color: #ffffff; background: rgba(255, 255, 255, 0.08); }
-  .btn-outline[data-platform="Deezer"]:hover        { border-color: #A238FF; background: rgba(162, 56, 255, 0.08); }
-  .btn-outline[data-platform="SoundCloud"]:hover    { border-color: #FF5500; background: rgba(255, 85, 0, 0.08); }
-  .btn-outline[data-platform="Pandora"]:hover       { border-color: #3668FF; background: rgba(54, 104, 255, 0.08); }
+  .btn-stream:hover { border-color: rgba(var(--brand), 0.85); background: rgba(var(--brand), 0.16); }
 
   .nav-wordmark:hover  { opacity: 0.8; }
   .nav-link:hover      { color: var(--text); }
@@ -1695,6 +1698,7 @@ a.inspiration-song:hover { opacity: 0.75; }
    ============================================================ */
 .btn-primary:active { transform: scale(0.97); opacity: 0.9; }
 .btn-outline:active { transform: scale(0.97); background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.45); }
+.btn-stream:active { background: rgba(var(--brand), 0.22); border-color: rgba(var(--brand), 0.9); }
 .nav-wordmark:active { transform: scale(0.96); opacity: 0.8; }
 .nav-link:active { color: var(--accent); }
 .nav-links.mobile-open .nav-link:active { color: var(--accent); transform: scale(0.98); }
