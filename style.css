@@ -1560,6 +1560,18 @@ a, button, [role="button"] { touch-action: manipulation; }
 .lyrics-release-sound .note-draft { margin-left: 0.2rem; vertical-align: 0.1em; }
 .page-intro-more { margin-top: 0.75rem; }
 
+/* Inspirations: what some of the beats came from, styled like the tracklist */
+.inspirations { max-width: 62ch; margin-top: clamp(1.75rem, 3.5vw, 2.5rem); }
+.inspirations-heading { font-size: 0.9rem; font-weight: 600; color: var(--muted); padding-bottom: 0.75rem; border-bottom: 1px solid var(--line); }
+.inspiration { display: grid; gap: 0.2rem 1.5rem; padding: 0.75rem 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+@media (min-width: 640px) { .inspiration { grid-template-columns: 10.5rem minmax(0, 1fr); align-items: baseline; } }
+.inspiration-song { font-weight: 600; color: var(--art); }
+a.inspiration-song { transition: opacity var(--t-fast); }
+a.inspiration-song:hover { opacity: 0.75; }
+.inspiration-text { line-height: 1.55; color: var(--text-soft); }
+.song-inspiration { margin-top: 0.45rem; font-size: 0.95rem; line-height: 1.55; color: var(--muted); }
+.song-inspiration .note-draft { margin-left: 0.3rem; vertical-align: 0.1em; }
+
 /* Track by track: a line through the album, drawn as the page scrolls */
 .arc-summary { max-width: 62ch; margin-bottom: clamp(2rem, 4vw, 2.75rem); font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); }
 .arc-body { position: relative; padding-left: 3rem; }

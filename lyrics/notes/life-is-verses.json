@@ -2,7 +2,11 @@
   "release": "life-is-verses",
   "sound": {
     "draft": true,
-    "text": "Life is Verses is late-night music, dark and hard-hitting. Under was inspired by Playboi Carti's Over but doesn't really sound like it, with high synth chords over quick, steady drums, and Nick Fury is a darker, moodier take on the same idea. 3AM began when SyWavy asked Jett2Fly to rework The Weeknd's Tell Your Friends into a beat he could sing and rap over. It didn't catch on until late 2022, when people on TikTok started finding it, and it's still his most-played song."
+    "text": "Life is Verses is made for late at night. Under opens on high, bright synth chords over quick, steady drums, and Nick Fury takes the same idea somewhere moodier. Then there's 3AM. SyWavy loved The Weeknd's Tell Your Friends and asked Jett2Fly to turn it into a beat he could sing and rap over. For about a year, not much happened. In late 2022, people on TikTok found it, and it's still his most-played song.",
+    "inspirations": [
+      { "track": 1, "text": "Inspired by Over by Playboi Carti" },
+      { "track": 3, "text": "Built on Tell Your Friends by The Weeknd" }
+    ]
   },
   "songs": {
     "1": {

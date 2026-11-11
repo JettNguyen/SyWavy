@@ -37,7 +37,11 @@ An album or EP's notes file can also have a `sound` paragraph: how the project s
 Jett2Fly made it, in Jett's words. It shows as "The sound" on the release page and under the
 project on the Lyrics page, and it's hidden while it has `"draft": true`, like a note.
 
-    "sound": { "draft": true, "text": "..." }
+    "sound": { "draft": true, "text": "...", "inspirations": [{ "track": 6, "text": "Based on ..." }] }
+
+`inspirations` is optional: what some of the beats came from. Each one shows in a list under the
+paragraph, and on that song's lyrics page under its title. Leave out `track` for one that covers
+the whole project.
 
 While any sound paragraph is published, the Lyrics page also says that SyWavy records his own vocals
 and Jett2Fly makes every beat and mixes and masters each song, and explains the plane tag.

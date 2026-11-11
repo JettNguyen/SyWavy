@@ -2,7 +2,14 @@
   "release": "magnum-opus",
   "sound": {
     "draft": true,
-    "text": "Magnum Opus took about a year, and at 18 songs it's the longest project SyWavy and Jett2Fly have made. It swings between moods from one song to the next, hard rap beats against slow R&B, and Jett2Fly's synths run under nearly all of it. Vertex opens on real drum sounds and a heavy bass guitar, Steer rides a walking upright bass, and Slow? Never grew out of Slow Down by Mac Ayres. Flame was inspired by The Flamingos' I Only Have Eyes for You and sounds like it samples an old doo-wop record, but the voices are Jett2Fly's own, shifted lower. The Part Time Models play the distorted guitar on Put It On!, and a Vine boom is hidden very quietly under the hits on Awtside."
+    "text": "Magnum Opus took about a year, and at 18 songs it's the longest project SyWavy and Jett2Fly have made. It changes mood from song to song, hard rap on one and slow R&B on the next. Vertex kicks it off with real drum sounds and a heavy bass guitar, and Steer swings on a walking upright bass. The last four songs are the singles that led up to it. Flame sounds like an old doo-wop record, but the backing voices are Jett2Fly's own. On Put It On!, The Part Time Models' guitar and Jett2Fly's bass trade a solo, his favorite part of the song. And Awtside hides a Vine boom so quietly that most people never catch it.",
+    "inspirations": [
+      { "track": 4, "text": "A remake of an unreleased song by The Weeknd" },
+      { "track": 5, "text": "Inspired by Maybach Seats by Skrilla" },
+      { "track": 6, "text": "Based on Slow Down by Mac Ayres" },
+      { "track": 14, "text": "Inspired by Shorty (Got Her Eyes on Me) by Donell Jones" },
+      { "track": 16, "text": "Inspired by I Only Have Eyes for You by The Flamingos" }
+    ]
   },
   "songs": {
     "1": {

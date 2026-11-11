@@ -118,6 +118,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
     const prev = list[i - 1], next = list[i + 1];
     const notes = notesOf(song);
     const feat = FEATURES[song.slug];
+    const inspiration = inspirationOf(song);
 
     // Which notes cover each line
     const covering = song.lines.map(l => notes.map((n, k) => (l.n >= n.lines[0] && l.n <= n.lines[1] ? k : -1)).filter(k => k >= 0));
@@ -185,6 +186,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
           <p class="kicker">${kicker}</p>
           <h1 class="song-title">${esc(song.title)}</h1>
           <p class="song-artist">SyWavy${feat ? `<span> feat. ${esc(feat)}</span>` : ''}</p>
+          ${inspiration ? `<p class="song-inspiration">${esc(inspiration.text)}${inspiration.draft ? ' <span class="note-draft">Draft</span>' : ''}</p>` : ''}
         </div>
         ${links ? `<div class="stream-links">${links}</div>` : ''}
       </div>
@@ -230,8 +232,37 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
     <section class="release-section sound" style="${artVars(release)}" aria-labelledby="soundHeading">
       <div class="section-head"><h2 id="soundHeading" class="section-heading section-heading-sm">The sound</h2>${draftTag(sound)}</div>
       <p class="sound-text">${esc(sound.text)}</p>
+      ${inspirationsHTML(release, sound)}
     </section>`;
   }
+
+  /* What some of the beats came from, song by song */
+  function inspirationsHTML(release, sound) {
+    const list = sound.inspirations || [];
+    if (!list.length) return '';
+    const songs = byRelease.get(release.id) || [];
+    const whole = `The whole ${typeLabel(release.type) === 'EP' ? 'EP' : typeLabel(release.type).toLowerCase()}`;
+    return `
+      <div class="inspirations">
+        <h3 class="inspirations-heading">Inspirations</h3>
+        <ul class="inspiration-list">${list.map(x => {
+          const song = x.track !== undefined && songs.find(s => s.track === x.track);
+          const name = song
+            ? (hasLyrics(song) ? `<a href="${songHref(song)}" class="inspiration-song">${esc(song.title)}</a>` : `<span class="inspiration-song">${esc(song.title)}</span>`)
+            : `<span class="inspiration-song">${whole}</span>`;
+          return `
+          <li class="inspiration">${name}<span class="inspiration-text">${esc(x.text)}</span></li>`;
+        }).join('')}
+        </ul>
+      </div>`;
+  }
+
+  // A song's own inspiration, for its lyrics page
+  const inspirationOf = song => {
+    const sound = sounds.get(song.releaseId);
+    const x = sound && (sound.inspirations || []).find(i => i.track === song.track);
+    return x ? { text: x.text, draft: sound.draft } : null;
+  };
 
   /* ----------------------------------------------------------
      TRACK BY TRACK (albums with an arc)

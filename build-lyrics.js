@@ -110,6 +110,12 @@ function loadNotes(byRelease, { drafts = false } = {}) {
     // A short paragraph on how the project sounds and how it was made
     if (data.sound) {
       if (typeof data.sound.text !== 'string' || !data.sound.text.trim()) throw new Error(`${where}: sound needs its text`);
+      // What a song's beat came from. No track means the whole project.
+      (data.sound.inspirations || []).forEach((x, i) => {
+        const at = `${where} sound inspiration ${i + 1}`;
+        if (typeof x.text !== 'string' || !x.text.trim()) throw new Error(`${at}: needs its text`);
+        if (x.track !== undefined && !list.some(s => s.track === x.track)) throw new Error(`${at}: no track ${x.track}`);
+      });
       if (drafts || !data.sound.draft) sounds.set(releaseId, data.sound);
     }
 
