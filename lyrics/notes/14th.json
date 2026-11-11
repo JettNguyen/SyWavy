@@ -4,12 +4,12 @@
     "1": {
       "title": "14th",
       "notes": [
-        { "lines": [37, 40], "kind": "story", "body": "Natasha comes from the Latin for Christmas Day, so the name means born on Christmas, which is SyWavy's own birthday.", "draft": true },
-        { "lines": [6, 7], "kind": "story", "body": "Twos are knees: down on both to pray. Fours are four fingers held up, the hand sign for a neighborhood in St. Pete.", "draft": true },
-        { "lines": [1, 2], "kind": "story", "body": "The 14th is Valentine's Day, and he wants someone to be his for it. The song came out on November 14, so the title lands on its own release date too.", "draft": true },
-        { "lines": [4, 4], "kind": "reference", "title": "Type beat", "body": "Instrumentals sold online and labeled after famous artists so anyone can sound like them. He doesn't use them, since Jett2Fly makes his beats.", "ref": {"name": "Type beat", "category": "other"}, "draft": true },
-        { "lines": [17, 22], "kind": "story", "body": "He admits he isn't an athlete, then talks about her in basketball terms anyway: the decision is hers, and her roster is stacked. Moving on becomes footwork, one foot planted, and lifting the other is a travel. He's stuck in place.", "draft": true },
-        { "lines": [24, 24], "kind": "reference", "title": "E.T. the Extra-Terrestrial", "body": "Steven Spielberg's 1982 film, where the stranded alien just wants to call home. He's having the same trouble getting through.", "ref": {"name": "E.T. the Extra-Terrestrial", "category": "film-tv"}, "draft": true }
+        { "lines": [37, 40], "kind": "story", "body": "Natasha comes from the Latin for Christmas Day, so the name means born on Christmas, which is SyWavy's own birthday." },
+        { "lines": [6, 7], "kind": "story", "body": "Twos are knees: down on both to pray. Fours are four fingers held up, the hand sign for a neighborhood in St. Pete." },
+        { "lines": [1, 2], "kind": "story", "body": "The 14th is Valentine's Day, and he wants someone to be his for it. The song came out on November 14, so the title lands on its own release date too." },
+        { "lines": [4, 4], "kind": "reference", "title": "Type beat", "body": "Instrumentals sold online and labeled after famous artists so anyone can sound like them. He doesn't use them, since Jett2Fly makes his beats.", "ref": {"name": "Type beat", "category": "other"} },
+        { "lines": [17, 22], "kind": "story", "body": "He admits he isn't an athlete, then talks about her in basketball terms anyway: the decision is hers, and her roster is stacked. Moving on becomes footwork, one foot planted, and lifting the other is a travel. He's stuck in place." },
+        { "lines": [24, 24], "kind": "reference", "title": "E.T. the Extra-Terrestrial", "body": "Steven Spielberg's 1982 film, where the stranded alien just wants to call home. He's having the same trouble getting through.", "ref": {"name": "E.T. the Extra-Terrestrial", "category": "film-tv"} }
       ]
     }
   }

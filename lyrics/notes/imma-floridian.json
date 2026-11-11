@@ -4,20 +4,20 @@
     "1": {
       "title": "Imma Floridian",
       "notes": [
-        { "lines": [28, 28], "kind": "story", "body": "Leave-in conditioner is a hair product you don't rinse out. Here it's also her wanting to leave.", "draft": true },
-        { "lines": [26, 26], "kind": "reference", "title": "G-Man", "body": "The T-shirt brand you find at gas stations. He'd rather wear one than shop at Neiman Marcus.", "ref": { "name": "G-Man (T-shirt brand)", "category": "brand" }, "draft": true },
-        { "lines": [14, 14], "kind": "story", "body": "A burna is a burner phone, the cheap prepaid kind you can toss.", "draft": true },
-        { "lines": [1, 8], "kind": "story", "body": "She's on her way out and talking about designer bags, and he answers with where he's from. He's Southern, but not the Texas kind, and the rhymes run straight into the title.", "draft": true },
-        { "lines": [2, 2], "kind": "reference", "title": "Birkin", "body": "The Hermès Birkin, a handbag with long waitlists and five-figure prices. She brings it up as she's heading out the door.", "ref": { "name": "Birkin bag", "category": "brand" }, "draft": true },
-        { "lines": [4, 4], "kind": "reference", "title": "Hermès", "body": "The French fashion house behind the Birkin, known for its H logo. She wants all of it, from the logo on up.", "ref": { "name": "Hermès", "category": "brand" }, "draft": true },
-        { "lines": [5, 5], "kind": "reference", "title": "Berkeley", "body": "The University of California, Berkeley, one of the country's top schools. Brain is also slang for oral sex, so the compliment works two ways.", "ref": { "name": "University of California, Berkeley", "category": "place", "place": { "florida": false } }, "draft": true },
-        { "lines": [6, 6], "kind": "reference", "title": "Prime Meridian", "body": "The line of zero longitude through Greenwich, England, where the world's time zones start. Being left there means starting over from zero, and Meridian sets up the rhyme with the title.", "ref": { "name": "Prime Meridian", "category": "place", "place": { "florida": false } }, "draft": true },
-        { "lines": [9, 21], "kind": "story", "body": "Furnish is the word the song keeps turning over. He's furnishing his place again, but said quickly it sounds like finish, and the last verse makes that second meaning plain. He also says he made the song up on the spot as he recorded.", "draft": true },
-        { "lines": [17, 18], "kind": "story", "body": "The hook cuts short the usual phrase for making something up on the spot, which is how he says he made this one. Top runs all through the song, from being on top to living on the highest floor.", "draft": true },
-        { "lines": [25, 27], "kind": "reference", "title": "Neiman Marcus", "body": "The Dallas luxury department store. He splits its name across lines while saying he's never shopped there.", "ref": { "name": "Neiman Marcus", "category": "brand" }, "draft": true },
-        { "lines": [36, 37], "kind": "story", "body": "Right after saying everything he owns is furnished, she takes a seat on him like he's part of the furniture.", "draft": true },
-        { "lines": [38, 38], "kind": "reference", "title": "Faneto", "body": "Chief Keef's 2014 drill anthem, still a go-to for crowds. Calling a verse its Faneto means it's the hardest one.", "ref": { "name": "Faneto", "category": "musician" }, "draft": true },
-        { "lines": [52, 59], "kind": "story", "body": "The ending drops the boasting. He says he's done, and asks her again and again to do right by him.", "draft": true }
+        { "lines": [28, 28], "kind": "story", "body": "Leave-in conditioner is a hair product you don't rinse out. Here it's also her wanting to leave." },
+        { "lines": [26, 26], "kind": "reference", "title": "G-Man", "body": "The T-shirt brand you find at gas stations. He'd rather wear one than shop at Neiman Marcus.", "ref": { "name": "G-Man (T-shirt brand)", "category": "brand" } },
+        { "lines": [14, 14], "kind": "story", "body": "A burna is a burner phone, the cheap prepaid kind you can toss." },
+        { "lines": [1, 8], "kind": "story", "body": "She's on her way out and talking about designer bags, and he answers with where he's from. He's Southern, but not the Texas kind, and the rhymes run straight into the title." },
+        { "lines": [2, 2], "kind": "reference", "title": "Birkin", "body": "The Hermès Birkin, a handbag with long waitlists and five-figure prices. She brings it up as she's heading out the door.", "ref": { "name": "Birkin bag", "category": "brand" } },
+        { "lines": [4, 4], "kind": "reference", "title": "Hermès", "body": "The French fashion house behind the Birkin, known for its H logo. She wants all of it, from the logo on up.", "ref": { "name": "Hermès", "category": "brand" } },
+        { "lines": [5, 5], "kind": "reference", "title": "Berkeley", "body": "The University of California, Berkeley, one of the country's top schools. Brain is also slang for oral sex, so the compliment works two ways.", "ref": { "name": "University of California, Berkeley", "category": "place", "place": { "florida": false } } },
+        { "lines": [6, 6], "kind": "reference", "title": "Prime Meridian", "body": "The line of zero longitude through Greenwich, England, where the world's time zones start. Being left there means starting over from zero, and Meridian sets up the rhyme with the title.", "ref": { "name": "Prime Meridian", "category": "place", "place": { "florida": false } } },
+        { "lines": [9, 21], "kind": "story", "body": "Furnish is the word the song keeps turning over. He's furnishing his place again, but said quickly it sounds like finish, and the last verse makes that second meaning plain. He also says he made the song up on the spot as he recorded." },
+        { "lines": [17, 18], "kind": "story", "body": "The hook cuts short the usual phrase for making something up on the spot, which is how he says he made this one. Top runs all through the song, from being on top to living on the highest floor." },
+        { "lines": [25, 27], "kind": "reference", "title": "Neiman Marcus", "body": "The Dallas luxury department store. He splits its name across lines while saying he's never shopped there.", "ref": { "name": "Neiman Marcus", "category": "brand" } },
+        { "lines": [36, 37], "kind": "story", "body": "Right after saying everything he owns is furnished, she takes a seat on him like he's part of the furniture." },
+        { "lines": [38, 38], "kind": "reference", "title": "Faneto", "body": "Chief Keef's 2014 drill anthem, still a go-to for crowds. Calling a verse its Faneto means it's the hardest one.", "ref": { "name": "Faneto", "category": "musician" } },
+        { "lines": [52, 59], "kind": "story", "body": "The ending drops the boasting. He says he's done, and asks her again and again to do right by him." }
       ]
     }
   }

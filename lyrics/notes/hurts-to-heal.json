@@ -4,47 +4,47 @@
     "1": {
       "title": "7 Days",
       "notes": [
-        { "lines": [1, 8], "kind": "story", "body": "The song counts a week night by night, each one a different stage of the same relationship. The count picks up again in the second verse and runs past seven.", "draft": true },
-        { "lines": [5, 6], "kind": "reference", "title": "SZA", "body": "The R&B singer whose 2017 debut album Ctrl includes the hit that names the third night. Her music is what's playing.", "ref": {"name": "SZA", "category": "musician"}, "draft": true },
-        { "lines": [10, 10], "kind": "reference", "title": "Chevrolet Impala", "body": "Chevy's long-running full-size sedan, named for an African antelope. That's why he talks about taming it, and the back end makes it a sex joke too.", "ref": {"name": "Chevrolet Impala", "category": "brand"}, "draft": true },
-        { "lines": [14, 17], "kind": "story", "body": "She tells him not to worry about a guy she swears is only a friend, and he learns better. Once he's gone, his phone gets quieter, and he counts that as a win.", "draft": true },
-        { "lines": [26, 26], "kind": "story", "body": "FT is short for FaceTime, where they argue, and ft. is also how a song credit marks a feature. The line slides from one to the other.", "draft": true },
-        { "lines": [51, 54], "kind": "story", "body": "Seven nights aren't enough, so he calls for an eighth. Then he plays week against weak: a week only holds seven days, and that's the problem.", "draft": true }
+        { "lines": [1, 8], "kind": "story", "body": "The song counts a week night by night, each one a different stage of the same relationship. The count picks up again in the second verse and runs past seven." },
+        { "lines": [5, 6], "kind": "reference", "title": "SZA", "body": "The R&B singer whose 2017 debut album Ctrl includes the hit that names the third night. Her music is what's playing.", "ref": {"name": "SZA", "category": "musician"} },
+        { "lines": [10, 10], "kind": "reference", "title": "Chevrolet Impala", "body": "Chevy's long-running full-size sedan, named for an African antelope. That's why he talks about taming it, and the back end makes it a sex joke too.", "ref": {"name": "Chevrolet Impala", "category": "brand"} },
+        { "lines": [14, 17], "kind": "story", "body": "She tells him not to worry about a guy she swears is only a friend, and he learns better. Once he's gone, his phone gets quieter, and he counts that as a win." },
+        { "lines": [26, 26], "kind": "story", "body": "FT is short for FaceTime, where they argue, and ft. is also how a song credit marks a feature. The line slides from one to the other." },
+        { "lines": [51, 54], "kind": "story", "body": "Seven nights aren't enough, so he calls for an eighth. Then he plays week against weak: a week only holds seven days, and that's the problem." }
       ]
     },
     "2": {
       "title": "Traffic",
       "notes": [
-        { "lines": [49, 53], "kind": "story", "body": "Leakers get hold of songs and post them online before they come out. The hook dreads them.", "draft": true },
-        { "lines": [8, 11], "kind": "story", "body": "The hook pairs racing through cars on the road with a feeling that won't wear off. He's weaving toward someone, and what stays with him is how love smells.", "draft": true },
-        { "lines": [14, 14], "kind": "reference", "title": "Love Lockdown", "body": "Kanye West's 2008 single from 808s & Heartbreak, an album built on the Roland 808 drum machine. He names the song and the machine in a few words.", "ref": {"name": "Love Lockdown", "category": "musician"}, "draft": true },
-        { "lines": [15, 15], "kind": "reference", "title": "Madden NFL", "body": "EA Sports' long-running football video game. Her games are maddening, and Madden is where you call the plays.", "ref": {"name": "Madden NFL", "category": "game"}, "draft": true },
-        { "lines": [16, 16], "kind": "reference", "title": "Beyblade", "body": "The spinning-top toy and anime, where tops are launched with a ripcord and a shout to let it rip. He starts things right away, the same way.", "ref": {"name": "Beyblade", "category": "anime-cartoon"}, "draft": true },
-        { "lines": [17, 17], "kind": "reference", "title": "Major Payne", "body": "Damon Wayans' 1995 comedy about a hard-nosed Marine put in charge of young cadets. Attention is what a drill instructor barks, and the title sounds like a major pain.", "ref": {"name": "Major Payne", "category": "film-tv"}, "draft": true },
-        { "lines": [42, 44], "kind": "reference", "title": "Bleacher Report", "body": "The sports news site. Report and bleachers land back to back to spell it out, and bleach is what you'd reach for after a stain.", "ref": {"name": "Bleacher Report", "category": "brand"}, "draft": true },
-        { "lines": [75, 79], "kind": "story", "body": "He won't say who he's really after, only how many letters are in her name, and then he pretends not to know the count. It's a playful dodge at the end of a song that never sits still.", "draft": true }
+        { "lines": [49, 53], "kind": "story", "body": "Leakers get hold of songs and post them online before they come out. The hook dreads them." },
+        { "lines": [8, 11], "kind": "story", "body": "The hook pairs racing through cars on the road with a feeling that won't wear off. He's weaving toward someone, and what stays with him is how love smells." },
+        { "lines": [14, 14], "kind": "reference", "title": "Love Lockdown", "body": "Kanye West's 2008 single from 808s & Heartbreak, an album built on the Roland 808 drum machine. He names the song and the machine in a few words.", "ref": {"name": "Love Lockdown", "category": "musician"} },
+        { "lines": [15, 15], "kind": "reference", "title": "Madden NFL", "body": "EA Sports' long-running football video game. Her games are maddening, and Madden is where you call the plays.", "ref": {"name": "Madden NFL", "category": "game"} },
+        { "lines": [16, 16], "kind": "reference", "title": "Beyblade", "body": "The spinning-top toy and anime, where tops are launched with a ripcord and a shout to let it rip. He starts things right away, the same way.", "ref": {"name": "Beyblade", "category": "anime-cartoon"} },
+        { "lines": [17, 17], "kind": "reference", "title": "Major Payne", "body": "Damon Wayans' 1995 comedy about a hard-nosed Marine put in charge of young cadets. Attention is what a drill instructor barks, and the title sounds like a major pain.", "ref": {"name": "Major Payne", "category": "film-tv"} },
+        { "lines": [42, 44], "kind": "reference", "title": "Bleacher Report", "body": "The sports news site. Report and bleachers land back to back to spell it out, and bleach is what you'd reach for after a stain.", "ref": {"name": "Bleacher Report", "category": "brand"} },
+        { "lines": [75, 79], "kind": "story", "body": "He won't say who he's really after, only how many letters are in her name, and then he pretends not to know the count. It's a playful dodge at the end of a song that never sits still." }
       ]
     },
     "3": {
       "title": "Violet & Tate",
       "notes": [
-        { "lines": [4, 4], "kind": "story", "body": "Head means his state of mind, and also oral sex, which is why teeth are the punch line.", "draft": true },
-        { "lines": [7, 7], "kind": "reference", "title": "Violet and Tate", "body": "The doomed teen couple from the first season of American Horror Story, played by Taissa Farmiga and Evan Peters. Their romance never leaves one haunted house, which is why his never goes out on dates.", "ref": {"name": "American Horror Story: Murder House", "category": "film-tv"}, "draft": true },
-        { "lines": [16, 20], "kind": "story", "body": "The verse plays like a scene: he's been on the road for hours, he's hungry, she has to let him in, and they race to her door. He wins. Small moments at home are the whole relationship.", "draft": true },
-        { "lines": [35, 35], "kind": "reference", "title": "Monarch butterfly", "body": "Nerves feel like butterflies in your stomach, and he upgrades his to monarchs, the best-known butterfly in America.", "ref": {"name": "Monarch butterfly", "category": "other"}, "draft": true },
-        { "lines": [39, 39], "kind": "reference", "title": "Gary Payton", "body": "The Hall of Fame point guard nicknamed The Glove for his smothering defense with the Seattle SuperSonics. She fits him the way the nickname fit Payton.", "ref": {"name": "Gary Payton", "category": "athlete"}, "draft": true },
-        { "lines": [57, 66], "kind": "story", "body": "Leaving turns into a fight: she grills him, his keys vanish, and he's sure she's behind it. When he finally gets out, he says he might as well disappear, which is exactly the show's rule: its ghosts can't exist anywhere outside that house.", "draft": true }
+        { "lines": [4, 4], "kind": "story", "body": "Head means his state of mind, and also oral sex, which is why teeth are the punch line." },
+        { "lines": [7, 7], "kind": "reference", "title": "Violet and Tate", "body": "The doomed teen couple from the first season of American Horror Story, played by Taissa Farmiga and Evan Peters. Their romance never leaves one haunted house, which is why his never goes out on dates.", "ref": {"name": "American Horror Story: Murder House", "category": "film-tv"} },
+        { "lines": [16, 20], "kind": "story", "body": "The verse plays like a scene: he's been on the road for hours, he's hungry, she has to let him in, and they race to her door. He wins. Small moments at home are the whole relationship." },
+        { "lines": [35, 35], "kind": "reference", "title": "Monarch butterfly", "body": "Nerves feel like butterflies in your stomach, and he upgrades his to monarchs, the best-known butterfly in America.", "ref": {"name": "Monarch butterfly", "category": "other"} },
+        { "lines": [39, 39], "kind": "reference", "title": "Gary Payton", "body": "The Hall of Fame point guard nicknamed The Glove for his smothering defense with the Seattle SuperSonics. She fits him the way the nickname fit Payton.", "ref": {"name": "Gary Payton", "category": "athlete"} },
+        { "lines": [57, 66], "kind": "story", "body": "Leaving turns into a fight: she grills him, his keys vanish, and he's sure she's behind it. When he finally gets out, he says he might as well disappear, which is exactly the show's rule: its ghosts can't exist anywhere outside that house." }
       ]
     },
     "4": {
       "title": "1123",
       "notes": [
-        { "lines": [2, 2], "kind": "story", "body": "Eleven and three are months. November, the eleventh, didn't hurt, but March, the third, did.", "draft": true },
-        { "lines": [1, 4], "kind": "story", "body": "He opens with a warning that this is as exposed as he gets. Then come the details that make it real: the post that tells him she's over it, and the song they shared still playing every time his phone rings.", "draft": true },
-        { "lines": [8, 8], "kind": "reference", "title": "Ariana Grande", "body": "Her 2018 number one thank u, next is about thanking your exes and moving on. He says nearly the same words right after cutting someone off.", "ref": {"name": "Ariana Grande", "category": "musician"}, "draft": true },
-        { "lines": [11, 11], "kind": "reference", "title": "Kevin Durant", "body": "The scoring great who has worn number 35 for most of his career, respected for a jumper almost no one can guard. Taking his chance with a woman earns him the same respect.", "ref": {"name": "Kevin Durant", "category": "athlete"}, "draft": true },
-        { "lines": [15, 15], "kind": "reference", "title": "Hermès Birkin", "body": "Hermès's handbag, one of the most expensive and hardest to get in fashion. She wants one while an older man's money comes from the stock market.", "ref": {"name": "Hermès Birkin", "category": "brand"}, "draft": true },
-        { "lines": [37, 44], "kind": "story", "body": "He can't get an apology, can't stop checking her Instagram, and hears she's doing great on her own. Then he lands on the idea that gives the EP its name: getting better is painful in its own right.", "draft": true }
+        { "lines": [2, 2], "kind": "story", "body": "Eleven and three are months. November, the eleventh, didn't hurt, but March, the third, did." },
+        { "lines": [1, 4], "kind": "story", "body": "He opens with a warning that this is as exposed as he gets. Then come the details that make it real: the post that tells him she's over it, and the song they shared still playing every time his phone rings." },
+        { "lines": [8, 8], "kind": "reference", "title": "Ariana Grande", "body": "Her 2018 number one thank u, next is about thanking your exes and moving on. He says nearly the same words right after cutting someone off.", "ref": {"name": "Ariana Grande", "category": "musician"} },
+        { "lines": [11, 11], "kind": "reference", "title": "Kevin Durant", "body": "The scoring great who has worn number 35 for most of his career, respected for a jumper almost no one can guard. Taking his chance with a woman earns him the same respect.", "ref": {"name": "Kevin Durant", "category": "athlete"} },
+        { "lines": [15, 15], "kind": "reference", "title": "Hermès Birkin", "body": "Hermès's handbag, one of the most expensive and hardest to get in fashion. She wants one while an older man's money comes from the stock market.", "ref": {"name": "Hermès Birkin", "category": "brand"} },
+        { "lines": [37, 44], "kind": "story", "body": "He can't get an apology, can't stop checking her Instagram, and hears she's doing great on her own. Then he lands on the idea that gives the EP its name: getting better is painful in its own right." }
       ]
     }
   }

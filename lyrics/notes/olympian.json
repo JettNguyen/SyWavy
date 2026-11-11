@@ -4,11 +4,11 @@
     "1": {
       "title": "Olympian",
       "notes": [
-        { "lines": [2, 2], "kind": "story", "body": "Released three weeks before the Tokyo Olympics, which had been pushed back a year, the song wears the Games. An Olympic windbreaker comes first, then the five rings in the next line.", "draft": true },
-        { "lines": [3, 3], "kind": "reference", "title": "Kobe Bryant", "body": "Kobe won five championships with the Lakers, and the Olympic logo has five rings, so one image covers both. He died in January 2020, the year before this came out.", "ref": {"name": "Kobe Bryant", "category": "athlete"}, "draft": true },
-        { "lines": [9, 10], "kind": "story", "body": "The song turns outward: a friend's family has lost their home, and he can't do anything for them but hope. The hook's wish is for the people he loves to make it out.", "draft": true },
-        { "lines": [14, 14], "kind": "reference", "title": "Flint, Michigan", "body": "The Michigan city whose tap water was contaminated with lead after a 2014 switch in its water source. Years later, he's still calling for it to be fixed.", "ref": {"name": "Flint, Michigan", "category": "place", "place": {"florida": false}}, "draft": true },
-        { "lines": [42, 53], "kind": "story", "body": "The ending becomes a chant asking to be freed from the pain and from the city. It's for himself and for everyone he'd take with him.", "draft": true }
+        { "lines": [2, 2], "kind": "story", "body": "Released three weeks before the Tokyo Olympics, which had been pushed back a year, the song wears the Games. An Olympic windbreaker comes first, then the five rings in the next line." },
+        { "lines": [3, 3], "kind": "reference", "title": "Kobe Bryant", "body": "Kobe won five championships with the Lakers, and the Olympic logo has five rings, so one image covers both. He died in January 2020, the year before this came out.", "ref": {"name": "Kobe Bryant", "category": "athlete"} },
+        { "lines": [9, 10], "kind": "story", "body": "The song turns outward: a friend's family has lost their home, and he can't do anything for them but hope. The hook's wish is for the people he loves to make it out." },
+        { "lines": [14, 14], "kind": "reference", "title": "Flint, Michigan", "body": "The Michigan city whose tap water was contaminated with lead after a 2014 switch in its water source. Years later, he's still calling for it to be fixed.", "ref": {"name": "Flint, Michigan", "category": "place", "place": {"florida": false}} },
+        { "lines": [42, 53], "kind": "story", "body": "The ending becomes a chant asking to be freed from the pain and from the city. It's for himself and for everyone he'd take with him." }
       ]
     }
   }
