@@ -28,7 +28,7 @@ const buildPages = require('./build-pages');
 
 const ROOT = __dirname;
 const OUT  = path.join(ROOT, '_site');
-const SKIP = new Set(['_site', 'build.js', 'build-lyrics.js', 'build-pages.js', 'page.html', 'node_modules', 'lyrics', 'indexnow.js', 'fiveserver.config.js']);
+const SKIP = new Set(['_site', 'build.js', 'build-lyrics.js', 'build-pages.js', 'page.html', 'node_modules', 'lyrics', 'indexnow.js', 'fiveserver.config.js', 'build-colors.py']);
 const SITE = 'https://sywavy.com';
 const DRAFTS = process.argv.includes('--drafts');
 
