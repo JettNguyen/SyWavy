@@ -406,4 +406,136 @@ if (location.hostname === 'sywavy.com' && location.pathname.endsWith('.html')) {
     }
   }
 
+  /* ----------------------------------------------------------
+     BACK LINKS
+     The arrow link at the top of a song, a release, References
+     and SyWavy's Florida goes back to the page the visitor came
+     from, and to the same spot on it, like the browser's back
+     button. Lyrics opened from the Lyrics page go back to Lyrics,
+     and lyrics opened from a release go back to that release.
+     Next song and Previous song, or another release under More
+     from SyWavy, keep the same way back. A visitor who came from
+     anywhere else (a search, a shared link, the home page) gets
+     the link the page was built with: Lyrics on a song, All
+     releases on a release.
+     Each page's way back, name, and spot are kept for the tab in
+     sessionStorage. The way back also goes in the page's history
+     entry, so a reload or the back and forward buttons keep it.
+  ---------------------------------------------------------- */
+  const PAGES_KEY  = 'sywavy_pages';
+  const RETURN_KEY = 'sywavy_return';
+
+  // The address a page goes by, however it was typed
+  const pagePath = p => p.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/^\/lyrics$/, '/lyrics/');
+  const releaseNames = new Map(D.releases.map(r => [`/${r.id}`, r.title]));
+  const kindOf = p => p === '/lyrics/' ? 'hub'
+    : p.startsWith('/lyrics/') ? 'song'
+    : p === '/references' || p === '/florida' ? 'list'
+    : releaseNames.has(p) ? 'release'
+    : p === '/' ? 'home' : 'other';
+
+  // The kinds of page each one's back link can lead to. Moving on to a page
+  // of its own kind (the next song, another release) keeps the way back.
+  const LEADS_TO = { song: ['hub', 'list', 'release'], release: ['hub', 'song'], list: ['hub'] };
+  const ALONG = ['song', 'release'];
+
+  const here = pagePath(location.pathname);
+  const kind = kindOf(here);
+
+  function pagesSeen() {
+    try { return JSON.parse(sessionStorage.getItem(PAGES_KEY)) || {}; } catch (_) { return {}; }
+  }
+  const seen = path => pagesSeen()[path] || {};
+  function remember(path, facts) {
+    const all = pagesSeen();
+    all[path] = Object.assign(all[path] || {}, facts);
+    keep(PAGES_KEY, JSON.stringify(all));
+  }
+
+  const NAMES = { '/lyrics/': 'Lyrics', '/references': 'References', '/florida': "SyWavy's Florida" };
+  const nameOf = path => NAMES[path] || releaseNames.get(path) || seen(path).name || '';
+
+  // A song's title, for the back link of a release page opened from it
+  const songTitle = kind === 'song' && document.querySelector('.song-title');
+  if (songTitle) remember(here, { name: songTitle.textContent.trim() });
+
+  // How far down the page was when the visitor left it
+  if (kind !== 'home' && kind !== 'other') {
+    window.addEventListener('pagehide', () => remember(here, { y: Math.round(window.scrollY) }));
+  }
+
+  // The page on this site that opened this one
+  function cameFrom() {
+    try {
+      const url = new URL(document.referrer);
+      return url.origin === location.origin ? pagePath(url.pathname) : '';
+    } catch (_) { return ''; }
+  }
+
+  // The page before this one in the tab's history: null when the browser
+  // can't say, and '' when there isn't one on this site
+  function pageBefore() {
+    const nav = window.navigation;
+    if (!nav || !nav.currentEntry || typeof nav.entries !== 'function') return null;
+    const prev = nav.entries()[nav.currentEntry.index - 1];
+    return prev && prev.url ? pagePath(new URL(prev.url).pathname) : '';
+  }
+
+  // Brought here by a back link: land where the visitor left this page, or
+  // else on the link to the page they came back from (that song's row)
+  let returned = null;
+  try { returned = JSON.parse(take(RETURN_KEY)); } catch (_) { /* nothing handed over */ }
+  if (returned && returned.to !== here) returned = null;
+
+  if (returned) {
+    const y = returned.spot ? seen(here).y : undefined;
+    const link = typeof y === 'number' ? null
+      : [...document.querySelectorAll('main a[href]')].find(a => a.origin === location.origin && pagePath(a.pathname) === returned.from);
+    if (typeof y === 'number') {
+      landOn(() => window.scrollTo(0, y));
+    } else if (link) {
+      landOn(() => link.scrollIntoView({ block: 'center' }));
+      link.classList.add('is-landed');
+      setTimeout(() => link.classList.remove('is-landed'), 2400);
+    }
+  }
+
+  const backLink = document.querySelector('.back-link');
+  if (backLink && LEADS_TO[kind]) {
+    let back = history.state && history.state.sywavyBack;
+    if (!back) {
+      const from = cameFrom();
+      back = { to: '', direct: false };
+      if (returned) back.to = seen(here).back || '';
+      else if (from && from !== here && kindOf(from) === kind && ALONG.includes(kind)) back.to = seen(from).back || '';
+      else if (from && from !== here && LEADS_TO[kind].includes(kindOf(from))) back = { to: from, direct: history.length > 1 };
+      try { history.replaceState({ ...(history.state || {}), sywavyBack: back }, ''); } catch (_) { /* a reload just forgets it */ }
+    }
+    const to = back.to && nameOf(back.to) ? back.to : '';
+    remember(here, { back: to });
+    // A page the browser kept in memory may have been left with another way back
+    window.addEventListener('pageshow', e => { if (e.persisted) remember(here, { back: to }); });
+
+    if (to) {
+      backLink.href = to;
+      const text = [...backLink.childNodes].filter(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim()).pop();
+      if (text) text.textContent = nameOf(to);
+    }
+
+    backLink.addEventListener('click', e => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const dest = pagePath(new URL(backLink.href, location.href).pathname);
+      if (kindOf(dest) === 'home') return; // All releases: the section links above take it from here
+      const before = pageBefore();
+      if (before === null ? to === dest && back.direct : before === dest) {
+        // The page before this one is where the link goes, so step back to it
+        // the way the browser's back button does, right where it was left
+        e.preventDefault();
+        history.back();
+        return;
+      }
+      keep(RETURN_KEY, JSON.stringify({ to: dest, from: here, spot: Boolean(to) }));
+    });
+  }
+
 })();

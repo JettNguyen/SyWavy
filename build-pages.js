@@ -159,7 +159,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
         </div>
       </aside>` : '';
 
-    const kicker = `Lyrics<span>Track ${song.track} on ${esc(rel.title)}</span>${single && single.id !== rel.id ? `<span>Single, ${esc(formatDate(single.date))}</span>` : ''}`;
+    const kicker = `Lyrics<span>Track ${song.track} on <a href="/${rel.id}">${esc(rel.title)}</a></span>${single && single.id !== rel.id ? `<span>Single, ${esc(formatDate(single.date))}</span>` : ''}`;
     const listenOn = single || rel;
     const links = R.streamLinks ? R.streamLinks(listenOn, `Stream ${song.title}`) : '';
 
@@ -177,9 +177,11 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
         ${tracksHTML(rel, song)}
       </section>` : '';
 
+    // Back to the Lyrics page. main.js points it at the page the visitor came
+    // from instead, when that was a release page, References or the map.
     return `
       <div class="song-page" style="${artVars(rel)}">
-      <a href="/${rel.id}" class="back-link">${BACK}${esc(rel.title)}</a>
+      <a href="/lyrics/" class="back-link">${BACK}Lyrics</a>
       <div class="song-head animate-on-scroll">
         <a href="/${rel.id}" class="song-cover" aria-label="${esc(rel.title)}">${glow(rel)}${cover(rel, 480, 'song-cover-img')}</a>
         <div class="song-head-text">

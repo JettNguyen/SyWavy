@@ -159,6 +159,14 @@ a, button, [role="button"] { touch-action: manipulation; }
 }
 .kicker span { color: var(--muted); font-weight: 450; }
 .kicker span::before { content: '·'; margin-right: 0.6rem; color: var(--faint); }
+.kicker a {
+  padding-block: 0.5rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-underline-offset: 0.22em;
+  transition: color var(--t-fast), text-decoration-color var(--t-fast);
+}
 
 .show-more-wrap {
   display: flex;
@@ -1480,6 +1488,8 @@ a, button, [role="button"] { touch-action: manipulation; }
 .track-link.is-empty { color: var(--muted); }
 .track-item.is-current .track-title { color: var(--accent); }
 .song-page .track-item.is-current .track-title { color: var(--art); }
+/* The song a back link just came from, for a moment */
+.track-link.is-landed .track-title { color: var(--art, var(--accent)); }
 .song-page .lyrics-tracklist .track-num,
 .lyrics-release .track-num { color: var(--art); opacity: 0.85; }
 .lyrics-note-count { margin-left: auto; padding-left: 1rem; font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
@@ -1692,6 +1702,7 @@ a.inspiration-song:hover { opacity: 0.75; }
   .contact-email:hover { color: var(--accent); border-color: var(--accent); }
   .back-link:hover { color: var(--text); }
   .back-link:hover svg { transform: translateX(-3px); }
+  .kicker a:hover { color: var(--text); text-decoration-color: currentColor; }
 }
 
 /* ============================================================
@@ -1718,6 +1729,7 @@ a.inspiration-song:hover { opacity: 0.75; }
 .social-icon-link:active { transform: scale(0.9); background: rgba(255, 255, 255, 0.1); }
 .contact-email:active { color: var(--accent); border-color: var(--accent); }
 .back-link:active { color: var(--accent); }
+.kicker a:active { color: var(--accent); }
 
 /* Presses should feel instant; release eases back at the normal speed */
 .btn-primary:active, .btn-outline:active, .nav-wordmark:active, .nav-link:active, .nav-cta:active, .nav-hamburger:active,
