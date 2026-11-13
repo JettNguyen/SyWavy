@@ -85,9 +85,10 @@ window._SWR = (function () {
   }
 
   // The cover, blurred and faded, as colored light behind a release
-  const coverGlow = (release, cls) => `
+  // A release page's glow is the biggest thing on a phone's first screen, so it loads right away there
+  const coverGlow = (release, cls, lazy = true) => `
       <div class="cover-glow ${cls || ''}" aria-hidden="true">
-        <img src="/assets/covers/${release.cover}-480.webp" alt="" width="480" height="480" loading="lazy" decoding="async" />
+        <img src="/assets/covers/${release.cover}-480.webp" alt="" width="480" height="480"${lazy ? ' loading="lazy"' : ''} decoding="async" />
       </div>`;
 
   const liveLinks = release => (release.links || []).filter(l => l.url && l.url !== '#');
@@ -315,10 +316,10 @@ window._SWR = (function () {
     const related = relatedReleases(releases, index).map(r => releaseCard(r)).join('');
 
     return `
-    ${coverGlow(release, 'release-glow')}
+    ${coverGlow(release, 'release-glow', false)}
     <div class="release-page-inner animate-on-scroll">
       <div class="release-page-cover">
-        ${coverImg(release, { sizes: '(min-width: 1024px) 460px, (min-width: 640px) 300px, 88vw', cls: 'release-cover-img', extra: 'loading="eager" fetchpriority="high"' })}
+        ${coverImg(release, { sizes: '(min-width: 1440px) 584px, (min-width: 800px) 41vw, (min-width: 667px) 400px, 60vw', cls: 'release-cover-img', extra: 'loading="eager" fetchpriority="high"' })}
       </div>
       <div class="release-page-info">
         <p class="kicker">${kind}${release.date ? `<span>${formatDate(release.date)}</span>` : ''}</p>
