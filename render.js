@@ -179,9 +179,11 @@ window._SWR = (function () {
      The thumbnail carries the video's id and title, and main.js
      swaps it for the YouTube player when it is clicked.
   ---------------------------------------------------------- */
-  function videoThumb(youtubeId, title, { cls = 'video-thumb-wrap', label = `Play ${title}`, extra = '' } = {}) {
+  function videoThumb(youtubeId, title, { cls = 'video-thumb-wrap', label = `Play ${title}`, extra = '', small = false } = {}) {
     const hq  = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
-    const max = `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
+    // A thumbnail in the grid is shown a third of the page wide at most, so YouTube's
+    // 640px still is sharp there and a fraction of the 1280px one's weight
+    const max = `https://img.youtube.com/vi/${youtubeId}/${small ? 'sddefault' : 'maxresdefault'}.jpg`;
     return `
         <div class="${cls}" role="button" tabindex="0" aria-label="${escapeHTML(label)}"
              data-youtube-id="${escapeHTML(youtubeId)}" data-title="${escapeHTML(title)}">
@@ -207,7 +209,7 @@ window._SWR = (function () {
   function videoItem(video, hidden = false, lead = false) {
     return `
       <div class="video-item${lead ? ' video-lead' : ''}${hidden ? ' hidden' : ''}">
-        ${videoThumb(video.youtubeId, video.title, { extra: lead ? 'loading="lazy" fetchpriority="low"' : 'loading="lazy"' })}
+        ${videoThumb(video.youtubeId, video.title, { extra: lead ? 'loading="lazy" fetchpriority="low"' : 'loading="lazy"', small: !lead })}
         <div class="video-meta">
           ${lead ? '<p class="kicker">Newest video</p>' : ''}
           <p class="video-title">${escapeHTML(video.title)}</p>
