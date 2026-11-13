@@ -14,8 +14,10 @@
      notes, the lyrics hub, the references, and the Florida map
    The deploy workflow runs this on every push.
 
-   Preview locally:  node build.js && npx serve _site
-   With draft notes: node build.js --drafts && npx serve _site
+   Preview locally: press Go Live in VS Code (the Five Server
+   extension). fiveserver.config.js serves _site and builds it
+   again, with draft notes, whenever a file changes.
+   Without VS Code:  node build.js --drafts && npx serve _site
    ============================================================ */
 
 const fs   = require('fs');
@@ -26,7 +28,7 @@ const buildPages = require('./build-pages');
 
 const ROOT = __dirname;
 const OUT  = path.join(ROOT, '_site');
-const SKIP = new Set(['_site', 'build.js', 'build-lyrics.js', 'build-pages.js', 'page.html', 'node_modules', 'lyrics', 'indexnow.js']);
+const SKIP = new Set(['_site', 'build.js', 'build-lyrics.js', 'build-pages.js', 'page.html', 'node_modules', 'lyrics', 'indexnow.js', 'fiveserver.config.js']);
 const SITE = 'https://sywavy.com';
 const DRAFTS = process.argv.includes('--drafts');
 
