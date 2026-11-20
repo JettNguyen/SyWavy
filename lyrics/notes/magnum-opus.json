@@ -126,7 +126,7 @@
     },
     "7": {
       "title": "YAMAHA RIDIN'",
-      "beat": { "draft": true, "tempo": 75, "length": "3:17", "text": "YAMAHA RIDIN' makes you wait. The drums are going by 0:10, but the bass holds off for the first 16 bars, almost a minute, and lands at 0:51 on a fingered bass guitar. It drops out once more around 2:08, comes back for the last stretch, and the song ends on a quiet outro after the drums stop.", "gear": ["FL Studio", "FLEX", "Xpand!2"] },
+      "beat": { "draft": true, "tempo": 75, "key": "E minor", "length": "3:17", "text": "YAMAHA RIDIN' makes you wait. The drums are going by 0:10, but the bass holds off for the first 16 bars, almost a minute, and lands at 0:51 on a fingered bass guitar. It drops out once more around 2:08, comes back for the last stretch, and the song ends on a quiet outro after the drums stop.", "gear": ["FL Studio", "FLEX", "Xpand!2"] },
       "notes": [
         { "lines": [13, 13], "kind": "reference", "title": "The Foreign Exchange", "body": "The R&B duo of the singer Phonte and the Dutch producer Nicolay, who made their first album trading files online before they ever met. It works the plain way too, as foreign money.", "ref": { "name": "The Foreign Exchange", "category": "musician" } },
         { "lines": [1, 1], "kind": "reference", "title": "Kawasaki", "body": "The Japanese motorcycle maker. The song opens on a rival bike before settling on Yamaha, and every ride in it means two things.", "ref": { "name": "Kawasaki", "category": "brand" } },
@@ -154,7 +154,7 @@
     },
     "8": {
       "title": "Shameless Guy",
-      "beat": { "draft": true, "tempo": 95, "length": "2:57", "text": "Shameless Guy is slow R&B with a moodier electric piano, synth pads and a fingered bass guitar, and SyWavy's voice is stacked in layers all the way through. The beat waits until 0:20 to bring in the drums and bass, drops the bass for a moment just past two minutes, and lets the melody ring out on its own at the end.", "gear": ["FL Studio", "Omnisphere", "FLEX", "Xpand!2", "BBC Symphony Orchestra"] },
+      "beat": { "draft": true, "tempo": 95, "key": "A minor", "length": "2:57", "text": "Shameless Guy is slow R&B with a moodier electric piano, synth pads and a fingered bass guitar, and SyWavy's voice is stacked in layers all the way through. The beat waits until 0:20 to bring in the drums and bass, drops the bass for a moment just past two minutes, and lets the melody ring out on its own at the end.", "gear": ["FL Studio", "Omnisphere", "FLEX", "Xpand!2", "BBC Symphony Orchestra"] },
       "notes": [
         { "lines": [10, 10], "kind": "reference", "title": "Bella Thorne", "body": "The Shake It Up actress has talked since she was a kid about her dyslexia, and how her brain mixed up letters like b and d. Disney even wrote it into an episode of the show. That's why the mixed signals, right after the dyslexia line, land on her.", "ref": { "name": "Bella Thorne", "category": "film-tv" } },
         { "lines": [39, 39], "kind": "reference", "title": "Wallah", "body": "Arabic for I swear to God. Closing the verse with it, he swears every word is true.", "ref": { "name": "Wallah", "category": "other" } },
@@ -204,7 +204,7 @@
     },
     "11": {
       "title": "Favorite Meme",
-      "beat": { "draft": true, "tempo": 137, "length": "2:58", "text": "Favorite Meme gets its woozy, drunken piano from a piano sound played backwards, so each note swells up instead of fading out, with a grand piano alongside it. The 808 comes in at 0:18 and thins out to just the kick for a stretch in the middle, from about 1:14 to 1:40.", "gear": ["FL Studio", "Omnisphere", "FLEX", "Xpand!2"] },
+      "beat": { "draft": true, "tempo": 137, "key": "Bb major", "length": "2:58", "text": "Favorite Meme gets its woozy, drunken piano from a piano sound played backwards, so each note swells up instead of fading out, with a grand piano alongside it. The 808 comes in at 0:18 and thins out to just the kick for a stretch in the middle, from about 1:14 to 1:40.", "gear": ["FL Studio", "Omnisphere", "FLEX", "Xpand!2"] },
       "notes": [
         { "lines": [24, 24], "kind": "reference", "title": "The O", "body": "Orlando's nickname, and the Magic are its NBA team. He waves off the team and the city in one line.", "ref": { "name": "Orlando, Florida", "category": "place", "place": { "florida": true } } },
         { "lines": [5, 5], "kind": "reference", "title": "Dolce & Gabbana", "body": "The Milan fashion house known by its initials, sunglasses included.", "ref": { "name": "Dolce & Gabbana", "category": "brand" } },
@@ -273,7 +273,7 @@
     },
     "15": {
       "title": "Wavy Deagle",
-      "beat": { "draft": true, "tempo": 119, "length": "3:02", "text": "Wavy Deagle is synths from top to bottom, with a bell-like sparkle up high, and the ad-libs are made to sound huge. The plane tag rises right into the drop, and the 808 and hi hats hit together at 0:16. The 808 sits out from about 1:53 to 2:09 before the last run.", "gear": ["FL Studio", "Omnisphere"] },
+      "beat": { "draft": true, "tempo": 119, "key": "G# minor", "length": "3:02", "text": "Wavy Deagle is synths from top to bottom, with a bell-like sparkle up high, and the ad-libs are made to sound huge. The plane tag rises right into the drop, and the 808 and hi hats hit together at 0:16. The 808 sits out from about 1:53 to 2:09 before the last run.", "gear": ["FL Studio", "Omnisphere"] },
       "notes": [
         { "lines": [22, 22], "kind": "reference", "title": "Nav and Lil Uzi Vert", "body": "Two artists named side by side, and Leaders is a song the two of them made together.", "ref": { "name": "Nav and Lil Uzi Vert", "category": "musician" } },
         { "lines": [3, 4], "kind": "reference", "title": "Pinocchio", "body": "The puppet whose nose grows whenever he lies, and who dreams of being a real boy. In bed, where they lie, something grows, and he swears it's real.", "ref": { "name": "Pinocchio", "category": "anime-cartoon" } },
