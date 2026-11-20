@@ -95,12 +95,13 @@ function loadSongs(releases) {
 
 const isText = t => typeof t === 'string' && t.trim();
 
-/* The beat under a song: its tempo and length, a few plain sentences on how it's
-   built, and the gear. No key for now: measured keys missed too often, and Jett will come back to them. */
+/* The beat under a song: its tempo, length and hours in FL Studio, a few plain
+   sentences on how it's built, and the gear. No key for now: measured keys missed too often, and Jett will come back to them. */
 function checkBeat(b, at) {
   if (b.tempo !== undefined && !(typeof b.tempo === 'number' && b.tempo > 0)) throw new Error(`${at}: tempo must be a number`);
   if (b.key !== undefined) throw new Error(`${at}: the site shows no keys, so leave the key out`);
   if (b.length !== undefined && !/^\d+:[0-5]\d$/.test(b.length)) throw new Error(`${at}: length must look like "2:59"`);
+  if (b.hours !== undefined && !(Number.isInteger(b.hours) && b.hours > 0)) throw new Error(`${at}: hours must be a whole number`);
   if (b.text !== undefined && !isText(b.text)) throw new Error(`${at}: text is empty`);
   if (b.gear !== undefined && !(Array.isArray(b.gear) && b.gear.length && b.gear.every(isText))) throw new Error(`${at}: gear must be a list of names`);
   if (![b.tempo, b.length, b.text].some(x => x !== undefined)) throw new Error(`${at}: needs a tempo, length or text`);

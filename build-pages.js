@@ -267,7 +267,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
   }
 
   /* ----------------------------------------------------------
-     THE BEAT: a song's tempo and length under its title,
+     THE BEAT: a song's tempo, length and hours under its title,
      and how the beat is built after its lyrics
   ---------------------------------------------------------- */
   const andList = xs => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
@@ -276,7 +276,8 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
     if (!beat) return '';
     const facts = [
       beat.tempo && `${beat.tempo} BPM`,
-      beat.length
+      beat.length,
+      beat.hours && `about ${beat.hours} hour${beat.hours === 1 ? '' : 's'} in FL Studio`
     ].filter(Boolean);
     if (!facts.length) return '';
     return `<p class="song-facts">${facts.map(f => `<span class="fact">${f}</span>`).join('')}${draftTag(beat) ? ` ${draftTag(beat)}` : ''}</p>`;
