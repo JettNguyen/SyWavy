@@ -267,17 +267,15 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
   }
 
   /* ----------------------------------------------------------
-     THE BEAT: a song's tempo, key and length under its title,
+     THE BEAT: a song's tempo and length under its title,
      and how the beat is built after its lyrics
   ---------------------------------------------------------- */
-  const keyName = k => k.replace(/^([A-G])b/, '$1♭').replace(/^([A-G])#/, '$1♯');
   const andList = xs => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
 
   function beatFacts(beat) {
     if (!beat) return '';
     const facts = [
       beat.tempo && `${beat.tempo} BPM`,
-      beat.key && keyName(beat.key),
       beat.length
     ].filter(Boolean);
     if (!facts.length) return '';

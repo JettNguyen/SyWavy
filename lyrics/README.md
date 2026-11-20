@@ -60,14 +60,14 @@ and Jett2Fly makes every beat and mixes and masters each song, and explains the 
 
 ## The beat
 
-A song in a notes file can also have a `beat`: its tempo, key and length, which show in one line
+A song in a notes file can also have a `beat`: its tempo and length, which show in one line
 under its title, and a few plain sentences on how the beat is built, which show as "The beat" after
 the lyrics. `gear` starts with where it was made, then the instruments:
 
-    "beat": { "draft": true, "tempo": 86, "key": "F minor", "length": "2:59", "text": "...", "gear": ["FL Studio", "FLEX", "Omnisphere"] }
+    "beat": { "draft": true, "tempo": 86, "length": "2:59", "text": "...", "gear": ["FL Studio", "FLEX", "Omnisphere"] }
 
-Write a key like `F minor` or `Ab major`; the page shows it as A♭ major. Leave the key out until
-it's sure. These come from the beat analysis in Jett's Google Drive, which stays out of this repo.
+There's no key for now. Keys measured from the audio missed too often, so Jett left them off until
+he can come back to them. The rest comes from the beat analysis in Jett's Google Drive, which stays out of this repo.
 A beat is hidden while it has `"draft": true`, like a note.
 
 ## Places
