@@ -93,6 +93,19 @@ function loadSongs(releases) {
   return { songs, byRelease };
 }
 
+const isText = t => typeof t === 'string' && t.trim();
+
+/* The beat under a song: its tempo, key and length, a few plain sentences on how
+   it's built, and the gear. Keys are written like "F minor" or "Ab major". */
+function checkBeat(b, at) {
+  if (b.tempo !== undefined && !(typeof b.tempo === 'number' && b.tempo > 0)) throw new Error(`${at}: tempo must be a number`);
+  if (b.key !== undefined && !/^[A-G][b#]? (major|minor)$/.test(b.key)) throw new Error(`${at}: key must look like "F minor" or "Ab major"`);
+  if (b.length !== undefined && !/^\d+:[0-5]\d$/.test(b.length)) throw new Error(`${at}: length must look like "2:59"`);
+  if (b.text !== undefined && !isText(b.text)) throw new Error(`${at}: text is empty`);
+  if (b.gear !== undefined && !(Array.isArray(b.gear) && b.gear.length && b.gear.every(isText))) throw new Error(`${at}: gear must be a list of names`);
+  if (![b.tempo, b.key, b.length, b.text].some(x => x !== undefined)) throw new Error(`${at}: needs a tempo, key, length or text`);
+}
+
 /* Notes, checked against the lyrics so a note can't point past a song */
 function loadNotes(byRelease, { drafts = false } = {}) {
   const arcs = new Map();
@@ -111,7 +124,6 @@ function loadNotes(byRelease, { drafts = false } = {}) {
     // can have just its inspirations, with no paragraph.
     if (data.sound) {
       const s = data.sound;
-      const isText = t => typeof t === 'string' && t.trim();
       const insp = s.inspirations || [];
       if (s.text !== undefined && !isText(s.text)) throw new Error(`${where}: sound text is empty`);
       if (s.text === undefined && !insp.length) throw new Error(`${where}: sound needs its text or inspirations`);
@@ -136,6 +148,10 @@ function loadNotes(byRelease, { drafts = false } = {}) {
       const song = list.find(s => s.track === Number(track));
       if (!song) throw new Error(`${where}: no track ${track}`);
       if (entry.title && !sameSong(entry.title, song.title)) throw new Error(`${where}: track ${track} is "${song.title}", not "${entry.title}"`);
+      if (entry.beat) {
+        checkBeat(entry.beat, `${where} track ${track} beat`);
+        if (drafts || !entry.beat.draft) song.beat = entry.beat;
+      }
       song.notes = (song.notes || []).concat((entry.notes || []).filter(n => drafts || !n.draft).map((n, i) => {
         const at = `${where} track ${track} note ${i + 1}`;
         if (!KINDS.includes(n.kind)) throw new Error(`${at}: kind must be one of ${KINDS.join(', ')}`);
@@ -165,7 +181,7 @@ if (require.main === module) {
     const { songs, byRelease } = loadSongs(sandbox.window.SYWAVY.releases);
     const { arcs, sounds } = loadNotes(byRelease, { drafts: true });
     const count = k => songs.reduce((n, s) => n + (s.notes || []).filter(x => x.kind === k).length, 0);
-    console.log(`Notes are valid: ${KINDS.map(k => `${count(k)} ${k}`).join(', ')}, on ${songs.filter(s => (s.notes || []).length).length} songs; ${arcs.size} album arcs; ${[...sounds.values()].filter(s => s.text).length} sound paragraphs; ${[...sounds.values()].reduce((n, s) => n + s.inspirations.length, 0)} inspirations.`);
+    console.log(`Notes are valid: ${KINDS.map(k => `${count(k)} ${k}`).join(', ')}, on ${songs.filter(s => (s.notes || []).length).length} songs; ${arcs.size} album arcs; ${[...sounds.values()].filter(s => s.text).length} sound paragraphs; ${[...sounds.values()].reduce((n, s) => n + s.inspirations.length, 0)} inspirations; ${songs.filter(s => s.beat).length} beats.`);
     process.exit(0);
   }
   if (cmd !== 'number' || !id) { console.log('usage: node build-lyrics.js number <release id> | check'); process.exit(1); }

@@ -119,6 +119,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
     const notes = notesOf(song);
     const feat = FEATURES[song.slug];
     const inspirations = inspirationsOf(song);
+    const beat = song.beat;
 
     // Which notes cover each line
     const covering = song.lines.map(l => notes.map((n, k) => (l.n >= n.lines[0] && l.n <= n.lines[1] ? k : -1)).filter(k => k >= 0));
@@ -188,14 +189,14 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
           <p class="kicker">${kicker}</p>
           <h1 class="song-title">${esc(song.title)}</h1>
           <p class="song-artist">SyWavy${feat ? `<span> feat. ${esc(feat)}</span>` : ''}</p>
-          ${inspirations.map(x => `<p class="song-inspiration">${esc(x.text)}${x.draft ? ' <span class="note-draft">Draft</span>' : ''}</p>`).join('')}
+          ${beatFacts(beat)}${inspirations.map(x => `<p class="song-inspiration">${esc(x.text)}${x.draft ? ' <span class="note-draft">Draft</span>' : ''}</p>`).join('')}
         </div>
         ${links ? `<div class="stream-links">${links}</div>` : ''}
       </div>
       <div class="song-body${notes.length ? ' has-notes' : ''}">
         ${lyricsHTML}
         ${notesHTML}
-      </div>
+      </div>${beatSection(beat)}
       ${prev || next ? `<nav class="song-steps" aria-label="More songs">${step(prev, 'prev')}${step(next, 'next')}</nav>` : ''}
       ${tracklist}
       </div>`;
@@ -263,6 +264,35 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
         }).join('')}
         </ul>
       </div>`;
+  }
+
+  /* ----------------------------------------------------------
+     THE BEAT: a song's tempo, key and length under its title,
+     and how the beat is built after its lyrics
+  ---------------------------------------------------------- */
+  const keyName = k => k.replace(/^([A-G])b/, '$1♭').replace(/^([A-G])#/, '$1♯');
+  const andList = xs => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+
+  function beatFacts(beat) {
+    if (!beat) return '';
+    const facts = [
+      beat.tempo && `${beat.tempo} BPM`,
+      beat.key && keyName(beat.key),
+      beat.length
+    ].filter(Boolean);
+    if (!facts.length) return '';
+    return `<p class="song-facts">${facts.map(f => `<span class="fact">${f}</span>`).join('')}${draftTag(beat) ? ` ${draftTag(beat)}` : ''}</p>`;
+  }
+
+  function beatSection(beat) {
+    if (!beat || !beat.text) return '';
+    const [maker, ...rest] = beat.gear || [];
+    return `
+      <section class="release-section song-beat" aria-labelledby="beatHeading">
+        <div class="section-head"><h2 id="beatHeading" class="section-heading section-heading-sm">The beat</h2>${draftTag(beat)}</div>
+        <p class="sound-text">${esc(beat.text)}</p>
+        ${maker ? `<p class="song-beat-gear">Made in ${esc(maker)}${rest.length ? ` with ${esc(andList(rest))}` : ''}</p>` : ''}
+      </section>`;
   }
 
   // A song's own inspirations, for its lyrics page

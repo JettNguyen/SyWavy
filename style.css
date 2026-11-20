@@ -1597,6 +1597,13 @@ a.inspiration-song:hover { opacity: 0.75; }
 .song-inspiration { margin-top: 0.45rem; font-size: 0.95rem; line-height: 1.55; color: var(--muted); }
 .song-inspiration .note-draft { margin-left: 0.3rem; vertical-align: 0.1em; }
 
+/* The beat: tempo, key and length under a song's title, and how it's built after its lyrics */
+.song-facts { display: flex; flex-wrap: wrap; align-items: center; margin-top: 0.45rem; font-size: 0.95rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.song-facts .fact + .fact::before { content: "·"; margin: 0 0.5rem; }
+.song-facts .note-draft { margin-left: 0.5rem; }
+.song-beat .section-head { margin-bottom: 1.25rem; }
+.song-beat-gear { max-width: 62ch; margin-top: 0.9rem; font-size: 0.9rem; color: var(--muted); }
+
 /* Track by track: a line through the album, drawn as the page scrolls */
 .arc-summary { max-width: 62ch; margin-bottom: clamp(2rem, 4vw, 2.75rem); font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); }
 .arc-body { position: relative; padding-left: 3rem; }

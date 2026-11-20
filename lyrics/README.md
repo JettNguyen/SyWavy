@@ -58,6 +58,18 @@ New wording waits to be read the same way a note does:
 While any sound paragraph is published, the Lyrics page also says that SyWavy records his own vocals
 and Jett2Fly makes every beat and mixes and masters each song, and explains the plane tag.
 
+## The beat
+
+A song in a notes file can also have a `beat`: its tempo, key and length, which show in one line
+under its title, and a few plain sentences on how the beat is built, which show as "The beat" after
+the lyrics. `gear` starts with where it was made, then the instruments:
+
+    "beat": { "draft": true, "tempo": 86, "key": "F minor", "length": "2:59", "text": "...", "gear": ["FL Studio", "FLEX", "Omnisphere"] }
+
+Write a key like `F minor` or `Ab major`; the page shows it as A♭ major. Leave the key out until
+it's sure. These come from the beat analysis in Jett's Google Drive, which stays out of this repo.
+A beat is hidden while it has `"draft": true`, like a note.
+
 ## Places
 
 `notes/places.json` gives each Florida place a pin on the map, as `"Name": [latitude, longitude]`.
