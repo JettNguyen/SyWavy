@@ -39,9 +39,21 @@ project on the Lyrics page, and it's hidden while it has `"draft": true`, like a
 
     "sound": { "draft": true, "text": "...", "inspirations": [{ "track": 6, "text": "Based on ..." }] }
 
-`inspirations` is optional: what some of the beats came from. Each one shows in a list under the
-paragraph, and on that song's lyrics page under its title. Leave out `track` for one that covers
-the whole project.
+`inspirations` is optional: what some of the beats came from, including the records a song samples.
+Each one shows in a list under the paragraph, and on that song's lyrics page under its title. Leave
+out `track` for one that covers the whole project.
+
+A single has no paragraph, but its notes file can still list its inspirations. They show under the
+heading "Inspirations" on its page:
+
+    "sound": { "inspirations": [{ "track": 1, "text": "Built on a sample of ..." }] }
+
+New wording waits to be read the same way a note does:
+
+- A new inspiration gets `"draft": true`. To publish it, delete that.
+- New wording for a published paragraph or inspiration goes in `draftText`, next to its `text`. The
+  site keeps showing `text`; a build with `--drafts` shows `draftText` instead, marked Draft. To
+  publish it, move it into `text` and delete `draftText`.
 
 While any sound paragraph is published, the Lyrics page also says that SyWavy records his own vocals
 and Jett2Fly makes every beat and mixes and masters each song, and explains the plane tag.

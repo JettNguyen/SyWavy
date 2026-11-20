@@ -107,16 +107,29 @@ function loadNotes(byRelease, { drafts = false } = {}) {
     const data = JSON.parse(fs.readFileSync(path.join(NOTES, f), 'utf8'));
 
     if (data.arc && (drafts || !data.arc.draft)) arcs.set(releaseId, data.arc);
-    // A short paragraph on how the project sounds and how it was made
+    // A short paragraph on how the project sounds and how it was made. A single
+    // can have just its inspirations, with no paragraph.
     if (data.sound) {
-      if (typeof data.sound.text !== 'string' || !data.sound.text.trim()) throw new Error(`${where}: sound needs its text`);
+      const s = data.sound;
+      const isText = t => typeof t === 'string' && t.trim();
+      const insp = s.inspirations || [];
+      if (s.text !== undefined && !isText(s.text)) throw new Error(`${where}: sound text is empty`);
+      if (s.text === undefined && !insp.length) throw new Error(`${where}: sound needs its text or inspirations`);
+      // draftText is new wording for a published text, waiting to be read
+      if (s.draftText !== undefined && !(isText(s.draftText) && s.text !== undefined)) throw new Error(`${where}: sound draftText needs text to replace`);
       // What a song's beat came from. No track means the whole project.
-      (data.sound.inspirations || []).forEach((x, i) => {
+      insp.forEach((x, i) => {
         const at = `${where} sound inspiration ${i + 1}`;
-        if (typeof x.text !== 'string' || !x.text.trim()) throw new Error(`${at}: needs its text`);
+        if (!isText(x.text)) throw new Error(`${at}: needs its text`);
+        if (x.draftText !== undefined && !isText(x.draftText)) throw new Error(`${at}: draftText is empty`);
         if (x.track !== undefined && !list.some(s => s.track === x.track)) throw new Error(`${at}: no track ${x.track}`);
       });
-      if (drafts || !data.sound.draft) sounds.set(releaseId, data.sound);
+      const swap = x => (drafts && x.draftText ? { ...x, text: x.draftText, draft: true } : x);
+      const sound = {
+        ...swap(s),
+        inspirations: insp.map(swap).filter(x => drafts || !x.draft)
+      };
+      if ((drafts || !s.draft) && (sound.text || sound.inspirations.length)) sounds.set(releaseId, sound);
     }
 
     for (const [track, entry] of Object.entries(data.songs || {})) {
@@ -152,7 +165,7 @@ if (require.main === module) {
     const { songs, byRelease } = loadSongs(sandbox.window.SYWAVY.releases);
     const { arcs, sounds } = loadNotes(byRelease, { drafts: true });
     const count = k => songs.reduce((n, s) => n + (s.notes || []).filter(x => x.kind === k).length, 0);
-    console.log(`Notes are valid: ${KINDS.map(k => `${count(k)} ${k}`).join(', ')}, on ${songs.filter(s => (s.notes || []).length).length} songs; ${arcs.size} album arcs; ${sounds.size} sound paragraphs.`);
+    console.log(`Notes are valid: ${KINDS.map(k => `${count(k)} ${k}`).join(', ')}, on ${songs.filter(s => (s.notes || []).length).length} songs; ${arcs.size} album arcs; ${[...sounds.values()].filter(s => s.text).length} sound paragraphs; ${[...sounds.values()].reduce((n, s) => n + s.inspirations.length, 0)} inspirations.`);
     process.exit(0);
   }
   if (cmd !== 'number' || !id) { console.log('usage: node build-lyrics.js number <release id> | check'); process.exit(1); }

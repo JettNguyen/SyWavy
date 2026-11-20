@@ -118,7 +118,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
     const prev = list[i - 1], next = list[i + 1];
     const notes = notesOf(song);
     const feat = FEATURES[song.slug];
-    const inspiration = inspirationOf(song);
+    const inspirations = inspirationsOf(song);
 
     // Which notes cover each line
     const covering = song.lines.map(l => notes.map((n, k) => (l.n >= n.lines[0] && l.n <= n.lines[1] ? k : -1)).filter(k => k >= 0));
@@ -188,7 +188,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
           <p class="kicker">${kicker}</p>
           <h1 class="song-title">${esc(song.title)}</h1>
           <p class="song-artist">SyWavy${feat ? `<span> feat. ${esc(feat)}</span>` : ''}</p>
-          ${inspiration ? `<p class="song-inspiration">${esc(inspiration.text)}${inspiration.draft ? ' <span class="note-draft">Draft</span>' : ''}</p>` : ''}
+          ${inspirations.map(x => `<p class="song-inspiration">${esc(x.text)}${x.draft ? ' <span class="note-draft">Draft</span>' : ''}</p>`).join('')}
         </div>
         ${links ? `<div class="stream-links">${links}</div>` : ''}
       </div>
@@ -230,6 +230,12 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
   function soundSection(release) {
     const sound = sounds.get(release.id);
     if (!sound) return '';
+    // A single can have inspirations with no paragraph
+    if (!sound.text) return `
+    <section class="release-section sound" style="${artVars(release)}" aria-labelledby="soundHeading">
+      <div class="section-head"><h2 id="soundHeading" class="section-heading section-heading-sm">Inspirations</h2></div>
+      ${inspirationsHTML(release, sound, false)}
+    </section>`;
     return `
     <section class="release-section sound" style="${artVars(release)}" aria-labelledby="soundHeading">
       <div class="section-head"><h2 id="soundHeading" class="section-heading section-heading-sm">The sound</h2>${draftTag(sound)}</div>
@@ -239,31 +245,32 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
   }
 
   /* What some of the beats came from, song by song */
-  function inspirationsHTML(release, sound) {
+  function inspirationsHTML(release, sound, heading = true) {
     const list = sound.inspirations || [];
     if (!list.length) return '';
     const songs = byRelease.get(release.id) || [];
     const whole = `The whole ${typeLabel(release.type) === 'EP' ? 'EP' : typeLabel(release.type).toLowerCase()}`;
     return `
       <div class="inspirations">
-        <h3 class="inspirations-heading">Inspirations</h3>
+        ${heading ? '<h3 class="inspirations-heading">Inspirations</h3>' : ''}
         <ul class="inspiration-list">${list.map(x => {
           const song = x.track !== undefined && songs.find(s => s.track === x.track);
           const name = song
             ? (hasLyrics(song) ? `<a href="${songHref(song)}" class="inspiration-song">${esc(song.title)}</a>` : `<span class="inspiration-song">${esc(song.title)}</span>`)
             : `<span class="inspiration-song">${whole}</span>`;
           return `
-          <li class="inspiration">${name}<span class="inspiration-text">${esc(x.text)}</span></li>`;
+          <li class="inspiration">${name}<span class="inspiration-text">${esc(x.text)}${draftTag(x) ? ` ${draftTag(x)}` : ''}</span></li>`;
         }).join('')}
         </ul>
       </div>`;
   }
 
-  // A song's own inspiration, for its lyrics page
-  const inspirationOf = song => {
+  // A song's own inspirations, for its lyrics page
+  const inspirationsOf = song => {
     const sound = sounds.get(song.releaseId);
-    const x = sound && (sound.inspirations || []).find(i => i.track === song.track);
-    return x ? { text: x.text, draft: sound.draft } : null;
+    return sound
+      ? (sound.inspirations || []).filter(x => x.track === song.track).map(x => ({ text: x.text, draft: sound.draft || x.draft }))
+      : [];
   };
 
   /* ----------------------------------------------------------
@@ -307,7 +314,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
       <header class="page-head animate-on-scroll">
         <h1 class="section-heading">Lyrics<span class="section-count">${total}</span></h1>
         <p class="page-intro">Every SyWavy song${noted ? `, with ${noted} notes on the lines: who and what he's naming${studio ? ', the stories behind them, and how they were made' : ' and the stories behind them'}` : ''}.</p>
-        ${sounds.size ? `<p class="page-intro page-intro-more">SyWavy records his own vocals and sends them to Jett2Fly, who makes every beat and mixes and masters each song in FL Studio. The plane you hear on every song is Jett2Fly's tag, recorded at an airport in Texas when one flew right over his head.</p>` : ''}
+        ${[...sounds.values()].some(s => s.text) ? `<p class="page-intro page-intro-more">SyWavy records his own vocals and sends them to Jett2Fly, who makes every beat and mixes and masters each song in FL Studio. The plane you hear on every song is Jett2Fly's tag, recorded at an airport in Texas when one flew right over his head.</p>` : ''}
         ${refCount() || floridaCount() ? `<div class="page-links">
           ${refCount() ? '<a href="/references" class="btn-outline">References</a>' : ''}
           ${floridaCount() ? `<a href="/florida" class="btn-outline">SyWavy's Florida</a>` : ''}
@@ -320,7 +327,7 @@ module.exports = function pages({ D, R, songs, byRelease, arcs, sounds = new Map
             <div class="lyrics-release-about">
               <p class="kicker">${typeLabel(r.type)}<span>${year(r)}</span></p>
               <h2 class="lyrics-release-title" id="lr-${r.id}"><a href="/${r.id}">${esc(r.title)}</a></h2>
-              ${sounds.has(r.id) ? `<p class="lyrics-release-sound">${esc(sounds.get(r.id).text)} ${draftTag(sounds.get(r.id))}</p>` : ''}
+              ${sounds.has(r.id) && sounds.get(r.id).text ? `<p class="lyrics-release-sound">${esc(sounds.get(r.id).text)} ${draftTag(sounds.get(r.id))}</p>` : ''}
             </div>
             ${tracksHTML(r)}
           </div>

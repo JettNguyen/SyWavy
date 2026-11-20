@@ -181,7 +181,7 @@ for (const r of D.releases) {
   html = fillFooter(html);
   html = addToHead(html, jsonLd({
     ...albumData(r),
-    ...(sounds.has(r.id) && { description: sounds.get(r.id).text }),
+    ...(sounds.has(r.id) && sounds.get(r.id).text && { description: sounds.get(r.id).text }),
     byArtist: artistRef,
     sameAs: (r.links || []).filter(l => l.url && l.url !== '#').map(l => l.url)
   }));
