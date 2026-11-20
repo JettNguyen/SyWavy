@@ -1,15 +1,14 @@
 {
   "release": "flight-370",
   "sound": {
-    "text": "While they worked on Flight 370, Jett2Fly had indie rock and bedroom pop on repeat: Men I Trust, The Marías, Clairo. Over the year it took to make, that sound worked its way into the beats, and SyWavy even named a song after Clairo. The result is soft and mellow, a little wistful, with plenty of room for him to sing. Tour grew out of Not Used To, an unreleased early version of The Weeknd's The Town, and The Shining samples Love Through Her, another song of his that never came out. The closing song settles it: Flight 370 is an R&B album.",
-    "draftText": "While they worked on Flight 370, Jett2Fly had indie rock and bedroom pop on repeat: Men I Trust, The Marías, Clairo. Over the year it took to make, that sound worked its way into the beats, right down to the drums: some of the hits are cut from songs by Men I Trust and Crumb. SyWavy even named a song after Clairo. The result is soft and mellow, a little wistful, with plenty of room for him to sing. Tour grew out of Not Used To, an unreleased early version of The Weeknd's The Town, and The Shining samples Love Through Her, another song of his that never came out. The closing song settles it: Flight 370 is an R&B album.",
+    "text": "While they worked on Flight 370, Jett2Fly had indie rock and bedroom pop on repeat: Men I Trust, The Marías, Clairo. Over the year it took to make, that sound worked its way into the beats, right down to the drums: some of the hits are cut from songs by Men I Trust and Crumb. SyWavy even named a song after Clairo. The result is soft and mellow, a little wistful, with plenty of room for him to sing. Tour grew out of Not Used To, an unreleased early version of The Weeknd's The Town, and The Shining samples Love Through Her, another song of his that never came out. The closing song settles it: Flight 370 is an R&B album.",
     "inspirations": [
       { "text": "Influenced by Men I Trust, The Marías and Clairo" },
-      { "draft": true, "text": "Some of the drum hits are cut from songs by Men I Trust and Crumb" },
-      { "track": 2, "draft": true, "text": "Samples This Love by Bobby Oroza, mostly its drums, with a guitar and bassline recorded over it" },
+      { "text": "Some of the drum hits are cut from songs by Men I Trust and Crumb" },
+      { "track": 2, "text": "Samples This Love by Bobby Oroza, mostly its drums, with a guitar and bassline recorded over it" },
       { "track": 3, "text": "Grew out of Not Used To, an unreleased early version of The Town by The Weeknd" },
-      { "track": 8, "draft": true, "text": "Takes its melody from The Delay, an unreleased song by The Weeknd, with the vocal melody played on an instrument" },
-      { "track": 11, "text": "Samples Love Through Her, an unreleased song by The Weeknd", "draftText": "Samples the instruments of Love Through Her, an unreleased song by The Weeknd" }
+      { "track": 8, "text": "Takes its melody from The Delay, an unreleased song by The Weeknd, with the vocal melody played on an instrument" },
+      { "track": 11, "text": "Samples the instruments of Love Through Her, an unreleased song by The Weeknd" }
     ]
   },
   "arc": {

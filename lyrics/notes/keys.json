@@ -2,7 +2,7 @@
   "release": "keys",
   "sound": {
     "inspirations": [
-      { "track": 1, "draft": true, "text": "Built on a sample of You Don't Know My Name by Alicia Keys" }
+      { "track": 1, "text": "Built on a sample of You Don't Know My Name by Alicia Keys" }
     ]
   },
   "songs": {

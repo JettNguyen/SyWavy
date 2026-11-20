@@ -1,8 +1,7 @@
 {
   "release": "deep-voice-bastards",
   "sound": {
-    "text": "Deep Voice Bastards is named for the two people behind it. Jett2Fly never says a word on it, but anyone who's heard him and SyWavy talk would tell you they both have very deep voices, so SyWavy put them both in the title. The production is loud, with big synths that stay smooth instead of harsh and a lot of bass, and even the slower songs hit hard. Jett2Fly was drawing on melodic dubstep, The Glitch Mob in particular, but what he took from it was the mood and the melodies, not the sound. Kuy joins SyWavy on Intrusive Thoughts, which was inspired by Bowery Electric's Beat.",
-    "draftText": "Deep Voice Bastards is named for the two people behind it. Jett2Fly gets a line of his own on AudioSlave, and anyone who's heard him and SyWavy talk would tell you they both have very deep voices, so SyWavy put them both in the title. The production is loud, with big synths that stay smooth instead of harsh and a lot of bass, and even the slower songs hit hard. Jett2Fly was drawing on melodic dubstep, The Glitch Mob in particular, but what he took from it was the mood and the melodies, not the sound. Kuy joins SyWavy on Intrusive Thoughts, which was inspired by Bowery Electric's Beat.",
+    "text": "Deep Voice Bastards is named for the two people behind it. Jett2Fly gets a line of his own on AudioSlave, and anyone who's heard him and SyWavy talk would tell you they both have very deep voices, so SyWavy put them both in the title. The production is loud, with big synths that stay smooth instead of harsh and a lot of bass, and even the slower songs hit hard. Jett2Fly was drawing on melodic dubstep, The Glitch Mob in particular, but what he took from it was the mood and the melodies, not the sound. Kuy joins SyWavy on Intrusive Thoughts, which was inspired by Bowery Electric's Beat.",
     "inspirations": [
       { "text": "Influenced by melodic dubstep, especially The Glitch Mob's Fortune Days and We Can Make the World Stop" },
       { "track": 9, "text": "Inspired by Beat by Bowery Electric" }
@@ -85,7 +84,7 @@
         { "lines": [18, 21], "kind": "reference", "title": "Bob Marley", "body": "Her bob haircut supplies his first name, and doggy brings in the other famous Marley, the dog from Marley & Me. Then he takes the name of Marley's 1983 song Buffalo Soldier for himself.", "ref": { "name": "Bob Marley", "category": "musician" } },
         { "lines": [24, 24], "kind": "reference", "title": "Audioslave", "body": "The 2000s rock band formed by Chris Cornell and members of Rage Against the Machine. He borrows the name to say he's bound to the music.", "ref": { "name": "Audioslave", "category": "musician" } },
         { "lines": [27, 29], "kind": "story", "body": "The roaring plane isn't a plane. It's Jett2Fly, SyWavy's producer, whose name and sound are built on flight the way SyWavy's are built on water." },
-        { "lines": [28, 28], "kind": "story", "draft": true, "body": "Jett2Fly says this one himself, one of the two deep voices the album is named for." },
+        { "lines": [28, 28], "kind": "story", "body": "Jett2Fly says this one himself, one of the two deep voices the album is named for." },
         { "lines": [35, 37], "kind": "story", "body": "Trick and treat come one line apart, and the 31 right after makes it October 31, Halloween." }
       ]
     },
