@@ -1,5 +1,10 @@
 {
   "release": "family-ties",
+  "sound": {
+    "inspirations": [
+      { "track": 1, "draft": true, "text": "Built on an instrumental remake of Almeda by Solange, with the original record on top" }
+    ]
+  },
   "songs": {
     "1": {
       "title": "Family Ties.",

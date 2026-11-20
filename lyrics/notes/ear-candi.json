@@ -1,7 +1,12 @@
 {
   "release": "ear-candi",
   "sound": {
-    "text": "Ear Candi came out in June 2020, weeks after George Floyd was killed, and its cover comes from the protests that followed. SyWavy had a lot on his mind that summer. The sound picked up where Keys' left off: Keys' was built on a single sample, so Jett2Fly kept building beats from samples and loops. They made far more songs that year than they ever released, and these five are the ones they kept."
+    "text": "Ear Candi came out in June 2020, weeks after George Floyd was killed, and its cover comes from the protests that followed. SyWavy had a lot on his mind that summer. The sound picked up where Keys' left off: Keys' was built on a single sample, so Jett2Fly kept building beats from samples and loops. They made far more songs that year than they ever released, and these five are the ones they kept.",
+    "inspirations": [
+      { "track": 1, "draft": true, "text": "Samples Joy by The Georgia Mass Choir" },
+      { "track": 4, "draft": true, "text": "Samples Weak by SWV, and its last bars bring in Drama by Roy Woods to lead into No Change" },
+      { "track": 5, "draft": true, "text": "Built on Drama by Roy Woods featuring Drake" }
+    ]
   },
   "songs": {
     "1": {

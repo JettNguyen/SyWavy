@@ -4,7 +4,8 @@
     "text": "Life is Verses is made for late at night. Under opens on high, bright synth chords over quick, steady drums, and Nick Fury takes the same idea somewhere moodier. Then there's 3AM. SyWavy loved The Weeknd's Tell Your Friends and asked Jett2Fly to turn it into a beat he could sing and rap over. For about a year, not much happened. In late 2022, people on TikTok found it, and it's still his most-played song.",
     "inspirations": [
       { "track": 1, "text": "Inspired by Over by Playboi Carti" },
-      { "track": 3, "text": "Built on Tell Your Friends by The Weeknd" }
+      { "track": 3, "text": "Built on Tell Your Friends by The Weeknd", "draftText": "Samples Can't Stop Loving You by Soul Dog (1976), the record The Weeknd's Tell Your Friends is built on" },
+      { "track": 6, "draft": true, "text": "Samples Blue Lights by Jorja Smith, from her COLORS performance" }
     ]
   },
   "songs": {
